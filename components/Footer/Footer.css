@@ -1,0 +1,175 @@
+/*────────────────── 
+       页眉
+──────────────────*/
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-header-background);
+}
+
+.copyright {
+    color: #000000;
+    font-size: 1.2rem;
+    line-height: 40px;
+    text-align: center;
+    max-width: 1020px;
+
+}
+
+.copyright a {
+    color: #000000;
+
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: #ffffff;
+}
+
+.copyright .a1:hover {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 390px) {
+
+    .copyright a {
+        font-size: 0.7rem;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 315px) {
+    .content a {
+        font-size: 0.5rem;
+    }
+
+    .copyright a {
+        font-size: 0.5rem;
+    }
+
+    .copyright {
+        font-size: 0.5rem;
+    }
+}
+
+/*////////*/
+
+
+#ff {
+    max-width: 1020px;
+    width: 96%;
+    height: 100%;
+    display: left;
+    justify-content: left;
+    color: var(--ff-color);
+    font-size: 1rem;
+    line-height: 30px;
+    text-align: flex-start;
+
+    margin: 0 auto;
+}
+
+.ffaa {
+    background: var(--ffaa-background);
+    height: 100%;
+}
+
+.ffbb {
+
+
+
+
+    display: flex;
+    background: var(--ffbb-background);
+    font-size: 1em;
+    margin-top: 0px;
+}
+
+.ffa {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.ffbbxx a {
+    color: var(--ffbbxx-a-color);
+    text-decoration: none;
+
+}
+
+.ffbbxx a:hover {
+
+    text-decoration: underline;
+}
+
+.link_boxes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.link_boxes1 {
+    flex: 1;
+}
+
+.link_boxes li {
+    list-style: none;
+}
+
+.link_boxes ul li h2 {
+    margin-top: 10%;
+}
+
+.content {
+    display: flex;
+}
+
+.content a {
+    color: var(--content-a-color);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: var(--content-a-color-hover);
+    text-decoration: underline 1px;
+}
+
+@media only screen and (max-width: 275px) {
+    .ffbbxx {
+        font-size: 0.5rem;
+    }
+
+    .ffbbxx a {
+        font-size: 0.5rem;
+    }
+
+    .link_boxes {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .link_boxes ul li h2 {
+        margin-top: 10%;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 315px) {
+    #ff {
+        line-height: 20px;
+    }
+}
+
+.logo1 {
+    padding-top: 10px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}

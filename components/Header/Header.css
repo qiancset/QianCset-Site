@@ -1,0 +1,183 @@
+/*────────────────── 
+       header
+──────────────────*/
+
+header {
+	margin: 0 auto;
+	width: 100%;
+	height: 6vh;
+	background: var(--header-background);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	position: fixed;
+	top: 0vh;
+	transition: 0.5s;
+	z-index: 5;
+}
+
+
+.notification {
+	margin: 0 auto;
+	width: 100%;
+	height: 1;
+	color: #000000;
+	background: #ffffff;
+
+	display: flex;
+	text-align: center;
+	align-items: center;
+	position: fixed;
+	justify-content: center;
+
+	top: 6vh;
+	transition: 0.1s;
+	z-index: 4;
+}
+
+.notification strong:hover {
+	color: #ff0000;
+}
+
+
+
+.btn-close {
+	cursor: pointer;
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #666;
+}
+
+.btn-close:hover {
+	color: #ea7411;
+}
+
+.logo img {
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 5vh;
+	cursor: pointer;
+}
+
+.logo img:hover {
+	transition: all 0.5s;
+	box-shadow: 0 0 2rem #ea7411;
+	-webkit-border-radius: 22;
+	-moz-border-radius: 22;
+	border-radius: 22px;
+}
+
+/* 默认导航菜单样式 */
+.nav-bar {
+
+	list-style: none;
+	position: relative;
+	display: inline-flex;
+	width: 100%;
+}
+
+.nav-show {
+	display: none;
+}
+
+.Web3ModalA {
+	margin-left: auto;
+
+	margin-right: 5px;
+}
+
+.web3-network-switch {
+	margin-right: 5px;
+}
+
+@media only screen and (max-width: 970px) {
+	.web3-network-switch {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 750px) {
+
+	.logo img {
+
+		height: 40px;
+		cursor: pointer;
+	}
+}
+
+
+
+/*///////////*/
+
+
+
+/* 手机样式 */
+.ant-drawer-title {
+	color: #ceab4c;
+}
+
+.MenuUnfoldOutlined {
+	color: var(--header-decor-color);
+
+	font-size: 40px;
+}
+
+.Buttonant {
+	width: 100;
+	height: 70;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.Buttonant::after,
+.Buttonant:hover {
+	width: 100;
+	height: 80;
+}
+
+
+
+
+
+
+
+
+.Switch i {
+	width: 0px;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+	.nav-bar {
+		display: none;
+	}
+
+	.Buttonant {
+		display: block;
+	}
+
+	.Night {
+		display: none;
+	}
+
+
+}
+
+@media screen and (min-width:601px) and (max-width:9999px) {
+	.Buttonant {
+		display: none;
+		width: 40px;
+		height: 40px;
+
+
+	}
+}

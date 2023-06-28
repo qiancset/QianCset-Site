@@ -1,0 +1,13 @@
+.lightToggleIcon_pyhR {
+	color: #ffffff;
+}
+.antisNight {
+	-webkit-border-radius: 16;
+	-moz-border-radius: 16;
+	border-radius: 16px;
+}
+
+.antisNight:hover {
+	transition: all 0.5s;
+	box-shadow: 0 0 1rem #ffffff;
+}
