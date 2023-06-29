@@ -4,39 +4,20 @@ import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { Button } from 'antd'
 import { useTranslation } from "react-i18next";
-
+import '../../../styles/App.css'
+import '../../../styles/App1.css'
 
 const ModeThemes = () => {
-  const [isNight, setIsNight] = useState(false)
-  const { setTheme } = useTheme()
+  const [isNight, setIsNight] = useState(false);
+  const { setTheme, resolvedTheme } = useTheme();
 
   const toggleTheme = () => {
-    setIsNight(!isNight)
-    setTheme(isNight ? 'light' : 'dark')
-  }
+    setIsNight(!isNight);
+    setTheme(isNight ? 'light' : 'dark');
+  };
 
 
 
-//使用浏览器提供的 window.matchMedia 方法来检测用户系统主题是否改变，然后在 useEffect 中监听主题变化并更新应用的主题。
-
-  useEffect(() => {
-    const mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)')
-    const handleSystemThemeChange = (e) => {
-      const preferredValues = ['no-preference', 'dark']
-      if (preferredValues.includes(e.matches ? 'dark' : 'no-preference')) {
-        setIsNight(e.matches)
-        setTheme(e.matches ? 'dark' : 'light')
-      }
-    }
-
-    handleSystemThemeChange(mediaQueryList)
-
-    mediaQueryList.addEventListener('change', handleSystemThemeChange)
-
-    return () => {
-      mediaQueryList.removeEventListener('change', handleSystemThemeChange)
-    }
-  }, [])
   
 const { t } = useTranslation();
   return (
@@ -44,7 +25,7 @@ const { t } = useTranslation();
       type="text"
       title= {t('切换浅色/暗黑模式')}
       
-      className={isNight ? 'antisNight' : ''}
+      className={resolvedTheme === 'dark' ? 'antisNight' : 'antisNight'}
       onClick={toggleTheme}
       icon={
         <span>

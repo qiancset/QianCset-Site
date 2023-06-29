@@ -3,5 +3,11 @@
 import { ThemeProvider } from 'next-themes'
 
 export default function Themes({ children }) {
-  return <ThemeProvider>{children}</ThemeProvider>
+  return <ThemeProvider 
+  disableTransitionOnChange 
+  
+  >
+
+    {children}
+    </ThemeProvider>
 }
