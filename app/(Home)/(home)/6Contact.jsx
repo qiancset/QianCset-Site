@@ -23,7 +23,7 @@ export default function Contact() {
 
 						<div>
 							<li>
-								<a href="https://twitter.com/QianLi_web3" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a><a href="https://github.com/QianLiweb3?tab=repositories" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a><a href="https://qm.qq.com/cgi-bin/qm/qr?k=2Wt6v9arhhppgYG_REzJk7YtkoqTJA3M&noverify=0&personal_qrcode_source=3" target="_blank" rel="noopener noreferrer"><i className="fab fa-qq"></i></a>
+								<a href="https://twitter.com/Qiancset" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a><a href="https://github.com/Qiancset" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a><a href="https://qm.qq.com/cgi-bin/qm/qr?k=2Wt6v9arhhppgYG_REzJk7YtkoqTJA3M&noverify=0&personal_qrcode_source=3" target="_blank" rel="noopener noreferrer"><i className="fab fa-qq"></i></a>
 							</li>
 						</div>
 					</div>
