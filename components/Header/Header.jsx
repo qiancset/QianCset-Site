@@ -1,4 +1,5 @@
-
+/* eslint-disable @next/next/no-img-element */
+'use client'
 
 
 import { useTranslation } from "react-i18next";
@@ -29,12 +30,12 @@ export default function Header() {
 
         {/* 电脑 */}
         <a className="logo" href="/">
-          <img src={"/Q.png"} alt="Q.png" />
+          <img src={"/icon/Q.png"} alt="header-Q" />
         </a>
 
         <nav>
           <Space size="large" align="center">
-            <ul className="nav-bar">
+            <div className="nav-bar">
               <li>
                 <MyNavLink href="/" id="Home">
                   {t("首页")}
@@ -58,7 +59,7 @@ export default function Header() {
                     </div>
                 </a>
               </li>
-            </ul>
+            </div>
             {/* 日夜模式按钮 */}
             <Space direction="vertical">
               <div className="Night">

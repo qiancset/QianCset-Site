@@ -17,7 +17,7 @@
 	--background-ant-color: #1f1f1f;
 
 	/* 根header */
-	--header-background: #1f1f1f;
+	--header-background: rgba(31, 31, 31, 0.9);
 	--nav-link-color: #fff;
 	--nav-link-color-hover: #ea7411;
 	--nav-link-hover: #ea7411;

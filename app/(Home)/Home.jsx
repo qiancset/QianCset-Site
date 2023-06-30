@@ -1,8 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import logo from "../../public/Q300K.png";
-import Image from 'next/image'
 import { LoginOutlined, FileSearchOutlined } from "@ant-design/icons";
 import './Home.css'
 
@@ -56,7 +55,7 @@ export default function Home() {
 
               <div className="右">
                 <div className="rotate1">
-                  <Image src={logo} alt="Q.png" className="Imagelogo"/>
+                  <img src='/icon/Q300K.png' alt="home-Q" className="Imagelogo"/>
                 </div>
               </div>
             </div>

@@ -4,8 +4,7 @@ import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { Button } from 'antd'
 import { useTranslation } from "react-i18next";
-import '../../../styles/App.css'
-import '../../../styles/App1.css'
+
 
 const ModeThemes = () => {
   const [isNight, setIsNight] = useState(false);

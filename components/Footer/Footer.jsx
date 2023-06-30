@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import './Footer.css'
 import Link from "next/link"
@@ -100,7 +101,7 @@ export default function Footer() {
       </div>
 
       <div className="ffbb">
-        <p><img src={'/Q.png'} alt="Q.png" className='logo1' /></p>
+        <p><img src={'/icon/Q.png'} alt="footer-Q" className='logo1' /></p>
 
         <ul >
           <div className="ffbbxx">
