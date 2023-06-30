@@ -23,7 +23,7 @@ export default function Home() {
     <div className="homemian">
       <div id="container">
         <h3 className="homeh3">
-          {t("千里区块链")}
+          {t("千赛特区块链")}
           <hr />
         </h3>
         <div id="home">

@@ -9,8 +9,8 @@ import { AntdContainer, Themes } from './_providers' //第三方供应商
 
 
 export const metadata = {
-  title: '千里 Qianli Web3',
-  description: 'QianLi Web3,千里加密社区服务平台,去中心化点对点交易,web3互动交流的加密世界,公共、开源、优质的区块链服务平台,官方网站:https://www.qlweb3.top/,千里去中心化服务平台,qianliweb3一个点对点交易swap,NFT,nft,加密货币的Dapps,使用react next js 的webapp',
+  title: '千赛特 Qiancset Web3',
+  description: 'Qiancset Web3,千赛特区块链社区服务平台,去中心化点对点交易,web3互动交流的加密世界,公共、开源、优质的区块链服务平台,官方网站:https://www.qlweb3.top/,千赛特去中心化服务平台,Qiancsetweb3一个点对点交易swap,NFT,nft,加密货币的Dapps,使用react next js 的webapp',
 
 /*   icons: {
     icon: '/favicon.ico',

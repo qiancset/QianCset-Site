@@ -7,7 +7,7 @@ import NFTCreator from "./mitiNFT/NFTCreator";
 
 export const metadata = {
   title: {
-    absolute: '产品 | 千里 Qianli Web3',
+    absolute: '产品 | 千里 Qiancset Web3',
   },
 }
 

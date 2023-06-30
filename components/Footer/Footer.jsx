@@ -106,7 +106,7 @@ export default function Footer() {
         <ul >
           <div className="ffbbxx">
             <nav className='ffa'>
-              <Link href="/">QianLi Web3</Link> {t('版权所有')}© 2023
+              <Link href="/">Qiancset Web3</Link> {t('版权所有')}© 2023
             </nav>
           </div>
         </ul>
