@@ -8,6 +8,8 @@
 # testing
 /coverage
 /.vscode/
+/.React代码片段/
+
 # next.js
 /.next/
 /out/
