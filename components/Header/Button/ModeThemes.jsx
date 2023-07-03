@@ -1,20 +1,18 @@
 "use client";
 import './ModeThemes.css'
-import { useState, useEffect } from 'react'
+/* import { useState, useEffect } from 'react' */
 import { useTheme } from 'next-themes'
 import { Button } from 'antd'
 import { useTranslation } from "react-i18next";
 
 
-const ModeThemes = () => {
-  const [isNight, setIsNight] = useState(false);
+const ModeThemes = ({ isNight, toggleTheme }) => {
   const { setTheme, resolvedTheme } = useTheme();
 
-  const toggleTheme = () => {
-    setIsNight(!isNight);
+  const handleToggleTheme = () => {
+    toggleTheme(!isNight);
     setTheme(isNight ? 'light' : 'dark');
   };
-
 
 
   
@@ -25,7 +23,7 @@ const { t } = useTranslation();
       title= {t('切换浅色/暗黑模式')}
       
       className={resolvedTheme === 'dark' ? 'antisNight' : 'antisNight'}
-      onClick={toggleTheme}
+      onClick={handleToggleTheme}
       icon={
         <span>
           {isNight ? (

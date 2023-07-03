@@ -1,9 +1,13 @@
 'use client'
-import { SwapWidget } from '@uniswap/widgets'
 import './Uniswap.css'
+import { SwapWidget } from '@uniswap/widgets'
+
+
 
 export default  function Uniswap() {
 
+
+  
 
 
   return(<div className="Uniswap1">
@@ -17,6 +21,9 @@ export default  function Uniswap() {
       hideConnectionUI={true} //隐藏小部件的内置钱包连接UI,'true'
       brandedFooter={false} //启用小部件底部的“由 Uniswap 提供支持”页脚。
      
+
+/*       provider={provider}
+      account={account}  */
       defaultChainId={1} //指定要提示用户将其钱包连接到哪个链ID。
       //tokenList={UNISWAP_TOKEN_LIST}          //令牌列表
       defaultInputTokenAddress={NATIVE}   //本机令牌的特殊地址
@@ -27,7 +34,7 @@ export default  function Uniswap() {
       jsonRpcUrlMap={jsonRpcUrlMap} //Api节点
      
       onTokenSelectorClick={false}
-      /* provider={provider} */
+     
     />
   
 

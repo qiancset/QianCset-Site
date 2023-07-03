@@ -4,7 +4,9 @@
 
 import AntdContainer from "./Antdcontainer";
 import Themes from "./Themes";
+import Web3Modalproviders from "./Web3Modalproviders";
 export{
     AntdContainer,
-    Themes
+    Themes,
+    Web3Modalproviders
 }
