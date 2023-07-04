@@ -60,7 +60,7 @@ export default function Header() {
               </li>
               <li>
                 
-                <a href="https://docs.qlweb3.top/" id="Wen" >
+                <a href="https://docs.qiancset.com/" id="Wen" >
                   <div className="nav-link" >
                     {t("文档")}<GoLinkExternal />
                     </div>
@@ -138,7 +138,7 @@ const DropdownA = ({ isNight, toggleTheme }) => {
     },
     {
       label: (
-        <MyNavLink href="https://docs.qlweb3.top/" id="Wen" target="_blank">
+        <MyNavLink href="https://docs.qiancset.com/" id="Wen" target="_blank">
           {t("文档")}<GoLinkExternal />
         </MyNavLink>
       ),

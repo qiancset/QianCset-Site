@@ -28,16 +28,16 @@ export default function Footer() {
 
             <ul className="box2">
               <li className="link_name"><h2>{t('介绍')}</h2></li>
-              <li ><Link target="_blank" href="https://docs.qlweb3.top/ru-men-zhi-nan">
+              <li ><Link target="_blank" href="https://docs.qiancset.com/ru-men-zhi-nan">
                 {t('入门指南')}
               </Link></li>
-              <li ><Link target="_blank" href="https://docs.qlweb3.top/xue-xi-wen-dang">
+              <li ><Link target="_blank" href="https://docs.qiancset.com/xue-xi-wen-dang">
                 {t('学习文档')}
               </Link></li>
-              <li ><Link target="_blank" href="https://docs.qlweb3.top/bai-pi-shu">
+              <li ><Link target="_blank" href="https://docs.qiancset.com/bai-pi-shu">
                 {t('白皮书')}
               </Link></li>
-              <li ><Link target="_blank" href='https://docs.qlweb3.top/jia-mi-huo-bi'>
+              <li ><Link target="_blank" href='https://docs.qiancset.com/jia-mi-huo-bi'>
                 {t('加密货币')}
               </Link></li>
             </ul>
@@ -50,16 +50,16 @@ export default function Footer() {
               <li className="link_name">
                 <h2>{t('服务')}</h2>
               </li>
-              <li ><Link target="_blank" href="https://docs.qlweb3.top/%E6%9C%8D%E5%8A%A1/chuang-ye-rong-zi">
+              <li ><Link target="_blank" href="https://docs.qiancset.com/%E6%9C%8D%E5%8A%A1/chuang-ye-rong-zi">
                 {t('创业融资')}
               </Link></li>
-              <li ><Link target="_blank" href="https://docs.qlweb3.top/%E6%9C%8D%E5%8A%A1/ji-shu-wen-ti">
+              <li ><Link target="_blank" href="https://docs.qiancset.com/%E6%9C%8D%E5%8A%A1/ji-shu-wen-ti">
                 {t('寻找团队')}
               </Link></li>
-              <li ><Link target="_blank" href="https://docs.qlweb3.top/%E6%9C%8D%E5%8A%A1/jia-ru-gong-xian">
+              <li ><Link target="_blank" href="https://docs.qiancset.com/%E6%9C%8D%E5%8A%A1/jia-ru-gong-xian">
                 {t('技术问题')}
               </Link></li>
-              <li ><Link target="_blank" href="https://docs.qlweb3.top/%E6%9C%8D%E5%8A%A1/xun-zhao-tuan-dui" >
+              <li ><Link target="_blank" href="https://docs.qiancset.com/%E6%9C%8D%E5%8A%A1/xun-zhao-tuan-dui" >
                 {t('加入贡献')}
               </Link></li>
             </ul>
@@ -68,26 +68,26 @@ export default function Footer() {
               <li className="link_name">
                 <h2>{t('关于')}</h2>
               </li>
-              <li ><Link target="_blank" href=" https://docs.qlweb3.top/%E5%85%B3%E4%BA%8E/guan-yu-she-qu" >
+              <li ><Link target="_blank" href=" https://docs.qiancset.com/%E5%85%B3%E4%BA%8E/guan-yu-she-qu" >
                 {t('关于社区')}
               </Link></li>
 
-              <li ><Link target="_blank" href=" https://docs.qlweb3.top/%E5%85%B3%E4%BA%8E/he-zuo">
+              <li ><Link target="_blank" href=" https://docs.qiancset.com/%E5%85%B3%E4%BA%8E/he-zuo">
                 {t('合作')}
               </Link></li>
 
-              <li ><Link target="_blank" href="https://docs.qlweb3.top/%E5%85%B3%E4%BA%8E/zan-zhu-shang">
+              <li ><Link target="_blank" href="https://docs.qiancset.com/%E5%85%B3%E4%BA%8E/zan-zhu-shang">
                 {t('赞助商')}
               </Link></li>
 
 
-              <li ><Link target="_blank" href=" https://docs.qlweb3.top/%E5%85%B3%E4%BA%8E/%E6%B3%95%E5%BE%8B/cookie-zheng-ce">
+              <li ><Link target="_blank" href=" https://docs.qiancset.com/%E5%85%B3%E4%BA%8E/%E6%B3%95%E5%BE%8B/cookie-zheng-ce">
                 {t('Cookie政策')}
               </Link></li>
-              <li ><Link target="_blank" href=" https://docs.qlweb3.top/%E5%85%B3%E4%BA%8E/%E6%B3%95%E5%BE%8B/shi-yong-tiao-kuan">
+              <li ><Link target="_blank" href=" https://docs.qiancset.com/%E5%85%B3%E4%BA%8E/%E6%B3%95%E5%BE%8B/shi-yong-tiao-kuan">
                 {t('使用条款')}
               </Link></li>
-              <li ><Link target="_blank" href=" https://docs.qlweb3.top/%E5%85%B3%E4%BA%8E/%E6%B3%95%E5%BE%8B/yin-si-zheng-ce">
+              <li ><Link target="_blank" href=" https://docs.qiancset.com/%E5%85%B3%E4%BA%8E/%E6%B3%95%E5%BE%8B/yin-si-zheng-ce">
                 {t('隐私政策')}
               </Link></li>
             </ul>

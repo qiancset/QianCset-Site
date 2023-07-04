@@ -44,7 +44,7 @@ export default function Home() {
                       {t("获取代币")} <LoginOutlined />
                     </button>
                   </Link>
-                  <Link href="https://docs.qlweb3.top/" target="_blank">
+                  <Link href="https://docs.qiancset.com/" target="_blank">
                     <button type="button" className="button2">
                       {t("阅读文档")}
                       <FileSearchOutlined />
