@@ -15,6 +15,7 @@ import React, { useState,useEffect  } from "react";
 import Locales from "./Button/Locales";
 import ModeThemes from './Button/ModeThemes'
 import Web3ModalA from "../Web3ModalA/Web3ModalA";
+import Link from "next/link";
 
 
 
@@ -60,7 +61,7 @@ export default function Header() {
               </li>
               <li>
                 
-                <a href="https://docs.qiancset.com/" id="Wen" >
+                <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
                   <div className="nav-link" >
                     {t("文档")}<GoLinkExternal />
                     </div>
@@ -138,9 +139,9 @@ const DropdownA = ({ isNight, toggleTheme }) => {
     },
     {
       label: (
-        <MyNavLink href="https://docs.qiancset.com/" id="Wen" target="_blank">
+        <Link className='nav-link' href="https://docs.qiancset.com/" id="Wen" target="_blank">
           {t("文档")}<GoLinkExternal />
-        </MyNavLink>
+        </Link>
       ),
       key: "4",
     },
