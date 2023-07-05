@@ -29,8 +29,8 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="theme-color" content="#ea7411" />
 
-        <link rel="icon" href="./favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="./apple-icon.png" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
 
 
         <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.1/css/all.css" />

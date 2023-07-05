@@ -1,23 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
-'use client'
-
+"use client";
 
 import { useTranslation } from "react-i18next";
-import {  Space, Dropdown } from "antd";
+import { Space, Dropdown } from "antd";
 import { MenuUnfoldOutlined } from "@ant-design/icons";
-import { GoLinkExternal } from 'react-icons/go';
+import { GoLinkExternal } from "react-icons/go";
 import "./Header.css";
 import MyNavLink from "./zujian/MyNavLink"; //封装 Link 组件
 
-import React, { useState,useEffect  } from "react";
+import React, { useState, useEffect } from "react";
 
-
-import Locales from "./Button/Locales";
-import ModeThemes from './Button/ModeThemes'
+import Locales from "./LocalesButton/Locales";
+import ModeThemes from "./ModeThemes/ModeThemes";
 import Web3ModalA from "../Web3ModalA/Web3ModalA";
 import Link from "next/link";
-
-
 
 export default function Header() {
   const [isNight, setIsNight] = useState(false);
@@ -25,7 +21,6 @@ export default function Header() {
   const toggleTheme = (isNight) => {
     setIsNight(isNight);
   };
-
 
   const { t } = useTranslation();
 
@@ -60,18 +55,18 @@ export default function Header() {
                 </MyNavLink>
               </li>
               <li>
-                
                 <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
-                  <div className="nav-link" >
-                    {t("文档")}<GoLinkExternal />
-                    </div>
+                  <div className="nav-link">
+                    {t("文档")}
+                    <GoLinkExternal />
+                  </div>
                 </a>
               </li>
             </div>
             {/* 日夜模式按钮 */}
             <Space direction="vertical">
               <div className="Night">
-              <ModeThemes isNight={isNight} toggleTheme={toggleTheme} />
+                <ModeThemes isNight={isNight} toggleTheme={toggleTheme} />
               </div>
             </Space>
 
@@ -87,20 +82,12 @@ export default function Header() {
           <Web3ModalA />
         </nav>
       </header>
-
-
     </>
   );
 }
 
-
-
 /* 下拉菜单 */
 const DropdownA = ({ isNight, toggleTheme }) => {
-
-
-
-
   const { t } = useTranslation();
 
   const [open, setOpen] = useState(false);
@@ -139,9 +126,12 @@ const DropdownA = ({ isNight, toggleTheme }) => {
     },
     {
       label: (
-        <Link className='nav-link' href="https://docs.qiancset.com/" id="Wen" target="_blank">
-          {t("文档")}<GoLinkExternal />
-        </Link>
+        <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
+          <div className="nav-link">
+            {t("文档")}
+            <GoLinkExternal />
+          </div>
+        </a>
       ),
       key: "4",
     },
@@ -186,5 +176,3 @@ const DropdownA = ({ isNight, toggleTheme }) => {
     </Dropdown>
   );
 };
-
-
