@@ -12,7 +12,7 @@ import React, { useState, useEffect } from "react";
 
 import Locales from "./LocalesButton/Locales";
 import ModeThemes from "./ModeThemes/ModeThemes";
-/* import Web3ModalA from "../Web3ModalA/Web3ModalA"; */
+/* import Web3ModalA from "../thirdweb/Web3ModalA"; */
 import Wallet from "../thirdweb/Wallet";
 
 export default function Header() {
@@ -82,7 +82,7 @@ export default function Header() {
         {/* 连接钱包按钮 */}
         <nav className="Web3ModalA">
           {/* <Web3ModalA /> */}
-          <Wallet btnTitle="连接钱包"/>
+          <Wallet/>
         </nav>
         
       </header>

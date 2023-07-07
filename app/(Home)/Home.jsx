@@ -11,7 +11,6 @@ import Marquee from "./(home)/4Marquee";
 import Projects from "./(home)/5Projects";
 import Contact from "./(home)/6Contact";
 import { useTranslation } from "react-i18next";
-import Loginbtn from './login-btn'
 export default function Home() {
 
   const { t } = useTranslation();
@@ -22,7 +21,6 @@ export default function Home() {
   return (
     <div className="homemian">
       <div id="container">
-      <Loginbtn/>
         <h3 className="homeh3">
           {t("千赛特区块链")}
           <hr />
