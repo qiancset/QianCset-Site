@@ -12,8 +12,8 @@ import React, { useState, useEffect } from "react";
 
 import Locales from "./LocalesButton/Locales";
 import ModeThemes from "./ModeThemes/ModeThemes";
-import Web3ModalA from "../Web3ModalA/Web3ModalA";
-import Link from "next/link";
+/* import Web3ModalA from "../Web3ModalA/Web3ModalA"; */
+import Wallet from "../thirdweb/Wallet";
 
 export default function Header() {
   const [isNight, setIsNight] = useState(false);
@@ -63,6 +63,7 @@ export default function Header() {
                 </a>
               </li>
             </div>
+
             {/* 日夜模式按钮 */}
             <Space direction="vertical">
               <div className="Night">
@@ -74,13 +75,16 @@ export default function Header() {
             <div className="Night">
               <Locales />
             </div>
+
           </Space>
         </nav>
 
         {/* 连接钱包按钮 */}
         <nav className="Web3ModalA">
-          <Web3ModalA />
+          {/* <Web3ModalA /> */}
+          <Wallet btnTitle="连接钱包"/>
         </nav>
+        
       </header>
     </>
   );
