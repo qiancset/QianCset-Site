@@ -51,9 +51,10 @@ const theme = {
   borderRadius: 0,
 };
 const jsonRpcUrlMap = { 
-  1:['https://eth-mainnet.g.alchemy.com/v2/vUaB_jk8nEelfcPJzNxpqCv5DpTPB_O9'],
-  42161:['https://arb-mainnet.g.alchemy.com/v2/CdeCwYqT7ezhlc-RIGzBydlqkuq3kp8F'],
-  137:['https://polygon-mainnet.g.alchemy.com/v2/Rm2C0m_GtoU1IiBTEEtImfA9LtnAUjhQ']
+  1:['https://eth-mainnet.g.alchemy.com/v2/mlFEUUHXOMfXKOL0zV12xXYfb8LUjnMf'],
+  42161:['https://arb-mainnet.g.alchemy.com/v2/4ZFkWe3RAFIPggBGs_QF22l_CkPQIwv0'],
+  10:['https://opt-mainnet.g.alchemy.com/v2/mWJ8qFvl-bijKQGL85sSLK54Audbbt_o'],
+  137:['https://polygon-mainnet.g.alchemy.com/v2/KYaEAzPvehDQOFBO5tAjIX2_FRwoH1oD']
   }
 const NATIVE = 'NATIVE' 
 const USDT = '0xdAC17F958D2ee523a2206206994597C13D831ec7'
