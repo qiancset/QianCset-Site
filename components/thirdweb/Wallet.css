@@ -1,6 +1,7 @@
 .my-custom-class {
     height: 40px !important;
-    padding: 10px;
+    padding: 10px!important;
+    /* background: var(--color)!important; */
 }
 
 @media only screen and (max-width: 750px) {

@@ -7,7 +7,7 @@ import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import { mainnet, arbitrum, polygon, optimism, zkSync, bsc, localhost } from 'wagmi/chains';
 
 const chains = [mainnet, arbitrum, polygon, optimism, zkSync, bsc, localhost]
-const projectId = '9363f563cd22a418253428327d4d54c2'
+const projectId = process.env.PROJECT_ID;
 
 //配置公共客户端
 const { publicClient  } = configureChains(chains, [w3mProvider({ projectId })])
