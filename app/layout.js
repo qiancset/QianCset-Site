@@ -4,7 +4,7 @@ import '@/styles/App1.css'
 import '@/styles/Anniu.css'
 import '@/locales/i18n/i18n'
 import { Header, Footer } from '@/components'//组件来源
-import { AntdContainer,Auth, Themes, Web3Modalproviders,Thirdweb } from './_providers' //第三方供应商
+import { AntdContainer, Themes,Thirdweb } from './_providers' //第三方供应商
 
 
 
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
 
       <body className='className'>
         <Themes>
-          <Auth>
+         
           <Thirdweb>
             <AntdContainer>
 
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
 
             </AntdContainer>
           </Thirdweb>
-          </Auth>
+          
         </Themes>
       </body>
 
