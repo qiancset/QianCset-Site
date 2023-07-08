@@ -1,3 +1,4 @@
+"use client";
 
 
 import { Web3Modal  } from "@web3modal/react";
