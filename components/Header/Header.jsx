@@ -12,8 +12,8 @@ import React, { useState, useEffect } from "react";
 
 import Locales from "./LocalesButton/Locales";
 import ModeThemes from "./ModeThemes/ModeThemes";
-/* import Web3ModalA from "../thirdweb/Web3ModalA"; */
-import Wallet from "../thirdweb/Wallet";
+import Web3ModalA from "../thirdweb/Web3ModalA";
+/* import Wallet from "../thirdweb/Wallet"; */
 
 export default function Header() {
   const [isNight, setIsNight] = useState(false);
@@ -81,8 +81,8 @@ export default function Header() {
 
         {/* 连接钱包按钮 */}
         <nav className="Web3ModalA">
-         {/*  <Web3ModalA /> */}
-          <Wallet/>
+          <Web3ModalA />
+          {/* <Wallet/> */}
         </nav>
         
       </header>

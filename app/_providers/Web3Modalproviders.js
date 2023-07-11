@@ -1,14 +1,14 @@
 "use client";
 
+import { useTheme } from 'next-themes';
 
 import { Web3Modal  } from "@web3modal/react";
-
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import { mainnet, arbitrum, polygon, optimism, zkSync, bsc, localhost } from 'wagmi/chains';
 
 const chains = [mainnet, arbitrum, polygon, optimism, zkSync, bsc, localhost]
-const projectId = process.env.PROJECT_ID;
+const projectId = '9363f563cd22a418253428327d4d54c2';
 
 //配置公共客户端
 const { publicClient  } = configureChains(chains, [w3mProvider({ projectId })])
@@ -21,8 +21,9 @@ const wagmiConfig = createConfig({
 //创建 EthereumClient 实例
 const ethereumClient = new EthereumClient(wagmiConfig, chains)
 
-
 export default function Web3Modalproviders({children}) {
+const { theme } = useTheme();
+
     return (
         <>
         <WagmiConfig config={wagmiConfig}>
@@ -33,14 +34,14 @@ export default function Web3Modalproviders({children}) {
 projectId={projectId}
 ethereumClient={ethereumClient}
 themeVariables={themeVariables} //主题变量
-themeMode={"dark" | "light"} //深色或浅色模式。默认为用户的系统首选项。
+themeMode={theme} // 使用next-themes提供的主题模式
 termsOfServiceUrl={
   "https://docs.qiancset.com/%E5%85%B3%E4%BA%8E/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%AC%BE/shi-yong-tiao-kuan"
 } //服务条款页面
 privacyPolicyUrl={
   "https://docs.qiancset.com/%E5%85%B3%E4%BA%8E/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%AC%BE/yin-si-zheng-ce"
 } //隐私策略网址
-defaultChain={mainnet} //默认链
+//defaultChain={mainnet} //默认链
 enableNetworkView={false} //选择钱包之前显示网络选择视图,默认值为禁用=false
 //mobileWallets={mobileWallets} //手机钱包
 desktopWallets={desktopWallets} //桌面钱包

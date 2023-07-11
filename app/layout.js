@@ -4,7 +4,7 @@ import '@/styles/App1.css'
 import '@/styles/Anniu.css'
 import '@/locales/i18n/i18n'
 import { Header, Footer } from '@/components'//组件来源
-import { AntdContainer, Themes, Thirdweb, } from './_providers' //第三方供应商
+import { AntdContainer, Themes, Web3Modalproviders} from './_providers' //第三方供应商
 
 
 
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
       <body className='className'>
         <Themes>
 
-          <Thirdweb>
+          <Web3Modalproviders>
             <AntdContainer>
 
               <Header />
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
               <Footer />
 
             </AntdContainer>
-          </Thirdweb>
+          </Web3Modalproviders>
 
         </Themes>
       </body>
