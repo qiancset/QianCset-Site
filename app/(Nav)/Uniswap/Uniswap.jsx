@@ -3,13 +3,16 @@ import "./Uniswap.css";
 import { SwapWidget, darkTheme } from "@uniswap/widgets";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "next-themes";
-import {provider} from '@web3modal/ethereum'
+import {provider} from '../../_providers/Web3Modalproviders'
+import { useWeb3Modal } from '@web3modal/react'
 
 
 
-export default function Uniswap({Wallet}) {
+export default function Uniswap() {
   const { t } = useTranslation();
   const { resolvedTheme } = useTheme();
+
+  const { open} = useWeb3Modal()
 
   return (
     <div className="Uniswap1">
@@ -23,7 +26,7 @@ export default function Uniswap({Wallet}) {
           brandedFooter={false} //启用小部件底部的“由 Uniswap 提供支持”页脚。
           hideConnectionUI={true} //隐藏小部件的内置钱包连接UI,'true'
           provider={provider}
-          onConnectWalletClick={Wallet}
+          onConnectWalletClick={() => open({ route: 'ConnectWallet' })}
           jsonRpcUrlMap={jsonRpcUrlMap} //Api节点
  
           
@@ -31,9 +34,9 @@ export default function Uniswap({Wallet}) {
 
           //defaultChainId={1} //指定要提示用户将其钱包连接到哪个链ID
           //tokenList={UNISWAP_TOKEN_LIST}          //令牌列表
-          //defaultInputTokenAddress='NATIVE'   //本机令牌的特殊地址
-          //defaultInputAmount={1}          //默认输入设置为 1 代币
-          //defaultOutputTokenAddress='0xdAC17F958D2ee523a2206206994597C13D831ec7' //默认输出令牌设置为 USDT
+          defaultInputTokenAddress='NATIVE'   //本机令牌的特殊地址
+          defaultInputAmount={1}          //默认输入设置为 1 代币
+          defaultOutputTokenAddress='0xdAC17F958D2ee523a2206206994597C13D831ec7' //默认输出令牌设置为 USDT
           
         />
       </div>

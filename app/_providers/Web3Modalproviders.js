@@ -41,7 +41,7 @@ termsOfServiceUrl={
 privacyPolicyUrl={
   "https://docs.qiancset.com/%E5%85%B3%E4%BA%8E/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%AC%BE/yin-si-zheng-ce"
 } //隐私策略网址
-//defaultChain={mainnet} //默认链
+defaultChain={mainnet} //默认链
 enableNetworkView={false} //选择钱包之前显示网络选择视图,默认值为禁用=false
 //mobileWallets={mobileWallets} //手机钱包
 desktopWallets={desktopWallets} //桌面钱包
