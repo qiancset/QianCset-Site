@@ -7,9 +7,13 @@ import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import { mainnet, arbitrum, polygon, optimism, zkSync, bsc, localhost } from 'wagmi/chains';
 
-const chains = [mainnet, arbitrum, polygon, optimism, zkSync, bsc, localhost]
-const projectId = '9363f563cd22a418253428327d4d54c2';
 
+
+export default function Web3Modalproviders({children}) {
+  const chains = [mainnet, arbitrum, polygon, optimism, zkSync, bsc, localhost]
+
+const { theme } = useTheme();
+const projectId = '9363f563cd22a418253428327d4d54c2';
 //配置公共客户端
 const { publicClient  } = configureChains(chains, [w3mProvider({ projectId })])
 
@@ -20,9 +24,6 @@ const wagmiConfig = createConfig({
 })
 //创建 EthereumClient 实例
 const ethereumClient = new EthereumClient(wagmiConfig, chains)
-
-export default function Web3Modalproviders({children}) {
-const { theme } = useTheme();
 
     return (
         <>

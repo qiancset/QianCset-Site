@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="zh">
       <head>
+        <meta charset="utf-8" />
         <meta name="theme-color" content="#ea7411" />
 
         <link rel="icon" href="/favicon.ico" sizes="any" />
