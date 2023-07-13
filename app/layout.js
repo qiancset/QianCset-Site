@@ -11,7 +11,7 @@ import { AntdContainer, Themes, Web3Modalproviders} from './_providers' //第三
 
 export const metadata = {
   title: '千赛特 Qiancset Web3',
-  description: 'Qiancset Web3,千赛特区块链社区服务平台,去中心化点对点交易,web3互动交流的加密世界,公共、开源、优质的区块链服务平台,官方网站:https://www.qlweb3.top/,千赛特去中心化服务平台,Qiancsetweb3一个点对点交易swap,NFT,nft,加密货币的Dapps,使用react next js 的webapp',
+  description: 'Qiancset Web3,千赛特区块链社区服务平台,去中心化点对点交易,web3互动交流的加密世界,公共、开源、优质的区块链服务平台,官方网站: https://www.qiancset.com/, 千赛特去中心化服务平台,qiancsetweb3一个点对点交易swap,NFT,nft,加密货币的Dapps,使用react next js 的webdapp',
 
   /*   icons: {
       icon: '/favicon.ico',
@@ -32,7 +32,6 @@ export default function RootLayout({ children }) {
 
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-icon.png" />
-
 
         <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.1/css/all.css" />
       </head>
