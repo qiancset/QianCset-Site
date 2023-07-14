@@ -4,9 +4,10 @@ import '@/styles/App1.css'
 import '@/styles/Anniu.css'
 import '@/locales/i18n/i18n'
 import { Header, Footer } from '@/components'//组件来源
-import { AntdContainer, Themes, Web3Modalproviders} from './_providers' //第三方供应商
+import Providers from './_Providers/_Providers' //第三方供应商
 
-
+import { Inter } from 'next/font/google'
+const inter = Inter({ subsets: ['latin'] })
 
 
 export const metadata = {
@@ -37,20 +38,16 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.1/css/all.css" />
       </head>
 
-      <body className='className'>
-        <Themes>
-
-          <Web3Modalproviders>
-            <AntdContainer>
+      <body className={inter.className}>
+  
+            <Providers>
 
               <Header />
               {children}
               <Footer />
 
-            </AntdContainer>
-          </Web3Modalproviders>
+            </Providers>
 
-        </Themes>
       </body>
 
 
