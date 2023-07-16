@@ -1,6 +1,17 @@
-"use client";
-export default function ttpage() {
+
+
+export default function Ttpage() {
+
   return (
-    <div>ttpage</div>
-  )
+    <>
+      <h1 >ttpage</h1>
+      <h1 >ttpage</h1>
+      <h1 >ttpage</h1>
+      <h1 >ttpage</h1>
+      <h1 >ttpage</h1>
+      <h1 >ttpage</h1>
+      <h1 >ttpage</h1>
+
+    </>
+  );
 }

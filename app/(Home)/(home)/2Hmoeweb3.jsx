@@ -39,9 +39,9 @@ export default function HmoeWeb3() {
           </div>
         </div>
 
-        <div>
+     
           <div>
-            <div className="kapian">
+{/*             <div className="kapian">
               <div className="feature-card">
                 
                   <a
@@ -58,7 +58,7 @@ export default function HmoeWeb3() {
                 </p>
                 <h4 className="h4-aragon">{t("加入 Aragon DAO社区共同治理")}</h4>
               </div>
-            </div>
+            </div> */}
 
             <div className="social-media1">
               <a
@@ -90,6 +90,6 @@ export default function HmoeWeb3() {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 }

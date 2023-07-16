@@ -2,59 +2,59 @@
 
 import { useTheme } from 'next-themes';
 
-import { Web3Modal  } from "@web3modal/react";
+import { Web3Modal } from "@web3modal/react";
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import { mainnet, arbitrum, polygon, optimism, zkSync, bsc, localhost } from 'wagmi/chains';
 
 
 
-export default function Web3Modalproviders({children}) {
+export default function Web3ModalP({ children }) {
   const chains = [mainnet, arbitrum, polygon, optimism, zkSync, bsc, localhost]
 
-const { theme } = useTheme();
-const projectId = '9363f563cd22a418253428327d4d54c2';
-//配置公共客户端
-const { publicClient  } = configureChains(chains, [w3mProvider({ projectId })])
+  const { theme } = useTheme();
+  const projectId = '9363f563cd22a418253428327d4d54c2';
+  //配置公共客户端
+  const { publicClient } = configureChains(chains, [w3mProvider({ projectId })])
 
-const wagmiConfig = createConfig({
+  const wagmiConfig = createConfig({
     autoConnect: true,
     connectors: w3mConnectors({ projectId, chains }),
-    publicClient 
-})
-//创建 EthereumClient 实例
-const ethereumClient = new EthereumClient(wagmiConfig, chains)
+    publicClient
+  })
+  //创建 EthereumClient 实例
+  const ethereumClient = new EthereumClient(wagmiConfig, chains)
 
-    return (
-        <>
-        <WagmiConfig config={wagmiConfig}>
-            {children}
-        </WagmiConfig>
+  return (
+    <>
+      <WagmiConfig config={wagmiConfig}>
+        {children}
+      </WagmiConfig>
 
-        <Web3Modal
-projectId={projectId}
-ethereumClient={ethereumClient}
-themeVariables={themeVariables} //主题变量
-themeMode={theme} // 使用next-themes提供的主题模式
-termsOfServiceUrl={
-  "https://docs.qiancset.com/%E5%85%B3%E4%BA%8E/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%AC%BE/shi-yong-tiao-kuan"
-} //服务条款页面
-privacyPolicyUrl={
-  "https://docs.qiancset.com/%E5%85%B3%E4%BA%8E/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%AC%BE/yin-si-zheng-ce"
-} //隐私策略网址
-defaultChain={mainnet} //默认链
-enableNetworkView={false} //选择钱包之前显示网络选择视图,默认值为禁用=false
-//mobileWallets={mobileWallets} //手机钱包
-desktopWallets={desktopWallets} //桌面钱包
-explorerRecommendedWalletIds={explorerRecommendedWalletIds} //推荐钱包
-//explorerExcludedWalletIds={'ALL'}//排除钱包
+      <Web3Modal
+        projectId={projectId}
+        ethereumClient={ethereumClient}
+        themeVariables={themeVariables} //主题变量
+        themeMode={theme} // 使用next-themes提供的主题模式
+        termsOfServiceUrl={
+          "https://docs.qiancset.com/%E5%85%B3%E4%BA%8E/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%AC%BE/shi-yong-tiao-kuan"
+        } //服务条款页面
+        privacyPolicyUrl={
+          "https://docs.qiancset.com/%E5%85%B3%E4%BA%8E/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%AC%BE/yin-si-zheng-ce"
+        } //隐私策略网址
+        defaultChain={mainnet} //默认链
+        enableNetworkView={false} //选择钱包之前显示网络选择视图,默认值为禁用=false
+        //mobileWallets={mobileWallets} //手机钱包
+        desktopWallets={desktopWallets} //桌面钱包
+        explorerRecommendedWalletIds={explorerRecommendedWalletIds} //推荐钱包
+      //explorerExcludedWalletIds={'ALL'}//排除钱包
 
 
-/>
-</>
+      />
+    </>
   )
 }
-     
+
 
 const themeVariables = {
   language: "zh-CN",
@@ -65,13 +65,13 @@ const themeVariables = {
   "--w3m-background-image-url": "", //	要使用的背景图像 url 而不是默认的动画渐变
   "--w3m-logo-image-url": "https://docs.qiancset.com/img/NFT-24K.png", //要使用的图像网址代替钱包连接徽标
   "--w3m-text-xsmall-regular-font-family": "",
-  };
-  
-  /* const mobileWallets = [
-  ]; */
-  
-  const desktopWallets = [];
-  const explorerRecommendedWalletIds = [
+};
+
+/* const mobileWallets = [
+]; */
+
+const desktopWallets = [];
+const explorerRecommendedWalletIds = [
   "c57ca95b47569778a828d19178114f4db188b89b763c899ba0be274e97267d96",
   "c03dfee351b6fcc421b4494ea33b9d4b92a984f87aa76d1663bb28705e95034a",
   "20459438007b75f4f4acb98bf29aa3b800550309646d375da5fd4aac6c2a2c66",
@@ -84,4 +84,4 @@ const themeVariables = {
   "163d2cf19babf05eb8962e9748f9ebe613ed52ebf9c8107c9a0f104bfcf161b3",
   "f2436c67184f158d1beda5df53298ee84abfc367581e4505134b5bcf5f46697d",
   "2863183c3299d820fb9a4cb8aab4a34f50380c9992e8be871fd60a62e8d36481",
-  ];
+];

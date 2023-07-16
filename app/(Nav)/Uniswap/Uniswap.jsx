@@ -3,7 +3,7 @@ import "./Uniswap.css";
 import { SwapWidget, darkTheme } from "@uniswap/widgets";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "next-themes";
-import {provider} from '../../_providers/Web3Modalproviders'
+import {provider} from '../../_Providers/Web3ModalP'
 import { useWeb3Modal } from '@web3modal/react'
 
 

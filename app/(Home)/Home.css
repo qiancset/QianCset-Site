@@ -66,7 +66,7 @@
 
 }
 
-.homeh3 {
+.homeh1 {
 	padding-top: 4vh;
 	padding-bottom: 15px;
 	
@@ -85,7 +85,7 @@
 }
 
 @media only screen and (max-width: 236px) {
-	.homeh3 {
+	.homeh1 {
 		font-size: 1.2rem;
 	}
 
@@ -173,7 +173,7 @@
 		font-size: 2rem;
 	}
 
-	.homeh3 {
+	.homeh1 {
 		margin-top: 6vh;
 	}
 
@@ -223,7 +223,7 @@
 
 	}
 
-	.homeh3 {
+	.homeh1 {
 		font-size: 3rem;
 		margin-top: 8vh;
 	}
@@ -288,7 +288,7 @@
 		align-items: center;
 	}
 
-	.homeh3 {
+	.homeh1 {
 		font-size: 2rem;
 
 	}
@@ -445,7 +445,7 @@
 	}
 
 	.feature-card {
-		height: 155;
+		height: 100%;
 		-webkit-border-radius: 20;
 		-moz-border-radius: 20;
 		border-radius: 20px;

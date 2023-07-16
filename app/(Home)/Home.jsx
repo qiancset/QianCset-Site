@@ -21,10 +21,10 @@ export default function Home() {
   return (
     <div className="homemian">
       <div id="container">
-        <h3 className="homeh3">
+        <h1 className="homeh1">
           {t("千赛特区块链")}
           <hr />
-        </h3>
+        </h1>
         <div id="home">
           <section className="intro1">
             <div className="container">
