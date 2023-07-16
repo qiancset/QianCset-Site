@@ -4,7 +4,7 @@ import '@/styles/App1.css'
 import '@/styles/Anniu.css'
 import '@/locales/i18n/i18n'
 import { Header, Footer } from '@/components'//组件来源
-import Providers from './_Providers/_Providers' //第三方供应商
+import Providers from './_Providers/Providers' //第三方供应商
 
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
