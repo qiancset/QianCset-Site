@@ -1,5 +1,5 @@
 "use client";
-import AntdContainer from "./AntdContainer";
+import Antd from "./Antd";
 import Themes from "./Themes";
 import Web3ModalP from './Web3ModalP';
 
@@ -9,9 +9,9 @@ export default function Providers({ children }) {
   
       <Themes>
         <Web3ModalP>
-          <AntdContainer>
+          <Antd>
             {children}
-            </AntdContainer>
+            </Antd>
         </Web3ModalP>
       </Themes>
       

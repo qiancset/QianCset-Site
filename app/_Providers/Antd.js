@@ -11,7 +11,7 @@ import zhCN from 'antd/locale/zh_CN';
       "wireframe": false
     }
   };
-export default function AntdContainer({children}) {
+export default function Antd({children}) {
   return (
  
       <ConfigProvider theme={theme} locale={zhCN}>{children}</ConfigProvider>
