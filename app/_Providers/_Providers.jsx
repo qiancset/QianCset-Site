@@ -1,5 +1,5 @@
 "use client";
-import AntdContainer from "./Antdcontainer";
+import AntdContainer from "./AntdContainer";
 import Themes from "./Themes";
 import Web3ModalP from './Web3ModalP';
 import { Analytics } from '@vercel/analytics/react';
