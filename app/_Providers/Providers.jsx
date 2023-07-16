@@ -1,7 +1,7 @@
 "use client";
 import Antd from "./Antd";
 import Themes from "./Themes";
-import Web3ModalP from './Web3ModalP';
+import Web3ModalP from "./Web3ModalP";
 
 export default function Providers({ children }) {
   return (
