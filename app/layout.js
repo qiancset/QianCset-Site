@@ -4,9 +4,9 @@ import '@/styles/App1.css'
 import '@/styles/Anniu.css'
 import '@/locales/i18n/i18n'
 import { Header, Footer } from '@/components'//组件来源
-import Antd from "./_Providers/Antd";
-import Themes from "./_Providers/Themes";
-import Web3ModalP from './_Providers/Web3ModalP';
+import Antd from "./Providers/Antd";
+import Themes from "./Providers/Themes";
+import Web3ModalP from './Providers/Web3ModalP';
 
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
