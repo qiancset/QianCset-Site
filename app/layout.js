@@ -4,7 +4,9 @@ import '@/styles/App1.css'
 import '@/styles/Anniu.css'
 import '@/locales/i18n/i18n'
 import { Header, Footer } from '@/components'//组件来源
-import Providers from './_Providers/Providers' //第三方供应商
+import Antd from "./_Providers/Antd";
+import Themes from "./_Providers/Themes";
+import Web3ModalP from './_Providers/Web3ModalP';
 
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
@@ -41,13 +43,17 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
   
-            <Providers>
+      <Themes>
+        <Web3ModalP>
+          <Antd>
 
               <Header />
               {children}
               <Footer />
 
-            </Providers>
+              </Antd>
+        </Web3ModalP>
+      </Themes>
 
       </body>
 
