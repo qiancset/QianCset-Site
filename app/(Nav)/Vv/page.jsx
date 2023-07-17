@@ -2,7 +2,7 @@
 
 
 import './Vv.css'
-import NFTCreator from "./mitiNFT/NFTCreator";
+import NFTCreator from "./_mitiNFT/NFTCreator";
 
 
 export const metadata = {
