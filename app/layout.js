@@ -45,6 +45,7 @@ export default function RootLayout({ children }) {
 
 
           <Header />
+          <div style={{ height: '6vh' }}/>
           {children}
           <Footer />
 

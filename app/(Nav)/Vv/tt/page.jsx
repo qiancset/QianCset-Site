@@ -1,17 +1,10 @@
+'use client'
 
 
-export default function Ttpage() {
+import { useWeb3Modal } from '@web3modal/react'
 
-  return (
-    <>
-      <h1 >ttpage</h1>
-      <h1 >ttpage</h1>
-      <h1 >ttpage</h1>
-      <h1 >ttpage</h1>
-      <h1 >ttpage</h1>
-      <h1 >ttpage</h1>
-      <h1 >ttpage</h1>
+export default function HomePage() {
+  const { open, close } = useWeb3Modal()
 
-    </>
-  );
+  return <button onClick={() => open()}>Connect</button>
 }

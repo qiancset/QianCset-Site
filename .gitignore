@@ -1,32 +1,32 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# 依赖
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
+# 测试
 /coverage
 /.vscode/
 /.React代码片段/
+/Hardhat
+/hardhat.config.js
 
 # next.js
 /.next/
 /out/
 
-# production
+# 生产
 /build
 
-# misc
+# 杂项
 .DS_Store
 *.pem
 
-# debug
+# 调试
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
+# 本地环境文件
 .env*.local
 .env
 .env.local

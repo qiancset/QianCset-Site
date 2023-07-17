@@ -62,15 +62,15 @@ export default function HmoeWeb3() {
 
             <div className="social-media1">
               <a
-                href="https://pd.qq.com/s/mev662r5"
+                href="https://pd.qq.com/s/8z8x37o4v"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <button className="Bbutton">
-                  <p>
+                 
                     <i className="fab fa-qq fa-1x"></i>
                     {t("加入QQ频道")}
-                  </p>
+                 
                 </button>
               </a>
 
@@ -80,12 +80,25 @@ export default function HmoeWeb3() {
                 rel="noopener noreferrer"
               >
                 <button className="Bbutton">
-                  <p>
+                
                     <i className="fab fa-discord fa-1x"></i>
                     {t("加入Dis频道")}
-                  </p>
+               
                 </button>
               </a>
+              <a
+                href="https://admin.daohaus.fun/#/molochv3/0x89/0xf403bb02187fe7184722f0575e59578e4f649269"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="Bbutton">
+                 
+                    <img src='https://app.daohaus.club/static/media/haus_icon.445212878bddeed5d9a2534193a06d9a.svg' width={25} height={25}/>
+                    {t("加入DAOhaus")}
+              
+                </button>
+              </a>
+              
             </div>
           </div>
         </div>
