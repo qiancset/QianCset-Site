@@ -1,10 +1,10 @@
 "use client";
 
-import Uniswap from "./Uniswap"
+import UniSwap from "./Uniswap"
 export default function Uniswappage() {
   return (
     <>
-    <Uniswap/>
+    <UniSwap/>
     </>
   )
 }

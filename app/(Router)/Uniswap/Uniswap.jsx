@@ -1,16 +1,16 @@
 "use client";
+import '@uniswap/widgets/fonts.css'
 import "./Uniswap.css";
 import { SwapWidget, darkTheme } from "@uniswap/widgets";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "next-themes";
 import { provider } from "../../_Providers/Web3ModalP";
-import { useWeb3Modal } from "@web3modal/react";
 
 export default function Uniswap() {
   const { t } = useTranslation();
   const { resolvedTheme } = useTheme();
 
-  const { open } = useWeb3Modal();
+
 
   return (
     <div className="Uniswap1">

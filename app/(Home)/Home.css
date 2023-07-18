@@ -264,7 +264,7 @@
 		height: 100%;
 	}
 
-	.右 .marquee-container {
+	.右 .marqueeContainer {
 		margin-top: 10px;
 	}
 
@@ -367,7 +367,11 @@
 .feature-card p i {
 	color: #ea7411;
 }
-
+.social-media1 img{
+	margin-bottom: -4px;
+	height: 32px;
+	width: 32px;
+}
 
 .feature-card h4 {
 	font-size: 1.1rem;
@@ -506,35 +510,35 @@
 	text-align: center;
 }
 
-.kapianweb33 {
+.Web3card {
 	-webkit-border-radius: 50;
 	-moz-border-radius: 50;
 	border-radius: 50px;
 	height: 270px;
 	flex: 1 0 200px;
 	transition: all 0.5s;
-	border: var(--kapianweb33-border);
-	background-color: var(--kapianweb33-background);
+	border: var(--Web3card-border);
+	background-color: var(--Web3card-background);
 }
 
-.kapianweb33:hover {
+.Web3card:hover {
 	box-shadow: 0 0 0.9rem #ea7411;
 	border: solid #ea7411 1px;
 
 }
 
-.kapianweb333 {
+.Web3card1 {
 	background-color: transparent;
 
 }
 
-.kapianweb333 p {
+.Web3card1 p {
 	text-align: left;
 	font-size: 1rem;
 	margin: 5%;
 }
 
-.kapianweb333 i {
+.Web3card1 i {
 	font-size: 48px;
 	color: #ea7411;
 	margin-top: 20px;
@@ -546,12 +550,12 @@
 
 	}
 
-	.kapianweb33 {
+	.Web3card {
 		height: 350px;
 		flex: 1 0 400px;
 	}
 
-	.kapianweb333 p {
+	.Web3card1 p {
 		font-size: 1.5rem;
 		margin: 5%;
 	}
@@ -559,7 +563,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-	.kapianweb33 {
+	.Web3card {
 		height: 230px;
 		flex: 1 0 200px;
 		-webkit-border-radius: 30;
@@ -567,7 +571,7 @@
 		border-radius: 30px;
 	}
 
-	.kapianweb333 p {
+	.Web3card1 p {
 		font-size: 0.8rem;
 		margin: 5%;
 	}
@@ -575,18 +579,18 @@
 
 
 @media only screen and (max-width: 330px) {
-	.kapianweb333 p {
+	.Web3card1 p {
 		font-size: 0.3rem;
 	}
 }
 
 @media only screen and (max-width: 240px) {
-	.kapianweb333 p {
+	.Web3card1 p {
 		font-size: 0.3rem;
 		margin-top: 1%;
 	}
 
-	.kapianweb33 {
+	.Web3card {
 		height: 200px;
 		flex: 1 0 150px;
 		-webkit-border-radius: 30;
@@ -594,7 +598,7 @@
 		border-radius: 30px;
 	}
 
-	.kapianweb333 i {
+	.Web3card1 i {
 		font-size: 30px;
 		color: #ea7411;
 		margin-top: 0px;
@@ -981,31 +985,31 @@ hr {
 /*────────────────── 
        跑马灯
 ──────────────────*/
-.marquee-container {
+.marqueeContainer {
 	width: 100%;
 	overflow: hidden;
 	text-align: center;
 }
 
-.marquee-track img {
+.marqueeTrack img {
 	height: 50px;
 	width: 50px;
 }
 
-.marquee-track svg {
+.marqueeTrack svg {
 	height: 50px;
 	width: 50px;
 }
 
-.marquee-track {
+.marqueeTrack {
 	display: flex;
 	width: 3900px;
-	/* 假设每个 .marquee-item 的宽度都是 200px，需要显示 3 个 .marquee-item */
+	/* 假设每个 .marqueeItem 的宽度都是 200px，需要显示 3 个 .marqueeItem */
 	animation: marquee 20s linear infinite;
-	/* 每个 .marquee-item 动画时间是 4s，需要显示 3 个 .marquee-item，因此动画总时间是 12s */
+	/* 每个 .marqueeItem 动画时间是 4s，需要显示 3 个 .marquee-item，因此动画总时间是 12s */
 }
 
-.marquee-item {
+.marqueeItem {
 	padding: 0px;
 	width: 150px;
 	text-align: center;
@@ -1021,30 +1025,30 @@ hr {
 
 	100% {
 		transform: translateX(-50%);
-		/* -50% 表示偏移量为一个 .marquee-item 的宽度 */
+		/* -50% 表示偏移量为一个 .marqueeItem 的宽度 */
 	}
 }
 
 @media only screen and (max-width: 390px) {
-	.marquee-track img {
+	.marqueeTrack img {
 		height: 40px;
 		width: 40px;
 	}
 
-	.marquee-track svg {
+	.marqueeTrack svg {
 		height: 40px;
 		width: 40px;
 	}
 
-	.marquee-track {
+	.marqueeTrack {
 		display: flex;
 		width: 3900px;
-		/* 假设每个 .marquee-item 的宽度都是 200px，需要显示 3 个 .marquee-item */
+		/* 假设每个 .marqueeItem 的宽度都是 200px，需要显示 3 个 .marqueeItem */
 		animation: marquee 20s linear infinite;
-		/* 每个 .marquee-item 动画时间是 4s，需要显示 3 个 .marquee-item，因此动画总时间是 12s */
+		/* 每个 .marqueeItem 动画时间是 4s，需要显示 3 个 .marquee-item，因此动画总时间是 12s */
 	}
 
-	.marquee-item {
+	.marqueeItem {
 		padding: 0px;
 		height: 5%;
 		width: 80px;

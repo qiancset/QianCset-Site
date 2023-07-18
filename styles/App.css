@@ -30,8 +30,8 @@
 
 	/* 3 web3 */
 	--web3-background: linear-gradient(0deg, #ea7411 0.26%, #f0c144 100.32%);
-	--kapianweb33-border: solid transparent 1px;
-	--kapianweb33-background: #fff2c5;
+	--Web3card-border: solid transparent 1px;
+	--Web3card-background: #fff2c5;
 
 	/* 4 学习文档 */
 	--card-box-shadow: 0 0 0.1rem #fff;
