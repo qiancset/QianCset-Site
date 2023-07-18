@@ -63,7 +63,7 @@ const themeVariables = {
   "--w3m-accent-fill-color": "", //用于具有主题色背景的元素内的文本和图标的颜色
   "--w3m-background-color": "#ea7411", //要使用的背景颜色不是默认动画渐变
   "--w3m-background-image-url": "", //	要使用的背景图像 url 而不是默认的动画渐变
-  "--w3m-logo-image-url": "https://docs.qiancset.com/img/NFT-24K.png", //要使用的图像网址代替钱包连接徽标
+  "--w3m-logo-image-url": "/icon/NFT-24K.png", //要使用的图像网址代替徽标
   "--w3m-text-xsmall-regular-font-family": "",
 };
 
