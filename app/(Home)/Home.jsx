@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-'use client'
+"use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { LoginOutlined, FileSearchOutlined } from "@ant-design/icons";
-import './Home.css'
+import "./Home.css";
 
 import HmoeWeb3 from "./(home)/2Hmoeweb3";
 import Web3 from "./(home)/3Web3";
@@ -12,68 +12,49 @@ import Projects from "./(home)/5Projects";
 import Contact from "./(home)/6Contact";
 import { useTranslation } from "react-i18next";
 export default function Home() {
-
   const { t } = useTranslation();
-
-
-
 
   return (
     <div className="homemian">
-      <div id="container">
+      <div id="home">
+        <div className="rotate1">
+          <img src="/icon/Q300K.png" alt="home-Q" className="Imagelogo" />
+        </div>
         <h1 className="homeh1">
           {t("千赛特区块链")}
           <hr />
         </h1>
-        <div id="home">
-          <section className="intro1">
-            <div className="container">
-              <div className="左">
-                <p>
-                  <strong>{t("去中心化社区")}</strong>
-                </p>
-                <p>
-                  <strong>{t("Web3互动交流的区块链世界")}</strong>
-                </p>
-                <div></div>
 
-                <div>
-                  <Link href="./Uniswap">
-                    <button type="button" className="button1 pulse w-button">
-                      {t("获取代币")} <LoginOutlined />
-                    </button>
-                  </Link>
-                  <Link href="https://docs.qiancset.com/" target="_blank">
-                    <button type="button" className="button2">
-                      {t("阅读文档")}
-                      <FileSearchOutlined />
-                    </button>
-                  </Link>
-                </div>
-              </div>
+        <strong className="home_strong">
+          <p style={{ textAlign: "center" }}>
+            {t("去中心化社区")},{t("Web3互动交流的区块链世界")}
+          </p>
+        </strong>
 
-              <div className="右">
-                <div className="rotate1">
-                  <img src='/icon/Q300K.png' alt="home-Q" className="Imagelogo"/>
-                </div>
-              </div>
-            </div>
-          </section>
+        <div className="homebtn">
+          <Link href="./Uniswap">
+            <button type="button" className="button1 pulse w-button">
+              {t("获取代币")} <LoginOutlined />
+            </button>
+          </Link>
+
+          <Link href="https://docs.qiancset.com/" target="_blank">
+            <button type="button" className="button2">
+              {t("阅读文档")} <FileSearchOutlined />
+            </button>
+          </Link>
         </div>
-
-        <Down />
-        {/* 浮动箭头 */}
-
-        <HmoeWeb3 />
-        <Web3 />
-        <Marquee />
-        <Projects />
-
-
-
-        <Contact />
       </div>
 
+      <Down />
+      {/* 浮动箭头 */}
+
+      <HmoeWeb3 />
+      <Web3 />
+      <Marquee />
+      <Projects />
+
+      <Contact />
     </div>
   );
 }

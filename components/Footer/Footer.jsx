@@ -103,14 +103,13 @@ export default function Footer() {
       <div className="ffbb">
         <p><img src={'/icon/Q.png'} alt="footer-Q" className='logo1' /></p>
 
-        <ul >
+        
           <div className="ffbbxx">
-            <nav className='ffa'>
+            <div className='ffa'>
               <Link href="/">Qiancset Web3</Link> {t('版权所有')}© 2023
-            </nav>
+            </div>
           </div>
-        </ul>
-
+      
       </div>
     </footer>
   );

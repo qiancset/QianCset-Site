@@ -7,7 +7,7 @@
 	width: 100%;
 	height: 100%;
 	padding: 0;
-	
+
 }
 
 /*──────────────────
@@ -18,59 +18,20 @@
 	margin: auto;
 	max-width: 1520px;
 
-	height: 100%;
+	height: 100vh;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
+	/* justify-content: space-evenly; */
 	background-size: cover;
 	background-position: center;
-}
-
-
-
-.intro {
-	color: var(--color);
-	z-index: 1;
-	
-}
-
-.intro p {
-	margin: 5px;
-	font-size: 2rem;
-
-	text-align: center;
 
 }
 
-.intro1 {
-	margin-top: 0vh;
-	color: var(--color);
-	z-index: 1;
-	width: 90%;
-	height: 100vh;
-	position: relative;
-
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-
-.intro1 p strong {
-	font-size: 2.5rem;
-
-	text-align: center;
-
-}
 
 .homeh1 {
-
 	padding-bottom: 15px;
-	
-	height: 100%;
 	letter-spacing: normal;
 	font-family: #000000;
 	font-style: normal;
@@ -96,21 +57,24 @@
 	#contact h3 {
 		font-size: 1.2rem;
 	}
-
-
 }
 
-.intro a {
-	text-align: left;
+.home_strong {
+	font-size: 2.5rem;
+	margin: 2vh;
 }
+
+
 
 /*---2D旋转---*/
 .rotate1 {
 	display: inline-block;
 	animation: rotate 20s infinite linear;
-	width: 80%;
-	height: 80%;
+	width: 200px;
+	height: 200px;
 	perspective: 100%;
+	margin-top: 10vh;
+	margin-bottom: 2vh;
 }
 
 .Imagelogo {
@@ -128,35 +92,6 @@
 	}
 }
 
-
-/*------*/
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	max-width: 1520px;
-	height: 100%;
-}
-
-.左 {
-	flex-basis: 50%;
-}
-
-.左 p {
-	text-align: left;
-	width: 100%;
-	height: 100;
-}
-
-.右 {
-	flex-basis: 50%;
-}
-
-.social-media1 {
-	margin: 10px;
-}
-
 /*──────────────────
        home媒体查询
 ──────────────────*/
@@ -168,105 +103,34 @@
 	.marqee-container {
 		margin-top: 0px;
 	}
-
-	.intro1 p strong {
-		font-size: 2rem;
-	}
-
-
-
-
 }
 
 @media only screen and (max-width: 850px) {
-
-	#home {
-
-		height: 70vh;
-
-	}
-
-	#home section.intro {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	#home section.intro div {
-		float: none;
-		margin-right: 0;
-		margin-bottom: 20px;
-	}
-
-	#home section.intro div.social-media {
-		float: none;
-		text-align: center;
-	}
-
-	.左,
-	.右 {
-		width: 100%;
-		float: none;
-		text-align: center;
-		flex-basis: 100%;
-	}
-
-	.左 p {
-		text-align: center;
-	}
-
-	.intro1 {
-		display: block;
-		text-align: center;
-
-	}
 
 	.homeh1 {
 		font-size: 3rem;
 	}
 
-	.intro1 p strong {
-		font-size: 1.8rem;
-		margin: 10px 0;
-	}
-
-	.intro1 img {
-		display: block;
-		margin: 0 auto;
-		max-width: 100%;
-	}
-
-	.social-media1 {
-		margin: 20px 0;
-
-	}
-
-	.social-media1 a {
-		margin-top: 0px;
-		margin-bottom: 0px;
-		margin-right: 0px;
-		margin-left: 0px;
-	}
-
-
-
 	.rotate1 {
 		display: inline-block;
 		animation: rotate 20s infinite linear;
-		width: 50px;
-		height: 50px;
+		width: 100px;
+		height: 100px;
 		perspective: 100px;
-		margin-top: 5%;
+		margin-top: 10vh;
 	}
 
-	.Imagelogo {
-		width: 100%;
-		height: 100%;
+	.home_strong p {
+		font-size: 1.5rem;
+		margin: 2vh;
 	}
 
-	.右 .marqueeContainer {
-		margin-top: 10px;
+	.homebtn {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
+
 
 	.feature-card {
 
@@ -327,9 +191,13 @@
 ──────────────────*/
 #hmoeWeb3 {
 	text-align: center;
-
 	margin: auto;
 	max-width: 1520px;
+}
+
+.hmoeWeb3_card {
+	text-align: center;
+	margin: auto;
 	height: 100%;
 	width: 70%;
 }
@@ -361,13 +229,19 @@
 	border: var(--feature-card-border-hover);
 }
 
+.social-media1 {
+	margin: 20px;
+}
 
-
+.social-media1 a {
+	margin: 5px;
+}
 
 .feature-card p i {
 	color: #ea7411;
 }
-.social-media1 img{
+
+.social-media1 img {
 	margin-bottom: -4px;
 	height: 32px;
 	width: 32px;

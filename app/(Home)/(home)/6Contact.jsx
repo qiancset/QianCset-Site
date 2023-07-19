@@ -30,12 +30,13 @@ export default function Contact() {
           </Link>
           <p>{t("点击下方随时在社交媒体上联系")}</p>
           <div className="social-media">
-            <ul>
-              <li>
+            <div>
+              
                 <a
                   href="https://twitter.com/Qiancset"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="twitter"
                 >
                   <i className="fab fa-twitter"></i>
                 </a>
@@ -43,6 +44,7 @@ export default function Contact() {
                   href="https://github.com/Qiancset"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="github"
                 >
                   <i className="fab fa-github"></i>
                 </a>
@@ -50,11 +52,12 @@ export default function Contact() {
                   href="https://qm.qq.com/cgi-bin/qm/qr?k=2Wt6v9arhhppgYG_REzJk7YtkoqTJA3M&noverify=0&personal_qrcode_source=3"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="qq"
                 >
                   <i className="fab fa-qq"></i>
                 </a>
-              </li>
-            </ul>
+              
+            </div>
           </div>
           <div>
             <p className="kapianLOGOP">{t("技术和平台依赖、借鉴与参考")}</p>
