@@ -1,4 +1,4 @@
-"use client";
+
 
 import UniSwap from "./Uniswap"
 export default function Uniswappage() {
