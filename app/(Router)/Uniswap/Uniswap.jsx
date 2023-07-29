@@ -1,5 +1,5 @@
 "use client";
-import '@uniswap/widgets/fonts.css'
+import "@uniswap/widgets/fonts.css";
 import "./Uniswap.css";
 import { SwapWidget, darkTheme } from "@uniswap/widgets";
 import { useTranslation } from "react-i18next";
@@ -10,7 +10,7 @@ export default function Uniswap() {
   const { t } = useTranslation();
   const { resolvedTheme } = useTheme();
 
-
+  const Provider = provider;
 
   return (
     <div className="Uniswap1">
@@ -23,10 +23,10 @@ export default function Uniswap() {
           theme={resolvedTheme === "dark" ? darkTheme : customTheme} //覆盖样式属性
           brandedFooter={false} //启用小部件底部的“由 Uniswap 提供支持”页脚。
           hideConnectionUI={true} //隐藏小部件的内置钱包连接UI,'true'
-          provider={provider}
+          provider={Provider}
           //onConnectWalletClick={() => open({ route: 'ConnectWallet' })}
           jsonRpcUrlMap={jsonRpcUrlMap} //Api节点
-          //defaultChainId={1} //指定要提示用户将其钱包连接到哪个链ID
+          defaultChainId={1} //指定要提示用户将其钱包连接到哪个链ID
           //tokenList={UNISWAP_TOKEN_LIST}          //令牌列表
           defaultInputTokenAddress="NATIVE" //本机令牌的特殊地址
           defaultInputAmount={1} //默认输入设置为 1 代币
