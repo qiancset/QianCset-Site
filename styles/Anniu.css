@@ -131,15 +131,12 @@
 
   .Bbutton {
     font-size: 1rem;
-    width: 90vw;
-    margin: 5px;
   }
 }
 
 @media only screen and (max-width: 390px) {
   .Bbutton {
     width: 90vw;
-    margin: 5px;
   }
 
   .social-media1 img {
