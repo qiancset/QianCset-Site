@@ -4,16 +4,18 @@ import "./Uniswap.css";
 import { SwapWidget, darkTheme } from "@uniswap/widgets";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "next-themes";
-import { provider } from "../../_Providers/Web3ModalP";
+
+
 
 export default function Uniswap() {
   const { t } = useTranslation();
   const { resolvedTheme } = useTheme();
 
-  const Provider = provider;
+
 
   return (
     <div className="Uniswap1">
+
       <div className="Uniswap">
         <SwapWidget
           convenienceFee={1} // 指定便利费为 1 个基点
@@ -23,7 +25,7 @@ export default function Uniswap() {
           theme={resolvedTheme === "dark" ? darkTheme : customTheme} //覆盖样式属性
           brandedFooter={false} //启用小部件底部的“由 Uniswap 提供支持”页脚。
           hideConnectionUI={true} //隐藏小部件的内置钱包连接UI,'true'
-          provider={Provider}
+          
           //onConnectWalletClick={() => open({ route: 'ConnectWallet' })}
           jsonRpcUrlMap={jsonRpcUrlMap} //Api节点
           defaultChainId={1} //指定要提示用户将其钱包连接到哪个链ID

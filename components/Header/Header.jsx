@@ -16,7 +16,11 @@ import Web3ModalA from "../Wallet/Web3ModalA"
 
 
 export default function Header() {
+  const [isNight, setIsNight] = useState(false);
 
+  const toggleTheme = (isNight) => {
+    setIsNight(isNight);
+  };
 
   const { t } = useTranslation();
 
@@ -25,7 +29,7 @@ export default function Header() {
       <header>
         {/* 小于450px显示 下拉菜单 */}
 
-        <DropdownA/>
+        <DropdownA isNight={isNight} toggleTheme={toggleTheme} />
 
         {/* 电脑 */}
         <a className="logo" href="/">
@@ -63,7 +67,7 @@ export default function Header() {
             {/* 日夜模式按钮 */}
             <Space direction="vertical">
               <div className="Night">
-                <ModeThemes />
+                <ModeThemes isNight={isNight} toggleTheme={toggleTheme} />
               </div>
             </Space>
 
@@ -86,7 +90,7 @@ export default function Header() {
 }
 
 /* 下拉菜单 */
-const DropdownA = () => {
+const DropdownA = ({ isNight, toggleTheme }) => {
   const { t } = useTranslation();
 
   const [open, setOpen] = useState(false);
@@ -135,7 +139,7 @@ const DropdownA = () => {
       key: "4",
     },
     {
-      label: <ModeThemes />,
+      label: <ModeThemes isNight={isNight} toggleTheme={toggleTheme} />,
       key: "5",
     },
     {
