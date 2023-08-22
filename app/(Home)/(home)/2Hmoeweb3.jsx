@@ -1,6 +1,6 @@
 "use client";
 import { useTranslation } from "react-i18next";
-import { GoLinkExternal } from "react-icons/go";
+
 
 export default function HmoeWeb3() {
   const { t } = useTranslation();

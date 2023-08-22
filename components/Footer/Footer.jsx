@@ -53,13 +53,13 @@ export default function Footer() {
               <li ><Link target="_blank" href="https://docs.qiancset.com/Serve/chuang-ye-rong-zi">
                 {t('创业融资')}
               </Link></li>
-              <li ><Link target="_blank" href="https://docs.qiancset.com/Serve/ji-shu-wen-ti">
+              <li ><Link target="_blank" href="https://docs.qiancset.com/Serve/xun-zhao-tuan-dui" >
                 {t('寻找团队')}
               </Link></li>
-              <li ><Link target="_blank" href="https://docs.qiancset.com/Serve/jia-ru-gong-xian">
+              <li ><Link target="_blank" href="https://docs.qiancset.com/Serve/ji-shu-wen-ti">
                 {t('技术问题')}
               </Link></li>
-              <li ><Link target="_blank" href="https://docs.qiancset.com/Serve/xun-zhao-tuan-dui" >
+              <li ><Link target="_blank" href="https://docs.qiancset.com/Serve/jia-ru-gong-xian">
                 {t('加入贡献')}
               </Link></li>
             </ul>

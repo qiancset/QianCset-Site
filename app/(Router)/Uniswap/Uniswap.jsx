@@ -5,17 +5,22 @@ import { SwapWidget, darkTheme } from "@uniswap/widgets";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "next-themes";
 
+import { useConnectModal } from "@rainbow-me/rainbowkit";
+
 
 
 export default function Uniswap() {
   const { t } = useTranslation();
   const { resolvedTheme } = useTheme();
 
+  const { openConnectModal } = useConnectModal(); // 添加这行来获取 openConnectModal 函数
 
+  const onConnectWalletClick = () => {
+    openConnectModal(); // 调用 openConnectModal 函数以打开连接钱包的模态框
+  };
 
   return (
     <div className="Uniswap1">
-
       <div className="Uniswap">
         <SwapWidget
           convenienceFee={1} // 指定便利费为 1 个基点
@@ -26,13 +31,13 @@ export default function Uniswap() {
           brandedFooter={false} //启用小部件底部的“由 Uniswap 提供支持”页脚。
           hideConnectionUI={true} //隐藏小部件的内置钱包连接UI,'true'
           
-          //onConnectWalletClick={() => open({ route: 'ConnectWallet' })}
-          jsonRpcUrlMap={jsonRpcUrlMap} //Api节点
-          defaultChainId={1} //指定要提示用户将其钱包连接到哪个链ID
+          onConnectWalletClick={onConnectWalletClick}
+          //jsonRpcUrlMap={jsonRpcUrlMap} //Api节点
+          //defaultChainId={1} //指定要提示用户将其钱包连接到哪个链ID
           //tokenList={UNISWAP_TOKEN_LIST}          //令牌列表
           defaultInputTokenAddress="NATIVE" //本机令牌的特殊地址
           defaultInputAmount={1} //默认输入设置为 1 代币
-          defaultOutputTokenAddress="0xdAC17F958D2ee523a2206206994597C13D831ec7" //默认输出令牌设置为 USDT
+          //defaultOutputTokenAddress="0xdAC17F958D2ee523a2206206994597C13D831ec7" //默认输出令牌设置为 USDT
         />
       </div>
     </div>
@@ -44,7 +49,7 @@ const customTheme = {
   accent: "#ea7411",
   borderRadius: 0,
 };
-const jsonRpcUrlMap = {
+/* const jsonRpcUrlMap = {
   1: ["https://eth-mainnet.g.alchemy.com/v2/mlFEUUHXOMfXKOL0zV12xXYfb8LUjnMf"],
   42161: [
     "https://arb-mainnet.g.alchemy.com/v2/4ZFkWe3RAFIPggBGs_QF22l_CkPQIwv0",
@@ -53,4 +58,4 @@ const jsonRpcUrlMap = {
   137: [
     "https://polygon-mainnet.g.alchemy.com/v2/KYaEAzPvehDQOFBO5tAjIX2_FRwoH1oD",
   ],
-};
+}; */
