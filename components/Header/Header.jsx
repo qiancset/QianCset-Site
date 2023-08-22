@@ -12,8 +12,8 @@ import React, { useState, useEffect } from "react";
 
 import Locales from "./LocalesButton/Locales";
 import ModeThemes from "./ModeThemes/ModeThemes";
-import Web3ModalA from "../Wallet/Web3ModalA"
 
+import Rainbowkit from "../Wallet/Rainbowkit";
 
 export default function Header() {
   const [isNight, setIsNight] = useState(false);
@@ -75,15 +75,13 @@ export default function Header() {
             <div className="Night">
               <Locales />
             </div>
-
           </Space>
         </nav>
 
         {/* 连接钱包按钮 */}
-        <nav className="Web3ModalA">
-          <Web3ModalA />
+        <nav className="Web3Modal">
+          <Rainbowkit />
         </nav>
-        
       </header>
     </>
   );
