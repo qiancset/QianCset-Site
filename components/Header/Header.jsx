@@ -12,7 +12,7 @@ import React, { useState, useEffect } from "react";
 
 import Locales from "./LocalesButton/Locales";
 import ModeThemes from "./ModeThemes/ModeThemes";
-
+import AuthComponent from '@/components/AuthComponent'
 import Rainbowkit from "../Wallet/Rainbowkit";
 
 export default function Header() {
@@ -75,11 +75,16 @@ export default function Header() {
             <div className="Night">
               <Locales />
             </div>
+
+            <AuthComponent/>
+
+
           </Space>
         </nav>
 
         {/* 连接钱包按钮 */}
         <nav className="Web3Modal">
+
           <Rainbowkit />
         </nav>
       </header>

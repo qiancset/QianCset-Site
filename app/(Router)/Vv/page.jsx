@@ -3,8 +3,7 @@
 
 
 import './Vv.css'
-import NFTCreator from "./_mitiNFT/NFTCreator";
-
+import NFTCreator from "./_mintNFT/NFTCreator";
 
 
 export const metadata = {
@@ -21,6 +20,8 @@ export default function Vv() {
   return (
     <>
       <div id="Vv" >
+
+
         <div className="Vv">
           <NFTCreator />
         </div>
