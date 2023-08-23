@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, } from "react";
 import Web3 from 'web3'; // 引入web3.js库
-import { abi } from "./contractABI.json";
+
 
 import './NFTCreator.css'
 import { useTranslation } from 'react-i18next';
@@ -30,7 +30,7 @@ const { t } = useTranslation();
 
           // 初始化合约对象
           const contractAddress = "0x21C0c2E14fc98d5a6cc048da07c09Fb5437d349A"; // 合约地址
-          // 合约ABI
+          const abi =[];// 合约ABI
           const contract = new web3.eth.Contract(abi, contractAddress);
 
           // 调用合约创建NFT
