@@ -32,8 +32,7 @@ export default function Uniswap() {
           hideConnectionUI={true} //隐藏小部件的内置钱包连接UI,'true'
           
           onConnectWalletClick={onConnectWalletClick}
-          //jsonRpcUrlMap={jsonRpcUrlMap} //Api节点
-          //defaultChainId={1} //指定要提示用户将其钱包连接到哪个链ID
+          jsonRpcUrlMap={jsonRpcUrlMap} //Api节点
           //tokenList={UNISWAP_TOKEN_LIST}          //令牌列表
           defaultInputTokenAddress="NATIVE" //本机令牌的特殊地址
           defaultInputAmount={1} //默认输入设置为 1 代币
@@ -49,7 +48,7 @@ const customTheme = {
   accent: "#ea7411",
   borderRadius: 0,
 };
-/* const jsonRpcUrlMap = {
+const jsonRpcUrlMap = {
   1: ["https://eth-mainnet.g.alchemy.com/v2/mlFEUUHXOMfXKOL0zV12xXYfb8LUjnMf"],
   42161: [
     "https://arb-mainnet.g.alchemy.com/v2/4ZFkWe3RAFIPggBGs_QF22l_CkPQIwv0",
@@ -58,4 +57,4 @@ const customTheme = {
   137: [
     "https://polygon-mainnet.g.alchemy.com/v2/KYaEAzPvehDQOFBO5tAjIX2_FRwoH1oD",
   ],
-}; */
+};
