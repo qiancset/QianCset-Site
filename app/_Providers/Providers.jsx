@@ -2,6 +2,7 @@
 import Antd from "./Antd";
 import Themes from "./Themes";
 import NextAuth from "./NextAuth";
+
 import RainbowkitP from "./RainbowkitP";
 export default function Providers({ children }) {
   return (
@@ -9,7 +10,11 @@ export default function Providers({ children }) {
       <Themes>
         <NextAuth>
           <RainbowkitP>
-            <Antd>{children}</Antd>
+
+           
+              <Antd>{children}</Antd>
+           
+
           </RainbowkitP>
         </NextAuth>
       </Themes>

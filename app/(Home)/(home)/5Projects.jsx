@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { GoLinkExternal } from "react-icons/go";
+
 import { useTranslation } from "react-i18next";
 
 function Card({ imageUrl, title, link }) {
@@ -11,7 +11,7 @@ function Card({ imageUrl, title, link }) {
         <img className="work-img" src={imageUrl} alt={title} />
         <div className="work-content">
           <strong>
-            {title} <GoLinkExternal />
+            {title} 
           </strong>
         </div>
       </a>

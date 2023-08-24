@@ -4,7 +4,7 @@
 import { useTranslation } from "react-i18next";
 import { Space, Dropdown } from "antd";
 import { MenuUnfoldOutlined } from "@ant-design/icons";
-import { GoLinkExternal } from "react-icons/go";
+
 import "./Header.css";
 import MyNavLink from "./zujian/MyNavLink"; //封装 Link 组件
 
@@ -58,7 +58,7 @@ export default function Header() {
                 <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
                   <div className="nav-link">
                     {t("文档")}
-                    <GoLinkExternal />
+                   
                   </div>
                 </a>
               </li>
@@ -135,7 +135,7 @@ const DropdownA = ({ isNight, toggleTheme }) => {
         <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
           <div className="nav-link">
             {t("文档")}
-            <GoLinkExternal />
+           
           </div>
         </a>
       ),
