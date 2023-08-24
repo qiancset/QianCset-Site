@@ -12,15 +12,15 @@ const handler = NextAuth({
 
     ],
 
-secret:process.env.JWT_SECRET,
 
-    pages: {
+
+/*     pages: {
         signIn: '/api/auth/signin',
-        /* signOut: '/api/auth/signout', */
-/*         error: '/error', // 在查询字符串中作为 ？error= 传递的错误代码
+        signOut: '/api/auth/signout',
+        error: '/error', // 在查询字符串中作为 ？error= 传递的错误代码
         verifyRequest: '/verify-request', // （用于检查电子邮件）
-        newUser: '/new-user' // 新用户将在首次登录时被定向到此处（如果不感兴趣，请将其排除在外） */
-      } 
+        newUser: '/new-user' // 新用户将在首次登录时被定向到此处（如果不感兴趣，请将其排除在外）
+      }  */
 })
 
 export { handler as GET, handler as POST }
