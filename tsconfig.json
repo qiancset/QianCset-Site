@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@/components/*": ["components/*"]
+    },
     "lib": [
       "dom",
       "dom.iterable",
@@ -21,19 +26,14 @@
       {
         "name": "next"
       }
-    ],
-
-    "baseUrl": ".",
-    "paths": {
-      "@/components/*": ["components/*"]
-    },
-    
+    ]
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx", 
+    
   ],
   "exclude": [
     "node_modules"
