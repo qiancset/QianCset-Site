@@ -8,7 +8,7 @@ function Card({ imageUrl, title, link }) {
   return (
     <div>
       <a href={link} target="_blank" rel="noopener noreferrer" className="card">
-        <Image className="work-img" src={imageUrl} alt={title} width={100} height={100}/>
+        <Image className="work-img" src={imageUrl} alt={title} width={200} height={200}/>
         <div className="work-content">
           <strong>
             {title} 

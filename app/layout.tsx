@@ -4,7 +4,7 @@ import '@/styles/App.css'
 import '@/styles/App1.css'
 import '@/styles/Anniu.css'
 import '@/locales/i18n/i18n'
-import { Header } from '@/components'//组件来源
+import  Header  from '@/components/Header/Header'//组件来源
 import Providers from './_Providers/Providers'
 import { Analytics } from '@vercel/analytics/react';
 

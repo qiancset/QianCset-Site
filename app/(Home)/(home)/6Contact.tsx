@@ -23,8 +23,8 @@ export default function Contact() {
             {t("合作发展")}
             <hr />
           </h3>
-          <Link href="/Donation">
-            <button className="Bbutton pulse w-button" target="_blank">
+          <Link href="/Donation" target="_blank">
+            <button className="Bbutton pulse w-button" >
               {t("捐赠代币")} <LikeOutlined />
             </button>
           </Link>

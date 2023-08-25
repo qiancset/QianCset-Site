@@ -11,6 +11,8 @@ import { infuraProvider } from 'wagmi/providers/infura'
 
 
 
+
+
 export default function RainbowkitP({ children }) {
     const { theme } = useTheme();
     // 根据当前的 theme 值来选择不同的主题
@@ -34,6 +36,7 @@ export default function RainbowkitP({ children }) {
 
           
                 <RainbowKitProvider
+         
                     chains={chains}
                     theme={{
                         lightMode: selectedTheme,
