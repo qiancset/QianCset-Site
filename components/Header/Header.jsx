@@ -39,29 +39,27 @@ export default function Header() {
         <nav>
           <Space size="large" align="center">
             <div className="nav-bar">
-              <li>
+           
                 <MyNavLink href="/" id="Home">
                   {t("首页")}
                 </MyNavLink>
-              </li>
-              <li>
+            
                 <MyNavLink href="/Uniswap" id="Uniswap">
                   {t("兑换")}
                 </MyNavLink>
-              </li>
-              <li>
+             
                 <MyNavLink href="/Vv" id="Vv">
                   {t("产品")}
                 </MyNavLink>
-              </li>
-              <li>
+              
+            
                 <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
                   <div className="nav-link">
                     {t("文档")}
                    
                   </div>
                 </a>
-              </li>
+             
             </div>
 
             {/* 日夜模式按钮 */}

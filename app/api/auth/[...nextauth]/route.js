@@ -15,7 +15,7 @@ const handler = NextAuth({
           })
     ],
 
-
+    secret:process.env.JWT_SECRET,
 
 /*     pages: {
         signIn: '/api/auth/signin',
