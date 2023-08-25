@@ -1,0 +1,30 @@
+{
+	 "Print to console": {
+	 	"scope": "javascript,javascriptreact,typescript,typescriptreact",
+	 	"prefix": "log",
+	 	"body": [
+	 		"console.log('$1');",
+	 		"$2"
+	 	],
+	 	"description": "Log output to console"
+	 },
+	 "Next Layout": {
+		"prefix": "rfclayout_Qiancset", // 触发片段的快捷键
+		"body": [
+			"",
+			"export const metadata = {",
+			"title: { absolute: '${1} | 千赛特-QianCset', },",
+			"}",
+			"",
+			"export default function ${1}${TM_FILENAME_BASE}({children}) {",
+			"   return (",
+			"     <>",
+            "     {children}",
+            "     </>",
+			"   )",
+			"}",
+
+		],
+		"description": "Create Basic Component"
+	},
+}

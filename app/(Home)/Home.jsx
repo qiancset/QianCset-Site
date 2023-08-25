@@ -32,7 +32,7 @@ export default function Home() {
         </strong>
 
         <div className="homebtn">
-          <Link href="./Uniswap">
+          <Link href="/Uniswap">
             <button type="button" className="button1 pulse w-button">
               {t("获取代币")} <LoginOutlined />
             </button>

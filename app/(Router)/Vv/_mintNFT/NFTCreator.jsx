@@ -1,10 +1,9 @@
-'use client'
-import React, { useState, } from "react";
-import Web3 from 'web3'; // 引入web3.js库
+"use client";
+import React, { useState } from "react";
+import Web3 from "web3"; // 引入web3.js库
 
-
-import './NFTCreator.css'
-import { useTranslation } from 'react-i18next';
+import "./NFTCreator.css";
+import { useTranslation } from "react-i18next";
 
 function NFTCreator() {
   const [name, setName] = useState("");
@@ -12,11 +11,11 @@ function NFTCreator() {
   const [file, setFile] = useState(null);
   const [fileUrl, setFileUrl] = useState(null); // 初始化为null
 
-const { t } = useTranslation();
+  const { t } = useTranslation();
 
   async function handleUpload() {
     // 创建web3对象
-    if (typeof window.ethereum !== 'undefined') {
+    if (typeof window.ethereum !== "undefined") {
       const web3 = new Web3(window.ethereum);
       try {
         // 请求用户授权
@@ -30,25 +29,29 @@ const { t } = useTranslation();
 
           // 初始化合约对象
           const contractAddress = "0x21C0c2E14fc98d5a6cc048da07c09Fb5437d349A"; // 合约地址
-          const abi =[];// 合约ABI
+          const abi = []; // 合约ABI
           const contract = new web3.eth.Contract(abi, contractAddress);
 
           // 调用合约创建NFT
-          contract.methods.createToken(name, description, base64Data)
-            .send({ from: window.ethereum.selectedAddress, value: 0, gas: 3000000 }, (error, result) => {
-              if (error) {
-                console.log(error);
-              } else {
-                console.log(result);
+          contract.methods
+            .createToken(name, description, base64Data)
+            .send(
+              { from: window.ethereum.selectedAddress, value: 0, gas: 3000000 },
+              (error, result) => {
+                if (error) {
+                  console.log(error);
+                } else {
+                  console.log(result);
+                }
               }
-            });
+            );
         };
         reader.readAsDataURL(file);
       } catch (e) {
         console.log(e);
       }
     }
-  };
+  }
 
   function handleFileChange(e) {
     setFile(e.target.files[0]);
@@ -61,9 +64,8 @@ const { t } = useTranslation();
   return (
     <div className="NFTCreator">
       <form className="formNFT">
-
-        <h2>{t('创建部署NFT')}</h2>
-        <label htmlFor="name">{t('NFT名字')}:</label>
+        <h2>{t("创建部署NFT")}</h2>
+        <label htmlFor="name">{t("NFT名字")}:</label>
         <input
           type="text"
           className="inputNFT"
@@ -72,30 +74,33 @@ const { t } = useTranslation();
           onChange={(e) => setName(e.target.value)}
         />
 
-        <label htmlFor="description">{t('NFT描述')}:</label>
+        <label htmlFor="description">{t("NFT描述")}:</label>
         <textarea
           id="description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
 
-        <label htmlFor="file1">{t('上传NFT')}:</label>
+        <label htmlFor="file1">{t("上传NFT")}:</label>
 
-        <div className="divNFT" style={{ height: '10vh' }}>
-  {fileUrl && (
-    <>
-      <img className="imgNFT" src={fileUrl} alt={t('"上传的图片"')} />
-      
-    </>
-  )}
-</div>
+        <div className="divNFT" style={{ height: "10vh" }}>
+          {fileUrl && (
+            <>
+              <img className="imgNFT" src={fileUrl} alt={t('"上传的图片"')} />
+            </>
+          )}
+        </div>
 
-
-          
-        <input type="file" className="inputNFT" id="file" onChange={handleFileChange} onClick={() => setFileUrl(null)}/>
+        <input
+          type="file"
+          className="inputNFT"
+          id="file"
+          onChange={handleFileChange}
+          onClick={() => setFileUrl(null)}
+        />
 
         <button className="buttonNFT" type="button" onClick={handleUpload}>
-          {t('创建 NFT')}
+          {t("创建 NFT")}
         </button>
       </form>
     </div>

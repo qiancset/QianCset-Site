@@ -5,7 +5,6 @@
 
 # 测试
 /coverage
-/.vscode/
 /.React代码片段/
 /Hardhat
 /hardhat.config.js

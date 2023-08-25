@@ -1,10 +1,11 @@
-
-
-import UniSwap from "./Uniswap"
+import UniSwap from "./Uniswap";
 export default function Uniswappage() {
   return (
     <>
-    <UniSwap/>
+
+      <UniSwap />
+<div></div>
     </>
-  )
+
+  );
 }

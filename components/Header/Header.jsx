@@ -12,7 +12,7 @@ import React, { useState, useEffect } from "react";
 
 import Locales from "./LocalesButton/Locales";
 import ModeThemes from "./ModeThemes/ModeThemes";
-import AuthComponent from '@/components/AuthComponent'
+
 import Rainbowkit from "../Wallet/Rainbowkit";
 
 export default function Header() {
@@ -76,7 +76,7 @@ export default function Header() {
               <Locales />
             </div>
 
-            <AuthComponent/>
+
 
 
           </Space>

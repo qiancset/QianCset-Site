@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-
+import Image from "next/image";
 
 import { useTranslation } from "react-i18next";
 
@@ -8,7 +8,7 @@ function Card({ imageUrl, title, link }) {
   return (
     <div>
       <a href={link} target="_blank" rel="noopener noreferrer" className="card">
-        <img className="work-img" src={imageUrl} alt={title} />
+        <Image className="work-img" src={imageUrl} alt={title} width={100} height={100}/>
         <div className="work-content">
           <strong>
             {title} 

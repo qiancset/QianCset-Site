@@ -11,10 +11,8 @@ export default function Providers({ children }) {
         <NextAuth>
           <RainbowkitP>
 
-           
-              <Antd>{children}</Antd>
-           
-
+            <Antd>{children}</Antd>
+            
           </RainbowkitP>
         </NextAuth>
       </Themes>
