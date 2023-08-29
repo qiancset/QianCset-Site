@@ -1,14 +1,14 @@
 "use client";
 
 import { LikeOutlined } from "@ant-design/icons";
-
+import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
 function LogoCard({ imageUrl, altText }) {
   return (
     <div className="feature-cardLOGO">
-      <img src={imageUrl} alt={altText} width="40px" height="40px" />
+      <Image src={imageUrl} alt={altText} width={40} height={40} />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import "./Vv.css";
+import "./Products.css";
 import NFTCreator from "./_mintNFT/NFTCreator";
 
 export const metadata = {
@@ -7,14 +7,14 @@ export const metadata = {
   },
 };
 
-export default function Vv() {
+export default function Products() {
   return (
-    <>
-      <div id="Vv">
-        <div className="Vv">
+<div className="Products">
+
+
           <NFTCreator />
-        </div>
-      </div>
-    </>
+      
+      
+</div>
   );
 }

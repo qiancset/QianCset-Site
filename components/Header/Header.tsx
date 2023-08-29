@@ -40,15 +40,15 @@ export default function Header() {
           <Space size="large" align="center">
             <div className="nav-bar">
            
-                <MyNavLink href="/" id="Home">
+                <MyNavLink href="/" >
                   {t("首页")}
                 </MyNavLink>
             
-                <MyNavLink href="/Uniswap" id="Uniswap">
+                <MyNavLink href="/Uniswap">
                   {t("兑换")}
                 </MyNavLink>
              
-                <MyNavLink href="/Vv" id="Vv">
+                <MyNavLink href="/Products" >
                   {t("产品")}
                 </MyNavLink>
               
@@ -106,7 +106,7 @@ const DropdownA = ({ isNight, toggleTheme }) => {
   const items = [
     {
       label: (
-        <MyNavLink href="/" id="Home">
+        <MyNavLink href="/">
           {t("首页")}
         </MyNavLink>
       ),
@@ -114,7 +114,7 @@ const DropdownA = ({ isNight, toggleTheme }) => {
     },
     {
       label: (
-        <MyNavLink href="/Uniswap" id="Uniswap">
+        <MyNavLink href="/Uniswap" >
           {t("兑换")}
         </MyNavLink>
       ),
@@ -122,7 +122,7 @@ const DropdownA = ({ isNight, toggleTheme }) => {
     },
     {
       label: (
-        <MyNavLink href="/Vv" id="Vv">
+        <MyNavLink href="/Products" >
           {t("产品")}
         </MyNavLink>
       ),
@@ -150,20 +150,20 @@ const DropdownA = ({ isNight, toggleTheme }) => {
   ];
   ////
 
-  const menuStyle = {
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    background: "var(--background-ant-color)",
-    color: "var(--color-ant)",
-  };
+
 
   return (
     <Dropdown
       menu={{
         items,
-        style: menuStyle,
+        style:{
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          background: "var(--background-ant-color)",
+          color: "var(--color-ant)",
+        },
         onClick: handleMenuClick,
       }}
       autoAdjustOverflow={true}

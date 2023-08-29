@@ -1,6 +1,6 @@
 "use client";
 import { useTranslation } from "react-i18next";
-
+import Image from "next/image";
 
 export default function HmoeWeb3() {
   const { t } = useTranslation();
@@ -49,7 +49,7 @@ export default function HmoeWeb3() {
           >
             <button className="Bbutton">
               {t("加入QQ频道")} 
-              <img src="/images/APPLOGO/QQ.svg" alt="QQ"/>
+              <Image src="/images/APPLOGO/QQ.svg" alt="QQ" height={40} width={40}/>
             </button>
           </a>
 
@@ -60,7 +60,7 @@ export default function HmoeWeb3() {
           >
             <button className="Bbutton">
               {t("加入Dis频道")} 
-              <img src="/images/APPLOGO/Discord.svg" alt="Discord"/>
+              <Image src="/images/APPLOGO/Discord.svg" alt="Discord" height={40} width={40}/>
             </button>
           </a>
 
@@ -71,7 +71,7 @@ export default function HmoeWeb3() {
           >
             <button className="Bbutton">
               {t("加入Daohaus")} 
-              <img src="/images/COMLOGO/DAOhaus.svg" alt="DAOhaus"/>
+              <Image src="/images/COMLOGO/DAOhaus.svg" alt="DAOhaus" height={40} width={40}/>
             </button>
           </a>
         </div>
