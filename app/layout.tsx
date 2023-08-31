@@ -4,9 +4,11 @@ import '@/styles/App.css'
 import '@/styles/App1.css'
 import '@/styles/Anniu.css'
 import '@/locales/i18n/i18n'
-import  Header  from '@/components/Header/Header'//组件来源
+import Header from '@/components/Header/Header'//组件来源
 import Providers from './_Providers/Providers'
 import { Analytics } from '@vercel/analytics/react';
+import { Suspense  } from 'react'
+import Loading from './loading'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,7 +26,7 @@ export const metadata = {
 
 }
 
-export default function Layout({ children }) {
+export default function Layout({children}) {
 
 
 
@@ -42,15 +44,23 @@ export default function Layout({ children }) {
       </head>
 
       <body className={inter.className}>
-
         <Providers>
 
-
-          <Header />
-          <div style={{ height: '6vh' }}/>
-          {children}
-          <Analytics />
           
+
+          
+         
+
+            <Suspense fallback={<Loading />}>
+            <Header />
+
+            <div style={{ height: '6vh' }} />
+            {children}
+
+          </Suspense>
+
+          <Analytics />
+
 
         </Providers>
 
@@ -60,3 +70,4 @@ export default function Layout({ children }) {
     </html>
   )
 }
+

@@ -1,33 +1,9 @@
-"use client";
-import { useState } from "react";
-import { ethers } from "ethers";
+'use client'
 
-
-
-export default function B() {
-
-  return (
-    <div>
-
-    </div>
-  );
+export default function Bpage() {
+   return (
+     <>
+     B
+     </>
+   )
 }
-
-
-const daiAddress = "0x10229B9d3783Cb6E0737CAb019AC94E12a42846c";
-
-const daiAbi = [
-  {
-    inputs: [],
-    name: "greet",
-    outputs: [
-      {
-        internalType: "string",
-        name: "",
-        type: "string",
-      },
-    ],
-    stateMutability: "pure",
-    type: "function",
-  },
-];

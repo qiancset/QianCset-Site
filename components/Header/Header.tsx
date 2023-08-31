@@ -36,7 +36,7 @@ export default function Header() {
           <img src={"/icon/Q.png"} alt="header-Q" />
         </a>
 
-        <nav>
+        <nav className="nav_PC">
           <Space size="large" align="center">
             <div className="nav-bar">
            
@@ -54,7 +54,7 @@ export default function Header() {
               
             
                 <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
-                  <div className="nav-link">
+                  <div className="nav_link">
                     {t("文档")}
                    
                   </div>
@@ -63,16 +63,14 @@ export default function Header() {
             </div>
 
             {/* 日夜模式按钮 */}
-            <Space direction="vertical">
-              <div className="Night">
+      
                 <ModeThemes isNight={isNight} toggleTheme={toggleTheme} />
-              </div>
-            </Space>
+         
 
             {/* 国际化按钮 */}
-            <div className="Night">
+
               <Locales />
-            </div>
+
 
 
 
@@ -131,7 +129,7 @@ const DropdownA = ({ isNight, toggleTheme }) => {
     {
       label: (
         <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
-          <div className="nav-link">
+          <div className="nav_link">
             {t("文档")}
            
           </div>

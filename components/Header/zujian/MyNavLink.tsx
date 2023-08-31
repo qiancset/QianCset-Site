@@ -13,8 +13,8 @@ export default function MyNavLink({ href, children }) {
   }
   
   return (
-    <Link href={href} prefetch={true} passHref>
-      <div className={`nav-link ${isActive ? 'active' : ''}`}>{children}</div>
+    <Link href={href} prefetch={true}>
+      <div className={`nav_link ${isActive ? 'active' : ''}`}>{children}</div>
     </Link>
   );
 }

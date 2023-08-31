@@ -92,12 +92,7 @@ header {
 	margin-right: 5px;
 }
 
-@media only screen and (max-width: 970px) {
-	.web3-network-switch {
-		display: none;
-	}
 
-}
 
 @media only screen and (max-width: 750px) {
 
@@ -157,18 +152,9 @@ header {
 
 
 @media only screen and (max-width: 600px) {
-
-	.nav-bar {
-		display: none;
-	}
-
-	.Buttonant {
-		display: block;
-	}
-
-	.Night {
-		display: none;
-	}
+.nav_PC{
+	display: none;
+}
 
 
 }
@@ -178,7 +164,5 @@ header {
 		display: none;
 		width: 40px;
 		height: 40px;
-
-
 	}
 }
