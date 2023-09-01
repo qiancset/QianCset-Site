@@ -8,7 +8,7 @@ export default function Loading() {
     <div className='loading'>
         <Skeleton.Image active={active} />
 
-<Skeleton active paragraph={{ rows: 20 }} />
+<Skeleton active paragraph={{ rows: 5 }} />
 
 
     </div>

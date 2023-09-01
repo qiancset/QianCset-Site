@@ -768,67 +768,7 @@
 
 }
 
-/*──────────────────
-    社交媒体
-──────────────────*/
 
-.social-media {
-
-	padding: 10px;
-	display: flex;
-	position: center;
-	align-items: space-around;
-	justify-content: center;
-}
-
-.social-media li {
-	list-style: none;
-}
-
-.social-media a {
-	transition: all 0.2s;
-	margin: 10px;
-	font-size: 2rem;
-	text-align: center;
-	display: inline-block;
-	color: var(--color);
-
-}
-
-.social-media a i {
-	cursor: pointer;
-	font-size: 60px;
-
-}
-
-.social-media Image {
-	cursor: pointer;
-	height: 60px;
-}
-
-@media only screen and (max-width: 450px) {
-	.social-media a i {
-		cursor: pointer;
-		font-size: 40px;
-	}
-
-	.social-media Image {
-		cursor: pointer;
-		height: 40px;
-	}
-}
-
-
-.social-media a i:hover {
-	color: #ea7411;
-	text-shadow: 0 0 100px var(--main-decor-color);
-}
-
-.social-media a:hover {
-	color: #ea7411;
-	text-shadow: 0 0 100px var(--main-decor-color);
-
-}
 
 
 
@@ -844,7 +784,7 @@
 hr {
 	background: var(--main-decor-color);
 
-	height: 1px;
+	height: 10px;
 	width: 150px;
 	border-radius: 5px;
 	border: hidden;

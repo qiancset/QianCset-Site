@@ -42,7 +42,7 @@ export default function RainbowkitP({ children }) {
                         lightMode: selectedTheme,
                         darkMode: selectedTheme,
                     }}
-                    modalSize="compact"
+                    
                     appInfo={{
                         appName: 'QianCset Dapp',
                         learnMoreUrl: 'https://docs.qiancset.com/Learning_docs/Crypto_Wallet',

@@ -1,16 +1,49 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import './Footer.css'
+import Image from 'next/image';
 import Link from "next/link"
 import { useTranslation } from 'react-i18next';
+
+function Linkli({ children, href }) {
+  return (
+    <>
+      <li><Link href={href} target="_blank">{children}</Link></li>
+    </>
+  )
+}
+function SocialMedia({ href, className }) {
+  return (
+    <>
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className={className} />
+      </a>
+    </>
+  )
+}
 
 export default function Footer() {
   const { t } = useTranslation();
   return (
     <footer className='.copyright'>
 
+      <div className="social-media">
+        <SocialMedia href='https://twitter.com/Qiancset' className='fab fa-twitter' />
+        <SocialMedia href='https://github.com/Qiancset' className='fab fa-github' />
+        <SocialMedia href='https://qm.qq.com/cgi-bin/qm/qr?k=2Wt6v9arhhppgYG_REzJk7YtkoqTJA3M&noverify=0&personal_qrcode_source=3' className='fab fa-qq' />
+      </div>
 
       <div className="ffaa">
+
+
+
+
+
+
         <div id="ff" className="content">
 
 
@@ -28,18 +61,14 @@ export default function Footer() {
 
             <ul className="box2">
               <li className="link_name"><h2>{t('介绍')}</h2></li>
-              <li ><Link target="_blank" href="https://docs.qiancset.com/ru-men-zhi-nan">
+              <Linkli href='https://docs.qiancset.com/ru-men-zhi-nan' >
                 {t('入门指南')}
-              </Link></li>
-              <li ><Link target="_blank" href="https://docs.qiancset.com/category/%E5%AD%A6%E4%B9%A0%E6%96%87%E6%A1%A3/">
-                {t('学习文档')}
-              </Link></li>
+              </Linkli>
+
               <li ><Link target="_blank" href="https://docs.qiancset.com/bai-pi-shu">
                 {t('白皮书')}
               </Link></li>
-              <li ><Link target="_blank" href='https://docs.qiancset.com/jia-mi-huo-bi'>
-                {t('加密货币')}
-              </Link></li>
+
             </ul>
 
 
@@ -50,46 +79,48 @@ export default function Footer() {
               <li className="link_name">
                 <h2>{t('服务')}</h2>
               </li>
-              <li ><Link target="_blank" href="https://docs.qiancset.com/Serve/chuang-ye-rong-zi">
-                {t('创业融资')}
-              </Link></li>
-              <li ><Link target="_blank" href="https://docs.qiancset.com/Serve/xun-zhao-tuan-dui" >
-                {t('寻找团队')}
-              </Link></li>
-              <li ><Link target="_blank" href="https://docs.qiancset.com/Serve/ji-shu-wen-ti">
+
+              <Linkli href="https://docs.qiancset.com/Serve/ji-shu-wen-ti">
                 {t('技术问题')}
-              </Link></li>
-              <li ><Link target="_blank" href="https://docs.qiancset.com/Serve/jia-ru-gong-xian">
+              </Linkli>
+
+              <Linkli href="https://docs.qiancset.com/Serve/jia-ru-gong-xian">
                 {t('加入贡献')}
-              </Link></li>
+              </Linkli>
+
+              <Linkli href="https://docs.qiancset.com/category/he-zuo">
+                {t('合作')}
+              </Linkli>
+
+              <Linkli href="https://docs.qiancset.com/category/zan-zhu-shang">
+                {t('赞助商')}
+              </Linkli>
+
             </ul>
 
             <ul className="box4">
               <li className="link_name">
                 <h2>{t('关于')}</h2>
               </li>
-              <li ><Link target="_blank" href=" https://docs.qiancset.com/category/guan-yu-she-qu" >
+
+              <Linkli href="https://docs.qiancset.com/category/guan-yu-she-qu">
                 {t('关于社区')}
-              </Link></li>
-
-              <li ><Link target="_blank" href=" https://docs.qiancset.com/category/he-zuo">
-                {t('合作')}
-              </Link></li>
-
-              <li ><Link target="_blank" href="https://docs.qiancset.com/category/zan-zhu-shang">
-                {t('赞助商')}
-              </Link></li>
+              </Linkli>
 
 
-              <li ><Link target="_blank" href=" https://docs.qiancset.com/category/Legal_Terms/cookie-zheng-ce">
+
+
+              <Linkli href="https://docs.qiancset.com/category/Legal_Terms/cookie-zheng-ce">
                 {t('Cookie政策')}
-              </Link></li>
-              <li ><Link target="_blank" href=" https://docs.qiancset.com/category/Legal_Terms/shi-yong-tiao-kuan">
+              </Linkli>
+
+              <Linkli href="https://docs.qiancset.com/category/Legal_Terms/shi-yong-tiao-kuan">
                 {t('使用条款')}
-              </Link></li>
-              <li ><Link target="_blank" href=" https://docs.qiancset.com/category/Legal_Terms/yin-si-zheng-ce">
+              </Linkli>
+              <Linkli href="https://docs.qiancset.com/category/Legal_Terms/yin-si-zheng-cen">
                 {t('隐私政策')}
-              </Link></li>
+              </Linkli>
+
             </ul>
           </div>
           <div className="content2">
@@ -98,18 +129,23 @@ export default function Footer() {
 
 
         </div>
+        <div className='logofooter'>
+          <Image src="/icon/QIANCSET.png" alt="QIANCSET" height={124} width={400} className='QIANCSET'/>
+        </div>
+
       </div>
 
       <div className="ffbb">
-        <p><img src={'/icon/Q.png'} alt="footer-Q" className='logo1' /></p>
 
-        
-          <div className="ffbbxx">
-            <div className='ffa'>
-              <Link href="/">Qiancset Web3</Link> {t('版权所有')}© 2023
-            </div>
+
+        <div className="ffbbxx">
+
+          <div className='ffa'>
+            {t('版权所有')} © 2023 Qiancset 千赛特
           </div>
-      
+
+        </div>
+
       </div>
     </footer>
   );

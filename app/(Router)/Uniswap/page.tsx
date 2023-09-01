@@ -4,7 +4,7 @@ export default function Uniswappage() {
     <>
 
       <UniSwap />
-<div></div>
+
     </>
 
   );

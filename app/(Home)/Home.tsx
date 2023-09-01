@@ -10,6 +10,7 @@ import Web3 from "./(home)/3Web3";
 import Marquee from "./(home)/4Marquee";
 import Projects from "./(home)/5Projects";
 import Contact from "./(home)/6Contact";
+import F from './(home)/7F'
 import { useTranslation } from "react-i18next";
 export default function Home() {
   const { t } = useTranslation();
@@ -18,7 +19,7 @@ export default function Home() {
     <div className="homemian">
       <div id="home">
         <div className="rotate1">
-          <img src="/icon/Q300K.png" alt="home-Q" className="Imagelogo" />
+          <img src="favicon.ico" alt="home-Q" className="Imagelogo" />
         </div>
         <h1 className="homeh1">
           {t("千赛特区块链")}
@@ -55,6 +56,7 @@ export default function Home() {
       <Projects />
 
       <Contact />
+      <F />
     </div>
   );
 }

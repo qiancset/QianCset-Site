@@ -92,18 +92,9 @@ footer {
 .ffa {
     font-size: 1em;
     margin-top: 10px;
-}
-
-.ffbbxx a {
-    color: var(--ffbbxx-a-color);
-    text-decoration: none;
 
 }
 
-.ffbbxx a:hover {
-
-    text-decoration: underline;
-}
 
 .link_boxes {
     width: 100%;
@@ -146,9 +137,6 @@ footer {
         font-size: 0.5rem;
     }
 
-    .ffbbxx a {
-        font-size: 0.5rem;
-    }
 
     .link_boxes {
         display: flex;
@@ -167,9 +155,82 @@ footer {
     }
 }
 
-.logo1 {
-    padding-top: 10px;
-    height: 20px;
-    width: 20px;
+
+.logofooter {
+    padding: 20px;
+    display: flex;
+    position: center;
+    align-items: space-around;
+    justify-content: center;
+}
+.QIANCSET{
+    opacity: 50%;
+    transition: 0.5s;
+}
+.QIANCSET:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+
+/*──────────────────
+    社交媒体
+──────────────────*/
+
+.social-media {
+    background: var(--ffaa-background);
+    padding: 10px;
+    display: flex;
+    position: center;
+    align-items: space-around;
+
+}
+
+.social-media li {
+    list-style: none;
+}
+
+.social-media a {
+    transition: all 0.2s;
+    margin: 10px;
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    color: var(--color);
+
+}
+
+.social-media a i {
     cursor: pointer;
+    font-size: 40px;
+
+}
+
+.social-media Image {
+    cursor: pointer;
+    height: 40px;
+}
+
+@media only screen and (max-width: 450px) {
+    .social-media a i {
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    .social-media Image {
+        cursor: pointer;
+        height: 30px;
+    }
+}
+
+
+.social-media a i:hover {
+    color: #ea7411;
+    text-shadow: 0 0 100px var(--main-decor-color);
+}
+
+.social-media a:hover {
+    color: #ea7411;
+    text-shadow: 0 0 100px var(--main-decor-color);
+
 }

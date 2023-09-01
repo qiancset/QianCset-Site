@@ -1,3 +1,5 @@
+'use client'
+
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import './MyNavLink.css';
@@ -13,7 +15,7 @@ export default function MyNavLink({ href, children }) {
   }
   
   return (
-    <Link href={href} prefetch={true}>
+    <Link href={href} prefetch={true} passHref>
       <div className={`nav_link ${isActive ? 'active' : ''}`}>{children}</div>
     </Link>
   );

@@ -1,5 +1,4 @@
-import { Suspense } from "react";
-import Loading from "./loading";
+
 
 export const metadata = {
   title: { absolute: "兑换 | 千赛特-QianCset", },
@@ -8,11 +7,11 @@ export const metadata = {
 
 export default function Uniswap({ children }) {
   return <>
-  <Suspense fallback={<Loading />}>
+
 
     {children}
-    </Suspense>
-    </>;
+
+  </>;
 }
 
 
