@@ -7,8 +7,8 @@ import '@/locales/i18n/i18n'
 import Header from '@/components/Header/Header'//组件来源
 import Providers from './_Providers/Providers'
 import { Analytics } from '@vercel/analytics/react';
-import { Suspense } from 'react'
-import Loading from './loading'
+
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -55,10 +55,10 @@ export default function Layout({ children }) {
           <Header />
 
           <div style={{ height: '6vh' }} />
-          <Suspense fallback={<Loading />}>
+     
             {children}
 
-          </Suspense>
+   
 
           <Analytics />
 

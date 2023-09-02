@@ -20,7 +20,7 @@ export default function HmoeWeb3() {
               <p>
                 <i className="fas fa-share-square fa-2x" />
               </p>
-              <h4>{t("分享你的想法和经验")}</h4>
+              <h4>{t("分享想法和经验")}</h4>
             </HmoeWeb3card>
           </div>
 

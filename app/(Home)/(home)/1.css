@@ -1,3 +1,6 @@
+.Carousel{
+    height: 50%;
+}
 .Carousel_img{
     display: flex;
     position: center;

@@ -3,9 +3,9 @@ import './1.css'
 import Image from 'next/image';
 import { Carousel } from 'antd';
 
-export default function Carousel1Carousel() {
+export default function Carouselpage() {
   return (
-    <>
+    <div className='Carousel'>
       <Carousel autoplay>
 
         <IMAGE src="/icon/QianCset.png" alt='QianCset' />
@@ -17,7 +17,7 @@ export default function Carousel1Carousel() {
         <IMAGE src="/icon/QianCset白.png" alt='QianCset白' />
 
       </Carousel>
-    </>
+    </div>
   )
 }
 
@@ -28,7 +28,7 @@ function IMAGE({ src, alt }) {
   };
   return (
     <div className='Carousel_img'>
-      <Image src={src} style={contentStyle} height={2344} width={771} alt={alt} />
+      <Image src={src} style={contentStyle} height={132} width={400} alt={alt} />
     </div>
   )
 }
