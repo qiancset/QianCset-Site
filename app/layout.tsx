@@ -7,7 +7,7 @@ import '@/locales/i18n/i18n'
 import Header from '@/components/Header/Header'//组件来源
 import Providers from './_Providers/Providers'
 import { Analytics } from '@vercel/analytics/react';
-import { Suspense  } from 'react'
+import { Suspense } from 'react'
 import Loading from './loading'
 
 
@@ -26,7 +26,7 @@ export const metadata = {
 
 }
 
-export default function Layout({children}) {
+export default function Layout({ children }) {
 
 
 
@@ -46,15 +46,16 @@ export default function Layout({children}) {
       <body className={inter.className}>
         <Providers>
 
-          
 
-          
-         
 
-            <Suspense fallback={<Loading />}>
-            <Header />
 
-            <div style={{ height: '6vh' }} />
+
+
+
+          <Header />
+
+          <div style={{ height: '6vh' }} />
+          <Suspense fallback={<Loading />}>
             {children}
 
           </Suspense>

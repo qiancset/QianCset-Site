@@ -8,21 +8,23 @@ import Sun from "./Sun";
 import Moon from "./Moon";
 
 const ModeThemes = ({ isNight, toggleTheme }) => {
-  const { setTheme, resolvedTheme } = useTheme();
+  const { setTheme, resolvedTheme,theme } = useTheme();
 
   const handleToggleTheme = () => {
     toggleTheme(!isNight);
     setTheme(isNight ? "light" : "dark");
   };
 
+
+  
   const { t } = useTranslation();
   return (
     <Button
       type="text"
       title={t("切换浅色/暗黑模式")}
-      className={resolvedTheme === "dark" ? "antisNight" : "antisNight"}
+      className={resolvedTheme === "light" ? "antisNight" : "antisNight"}
       onClick={handleToggleTheme}
-      icon={<span>{isNight ? <Sun /> : <Moon />}</span>}
+      icon={isNight ? <Sun /> : <Moon />}
     />
   );
 };

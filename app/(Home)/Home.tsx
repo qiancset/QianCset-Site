@@ -4,25 +4,31 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { LoginOutlined, FileSearchOutlined } from "@ant-design/icons";
 import "./Home.css";
-
+import Carousel from './(home)/1Carousel'
 import HmoeWeb3 from "./(home)/2Hmoeweb3";
 import Web3 from "./(home)/3Web3";
 import Marquee from "./(home)/4Marquee";
 import Projects from "./(home)/5Projects";
 import Contact from "./(home)/6Contact";
-import F from './(home)/7F'
 import { useTranslation } from "react-i18next";
+import { FloatButton } from 'antd';
+
+
 export default function Home() {
   const { t } = useTranslation();
 
   return (
     <div className="homemian">
+
+
       <div id="home">
+
+
         <div className="rotate1">
           <img src="favicon.ico" alt="home-Q" className="Imagelogo" />
         </div>
         <h1 className="homeh1">
-          {t("千赛特区块链")}
+          {t("千赛特")}
           <hr />
         </h1>
 
@@ -45,18 +51,20 @@ export default function Home() {
             </button>
           </Link>
         </div>
+  
       </div>
 
-      <Down />
-      {/* 浮动箭头 */}
+      <Down />{/* 浮动箭头 */}
+      
+      <Carousel />
 
       <HmoeWeb3 />
       <Web3 />
-      <Marquee />
+      {/* <Marquee /> */}
       <Projects />
 
       <Contact />
-      <F />
+      <FloatButton.BackTop />
     </div>
   );
 }

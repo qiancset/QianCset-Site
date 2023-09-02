@@ -29,9 +29,10 @@ function SocialMedia({ href, className }) {
 export default function Footer() {
   const { t } = useTranslation();
   return (
-    <footer className='.copyright'>
-
+    <footer className='copyright'>
+<p>{t("点击下方随时在社交媒体上联系")}</p>
       <div className="social-media">
+        
         <SocialMedia href='https://twitter.com/Qiancset' className='fab fa-twitter' />
         <SocialMedia href='https://github.com/Qiancset' className='fab fa-github' />
         <SocialMedia href='https://qm.qq.com/cgi-bin/qm/qr?k=2Wt6v9arhhppgYG_REzJk7YtkoqTJA3M&noverify=0&personal_qrcode_source=3' className='fab fa-qq' />
@@ -130,7 +131,12 @@ export default function Footer() {
 
         </div>
         <div className='logofooter'>
-          <Image src="/icon/QIANCSET.png" alt="QIANCSET" height={124} width={400} className='QIANCSET'/>
+          <Image src="/icon/QianCset.png" alt="QIANCSET" className='QIANCSET'
+            height={124} width={400}
+            style={{
+              width: '40%',
+              height: 'auto',
+            }} />
         </div>
 
       </div>

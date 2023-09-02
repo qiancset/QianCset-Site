@@ -4,16 +4,11 @@
 footer {
     width: 100%;
     height: 100%;
-    background-color: var(--main-header-background);
 }
 
 .copyright {
     color: #000000;
-    font-size: 1.2rem;
-    line-height: 40px;
-    text-align: center;
-    max-width: 1020px;
-
+    background-color: var(--ffaa-background);
 }
 
 .copyright a {
@@ -74,7 +69,7 @@ footer {
 }
 
 .ffaa {
-    background: var(--ffaa-background);
+   
     height: 100%;
 }
 

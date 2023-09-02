@@ -33,7 +33,7 @@ export default function Header() {
 
         {/* 电脑 */}
         <a className="logo" href="/">
-          <img src={"favicon.ico"} alt="header-Q" />
+          <img src="favicon.ico" alt="header-Q" />
         </a>
 
         <nav className="nav_PC">

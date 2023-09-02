@@ -17,16 +17,13 @@
 #home {
 	margin: auto;
 	max-width: 1520px;
-
 	height: 100vh;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	/* justify-content: space-evenly; */
 	background-size: cover;
 	background-position: center;
-
 }
 
 

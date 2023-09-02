@@ -19,8 +19,8 @@
 }
 
 .nav_link:hover {
-	color: var(--nav-link-color-hover);
-	text-shadow: var(--nav-link-hover);
+	color: var(--nav-link-hover);
+
 	transition: all 0.5s;
 
 	-webkit-border-radius: 30;

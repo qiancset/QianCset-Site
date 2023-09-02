@@ -28,7 +28,7 @@ export default function Contact() {
               {t("捐赠代币")} <LikeOutlined />
             </button>
           </Link>
-          <p>{t("点击下方随时在社交媒体上联系")}</p>
+          
 
           <div>
             <p className="kapianLOGOP">{t("技术和平台依赖、借鉴与参考")}</p>

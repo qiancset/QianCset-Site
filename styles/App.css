@@ -20,7 +20,7 @@
 	--header-background: linear-gradient(200.33deg, rgba(225, 137, 54, 0.9) 0.26%, rgba(240, 193, 68, 0.9) 108.32%);
 	--nav-link-color: #000;
 	--nav-link-color-hover: #fff;
-	--nav-link-hover: 2px 2px 40px #ea7411, -2px 2px 0 #ea7411, 2px -2px 0 #ea7411, -2px -2px 0 #ea7411;
+	--nav-link-hover:  #ea7411;
 	--header-decor-color:#000000;
 
 	/* 2 加入社区 */

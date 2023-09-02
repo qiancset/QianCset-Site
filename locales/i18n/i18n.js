@@ -7,12 +7,11 @@ import en from '../en.json'
 import zh from '../zh.json'
 import fr from '../fr.json'
 import ja from '../ja.json'
-import ko from '../ko.json'
 import { locizePlugin } from 'locize';
 
 // 配置json的格式
 const resources = {
-  en,zh,fr,ja,ko
+  en,zh,fr,ja
 };
 
 

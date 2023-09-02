@@ -1,5 +1,6 @@
+import Link from "next/link";
 import "./Products.css";
-import NFTCreator from "./_mintNFT/NFTCreator";
+
 
 export const metadata = {
   title: {
@@ -12,7 +13,7 @@ export default function Products() {
 <div className="Products">
 
 
-          <NFTCreator />
+<Link href='/Products/mintNFT'>mintNFT</Link>     
       
       
 </div>

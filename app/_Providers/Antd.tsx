@@ -16,9 +16,12 @@ export default function Antd({children}) {
   
 /* 使用 Design Token */  
 const light = {  
-  token: {  
-    "colorPrimary": "#ea7411",  
-    "borderRadius": 16,  
-    "wireframe": false  
-  }  
+  "token": {
+    "colorPrimary": "#ea7411",
+    "borderRadius": 20,
+    "wireframe": false,
+    "colorInfo": "#ea7411",
+    "sizeUnit": 4,
+    "sizeStep": 6
+  }
 };  
