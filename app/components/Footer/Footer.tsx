@@ -121,7 +121,7 @@ export default function Footer() {
         </div>
         <div className="logofooter">
           <img
-            src="icon/QianCset.png"
+            src="/images/icon/QianCset.png"
             alt="QianCset"
             className="QianCset"
 
