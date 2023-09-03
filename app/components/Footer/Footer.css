@@ -145,6 +145,7 @@ footer {
 
 
 .logofooter {
+    
     padding: 20px;
     display: flex;
     position: center;
@@ -153,7 +154,7 @@ footer {
 }
 .QianCset{
     width: 40%;
-    height: auto;
+    height: 13.2%;
     opacity: 50%;
     transition: 0.5s;
 }

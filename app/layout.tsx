@@ -33,7 +33,7 @@ export default function Layout({ children }) {
           content="QiancsetWeb3,Qiancset,Web3,qiancsetweb3,qiancset,web3,千赛特,区块链,千赛特官网,千赛特去中心化应用,QiancsetDapp,千赛特DAPP,千赛特币,QCC,QisncsetCoin,QiancsetToken,qiancsetblockchain"
         />
         <link rel="favicon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="./icon/Q300K.png" />
+        <link rel="icon" href="./icon.png" />
         <link rel="apple-touch-icon" href="/apple-icon.png" />
 
         <link

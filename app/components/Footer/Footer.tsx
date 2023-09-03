@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import "./Footer.css";
-import Image from "next/image";
+
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
@@ -120,12 +120,11 @@ export default function Footer() {
           <div className="content2"></div>
         </div>
         <div className="logofooter">
-          <Image
+          <img
             src="icon/QianCset.png"
             alt="QianCset"
             className="QianCset"
-            height={132}
-            width={400}
+
           />
         </div>
       </div>
