@@ -8,7 +8,7 @@ import Sun from "./Sun";
 import Moon from "./Moon";
 
 const ModeThemes = ({ isNight, toggleTheme }) => {
-  const { setTheme, resolvedTheme,theme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
 
   const handleToggleTheme = () => {
     toggleTheme(!isNight);
