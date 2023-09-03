@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+import Image from "next/image";
 import "./Footer.css";
 
 import Link from "next/link";
@@ -120,11 +121,11 @@ export default function Footer() {
           <div className="content2"></div>
         </div>
         <div className="logofooter">
-          <img
+          <Image
             src="/images/icon/QianCset.png"
             alt="QianCset"
             className="QianCset"
-
+            height={132} width={400}
           />
         </div>
       </div>
