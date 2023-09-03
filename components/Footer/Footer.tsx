@@ -4,7 +4,7 @@ import "./Footer.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import QianCset from 'public/icon/QianCset.png'
+import QianCset from '../../public/icon/QianCset.png'
 function Linkli({ children, href }) {
   return (
     <>
