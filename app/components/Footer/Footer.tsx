@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
-import QianCset from '@/public/icon/QianCset.png'
 
 function Linkli({ children, href }) {
   return (
@@ -122,9 +121,9 @@ export default function Footer() {
         </div>
         <div className="logofooter">
           <Image
-            src={QianCset}
-            alt="QIANCSET"
-            className="QIANCSET"
+            src="icon/QianCset.png"
+            alt="QianCset"
+            className="QianCset"
             height={132}
             width={400}
           />

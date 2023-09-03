@@ -151,13 +151,13 @@ footer {
     align-items: space-around;
     justify-content: center;
 }
-.QIANCSET{
+.QianCset{
     width: 40%;
     height: auto;
     opacity: 50%;
     transition: 0.5s;
 }
-.QIANCSET:hover{
+.QianCset:hover{
     opacity: 100%;
     transition: 0.5s;
 }
