@@ -19,13 +19,16 @@ const ModeThemes = ({ isNight, toggleTheme }) => {
   
   const { t } = useTranslation();
   return (
+    <div className="ModeThemes">
+
     <Button
       type="text"
       title={t("切换浅色/暗黑模式")}
       className={resolvedTheme === "light" ? "antisNight" : "antisNight"}
       onClick={handleToggleTheme}
       icon={isNight ? <Sun /> : <Moon />}
-    />
+      />
+      </div>
   );
 };
 

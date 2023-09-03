@@ -5,13 +5,24 @@
 .darkToggleIcon_wfgR {
 
 }
+.ModeThemes{
+	display: flex;
+    position: center;
+    align-items: space-around;
+    justify-content: center;
+}
+.ModeThemes:hover{
+	background: var(--nav-link-hover-background);
+	-webkit-border-radius: 16;
+	-moz-border-radius: 16;
+	border-radius: 16px;
+
+
+}
 .antisNight {
 	-webkit-border-radius: 16;
 	-moz-border-radius: 16;
 	border-radius: 16px;
+
 }
 
-.antisNight:hover {
-	transition: all 0.5s;
-	box-shadow: 0 0 1rem #ffffff;
-}

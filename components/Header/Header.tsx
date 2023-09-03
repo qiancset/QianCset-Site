@@ -29,7 +29,6 @@ export default function Header() {
       <header>
         {/* 小于450px显示 下拉菜单 */}
 
-        <DropdownA isNight={isNight} toggleTheme={toggleTheme} />
 
         {/* 电脑 */}
         <a className="logo" href="/">
@@ -83,6 +82,8 @@ export default function Header() {
 
           <Rainbowkit />
         </nav>
+        <DropdownA isNight={isNight} toggleTheme={toggleTheme} />
+
       </header>
     </>
   );

@@ -1,29 +1,23 @@
-
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { LoginOutlined, FileSearchOutlined } from "@ant-design/icons";
 import "./Home.css";
-import Carousel from './(home)/1Carousel'
+/* import Carousel from './(home)/1Carousel' */
 import HmoeWeb3 from "./(home)/2Hmoeweb3";
 import Web3 from "./(home)/3Web3";
-import Marquee from "./(home)/4Marquee";
+/* import Marquee from "./(home)/4Marquee"; */
 import Projects from "./(home)/5Projects";
 import Contact from "./(home)/6Contact";
 import { useTranslation } from "react-i18next";
-import { FloatButton } from 'antd';
-
+import { FloatButton } from "antd";
 
 export default function Home() {
   const { t } = useTranslation();
 
   return (
     <div className="homemian">
-
-
       <div id="home">
-
-
         <div className="rotate1">
           <img src="favicon.ico" alt="home-Q" className="Imagelogo" />
         </div>
@@ -51,12 +45,12 @@ export default function Home() {
             </button>
           </Link>
         </div>
-  
       </div>
 
-      <Down />{/* 浮动箭头 */}
-      
-      <Carousel />
+      <Down />
+      {/* 浮动箭头 */}
+
+      {/* <Carousel /> */}
 
       <HmoeWeb3 />
       <Web3 />
@@ -64,7 +58,7 @@ export default function Home() {
       <Projects />
 
       <Contact />
-      <FloatButton.BackTop />
+      <FloatButton.BackTop visibilityHeight={3000} />
     </div>
   );
 }

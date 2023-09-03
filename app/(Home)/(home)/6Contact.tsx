@@ -36,9 +36,9 @@ export default function Contact() {
             <div className="kapianLOGO">
               <LogoCard imageUrl="/images/WEB3/ETH.svg" altText="ETH" />
               <LogoCard imageUrl="/images/WEB3/UINSWAP.png" altText="UINSWAP" />
-              <LogoCard imageUrl="/images/WEB3/Polygo.svg" altText="Polygo" />
 
               <LogoCard imageUrl="/images/COMLOGO/MetaMask.svg" altText="MetaMask" />
+              <LogoCard imageUrl="/images/COMLOGO/Rainbow.svg" altText="Rainbow" />
               <LogoCard imageUrl="/images/COMLOGO/wallet_connect.png" altText="wallet_connect" />
               <LogoCard imageUrl="/images/COMLOGO/Alcheny.svg" altText="Alcheny" />
               <LogoCard imageUrl="/images/COMLOGO/DAOhaus.svg" altText="DAOhaus" />

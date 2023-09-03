@@ -24,8 +24,8 @@
   border: solid black 1px;
   cursor: pointer;
   border: none;
-  cursor: pointer;
   margin: 5px;
+  
 }
 
 .button1:hover {
@@ -47,7 +47,7 @@
 
   cursor: pointer;
   border: none;
-  cursor: pointer;
+
   margin: 5px;
 
 }
@@ -130,14 +130,14 @@
   }
 
   .Bbutton {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    width: 90vw;
+    margin: 1%;
   }
 }
 
 @media only screen and (max-width: 390px) {
-  .Bbutton {
-    width: 90vw;
-  }
+
 
   .social-media1 img {
     height: 10px;

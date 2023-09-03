@@ -6,33 +6,33 @@ footer {
     height: 100%;
 }
 
-.copyright {
-    color: #000000;
+.footer {
+    color: var(--color);
     background-color: var(--ffaa-background);
 }
 
-.copyright a {
+.footer a {
     color: #000000;
 
     letter-spacing: 1px;
     text-decoration: none;
 }
 
-.copyright a:hover {
+.footer a:hover {
     color: #ffffff;
 }
 
-.copyright .a1:hover {
+.footer .a1:hover {
     color: #ffffff;
 }
 
 @media only screen and (max-width: 390px) {
 
-    .copyright a {
+    .footer a {
         font-size: 0.7rem;
     }
 
-    .copyright {
+    .footer {
         font-size: 0.7rem;
     }
 }
@@ -42,11 +42,11 @@ footer {
         font-size: 0.5rem;
     }
 
-    .copyright a {
+    .footer a {
         font-size: 0.5rem;
     }
 
-    .copyright {
+    .footer {
         font-size: 0.5rem;
     }
 }
@@ -73,21 +73,16 @@ footer {
     height: 100%;
 }
 
-.ffbb {
-
-
-
-
+.页眉{
     display: flex;
     background: var(--ffbb-background);
     font-size: 1em;
-    margin-top: 0px;
+    padding:10px ;
 }
 
-.ffa {
+.版权 {
     font-size: 1em;
-    margin-top: 10px;
-
+    margin: 1%;
 }
 
 
@@ -128,9 +123,7 @@ footer {
 }
 
 @media only screen and (max-width: 275px) {
-    .ffbbxx {
-        font-size: 0.5rem;
-    }
+
 
 
     .link_boxes {

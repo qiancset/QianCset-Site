@@ -1,8 +1,9 @@
 .language-toggle:hover {
-	box-shadow: 0 0 1rem #ffffff;
 	-webkit-border-radius: 16;
 	-moz-border-radius: 16;
 	border-radius: 16px;
+	background: var(--nav-link-hover-background);
+
 }
 
 .language-toggle svg {

@@ -20,6 +20,7 @@
 	--header-background: linear-gradient(200.33deg, rgba(225, 137, 54, 0.9) 0.26%, rgba(240, 193, 68, 0.9) 108.32%);
 	--nav-link-color: #000;
 	--nav-link-color-hover: #fff;
+	--nav-link-hover-background:#00000031;
 	--nav-link-hover:  #ea7411;
 	--header-decor-color:#000000;
 

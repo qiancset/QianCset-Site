@@ -97,8 +97,8 @@ header {
 @media only screen and (max-width: 750px) {
 
 	.logo img {
-		margin-left: 0px;
-		margin-right: 0px;
+		margin-left: 2px;
+		margin-right: 2px;
 		height: 40px;
 		cursor: pointer;
 	}
@@ -117,8 +117,8 @@ header {
 
 .MenuUnfoldOutlined {
 	color: var(--header-decor-color);
-
 	font-size: 40px;
+	padding: 2px;
 }
 
 .Buttonant {

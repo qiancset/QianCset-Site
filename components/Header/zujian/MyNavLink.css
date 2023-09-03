@@ -2,12 +2,16 @@
 	width: 70%;
 	transition: all 0.5s;
 	font-size: 1.2rem;
-	margin: 0px;
-	padding: 4px 15px;
+	margin: 5px;
+	padding: 5px 10px;
 	text-decoration: none;
 	color: var(--nav-link-color);
 	cursor: pointer;
 	position: relative;
+	display: flex;
+    position: center;
+    align-items: space-around;
+    justify-content: center;
 }
 
 .nav_link.active {
@@ -19,10 +23,7 @@
 }
 
 .nav_link:hover {
-	color: var(--nav-link-hover);
-
-	transition: all 0.5s;
-
+	background: var(--nav-link-hover-background);
 	-webkit-border-radius: 30;
 	-moz-border-radius: 30;
 	border-radius: 30px;
@@ -45,32 +46,24 @@
 /*  */
 @media only screen and (max-width: 750px) {
 	.nav_link {
-		font-size: 1rem;
-		margin: 0px;
-		padding: 2px 5px;
+
+
+		padding: 2px 4px;
 	}
 }
 
 @media only screen and (max-width: 650px) {
 	.nav_link {
-		font-size: 0.8rem;
-		margin: 0px;
+
+
 		padding: 2px 4px;
 	}
 }
 
 @media only screen and (max-width: 390px) {
 	.nav_link {
-		font-size: 0.8rem;
-		margin: 0px;
-		padding: 2px 4px;
-	}
-}
 
-@media only screen and (max-width: 315px) {
-	.nav_link {
-		font-size: 0.8em;
-		margin: 0px;
-		padding: 2px 2px;
+
+		padding: 2px 4px;
 	}
 }

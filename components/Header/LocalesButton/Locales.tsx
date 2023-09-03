@@ -33,7 +33,6 @@ function Locales() {
       <Menu.Item key="en">English</Menu.Item>
       <Menu.Item key="fr">Français</Menu.Item>
       <Menu.Item key="ko">한국어</Menu.Item>
-      <Menu.Item key="ja">日本語</Menu.Item>
     </Menu>
   );
 
