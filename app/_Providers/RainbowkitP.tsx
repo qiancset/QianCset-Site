@@ -45,7 +45,7 @@ export default function RainbowkitP({ children }) {
         });
 
   return (
-    <WagmiConfig config={wagmiConfig}>
+    <WagmiConfig config={wagmiConfig} >
       <RainbowKitProvider
         chains={chains}
         theme={{
@@ -56,6 +56,7 @@ export default function RainbowkitP({ children }) {
           appName: "QianCset Dapp",
           learnMoreUrl: "https://docs.qiancset.com/Learning_docs/Crypto_Wallet",
         }}
+        
       >
         {children}
       </RainbowKitProvider>
