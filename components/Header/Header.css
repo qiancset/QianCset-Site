@@ -10,14 +10,13 @@ header {
 	transition: 0.5s;
 	z-index: 5;
 	display: flex;
+	position: fixed;
 	align-items: center;
 	justify-content: flex-start;
-	position: fixed;
 	-webkit-backdrop-filter: saturate(180%) blur(5px);
-    backdrop-filter: saturate(180%) blur(5px);
+	backdrop-filter: saturate(180%) blur(5px);
 	background: var(--header-background);
 }
-
 
 .notification {
 	margin: 0 auto;
@@ -27,9 +26,9 @@ header {
 	background: #ffffff;
 
 	display: flex;
+	position: fixed;
 	text-align: center;
 	align-items: center;
-	position: fixed;
 	justify-content: center;
 
 	top: 6vh;
@@ -40,8 +39,6 @@ header {
 .notification strong:hover {
 	color: #ff0000;
 }
-
-
 
 .btn-close {
 	cursor: pointer;
@@ -72,30 +69,20 @@ header {
 }
 
 /* 默认导航菜单样式 */
-.nav-bar {
 
+.nav-bar {
 	list-style: none;
 	position: relative;
 	display: inline-flex;
 	width: 100%;
 }
 
-.nav-show {
-	display: none;
-}
-
 .Web3Modal {
 	margin-left: auto;
+	margin-right: 1%;
 }
-
-.web3-network-switch {
-	margin-right: 5px;
-}
-
-
 
 @media only screen and (max-width: 750px) {
-
 	.logo img {
 		margin-left: 2px;
 		margin-right: 2px;
@@ -104,13 +91,19 @@ header {
 	}
 }
 
-
-
 /*///////////*/
 
-
-
 /* 手机样式 */
+.Dropdown {
+	height: 80vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: var(--background-ant-color);
+	color: var(--color-ant);
+}
+
 .ant-drawer-title {
 	color: #ceab4c;
 }
@@ -136,10 +129,43 @@ header {
 	height: 80;
 }
 
+.DropdownA_nav_link {
+	transition: all 0.5s;
+	font-size: 1.2rem;
+	margin: 5px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: var(--nav-link-color);
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	position: center;
+	align-items: space-around;
+	justify-content: center;
+}
 
+.DropdownA_nav_link.active {
+	color: #000000;
+	background: var(--main-decor-color);
+	-webkit-border-radius: 30;
+	-moz-border-radius: 30;
+	border-radius: 30px;
+}
 
+.DropdownA_nav_link:hover {
+	background: var(--nav-link-hover-background);
+	-webkit-border-radius: 30;
+	-moz-border-radius: 30;
+	border-radius: 30px;
+}
 
-
+.DropdownA_nav_link.active:hover {
+	color: #000000;
+	background: var(--main-decor-color);
+	-webkit-border-radius: 40;
+	-moz-border-radius: 40;
+	border-radius: 40px;
+}
 
 
 
@@ -147,19 +173,13 @@ header {
 	width: 0px;
 }
 
-
-
-
-
 @media only screen and (max-width: 750px) {
-.nav_PC{
-	display: none;
+	.nav_PC {
+		display: none;
+	}
 }
 
-
-}
-
-@media screen and (min-width:751px) and (max-width:9999px) {
+@media screen and (min-width: 751px) and (max-width: 9999px) {
 	.Buttonant {
 		display: none;
 		width: 40px;

@@ -1,5 +1,6 @@
 "use client";
 import "./ModeThemes.css";
+import { useState,useEffect } from "react";
 
 import { useTheme } from "next-themes";
 import { Button } from "antd";
@@ -7,13 +8,19 @@ import { useTranslation } from "react-i18next";
 import Sun from "./Sun";
 import Moon from "./Moon";
 
-const ModeThemes = ({ isNight, toggleTheme }) => {
+export default function ModeThemes()  {
+  const [isNight, setIsNight] = useState(localStorage.getItem("theme") === "dark"); 
   const { setTheme, resolvedTheme } = useTheme();
 
-  const handleToggleTheme = () => {
-    toggleTheme(!isNight);
-    setTheme(isNight ? "light" : "dark");
-  };
+  useEffect(() => {  
+    setTheme(localStorage.getItem("theme") || "light");  
+  }, [isNight]);  
+
+  const handleToggleTheme = () => {  
+    setIsNight(!isNight); // 切换日夜模式
+    setTheme(isNight ? "light" : "dark"); // 根据日夜模式设置主题  
+    localStorage.setItem("theme", isNight ? "light" : "dark");  
+  };  
 
 
   
@@ -27,9 +34,12 @@ const ModeThemes = ({ isNight, toggleTheme }) => {
       className={resolvedTheme === "light" ? "antisNight" : "antisNight"}
       onClick={handleToggleTheme}
       icon={isNight ? <Sun /> : <Moon />}
+      
       />
       </div>
   );
 };
 
-export default ModeThemes;
+
+
+

@@ -23,7 +23,7 @@ export default function Home() {
         </div>
         <h1 className="homeh1">
           {t("千赛特")}
-          <hr />
+          <hr className="home_hr"/>
         </h1>
 
         <strong className="home_strong">

@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-
+import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
-import { Space, Dropdown } from "antd";
+import { Space, Dropdown, Button } from "antd";
 import { MenuUnfoldOutlined } from "@ant-design/icons";
 
 import "./Header.css";
 import MyNavLink from "./zujian/MyNavLink"; //封装 Link 组件
-
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 import Locales from "./LocalesButton/Locales";
@@ -16,19 +16,12 @@ import ModeThemes from "./ModeThemes/ModeThemes";
 import Rainbowkit from "../Wallet/Rainbowkit";
 
 export default function Header() {
-  const [isNight, setIsNight] = useState(false);
-
-  const toggleTheme = (isNight) => {
-    setIsNight(isNight);
-  };
-
   const { t } = useTranslation();
 
   return (
     <>
       <header>
         {/* 小于450px显示 下拉菜单 */}
-
 
         {/* 电脑 */}
         <a className="logo" href="/">
@@ -38,136 +31,118 @@ export default function Header() {
         <nav className="nav_PC">
           <Space size="large" align="center">
             <div className="nav-bar">
-           
-                <MyNavLink href="/" >
-                  {t("首页")}
-                </MyNavLink>
-            
-                <MyNavLink href="/Uniswap">
-                  {t("兑换")}
-                </MyNavLink>
-             
-                <MyNavLink href="/Products" >
-                  {t("产品")}
-                </MyNavLink>
-              
-            
-                <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
-                  <div className="nav_link">
-                    {t("文档")}
-                   
-                  </div>
-                </a>
-             
+              <MyNavLink href="/">{t("首页")}</MyNavLink>
+
+              <MyNavLink href="/Uniswap">{t("兑换")}</MyNavLink>
+
+              <MyNavLink href="/Products">{t("产品")}</MyNavLink>
+
+              <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
+                <div className="nav_link">{t("文档")}</div>
+              </a>
             </div>
 
             {/* 日夜模式按钮 */}
-      
-                <ModeThemes isNight={isNight} toggleTheme={toggleTheme} />
-         
+
+            <ModeThemes />
 
             {/* 国际化按钮 */}
 
-              <Locales />
-
-
-
-
-
+            <Locales />
           </Space>
         </nav>
 
         {/* 连接钱包按钮 */}
         <nav className="Web3Modal">
-
           <Rainbowkit />
         </nav>
-        <DropdownA isNight={isNight} toggleTheme={toggleTheme} />
-
+        <DropdownA />
       </header>
     </>
   );
 }
 
 /* 下拉菜单 */
-const DropdownA = ({ isNight, toggleTheme }) => {
+const DropdownA = () => {
   const { t } = useTranslation();
 
-  const [open, setOpen] = useState(false);
-  const handleMenuClick = (e) => {
-    if (e.key === "3") {
-      setOpen(false);
-    }
-  };
+
+  const [open, setOpen] = useState(true);
+
   const handleOpenChange = (flag) => {
     setOpen(flag);
   };
   const items = [
     {
       label: (
-        <MyNavLink href="/">
-          {t("首页")}
-        </MyNavLink>
+        <Link href="/">
+          <div className="DropdownA_nav_link">
+            {t("首页")}
+          </div>
+        </Link>
       ),
       key: "1",
     },
     {
       label: (
-        <MyNavLink href="/Uniswap" >
-          {t("兑换")}
-        </MyNavLink>
+        <Link href="/Uniswap">
+          <div className="DropdownA_nav_link">
+            {t("兑换")}
+          </div>
+        </Link>
       ),
       key: "2",
     },
     {
       label: (
-        <MyNavLink href="/Products" >
-          {t("产品")}
-        </MyNavLink>
+        <Link href="/Products">
+          <div className="DropdownA_nav_link">
+            {t("产品")}
+          </div>
+        </Link>
       ),
       key: "3",
     },
     {
       label: (
-        <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
-          <div className="nav_link">
-            {t("文档")}
-           
-          </div>
-        </a>
+        <Link href="https://docs.qiancset.com/" target="_blank">
+          <div className="DropdownA_nav_link">{t("文档")}</div>
+        </Link>
       ),
       key: "4",
     },
     {
-      label: <ModeThemes isNight={isNight} toggleTheme={toggleTheme} />,
-      key: "5",
+      label:<hr/>,
+      key:"5",
     },
     {
-      label: <Locales />,
+      label: <div><ModeThemes  /></div>,
       key: "6",
+    },
+    {
+      label: <div><Locales /></div>,
+      key: "7",
     },
   ];
   ////
-
-
 
   return (
     <Dropdown
       menu={{
         items,
-        style:{
-          height: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
+        style: {
+          height: "50vh",
+          width: "100vw",
           background: "var(--background-ant-color)",
           color: "var(--color-ant)",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "left",
         },
-        onClick: handleMenuClick,
+        multiple: false,
       }}
-      autoAdjustOverflow={true}
       onOpenChange={handleOpenChange}
-      open={open}
+
     >
       <div onClick={() => setOpen(!open)}>
         <Space>

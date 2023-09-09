@@ -20,11 +20,11 @@
   color: black;
   font-size: 2rem;
   background: #e4a817;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   border: solid black 1px;
   cursor: pointer;
   border: none;
-  margin: 5px;
+  margin: 15px;
   
 }
 
@@ -42,13 +42,13 @@
   color: black;
   font-size: 2rem;
   background: #eec86f;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   border: solid black 1px;
 
   cursor: pointer;
   border: none;
 
-  margin: 5px;
+  margin: 15px;
 
 }
 
@@ -122,17 +122,18 @@
   .button1 {
     font-size: 1.5rem;
     width: 90vw;
+    margin: 5px;
   }
 
   .button2 {
     font-size: 1.5rem;
     width: 90vw;
+    margin: 5px;
   }
 
   .Bbutton {
     font-size: 1.5rem;
     width: 90vw;
-    margin: 1%;
   }
 }
 

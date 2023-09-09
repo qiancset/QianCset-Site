@@ -26,7 +26,7 @@ export default function Projects() {
       <div id="projects">
         <h3 className="projectsh3">
           {t("学习文档")}
-          <hr />
+          <hr className="home_hr"/>
         </h3>
         <p>{t("点击阅读了解新一代互联网")}</p>
         <div className="work-box">

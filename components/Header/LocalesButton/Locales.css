@@ -1,8 +1,16 @@
+.language-toggle{
+	display: flex;
+    position: center;
+    align-items: space-around;
+    justify-content: center;
+	margin: 5px;
+}
 .language-toggle:hover {
 	-webkit-border-radius: 16;
 	-moz-border-radius: 16;
 	border-radius: 16px;
-	background: var(--nav-link-hover-background);
+	background: var(--nav-link-hover-background);	
+
 
 }
 

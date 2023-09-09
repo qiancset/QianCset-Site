@@ -43,28 +43,6 @@ export default function HmoeWeb3() {
 
         <div className="social-media1">
           <a
-            href="https://pd.qq.com/s/8z8x37o4v"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="Bbutton">
-              {t("加入QQ频道")} 
-              <Image src="/images/APPLOGO/QQ.svg" alt="QQ" height={40} width={40}/>
-            </button>
-          </a>
-
-          <a
-            href="https://discord.gg/pMzB7fSs9E"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="Bbutton">
-              {t("加入Dis频道")} 
-              <Image src="/images/APPLOGO/Discord.svg" alt="Discord" height={40} width={40}/>
-            </button>
-          </a>
-
-          <a
             href="https://admin.daohaus.fun/#/molochv3/0x89/0xf403bb02187fe7184722f0575e59578e4f649269"
             target="_blank"
             rel="noopener noreferrer"

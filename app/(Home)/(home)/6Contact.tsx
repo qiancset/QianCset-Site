@@ -14,6 +14,7 @@ function LogoCard({ imageUrl, altText }) {
 }
 
 export default function Contact() {
+
   const { t } = useTranslation();
   return (
     <div>
@@ -21,19 +22,21 @@ export default function Contact() {
         <section className="intro4">
           <h3>
             {t("合作发展")}
-            <hr />
+            <hr className="home_hr"/>
           </h3>
           <Link href="/Donation" target="_blank">
             <button className="Bbutton pulse w-button" >
               {t("捐赠代币")} <LikeOutlined />
             </button>
           </Link>
-          
+
 
           <div>
-            <p className="kapianLOGOP">{t("技术和平台依赖、借鉴与参考")}</p>
 
+            <p className="kapianLOGOP">{t("技术和平台依赖、借鉴与参考")}</p>
+            
             <div className="kapianLOGO">
+
               <LogoCard imageUrl="/images/WEB3/ETH.svg" altText="ETH" />
               <LogoCard imageUrl="/images/WEB3/UINSWAP.png" altText="UINSWAP" />
 
@@ -42,17 +45,13 @@ export default function Contact() {
               <LogoCard imageUrl="/images/COMLOGO/wallet_connect.png" altText="wallet_connect" />
               <LogoCard imageUrl="/images/COMLOGO/Alcheny.svg" altText="Alcheny" />
               <LogoCard imageUrl="/images/COMLOGO/DAOhaus.svg" altText="DAOhaus" />
-              <LogoCard imageUrl="/images/APPLOGO/QQ.svg" altText="QQ" />
-              <LogoCard imageUrl="/images/APPLOGO/Discord.svg" altText="Discord" />  
-              <LogoCard imageUrl="/images/COMLOGO/React.svg" altText="react" />
-              <LogoCard imageUrl="/images/COMLOGO/Vercel.svg" altText="Vercel" />
-              <LogoCard imageUrl="/images/APPLOGO/GitHub.svg" altText="GitHub" />
-
-
             </div>
+
+
+
           </div>
         </section>
-        
+
       </div>
     </div>
   );

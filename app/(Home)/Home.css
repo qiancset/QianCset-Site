@@ -778,7 +778,7 @@
 
 /*──── hr下划线 ─────*/
 
-hr {
+.home_hr {
 	background: var(--main-decor-color);
 
 	height: 10px;

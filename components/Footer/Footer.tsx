@@ -42,6 +42,14 @@ export default function Footer() {
           href="https://github.com/Qiancset"
           className="fab fa-github"
         />
+        <SocialMedia
+          href="https://discord.gg/pMzB7fSs9E"
+          className="fab fa-discord"
+        />
+        <SocialMedia
+          href="https://pd.qq.com/s/8z8x37o4v"
+          className="fab fa-qq"
+        />
       </div>
 
       <div className="列表">
