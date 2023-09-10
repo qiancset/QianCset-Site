@@ -116,11 +116,11 @@ const DropdownA = () => {
       key:"5",
     },
     {
-      label: <div><ModeThemes  /></div>,
+      label: <ModeThemes  />,
       key: "6",
     },
     {
-      label: <div><Locales /></div>,
+      label: <Locales />,
       key: "7",
     },
   ];
