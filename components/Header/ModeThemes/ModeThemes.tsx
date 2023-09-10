@@ -9,19 +9,28 @@ import Sun from "./Sun";
 import Moon from "./Moon";
 
 export default function ModeThemes()  {
-  const [isNight, setIsNight] = useState(localStorage.getItem("theme") === "dark"); 
-  const { setTheme, resolvedTheme } = useTheme();
 
-  useEffect(() => {  
-    setTheme(localStorage.getItem("theme") || "light");  
-  }, []);  
+  const { setTheme, resolvedTheme } = useTheme();  
+  
+  const [isNight, setIsNight] = useState(false); 
 
-  const handleToggleTheme = () => {  
-    setIsNight(!isNight); // 切换日夜模式
-    setTheme(isNight ? "light" : "dark"); // 根据日夜模式设置主题  
+
+
+useEffect(() => {  
+  if (typeof window !== 'undefined') { // 检查是否在服务器端  
+    const theme = localStorage.getItem("theme");  
+    setIsNight(theme === "dark");  
+    setTheme(theme || "light");  
+  }  
+}, []); 
+
+const handleToggleTheme = () => {  
+  setIsNight(!isNight); // 切换日夜模式  
+  setTheme(isNight ? "light" : "dark"); // 根据日夜模式设置主题  
+  if (typeof window !== 'undefined') { // 检查是否在服务器端  
     localStorage.setItem("theme", isNight ? "light" : "dark");  
-  };  
-
+  }  
+};
 
   
   const { t } = useTranslation();
