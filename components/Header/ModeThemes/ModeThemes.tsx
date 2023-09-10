@@ -14,7 +14,7 @@ export default function ModeThemes()  {
 
   useEffect(() => {  
     setTheme(localStorage.getItem("theme") || "light");  
-  }, [isNight]);  
+  }, []);  
 
   const handleToggleTheme = () => {  
     setIsNight(!isNight); // 切换日夜模式
