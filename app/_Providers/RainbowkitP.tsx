@@ -73,7 +73,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "RainbowKit App",
+  appName: "QianCset DAPP",
   projectId: "ab4ee6ab51756c44ab8f80eb2fad1d22",
   chains,
 });

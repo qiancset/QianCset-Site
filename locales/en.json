@@ -5,6 +5,7 @@
     "产品": "Products",
     "文档": "Docs",
     "zh-CN": "en-US",
+    "zhCN": "enES",
     "连接钱包": "Connect Wallet",
     "温馨提示": "Tips",
     "本网站未正式发布，处于测试阶段，造成损失后果自负!!!": "This website has not been officially released and is in the testing stage, and you will bear the consequences of any losses!!!",
@@ -83,6 +84,7 @@
     "钱包连接": "Wallet Connect",
     "小狐狸钱包": "MetaMask Wallet",
     "加入Daohaus": "Join Daohaus",
-    "关注我们的社交媒体": "Follow us on social media"
+    "关注我们的社交媒体": "Follow us on social media",
+    "前往应用": "Go to Apps"
   }
 }

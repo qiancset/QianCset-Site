@@ -1,0 +1,17 @@
+.AppsHomepage{
+    background: #ea7411;
+    height: 200vh;
+    width: 100vw;
+}
+.AiOutlineAppstore{
+    font-size: 2rem;
+}
+.max_Home{
+	margin: auto;
+
+	max-width: 1520px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}

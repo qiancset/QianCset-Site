@@ -1,19 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { usePathname } from "next/navigation";
+
 import { useTranslation } from "react-i18next";
-import { Space, Dropdown, Button } from "antd";
+import { Space, Dropdown } from "antd";
 import { MenuUnfoldOutlined } from "@ant-design/icons";
 
 import "./Header.css";
 import MyNavLink from "./zujian/MyNavLink"; //封装 Link 组件
+
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
 
 import Locales from "./LocalesButton/Locales";
 import ModeThemes from "./ModeThemes/ModeThemes";
 
-import Rainbowkit from "../Wallet/Rainbowkit";
+import Clerk_Header from "../Clerk/Clerk_Header";
+
 
 export default function Header() {
   const { t } = useTranslation();
@@ -21,42 +22,45 @@ export default function Header() {
   return (
     <>
       <header>
-        {/* 小于450px显示 下拉菜单 */}
 
-        {/* 电脑 */}
-        <a className="logo" href="/">
+<div className="max_header">
+
+
+        <a className="logo" href="/about">
           <img src="favicon.ico" alt="header-Q" />
         </a>
 
-        <nav className="nav_PC">
+        
+        <nav className="nav_PC">{/* 电脑 */}
           <Space size="large" align="center">
             <div className="nav-bar">
-              <MyNavLink href="/">{t("首页")}</MyNavLink>
+              <MyNavLink href="/about">{t("首页")}</MyNavLink>
 
-              <MyNavLink href="/Uniswap">{t("兑换")}</MyNavLink>
+              <MyNavLink href="/about/Uniswap">{t("兑换")}</MyNavLink>
 
-              <MyNavLink href="/Products">{t("产品")}</MyNavLink>
+              <MyNavLink href="/about/Products">{t("产品")}</MyNavLink>
 
               <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
                 <div className="nav_link">{t("文档")}</div>
               </a>
             </div>
-
-            {/* 日夜模式按钮 */}
-
             <ModeThemes />
 
-            {/* 国际化按钮 */}
-
             <Locales />
+
           </Space>
         </nav>
 
-        {/* 连接钱包按钮 */}
-        <nav className="Web3Modal">
-          <Rainbowkit />
+
+        <nav className="Header_left">
+          <Clerk_Header />
         </nav>
-        <DropdownA />
+
+
+        <DropdownA />  {/* 小于450px显示 下拉菜单 */}
+
+
+        </div>{/* max_header */}
       </header>
     </>
   );
@@ -66,16 +70,10 @@ export default function Header() {
 const DropdownA = () => {
   const { t } = useTranslation();
 
-
-  const [open, setOpen] = useState(true);
-
-  const handleOpenChange = (flag) => {
-    setOpen(flag);
-  };
   const items = [
     {
       label: (
-        <Link href="/">
+        <Link href="/about">
           <div className="DropdownA_nav_link">
             {t("首页")}
           </div>
@@ -85,7 +83,7 @@ const DropdownA = () => {
     },
     {
       label: (
-        <Link href="/Uniswap">
+        <Link href="/about/Uniswap">
           <div className="DropdownA_nav_link">
             {t("兑换")}
           </div>
@@ -95,7 +93,7 @@ const DropdownA = () => {
     },
     {
       label: (
-        <Link href="/Products">
+        <Link href="/about/Products">
           <div className="DropdownA_nav_link">
             {t("产品")}
           </div>
@@ -112,11 +110,11 @@ const DropdownA = () => {
       key: "4",
     },
     {
-      label:<hr/>,
-      key:"5",
+      label: <hr />,
+      key: "5",
     },
     {
-      label: <ModeThemes  />,
+      label: <ModeThemes />,
       key: "6",
     },
     {
@@ -128,6 +126,7 @@ const DropdownA = () => {
 
   return (
     <Dropdown
+
       menu={{
         items,
         style: {
@@ -140,16 +139,19 @@ const DropdownA = () => {
           justifyContent: "left",
         },
         multiple: false,
+
       }}
-      onOpenChange={handleOpenChange}
+
 
     >
-      <div onClick={() => setOpen(!open)}>
+      <div onClick={(e) => e.preventDefault()}>
+
         <Space>
           <div className="Buttonant">
             <MenuUnfoldOutlined className="MenuUnfoldOutlined" />
           </div>
         </Space>
+
       </div>
     </Dropdown>
   );

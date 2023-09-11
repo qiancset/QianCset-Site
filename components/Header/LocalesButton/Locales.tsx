@@ -12,6 +12,7 @@ function Locales() {
   function handleLanguageChange(value) {
     i18n.changeLanguage(value);
     setShowMenu(false);
+
   }
 
   function handleMenuClick({ key }) {

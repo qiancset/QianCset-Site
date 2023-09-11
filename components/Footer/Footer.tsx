@@ -32,6 +32,9 @@ export default function Footer() {
   const { t } = useTranslation();
   return (
     <footer className="footer">
+      <div className="footer_background">
+
+
       <p>{t("关注我们的社交媒体")}</p>
       <div className="social-media">
         <SocialMedia
@@ -61,7 +64,7 @@ export default function Footer() {
               </li>
 
               <li>
-                <Link href="/">{t("开发中")}...</Link>
+                <Link href="/">Qiancset</Link>
               </li>
             </ul>
 
@@ -138,9 +141,20 @@ export default function Footer() {
         </div>
       </div>
 
+
+      </div>{/* footer_background */}
+
+
       <div className="页眉">
         <div className="版权">{t("版权所有")} © 2023 Qiancset 千赛特</div>
       </div>
+
+
+
+
+
+
+      
     </footer>
   );
 }
