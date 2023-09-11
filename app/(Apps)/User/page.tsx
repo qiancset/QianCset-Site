@@ -16,9 +16,9 @@ export default function Ppage() {
 </h1>
 
 
- <Collapse items={items} defaultActiveKey={['1']} onChange={onChange} />;
+ <Collapse items={items} defaultActiveKey={['1']} onChange={onChange} />
 
-    <Link href='/about'>关于</Link>
+    <Link href='/about' target="_blank">关于</Link>
      </>
    )
 }

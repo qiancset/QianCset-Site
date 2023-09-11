@@ -33,7 +33,7 @@ export default function Home() {
         </strong>
 
         <div className="homebtn">
-          <Link href="/Home" target="_blank">
+          <Link href="/" target="_blank">
             <button type="button" className="button1 pulse w-button">
               {t("前往应用")} <LoginOutlined />
             </button>

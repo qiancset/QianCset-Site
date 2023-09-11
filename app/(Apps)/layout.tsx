@@ -33,7 +33,7 @@ export default function Homelayout({ children }) {
 
 
                <AppsHeader />
-               <div style={{ height: "7vh" }} />
+
                
                   {children}
              

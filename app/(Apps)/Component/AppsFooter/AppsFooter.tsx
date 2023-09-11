@@ -4,7 +4,7 @@ import "./AppsFooter.css";
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { GoHome, GoHomeFill, GoHeart, GoHeartFill, GoPerson, GoPersonFill } from "react-icons/go";
-import { AiOutlineMessage, AiFillMessage,AiOutlineAppstore,AiFillAppstore } from "react-icons/ai"
+import { AiOutlineMessage, AiFillMessage } from "react-icons/ai"
 
 export default function AppsFooter() {
 
