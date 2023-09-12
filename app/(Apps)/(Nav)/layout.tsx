@@ -1,5 +1,5 @@
-import AppsFooter from '@/Component/AppsFooter/AppsFooter'
-import AppsHeader from '@/Component/AppsHeader/AppsHeader'
+import AppsFooter from '@/UI/AppsFooter/AppsFooter'
+import AppsHeader from '@/UI/AppsHeader/AppsHeader'
 
 
 export default function Heartlayout({ children }) {

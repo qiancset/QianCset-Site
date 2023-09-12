@@ -1,5 +1,5 @@
-import Headerchildren from "@/Component/AppsHeader/HeaderChildren"
-import Rainbowkit from "@/Component/Rainbowkit";
+import Headerchildren from "@/UI/AppsHeader/HeaderChildren"
+import Rainbowkit from "@/UI/Rainbowkit";
 
 
 export default function Dappbrowserlayout({ children }) {
@@ -19,7 +19,9 @@ function DappbrowserHeader() {
                 <div className="Header_center">
                     <h1>Dapp 浏览器</h1>
                 </div>
-
+                <div className="Header_right">
+                    <Rainbowkit />
+                </div>
             </Headerchildren>
         </>
     );

@@ -1,8 +1,8 @@
 
 import Image from "next/image";
 import Home from "./Home"
-import AppsFooter from "@/Component/AppsFooter/AppsFooter"
-import HeaderChildren from "@/Component/AppsHeader/HeaderChildren";
+import AppsFooter from "@/UI/AppsFooter/AppsFooter"
+import HeaderChildren from "@/UI/AppsHeader/HeaderChildren";
 
 
 export default function Appspage() {

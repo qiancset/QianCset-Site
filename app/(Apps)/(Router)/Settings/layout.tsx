@@ -1,4 +1,4 @@
-import Headerchildren from "@/Component/AppsHeader/HeaderChildren"
+import Headerchildren from "@/UI/AppsHeader/HeaderChildren"
 
 
 export default function Settingslayout({ children }) {
