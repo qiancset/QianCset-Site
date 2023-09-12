@@ -20,8 +20,6 @@
     "ethers": "^5.7.2",
     "eventemitter3": "^5.0.1",
     "i18next": "^23.2.11",
-    "i18next-browser-languagedetector": "^7.1.0",
-    "i18next-http-backend": "^2.2.1",
     "locize": "^2.4.6",
     "lokijs": "^1.5.12",
     "next": "13.4.10",

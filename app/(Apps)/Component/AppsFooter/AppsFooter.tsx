@@ -27,7 +27,7 @@ export default function AppsFooter() {
           >关注</NavLink>
 
           <NavLink
-            href='/message'
+            href='/Message'
             icon={ <AiOutlineMessage className="Navicon"/>}
             activeIcon={ <AiFillMessage className="Navicon"/>}
           >消息</NavLink>

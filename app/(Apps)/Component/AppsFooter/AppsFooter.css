@@ -10,7 +10,7 @@
   -webkit-backdrop-filter: saturate(180%) blur(5px);
   backdrop-filter: saturate(180%) blur(5px);
   background: var(--AppsFooter);
-  box-shadow: 0 0 0.08rem var(--nav_link-color);
+
 }
 
 .max_AppsFooter {

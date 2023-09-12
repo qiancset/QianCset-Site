@@ -2,7 +2,7 @@
 import "./AppsHeader.css";
 
 
-export default function AppsHeader({ children }) {
+export default function HeaderChildren({ children }) {
 
 
     return (

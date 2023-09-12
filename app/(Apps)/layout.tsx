@@ -1,11 +1,15 @@
-
-import Providers from "../_Providers/Providers";
-import '@/Component/theme/Apps.css'
-import '@/Component/theme/Apps_dark.css'
+import { Inter } from "next/font/google";
+import Providers from "@/Providers/Providers";
+import '@/CSS/theme/Apps.css'
+import '@/CSS/theme/Apps_dark.css'
+import { Analytics } from "@vercel/analytics/react";
 export const metadata = {
-   title: { absolute: 'QiacCset', },
-}
+   title: "QianCset 千赛特",
+   description:
+      "Qiancset Web3,千赛特区块链社区服务平台,去中心化点对点交易,web3互动交流的加密世界,官方网站:www.qiancset.com, 千赛特去中心化服务平台,qiancsetweb3一个点对点交易swap,NFT,nft,加密货币的Dapps,使用react-nextjs的webdapp",
 
+};
+const inter = Inter({ subsets: ["latin"] });
 export default function Homelayout({ children }) {
    return (
       <html lang="zh">
@@ -17,21 +21,22 @@ export default function Homelayout({ children }) {
                content="QiancsetWeb3,Qiancset,Web3,qiancsetweb3,qiancset,web3,千赛特,区块链,千赛特官网,千赛特去中心化应用,QiancsetDapp,千赛特DAPP,千赛特币,QCC,QisncsetCoin,QiancsetToken,qiancsetblockchain"
             />
             <link rel="favicon" href="/favicon.ico" sizes="any" />
-            <link rel="icon" href="./icon.png" />
             <link rel="apple-touch-icon" href="/apple-icon.png" />
+            <link rel="icon" href="/icon.png" />
 
             <link
                rel="stylesheet"
                href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.1/css/all.css"
             />
          </head>
-         <body>
+         <body className={inter.className}>
             <Providers>
 
 
-                  {children}
-             
- 
+               {children}
+               <Analytics />
+
+
             </Providers>
          </body>
       </html>

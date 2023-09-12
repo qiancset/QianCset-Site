@@ -18,17 +18,13 @@ export default function AppsHeader() {
     return (
         <header className="AppsHeader">
             <div className="max_AppsHeader">
-
                 {activePage === "/" && <Home />}
-
 
                 {activePage === "/Heart" && <Heart />}
 
-                {activePage === "/message" && <Message />}
+                {activePage === "/Message" && <Message />}
 
                 {activePage === "/User" && <User />}
-
-
             </div>
         </header>
     );
@@ -38,7 +34,13 @@ function Home() {
     return (
         <>
             <div className="Header_center">
-            <Image src="/images/icon/QianCset.jpg" className="QianCset" alt="header-Q" height={132} width={400}/>
+                <Image
+                    src="/images/icon/QianCset.jpg"
+                    className="QianCset"
+                    alt="header-Q"
+                    height={132}
+                    width={400}
+                />
             </div>
         </>
     );
@@ -46,8 +48,8 @@ function Home() {
 function Heart() {
     return (
         <>
-            <div className="Header_left">
-                <h1>关注</h1>
+            <div className="Header_center">
+                <p className="Header_P">关注</p>
             </div>
         </>
     );
@@ -56,8 +58,8 @@ function Heart() {
 function Message() {
     return (
         <>
-            <div className="Header_left">
-                <h1>消息</h1>
+            <div className="Header_center">
+                <p className="Header_P">消息</p>
             </div>
         </>
     );
@@ -66,13 +68,12 @@ function Message() {
 function User() {
     return (
         <>
-            <div className="Header_left">
-                <h1>我的</h1>
+            <div className="Header_center">
+                <p className="Header_P">我的</p>
             </div>
             <div className="Header_right">
                 <Rainbowkit />
             </div>
-
         </>
     );
 }

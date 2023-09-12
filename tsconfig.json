@@ -3,9 +3,13 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@/components/*": ["components/*"],
+      "@/components/*": ["app/(Router)/components/*"],
+      "@/styles/*": ["app/(Router)/styles/*"],
+      "@/locales/*": ["locales/*"],
+      "@/_Providers/*":["Providers/*"],
       "@/public/*":["public/*"],
-      "@/Component/*":["app/(Apps)/Component/*"]
+      "@/Component/*":["app/(Apps)/Component/*"],
+      "@/CSS/*":["app/(Apps)/CSS/*"]
     },
     "lib": [
       "dom",

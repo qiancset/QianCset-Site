@@ -4,15 +4,9 @@
 	-webkit-backdrop-filter: saturate(180%) blur(5px);
 	backdrop-filter: saturate(180%) blur(5px);
 	background: var(--header-background);
-	box-shadow: 0 0 1px var(--nav_link-color);
+
 }
-.QianCset{
-    width: 40%;
-    height: 13.2%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+
 .max_AppsHeader {
 	margin: auto;
 	max-width: 1520px;
@@ -23,18 +17,23 @@
 	justify-content: center;
 }
 
+.Header_P {
+	font-size: 1.5rem;
+}
+
 .Header_right {
 	margin-left: auto;
 	margin-right: 1%;
 }
 
-.Header_left{
+.Header_left {
 	margin-right: auto;
 	margin-left: 1%;
 }
-.Header_center{
 
+.Header_center {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+

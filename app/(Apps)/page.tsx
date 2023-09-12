@@ -1,14 +1,19 @@
 
 import Image from "next/image";
-import Home from "./(Home)/Home"
-import AppsFooter from "./Component/AppsFooter/AppsFooter"
-import Headerchildren from "./Component/AppsHeader/Headerchildren";
+import Home from "./Home"
+import AppsFooter from "@/Component/AppsFooter/AppsFooter"
+import HeaderChildren from "@/Component/AppsHeader/HeaderChildren";
+
 
 export default function Appspage() {
   return (
     <>
       <AppsHeader />
+
+
       <Home />
+
+
       <AppsFooter />
     </>
   )
@@ -16,11 +21,12 @@ export default function Appspage() {
 function AppsHeader() {
   return (
     <>
-      <Headerchildren>
+      <HeaderChildren>
         <div className="Header_center">
-          <Image src="/images/icon/QianCset.jpg" className="QianCset" alt="header-Q" height={132} width={400} />
+          <Image src="/favicon.ico" className="QianCset" alt="header-Q" height={50} width={50} />
         </div>
-      </Headerchildren>
+      </HeaderChildren>
     </>
   );
 }
+

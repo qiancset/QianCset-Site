@@ -1,0 +1,12 @@
+[data-theme='dark'] {
+	--color: #fff;
+	--box:rgb(239, 243, 244);
+
+	/* Footer */
+	--AppsFooter: #1a1a1a;
+	--nav_link-color: #ffffff;
+	
+	/* Header */
+	--header-background: #1a1a1a;
+	--nav_link-background-hover: #ffffff31;
+}
