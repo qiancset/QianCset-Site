@@ -1,6 +1,6 @@
 .AppsHeader {
 	width: 100%;
-	height: 7vh;
+	height: 3.5rem;
 	-webkit-backdrop-filter: saturate(180%) blur(5px);
 	backdrop-filter: saturate(180%) blur(5px);
 	background: var(--header-background);

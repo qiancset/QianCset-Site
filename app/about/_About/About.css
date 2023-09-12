@@ -1,5 +1,5 @@
-.homemian {
-	background: var(--homemian-background-color);
+.Aboutmian {
+	background: var(--Aboutmian-background-color);
 	justify-content: space-evenly;
 	margin: auto;
 	flex-direction: column;
@@ -11,10 +11,10 @@
 }
 
 /*──────────────────
-       home
+       About
 ──────────────────*/
 
-#home {
+#About {
 	margin: auto;
 	height: 100vh;
 	display: flex;
@@ -26,7 +26,7 @@
 }
 
 
-.homeh1 {
+.Abouth1 {
 	padding-bottom: 15px;
 	letter-spacing: normal;
 	font-family: #000000;
@@ -42,7 +42,7 @@
 }
 
 @media only screen and (max-width: 236px) {
-	.homeh1 {
+	.Abouth1 {
 		font-size: 1.2rem;
 	}
 
@@ -55,7 +55,7 @@
 	}
 }
 
-.home_strong {
+.About_strong {
 	font-size: 2.5rem;
 	margin: 2vh;
 }
@@ -89,10 +89,10 @@
 }
 
 /*──────────────────
-       home媒体查询
+       About媒体查询
 ──────────────────*/
 @media screen and (min-width:801px) and (max-width:1580px) {
-	#home {
+	#About {
 		height: 100vh;
 	}
 
@@ -103,7 +103,7 @@
 
 @media only screen and (max-width: 850px) {
 
-	.homeh1 {
+	.Abouth1 {
 		font-size: 3rem;
 	}
 
@@ -116,12 +116,12 @@
 		margin-top: 10vh;
 	}
 
-	.home_strong p {
+	.About_strong p {
 		font-size: 1.5rem;
 		margin: 2vh;
 	}
 
-	.homebtn {
+	.Aboutbtn {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -145,7 +145,7 @@
 		align-items: center;
 	}
 
-	.homeh1 {
+	.Abouth1 {
 		font-size: 2rem;
 
 	}
@@ -777,7 +777,7 @@
 
 /*──── hr下划线 ─────*/
 
-.home_hr {
+.About_hr {
 	background: var(--main-decor-color);
 
 	height: 10px;

@@ -1,12 +1,12 @@
 import Link from 'next/link'
-import './AppsHomePage.css'
+import './HomePage.css'
 import {AiOutlineAppstore,AiFillAppstore } from "react-icons/ai"
-export default function Apps() {
+export default function Home() {
 
    return (
      <>
       <div className='max_Home'>
-<div className="AppsHomepage">
+<div className="HomeHomepage">
 
  
 
@@ -15,7 +15,7 @@ export default function Apps() {
 <div className='Home'>
 
 <h1 >
-Apps Home
+Home
 </h1>
 
 </div>

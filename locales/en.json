@@ -1,6 +1,7 @@
 {
   "translation": {
     "首页": "Home",
+    "关于": "about",
     "兑换": "Exchange",
     "产品": "Products",
     "文档": "Docs",
@@ -21,7 +22,6 @@
     "寻找团队": "Find a Team",
     "技术问题": "Technical issues",
     "加入贡献": "Add contribution",
-    "关于": "With regard to",
     "关于社区": "About the community",
     "合作": "cooperation",
     "赞助商": "sponsor",
@@ -85,6 +85,7 @@
     "小狐狸钱包": "MetaMask Wallet",
     "加入Daohaus": "Join Daohaus",
     "关注我们的社交媒体": "Follow us on social media",
-    "前往应用": "Go to Apps"
+    "前往应用": "Go to Apps",
+    "新闻": "News"
   }
 }

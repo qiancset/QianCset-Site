@@ -34,9 +34,9 @@ export default function Header() {
         <nav className="nav_PC">{/* 电脑 */}
           <Space size="large" align="center">
             <div className="nav-bar">
-              <MyNavLink href="/about">{t("首页")}</MyNavLink>
+              <MyNavLink href="/about">{t("关于")}</MyNavLink>
 
-              <MyNavLink href="/about/Uniswap">{t("兑换")}</MyNavLink>
+              <MyNavLink href="/about/News">{t("新闻")}</MyNavLink>
 
               <MyNavLink href="/about/Products">{t("产品")}</MyNavLink>
 

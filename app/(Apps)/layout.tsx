@@ -1,5 +1,4 @@
-import AppsHeader from '@/Component/AppsHeader/AppsHeader'
-import AppsFooter from '@/Component/AppsFooter/AppsFooter';
+
 import Providers from "../_Providers/Providers";
 import '@/Component/theme/Apps.css'
 import '@/Component/theme/Apps_dark.css'
@@ -30,18 +29,9 @@ export default function Homelayout({ children }) {
             <Providers>
 
 
-
-
-               <AppsHeader />
-
-               
                   {children}
              
-               <AppsFooter />
-
-
-
-
+ 
             </Providers>
          </body>
       </html>

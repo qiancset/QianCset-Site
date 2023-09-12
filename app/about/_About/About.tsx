@@ -2,37 +2,35 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { LoginOutlined, FileSearchOutlined } from "@ant-design/icons";
-import "./Home.css";
-/* import Carousel from './(home)/1Carousel' */
-import HmoeWeb3 from "./_home/2Hmoeweb3";
-import Web3 from "./_home/3Web3";
-/* import Marquee from "./(home)/4Marquee"; */
-import Projects from "./_home/5Projects";
-import Contact from "./_home/6Contact";
+import "./About.css";
+import HmoeWeb3 from "./_about/2Hmoeweb3";
+import Web3 from "./_about/3Web3";
+import Projects from "./_about/5Projects";
+import Contact from "./_about/6Contact";
 import { useTranslation } from "react-i18next";
 import { FloatButton } from "antd";
 
-export default function Home() {
+export default function About() {
   const { t } = useTranslation();
 
   return (
-    <div className="homemian">
-      <div id="home">
+    <div className="Aboutmian">
+      <div id="About">
         <div className="rotate1">
-          <img src="favicon.ico" alt="home-Q" className="Imagelogo" />
+          <img src="favicon.ico" alt="About-Q" className="Imagelogo" />
         </div>
-        <h1 className="homeh1">
+        <h1 className="Abouth1">
           {t("千赛特")}
-          <hr className="home_hr"/>
+          <hr className="About_hr"/>
         </h1>
 
-        <strong className="home_strong">
+        <strong className="About_strong">
           <p style={{ textAlign: "center" }}>
             {t("去中心化社区")},{t("Web3互动交流的区块链世界")}
           </p>
         </strong>
 
-        <div className="homebtn">
+        <div className="Aboutbtn">
           <Link href="/" target="_blank">
             <button type="button" className="button1 pulse w-button">
               {t("前往应用")} <LoginOutlined />

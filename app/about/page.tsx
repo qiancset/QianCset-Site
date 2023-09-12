@@ -1,10 +1,10 @@
 
 
-import Home from "./_Home/Home"
+import About from "./_About/About"
 import  Footer  from "@/components/Footer/Footer";
 
 
-export default function Homepage() {
+export default function Aboutpage() {
 
 
 
@@ -12,7 +12,7 @@ export default function Homepage() {
     <>
 
 
-      <Home />
+      <About />
       <Footer />
 
     </>
