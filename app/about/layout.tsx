@@ -3,8 +3,8 @@ import { Inter } from "next/font/google";
 import "@/styles/App.css";
 import "@/styles/App1.css";
 import "@/styles/Anniu.css";
-import Clerk from "../_Providers/Clerk";
-import Header from "@/components/Header/Header"; //组件来源
+/* import Clerk from "../_Providers/Clerk"; */
+import Header from "@/components/Header/Header";
 import Providers from "../_Providers/Providers";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -23,7 +23,7 @@ export const metadata = {
 export default function Layout({ children }) {
 
   return (
-    <Clerk>
+
       <html lang="zh">
         <head>
           <meta charSet="utf-8" />
@@ -54,6 +54,6 @@ export default function Layout({ children }) {
           </Providers>
         </body>
       </html>
-    </Clerk>
+   
   );
 }

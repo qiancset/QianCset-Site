@@ -13,7 +13,7 @@ import Link from "next/link";
 import Locales from "./LocalesButton/Locales";
 import ModeThemes from "./ModeThemes/ModeThemes";
 
-import Clerk_Header from "../Clerk/Clerk_Header";
+/* import Clerk_Header from "../Clerk/Clerk_Header"; */
 
 
 export default function Header() {
@@ -53,7 +53,7 @@ export default function Header() {
 
 
         <nav className="Header_left">
-          <Clerk_Header />
+         {/*  <Clerk_Header /> */}
         </nav>
 
 
