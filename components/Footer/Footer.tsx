@@ -133,7 +133,7 @@ export default function Footer() {
         </div>
         <div className="logofooter">
           <Image
-            src="/images/icon/QianCset.png"
+            src="/images/icon/QianCset.jpg"
             alt="QianCset"
             className="QianCset"
             height={132} width={400}
