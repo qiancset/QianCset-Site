@@ -1,5 +1,5 @@
 "use client";
-import Rainbowkit from "@/Component/Rainbowkit";
+import Rainbowkit from "@/UI/Rainbowkit";
 import "./AppsHeader.css";
 
 import { useEffect, useState } from "react";
