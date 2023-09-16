@@ -5,6 +5,8 @@ import "./AppsHeader.css";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import ModeThemes from "@/app/(Router)/components/ModeThemes/ModeThemes";
+import Locales from "@/app/(Router)/components/LocalesButton/Locales";
 
 export default function AppsHeader() {
     const pathname = usePathname();
@@ -68,12 +70,12 @@ function Message() {
 function User() {
     return (
         <>
-            <div className="Header_center">
-                <p className="Header_P">我的</p>
+            <div className="Header_User">
+
+                <div className='Header_left_User'><ModeThemes /></div>
+                <div className='Header_right_User'><Locales /></div>
             </div>
-            <div className="Header_right">
-                <Rainbowkit />
-            </div>
+
         </>
     );
 }

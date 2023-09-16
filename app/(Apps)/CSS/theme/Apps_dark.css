@@ -3,10 +3,10 @@
 	--box:rgb(239, 243, 244);
 
 	/* Footer */
-	--AppsFooter: #1a1a1a;
+	--AppsFooter-background: #0d0d0d;
 	--nav_link-color: #ffffff;
 	
 	/* Header */
-	--header-background: #1a1a1a;
+	--header-background: #0d0d0d;
 	--nav_link-background-hover: #ffffff31;
 }

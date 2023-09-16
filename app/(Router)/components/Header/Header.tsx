@@ -75,7 +75,7 @@ const DropdownA = () => {
       label: (
         <Link href="/about">
           <div className="DropdownA_nav_link">
-            {t("首页")}
+          {t("关于")}
           </div>
         </Link>
       ),
@@ -83,9 +83,9 @@ const DropdownA = () => {
     },
     {
       label: (
-        <Link href="/about/Uniswap">
+        <Link href="/News">
           <div className="DropdownA_nav_link">
-            {t("兑换")}
+          {t("新闻")}
           </div>
         </Link>
       ),
@@ -93,7 +93,7 @@ const DropdownA = () => {
     },
     {
       label: (
-        <Link href="/about/Products">
+        <Link href="/Products">
           <div className="DropdownA_nav_link">
             {t("产品")}
           </div>

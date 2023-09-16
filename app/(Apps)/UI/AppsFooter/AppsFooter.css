@@ -9,8 +9,8 @@
   justify-content: flex-start;
   -webkit-backdrop-filter: saturate(180%) blur(5px);
   backdrop-filter: saturate(180%) blur(5px);
-  background: var(--AppsFooter);
-
+  background: var(--AppsFooter-background);
+	box-shadow: 0 0 0.05rem #000;
 }
 
 .max_AppsFooter {

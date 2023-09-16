@@ -13,13 +13,12 @@ export default function Mpage() {
   const [value, setValue] = useState('');
   return (
     <div className='page'>
-      <div className='Mpage'>
-      <App />
+<h1>消息功能待开发...</h1>
+{/*       <div className='Mpage'>
+      <MpageList />
       </div>
 
       <div className='message'>
-
-    
           <TextArea
             value={value}
             onChange={(e) => setValue(e.target.value)}
@@ -30,19 +29,16 @@ export default function Mpage() {
             }}
             className='TextArea'
       
-          />
-       
-   
+          /> 
           <IoSendOutline className='IoSendOutline'/>
+      </div> */}
       
-
-      </div>
     </div>
   )
 }
 
 
-const App = () => {
+const MpageList = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
   const loadMoreData = () => {

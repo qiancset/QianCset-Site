@@ -1,20 +1,23 @@
 'use client'
-import Locales from "@/components/LocalesButton/Locales"
-import ModeThemes from "@/components/ModeThemes/ModeThemes"
+
 import Link from 'next/link';
 import { SettingOutlined, RightOutlined, QuestionCircleOutlined, ExperimentOutlined, SolutionOutlined, WalletOutlined } from '@ant-design/icons'
+import Rainbowkit from "../../UI/Rainbowkit";
 export default function Ppage() {
 
 
   return (
     <>
 
-      <h1> User </h1>
-      <List />
       <div className="Button_User">
-        <ModeThemes />
-        <Locales />
+        <div className="List_User_left_Button">我的User</div>
+
+        <div className="List_User_right_Button">
+          <Rainbowkit />
+        </div>
       </div>
+      <List />
+
 
     </>
   )
@@ -54,31 +57,31 @@ const data = [
 const List = () => (
   <>
 
-<ul className='custom_list'>  
-    {data.map((item) => (  
-      <li key={item.href}>  
+    <ul className='custom_list'>
+      {data.map((item) => (
+        <li key={item.href}>
 
-        <Link href={item.href} className='List_Link' target={item.target}> 
-          <div className='List_Item'>  
+          <Link href={item.href} className='List_Link' target={item.target}>
+            <div className='List_Item'>
 
-            <div className='List_User_left'> 
+              <div className='List_User_left'>
 
-              <div className='ico_text'>  
-                <div className='ico'>{item.ico}</div>
-                <div className="gap"></div>  
-                <div className='text'>{item.text}</div>  
-              </div> 
+                <div className='ico_text'>
+                  <div className='ico'>{item.ico}</div>
+                  <div className="gap"></div>
+                  <div className='text'>{item.text}</div>
+                </div>
 
-            </div>  
+              </div>
 
-            <div className='List_User_right'><RightOutlined /></div>  
+              <div className='List_User_right'><RightOutlined /></div>
 
-          </div>  
-        </Link>  
+            </div>
+          </Link>
 
-      </li>  
-    ))}  
-  </ul> 
+        </li>
+      ))}
+    </ul>
 
 
   </>

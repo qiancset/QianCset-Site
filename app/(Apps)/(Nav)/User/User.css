@@ -7,12 +7,23 @@
 }
 
 .Button_User {
+	height: 100%;
+	width: 100%;
 	display: flex;
-	position: fixed;
 	align-items: center;
 	justify-content: flex-start;
-	position: fixed;
-	bottom: 3.5rem;
+/* position: fixed;
+	top: 3.5rem; */
+}
+.List_User_left_Button{
+	margin: 1%;
+	margin-right: auto;
+	margin-left: 2vw;
+}
+.List_User_right_Button{
+	margin: 1%;
+	margin-left: auto;
+	margin-right: 2vw;
 }
 .custom_list{
 	list-style-type: none; 
@@ -23,6 +34,7 @@
 .List_Link {
 	color: var(--color);
 	text-decoration: none;
+	
 }
 
 .List_Item {
