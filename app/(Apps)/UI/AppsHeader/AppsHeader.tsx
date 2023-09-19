@@ -36,13 +36,7 @@ function Home() {
     return (
         <>
             <div className="Header_center">
-                <Image
-                    src="/images/icon/QianCset.jpg"
-                    className="QianCset"
-                    alt="header-Q"
-                    height={132}
-                    width={400}
-                />
+
             </div>
         </>
     );

@@ -1,8 +1,8 @@
 
 export const metadata = {
-  title: {
-    absolute: "新闻 | 千赛特-QianCset",
-  },
+  title:  "新闻",
+  description:
+  "QianCset Web3 新闻, QianCsetNews,QiancsetNews,qiancsetNews,千赛特新闻",
 };
 export default function Newspage() {
    return (

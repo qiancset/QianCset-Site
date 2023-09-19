@@ -3,9 +3,9 @@ import "./Products.css";
 
 
 export const metadata = {
-  title: {
-    absolute: "产品 | 千赛特-QianCset",
-  },
+  title:"产品",
+  description:
+  " QianCset Web3 产品, QianCsetProducts,QiancsetProducts,qiancsetProducts,千赛特产品",
 };
 
 export default function Products() {
