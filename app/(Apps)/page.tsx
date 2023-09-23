@@ -12,13 +12,11 @@ export const metadata = {
 export default function Appspage() {
   return (
     <>
+
       <AppsHeader />
-
-
       <Home />
-
-
       <AppsFooter />
+      
     </>
   )
 }

@@ -5,8 +5,8 @@ import "./AppsHeader.css";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import ModeThemes from "@/app/(Router)/components/ModeThemes/ModeThemes";
-import Locales from "@/app/(Router)/components/LocalesButton/Locales";
+import ModeThemes from "@/app/(www)/components/ModeThemes/ModeThemes";
+import Locales from "@/app/(www)/components/LocalesButton/Locales";
 
 export default function AppsHeader() {
     const pathname = usePathname();

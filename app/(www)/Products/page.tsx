@@ -13,7 +13,7 @@ export default function Products() {
 <div className="Products">
 
 <h1>
-<Link href='/about/Products/mintNFT'>mintNFT</Link>     
+<Link href='/Products/mintNFT'>mintNFT</Link>     
 </h1>
 
 <h1>
