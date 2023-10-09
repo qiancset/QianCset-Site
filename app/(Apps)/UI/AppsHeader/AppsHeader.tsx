@@ -20,7 +20,7 @@ export default function AppsHeader() {
     return (
         <header className="AppsHeader">
             <div className="max_AppsHeader">
-                {activePage === "/" && <Home />}
+                {activePage === "/Home" && <Home />}
 
                 {activePage === "/Heart" && <Heart />}
 
@@ -35,9 +35,14 @@ export default function AppsHeader() {
 function Home() {
     return (
         <>
+
             <div className="Header_center">
 
+                <Image src="/favicon.ico" className="QianCset" alt="header-Q" height={40} width={40} />
+
+
             </div>
+
         </>
     );
 }
@@ -66,8 +71,16 @@ function User() {
         <>
             <div className="Header_User">
 
-                <div className='Header_left_User'><ModeThemes /></div>
-                <div className='Header_right_User'><Locales /></div>
+                <div className='Header_left_User'>
+                    <div className="ModeThemes">
+                        <ModeThemes />
+                    </div>
+                </div>
+                <div className='Header_right_User'>
+                    <div className="Locales">
+                        <Locales />
+                    </div>
+                </div>
             </div>
 
         </>

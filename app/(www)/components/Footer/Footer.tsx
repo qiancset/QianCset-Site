@@ -38,7 +38,7 @@ export default function Footer() {
       <p>{t("关注我们的社交媒体")}</p>
       <div className="social-media">
         <SocialMedia
-          href="https://twitter.com/Qiancset"
+          href="https://twitter.com/qiancset"
           className="fab fa-twitter"
         />
         <SocialMedia

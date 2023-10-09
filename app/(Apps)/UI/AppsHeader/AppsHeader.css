@@ -1,59 +1,141 @@
-.AppsHeader {
-	width: 100%;
-	height: 3.5rem;
-	-webkit-backdrop-filter: saturate(180%) blur(5px);
-	backdrop-filter: saturate(180%) blur(5px);
-	background: var(--header-background);
-	box-shadow: 0 0 0.05rem #000;
+/* 电脑 */
+@media screen and (min-width:701px) {
+	.AppsHeader {
+		width: 100%;
+		height: 56px;
+		-webkit-backdrop-filter: saturate(180%) blur(5px);
+		backdrop-filter: saturate(180%) blur(5px);
+		background: var(--header-background);
+		box-shadow: 0 0 0.05rem var(--color);
+		position: fixed;
+		top: 0;
+		z-index: 6;
+	}
+
+	.max_AppsHeader {
+		margin: auto;
+		max-width: 1520px;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.Header_P {
+		font-size: 1.5rem;
+	}
+
+	.Header_left {
+		margin-right: auto;
+		margin-left: 1%;
+	}
+
+	.Header_right {
+		margin-left: auto;
+		margin-right: 1%;
+	}
+
+
+	.Header_center {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+
+	.Header_User {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.Header_left_User {
+		margin-right: auto;
+		margin-left: 2vw;
+	}
+
+	.Header_right_User {
+		margin-left: auto;
+		margin-right: 2vw;
+	}
 }
 
-.max_AppsHeader {
-	margin: auto;
-	max-width: 1520px;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+/* 手机 */
+@media only screen and (max-width: 700px) {
+	.AppsHeader {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 56px;
+		-webkit-backdrop-filter: saturate(180%) blur(5px);
+		backdrop-filter: saturate(180%) blur(5px);
+		background: var(--header-background);
+		box-shadow: 0 0 0.05rem var(--color);
+		z-index: 6;
+	}
+
+	.max_AppsHeader {
+		margin: auto;
+		max-width: 1520px;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.Header_P {
+		font-size: 1.5rem;
+	}
+
+	.Header_left {
+		margin-right: auto;
+		margin-left: 1%;
+	}
+
+	.Header_right {
+		margin-left: auto;
+		margin-right: 1%;
+	}
+
+
+	.Header_center {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+
+	.Header_User {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.Header_left_User {
+		margin-right: auto;
+		margin-left: 2vw;
+	}
+
+	.Header_right_User {
+		margin-left: auto;
+		margin-right: 2vw;
+	}
 }
+.ModeThemes:hover{
 
-.Header_P {
-	font-size: 1.5rem;
 }
+.Locales:hover{
 
-.Header_left {
-	margin-right: auto;
-	margin-left: 1%;
 }
-
-.Header_right {
-	margin-left: auto;
-	margin-right: 1%;
-}
-
-
-.Header_center {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-
-
-.Header_User {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-}
-
-.Header_left_User {
-	margin-right: auto;
-	margin-left: 2vw;
-}
-
-.Header_right_User {
-	margin-left: auto;
-	margin-right: 2vw;
+.QianCset {
+	height: 40px;
+	width: 40px;
 }

@@ -6,7 +6,7 @@
 	/* Footer */
 	--AppsFooter-background: #ffffff;
 
-	--nav_link-color: #000000;
+	--nav_link-color: #000000d3;
 
 	/* Header */
 	--header-background: #ffffffa8;
@@ -15,7 +15,6 @@
 
 .max_layout {
 	margin: auto;
-
 	max-width: 1520px;
 	width: 100%;
 	height: 100%;
@@ -27,4 +26,30 @@
 	margin: 0;
 	padding: 0;
 
+}
+
+.loading{
+	margin: auto;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: space-evenly; */
+	background-size: cover;
+	background-position: center;
+}
+/*---2D旋转---*/
+.loading_div_img {
+	display: inline-block;
+	animation: rotate 20s infinite linear;
+	width: 200px;
+	height: 200px;
+	perspective: 100%;
+	margin-top: 10vh;
+	margin-bottom: 2vh;
+}
+
+.loading_img{
+	width: 100%;
+	height: 100%;
 }

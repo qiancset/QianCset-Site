@@ -1,0 +1,29 @@
+@media screen and (min-width:701px) {
+
+  .appspage-container {
+    display: flex;
+  }
+
+  .appspage-left {
+    position: fixed;
+    left: 0;
+    width: 10vw;
+    margin-left: 0.5vw;
+    margin-top: -56px;
+  }
+
+  .appspage-right {
+    margin-left: 11vw;
+    width: 89vw;
+    padding: 5px;
+    box-shadow: 0 0 0.05rem var(--color);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+.appspage-right {
+  margin-bottom: 57px;
+  padding: 5px;
+  box-shadow: 0 0 0.05rem var(--color);
+}
+}

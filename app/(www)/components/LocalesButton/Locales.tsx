@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Menu, Dropdown, Button } from "antd";
-import { TranslationOutlined } from "@ant-design/icons";
+import { GlobalOutlined } from "@ant-design/icons";
 import "./Locales.css";
 function Locales() {
   const { i18n } = useTranslation();
@@ -54,7 +54,7 @@ function Locales() {
       <div className="language-toggle">
         <Button
           type="text"
-          icon={<TranslationOutlined />}
+          icon={<GlobalOutlined />}
           style={styles}
           onClick={toggleMenu}
         >

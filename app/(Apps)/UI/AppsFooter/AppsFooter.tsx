@@ -15,27 +15,27 @@ export default function AppsFooter() {
 
         <div className="TabBar">
           <NavLink
-            href='/'
-            icon={ <GoHome className="Navicon"/>}
-            activeIcon={ <GoHomeFill className="Navicon"/>}
+            href='/Home'
+            icon={<GoHome className="Navicon" />}
+            activeIcon={<GoHomeFill className="Navicon" />}
           >首页</NavLink>
 
           <NavLink
             href='/Heart'
-            icon={ <GoHeart className="Navicon"/>}
-            activeIcon={ <GoHeartFill className="Navicon"/>}
+            icon={<GoHeart className="Navicon" />}
+            activeIcon={<GoHeartFill className="Navicon" />}
           >关注</NavLink>
 
           <NavLink
             href='/Message'
-            icon={ <AiOutlineMessage className="Navicon"/>}
-            activeIcon={ <AiFillMessage className="Navicon"/>}
+            icon={<AiOutlineMessage className="Navicon" />}
+            activeIcon={<AiFillMessage className="Navicon" />}
           >消息</NavLink>
 
           <NavLink
             href='/User'
-            icon={ <GoPerson className="Navicon"/>}
-            activeIcon={ <GoPersonFill className="Navicon"/>}
+            icon={<GoPerson className="Navicon" />}
+            activeIcon={<GoPersonFill className="Navicon" />}
           >我的</NavLink>
         </div>
 
@@ -55,16 +55,30 @@ function NavLink({ href, activeIcon, icon, children }) {
   }, [isActiveLink]);
 
   return (
+    <div className="Link">
+
+  
     <Link
       className={isActive ? 'nav_link_active' : 'nav_link'}
       href={href}
 
     >
-      <div>
-        {isActive ? activeIcon : icon}
-        <p className="Link_children">{children}</p>
+      <div className="NavLink-container">
+
+        <div className="NavLink-left"> 
+          {isActive ? activeIcon : icon}
+        </div>
+
+        <div className="NavLink-right">
+          <p className="Link_children">{children}</p>
+        </div>
+
+
       </div>
     </Link>
+
+
+    </div>
   );
 }
 

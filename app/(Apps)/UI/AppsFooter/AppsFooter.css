@@ -1,88 +1,76 @@
-.AppsFooter {
-  width: 100%;
-  height: 3.5rem;
-  z-index: 5;
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  -webkit-backdrop-filter: saturate(180%) blur(5px);
-  backdrop-filter: saturate(180%) blur(5px);
-  background: var(--AppsFooter-background);
-	box-shadow: 0 0 0.05rem #000;
-}
+/* 电脑 */
+@media screen and (min-width:701px) {
+  .AppsFooter {
+    height: 100%;
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
+    margin-top: 57px;
+  }
 
-.max_AppsFooter {
-	margin: auto;
-
-  max-width: 1520px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
+  .max_AppsFooter {
+    width: 100%;
+    height: 100%;
+  }
 
 
-.TabBar {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.Navicon{
-  margin-left: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.Link_children {
-padding-bottom: 1%;
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .TabBar {
+    width: 100%;
+    height: 100%;
+  }
 
-/* 未选中 */
-.nav_link {
-  margin: 1%;
-  text-decoration: none;
-  font-size: 1.7rem;
-  height: 100%;
-  width: 20%;
-  color: var(--nav_link-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* 选中 */
-.nav_link_active {
-  margin: 1%;
-  text-decoration: none;
-  font-size: 1.7rem;
-  height: 100%;
-  width: 20%;
-  color: #ea7411;
-  -webkit-border-radius: 30;
-  -moz-border-radius: 30;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-@media screen and (min-width:600px) {
-  .nav_link:hover {
+  .Navicon {
+    margin-left: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 1%;
-    height: 90%;
-    width: 20%;
+  }
+
+  .Link_children {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .Link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  /* 未选中 */
+  .nav_link {
+    height: 100%;
+    width: 100%;
+
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: var(--nav_link-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 选中 */
+  .nav_link_active {
+    height: 100%;
+    width: 100%;
+
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #ea7411;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav_link:hover {
+    height: 100%;
+    width: 100%;
     background: var(--nav_link-background-hover);
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
@@ -90,13 +78,168 @@ padding-bottom: 1%;
   }
 
   .nav_link_active:hover {
-    margin: 1%;
-    height: 90%;
-    width: 20%;
+    height: 100%;
+    width: 100%;
     background: var(--nav_link-background-hover);
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
     border-radius: 30px;
   }
+
+}
+
+
+
+/* 手机 */
+@media only screen and (max-width: 700px) {
+
+  .AppsFooter {
+    width: 100%;
+    height: 56px;
+    z-index: 5;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
+    background: var(--AppsFooter-background);
+    box-shadow: 0 0 0.05rem var(--color);
+  }
+
+  .max_AppsFooter {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+  .TabBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .Navicon {
+    font-size: 1.7rem;
+    margin-left: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Link_children {
+
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  /* 未选中 */
+  .nav_link {
+    width: 100%;
+    height: 100%;
+    padding: 20% 20% 20% 20%;
+    text-decoration: none;
+    font-size: 1.7rem;
+
+    color: var(--nav_link-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 选中 */
+  .nav_link_active {
+    width: 100%;
+    height: 100%;
+    padding: 20% 20% 20% 20%;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #ea7411;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav_link:hover {
+    height: 100%;
+    width: 100%;
+    padding: 20% 20% 20% 20%;
+    background: var(--nav_link-background-hover);
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+  }
+
+  .nav_link_active:hover {
+    height: 100%;
+    width: 100%;
+    padding: 20% 20% 20% 20%;
+    background: var(--nav_link-background-hover);
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+  }
+
+  .NavLink-right {
+    display: none;
+  }
+
+}
+@media screen and (min-width:701px) and (max-width:1079px) {
+
+  .NavLink-container {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .NavLink-right {
+    display: none;
+    
+  }
+}
+/* 电脑 */
+@media screen and (min-width:1080px) {
+  .NavLink-container {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /*     .NavLink-left {  
+      height: 50px; 
+      flex: 0 0 50%;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }  
+      
+    .NavLink-right { 
+      height: 50px; 
+      flex: 0 0 50%;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } */
 
 }

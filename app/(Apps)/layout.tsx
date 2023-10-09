@@ -46,7 +46,10 @@ export default function Homelayout({ children }) {
 
                <Suspense fallback={<Loading/>}>
 
-                  {children}
+
+<div style={{ height: "56px" }} />
+{children}
+
 
                </Suspense>
 

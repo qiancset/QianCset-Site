@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link';
-import { SettingOutlined, RightOutlined, QuestionCircleOutlined, ExperimentOutlined, SolutionOutlined, WalletOutlined } from '@ant-design/icons'
+import { SettingOutlined, RightOutlined, QuestionCircleOutlined, ExperimentOutlined, SolutionOutlined, WalletOutlined,AppstoreOutlined} from '@ant-design/icons'
 import Rainbowkit from "../../UI/Rainbowkit";
 
 
@@ -10,7 +10,7 @@ export default function Ppage() {
 
 
   return (
-    <>
+    <div className='User_Page'>
 
       <div className="Button_User">
         <div className="List_User_left_Button">我的User</div>
@@ -22,7 +22,7 @@ export default function Ppage() {
       <List />
 
 
-    </>
+    </div>
   )
 }
 
@@ -43,6 +43,11 @@ const data = [
     href: '/',
     text: '功能',
     ico: <div ><WalletOutlined /></div>
+  },
+  {
+    href: '/Dappbrowser',
+    text: 'Dapp浏览器',
+    ico: <div ><AppstoreOutlined /></div>,
   },
   {
     href: '/Settings',
