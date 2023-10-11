@@ -1,8 +1,9 @@
 'use client'
 
 import Link from 'next/link';
-import { SettingOutlined, RightOutlined, QuestionCircleOutlined, ExperimentOutlined, SolutionOutlined, WalletOutlined,AppstoreOutlined} from '@ant-design/icons'
-import Rainbowkit from "../../UI/Rainbowkit";
+import { SettingOutlined, RightOutlined, QuestionCircleOutlined, ExperimentOutlined, SolutionOutlined, WalletOutlined, AppstoreOutlined } from '@ant-design/icons'
+import Rainbowkit from "../../UI/Wallet/Rainbowkit";
+
 
 
 
@@ -29,10 +30,9 @@ export default function Ppage() {
 
 const data = [
   {
-    href: '/',
+    href: '/a/3',
     text: '资料',
     ico: <div><SolutionOutlined /></div>
-
   },
   {
     href: '/a',
@@ -40,14 +40,14 @@ const data = [
     ico: <div ><ExperimentOutlined /></div>
   },
   {
-    href: '/',
-    text: '功能',
-    ico: <div ><WalletOutlined /></div>
-  },
-  {
     href: '/Dappbrowser',
     text: 'Dapp浏览器',
     ico: <div ><AppstoreOutlined /></div>,
+  },  
+  {
+    href: '/',
+    text: '功能',
+    ico: <div ><WalletOutlined /></div>
   },
   {
     href: '/Settings',

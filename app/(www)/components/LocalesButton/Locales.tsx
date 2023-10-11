@@ -37,7 +37,7 @@ function Locales() {
     </Menu>
   );
 
-  const currentLanguageText = i18n.language === "en" ? "English" : "中文";
+
   const styles = {
     color: "var(--color)",
   };
@@ -54,12 +54,10 @@ function Locales() {
       <div className="language-toggle">
         <Button
           type="text"
-          icon={<GlobalOutlined />}
+          icon={<GlobalOutlined style={{marginTop:'2px'}}/>}
           style={styles}
           onClick={toggleMenu}
-        >
-          {currentLanguageText}
-        </Button>
+        />
       </div>
     </Dropdown>
   );

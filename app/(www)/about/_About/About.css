@@ -15,8 +15,8 @@
 ──────────────────*/
 
 #About {
-	margin: auto;
 	height: 100vh;
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -527,7 +527,7 @@
 
 .work-content {
 	display: flex;
-	flex-direction: column;
+
 	align-items: center;
 	margin: auto;
 	justify-content: center;
@@ -552,7 +552,6 @@
 	background: transparent;
 	box-shadow: var(--card-box-shadow);
 	text-decoration: none;
-
 	color: #000;
 	background: var(--card-background);
 }

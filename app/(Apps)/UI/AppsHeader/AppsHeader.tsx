@@ -1,5 +1,5 @@
 "use client";
-import Rainbowkit from "@/UI/Rainbowkit";
+
 import "./AppsHeader.css";
 
 import { useEffect, useState } from "react";
@@ -28,6 +28,8 @@ export default function AppsHeader() {
 
                 {activePage === "/User" && <User />}
             </div>
+
+
         </header>
     );
 }
@@ -71,16 +73,19 @@ function User() {
         <>
             <div className="Header_User">
 
+
                 <div className='Header_left_User'>
-                    <div className="ModeThemes">
-                        <ModeThemes />
-                    </div>
+
                 </div>
                 <div className='Header_right_User'>
-                    <div className="Locales">
+                
                         <Locales />
-                    </div>
+                        <ModeThemes />
+
+                
                 </div>
+
+
             </div>
 
         </>

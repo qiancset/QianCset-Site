@@ -1,17 +1,18 @@
 import Headerchildren from "@/UI/AppsHeader/HeaderChildren"
-import Rainbowkit from "@/UI/Rainbowkit";
+import Rainbowkit from "@/app/(Apps)/UI/Wallet/Rainbowkit";
 
 export const metadata = {
     title: {
         template: '%s | DAPP 浏览器',
         default: 'DAPP 浏览器',
-      },
-  };
+    },
+};
 
 export default function Dappbrowserlayout({ children }) {
     return (
         <>
             <DappbrowserHeader />
+            <div style={{ height: "56px" }} />
             {children}
 
         </>

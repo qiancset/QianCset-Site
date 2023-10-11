@@ -1,20 +1,22 @@
 /* 电脑 */
 @media screen and (min-width:701px) {
 	.AppsHeader {
-		width: 100%;
-		height: 56px;
-		-webkit-backdrop-filter: saturate(180%) blur(5px);
-		backdrop-filter: saturate(180%) blur(5px);
-		background: var(--header-background);
-		box-shadow: 0 0 0.05rem var(--color);
 		position: fixed;
 		top: 0;
 		z-index: 6;
+		width: 100%;
+		height: 56px;
+
+		-webkit-backdrop-filter: saturate(300%) blur(5px);
+		backdrop-filter: saturate(300%) blur(5px);
+		background: var(--header-background);
+
+		border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+
 	}
 
 	.max_AppsHeader {
 		margin: auto;
-		max-width: 1520px;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -24,6 +26,9 @@
 
 	.Header_P {
 		font-size: 1.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.Header_left {
@@ -41,6 +46,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
 	}
 
 
@@ -53,15 +59,14 @@
 		justify-content: flex-start;
 	}
 
-	.Header_left_User {
-		margin-right: auto;
-		margin-left: 2vw;
+	.Header_right_User {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-left: auto;
+		margin-right: 1%;
 	}
 
-	.Header_right_User {
-		margin-left: auto;
-		margin-right: 2vw;
-	}
 }
 
 /* 手机 */
@@ -69,18 +74,21 @@
 	.AppsHeader {
 		position: fixed;
 		top: 0;
+		z-index: 6;
 		width: 100%;
 		height: 56px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		-webkit-backdrop-filter: saturate(180%) blur(5px);
 		backdrop-filter: saturate(180%) blur(5px);
 		background: var(--header-background);
-		box-shadow: 0 0 0.05rem var(--color);
-		z-index: 6;
+
+		border-bottom: 1px solid rgba(204, 204, 204, 0.3);
 	}
 
 	.max_AppsHeader {
 		margin: auto;
-		max-width: 1520px;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -117,25 +125,17 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
-	}
 
-	.Header_left_User {
-		margin-right: auto;
-		margin-left: 2vw;
 	}
 
 	.Header_right_User {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
 		margin-left: auto;
-		margin-right: 2vw;
+		margin-right: 1%;
 	}
 }
-.ModeThemes:hover{
 
-}
-.Locales:hover{
 
-}
-.QianCset {
-	height: 40px;
-	width: 40px;
-}
+

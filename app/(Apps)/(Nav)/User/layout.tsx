@@ -5,7 +5,7 @@ export default function Userlayout({ children }) {
     <>
       <div className="User">
         {children}
-        </div>
+      </div>
     </>
   );
 }

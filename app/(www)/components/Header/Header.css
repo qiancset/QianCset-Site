@@ -3,30 +3,53 @@
 ──────────────────*/
 
 header {
-	margin: 0 auto;
 	width: 100%;
 	height: 6vh;
+	margin: 0 auto;
 	top: 0vh;
-	transition: 0.5s;
-	z-index: 5;
-	display: flex;
 	position: fixed;
+	z-index: 5;
+	transition: 0.5s;
+	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	-webkit-backdrop-filter: saturate(180%) blur(5px);
 	backdrop-filter: saturate(180%) blur(5px);
 	background: var(--header-background);
 }
-.max_header{
-	margin: auto;
 
+.max_header {
+	margin: auto;
 	max-width: 1520px;
-	width: 100%;
-	height: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	width: 100%;
+	height: 100%;
 }
+
+.button_header {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+.button_header_1{
+	padding: 10px;
+}
+.DropdownA{
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: 1%;
+}
+/* 默认导航菜单样式 */
+
+.nav-bar {
+	list-style: none;
+	position: relative;
+	display: inline-flex;
+	width: 100%;
+}
+
 .notification {
 	margin: 0 auto;
 	width: 100%;
@@ -77,18 +100,15 @@ header {
 	border-radius: 22px;
 }
 
-/* 默认导航菜单样式 */
 
-.nav-bar {
-	list-style: none;
-	position: relative;
-	display: inline-flex;
-	width: 100%;
-}
 
-.Header_left {
-	margin-left: auto;
-	margin-right: 1%;
+
+
+/*///////////*/
+
+
+.Switch i {
+	width: 0px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -98,93 +118,85 @@ header {
 		height: 40px;
 		cursor: pointer;
 	}
-}
 
-/*///////////*/
-
-/* 手机样式 */
-.Dropdown {
-	height: 80vh;
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background: var(--background-ant-color);
-	color: var(--color-ant);
-}
-
-.ant-drawer-title {
-	color: #ceab4c;
-}
-
-.MenuUnfoldOutlined {
-	color: var(--header-decor-color);
-	font-size: 40px;
-	padding: 2px;
-}
-
-.Buttonant {
-	width: 100;
-	height: 70;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-}
-
-.Buttonant::after,
-.Buttonant:hover {
-	width: 100;
-	height: 80;
-}
-
-.DropdownA_nav_link {
-	transition: all 0.5s;
-	font-size: 1.2rem;
-	margin: 5px;
-	padding: 5px 10px;
-	text-decoration: none;
-	color: var(--nav-link-color);
-	cursor: pointer;
-	position: relative;
-	display: flex;
-	position: center;
-	align-items: space-around;
-	justify-content: center;
-}
-
-.DropdownA_nav_link.active {
-	color: #000000;
-	background: var(--main-decor-color);
-	-webkit-border-radius: 30;
-	-moz-border-radius: 30;
-	border-radius: 30px;
-}
-
-.DropdownA_nav_link:hover {
-	background: var(--nav-link-hover-background);
-	-webkit-border-radius: 30;
-	-moz-border-radius: 30;
-	border-radius: 30px;
-}
-
-.DropdownA_nav_link.active:hover {
-	color: #000000;
-	background: var(--main-decor-color);
-	-webkit-border-radius: 40;
-	-moz-border-radius: 40;
-	border-radius: 40px;
-}
-
-
-
-.Switch i {
-	width: 0px;
-}
-
-@media only screen and (max-width: 750px) {
 	.nav_PC {
 		display: none;
+		justify-content: space-between;
+	}
+
+
+	/* 手机样式 */
+	.Dropdown {
+		height: 80vh;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background: var(--background-ant-color);
+		color: var(--color-ant);
+	}
+
+	.ant-drawer-title {
+		color: #ceab4c;
+	}
+
+	.MenuUnfoldOutlined {
+		color: var(--header-decor-color);
+		font-size: 40px;
+		padding: 2px;
+	}
+
+	.Buttonant {
+		width: 100;
+		height: 70;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	.Buttonant::after,
+	.Buttonant:hover {
+		width: 100;
+		height: 80;
+	}
+
+	.DropdownA_nav_link {
+		transition: all 0.5s;
+		font-size: 1.2rem;
+		margin: 5px;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: var(--nav-link-color);
+		cursor: pointer;
+		position: relative;
+		display: flex;
+		position: center;
+		align-items: space-around;
+		justify-content: center;
+	}
+
+	.DropdownA_nav_link.active {
+		color: #000000;
+		background: var(--main-decor-color);
+		-webkit-border-radius: 30;
+		-moz-border-radius: 30;
+		border-radius: 30px;
+	}
+
+	.DropdownA_nav_link:hover {
+		background: var(--nav-link-hover-background);
+		-webkit-border-radius: 30;
+		-moz-border-radius: 30;
+		border-radius: 30px;
+	}
+
+	.DropdownA_nav_link.active:hover {
+		color: #000000;
+		background: var(--main-decor-color);
+		-webkit-border-radius: 40;
+		-moz-border-radius: 40;
+		border-radius: 40px;
 	}
 }
 

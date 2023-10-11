@@ -45,8 +45,7 @@ export default function About() {
         </div>
       </div>
 
-      <Down />
-      {/* 浮动箭头 */}
+
 
       {/* <Carousel /> */}
 

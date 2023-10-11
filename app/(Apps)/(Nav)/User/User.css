@@ -1,39 +1,43 @@
-
 .User {
 	background: var(--background);
 	margin: auto;
+
 }
 
 .Button_User {
-	
+
 	height: 100%;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-/* position: fixed;
+	/* position: fixed;
 	top: 3.5rem; */
 }
-.List_User_left_Button{
+
+.List_User_left_Button {
 	margin: 1%;
 	margin-right: auto;
 	margin-left: 2vw;
 }
-.List_User_right_Button{
+
+.List_User_right_Button {
 	margin: 1%;
 	margin-left: auto;
 	margin-right: 2vw;
 }
-.custom_list{
-	list-style-type: none; 
+
+.custom_list {
+	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	
+
 }
+
 .List_Link {
 	color: var(--color);
 	text-decoration: none;
-	
+
 }
 
 .List_Item {
@@ -44,11 +48,12 @@
 	height: 70px;
 	/* box-shadow: 0 0 0.08rem var(--box); */
 }
+
 .List_Item:hover {
 	background: var(--nav_link-background-hover);
 	-webkit-border-radius: 30;
-    -moz-border-radius: 30;
-    border-radius: 30px;
+	-moz-border-radius: 30;
+	border-radius: 30px;
 }
 
 .List_User_right {
@@ -67,6 +72,7 @@
 		margin-left: auto;
 		margin-right: 5vw;
 	}
+
 	.List_User_left {
 		margin-right: auto;
 		margin-left: 5vw;
@@ -86,9 +92,11 @@
 	height: 100%;
 	width: 100%;
 }
-.gap{
+
+.gap {
 	width: 3vw;
 }
+
 .ico {
 	color: #ea7411;
 	font-size: 1.7rem;

@@ -44,11 +44,13 @@ export default function Homelayout({ children }) {
          <body className={inter.className}>
             <Providers>
 
-               <Suspense fallback={<Loading/>}>
+               <Suspense fallback={<Loading />}>
 
 
-<div style={{ height: "56px" }} />
-{children}
+
+                  
+                  {children}
+
 
 
                </Suspense>

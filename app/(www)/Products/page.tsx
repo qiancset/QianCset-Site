@@ -12,12 +12,10 @@ export default function Products() {
   return (
 <div className="Products">
 
-<h1>
-<Link href='/Products/mintNFT'>mintNFT</Link>     
-</h1>
+
 
 <h1>
-<Link href='/' target="_blank">QianCset</Link>     
+<Link href='/'>QianCset</Link>     
 </h1>
       
 </div>

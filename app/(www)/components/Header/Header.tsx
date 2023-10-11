@@ -2,7 +2,7 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { Space, Dropdown } from "antd";
+import { Space, Dropdown, Divider } from "antd";
 import { MenuUnfoldOutlined } from "@ant-design/icons";
 
 import "./Header.css";
@@ -23,41 +23,46 @@ export default function Header() {
     <>
       <header>
 
-<div className="max_header">
+        <div className="max_header">
 
 
-        <a className="logo" href="/about">
-          <img src="favicon.ico" alt="header-Q" />
-        </a>
+          <a className="logo" href="/about">
+            <img src="favicon.ico" alt="header-Q" />
+          </a>
 
-        
-        <nav className="nav_PC">{/* 电脑 */}
-          <Space size="large" align="center">
-            <div className="nav-bar">
-              <MyNavLink href="/about">{t("关于")}</MyNavLink>
 
-              <MyNavLink href="/News">{t("新闻")}</MyNavLink>
+          <nav className="nav_PC">{/* 电脑 */}
+            <Space size="large" align="center">
+              <div className="nav-bar">
+                <MyNavLink href="/about">{t("关于")}</MyNavLink>
 
-              <MyNavLink href="/Products">{t("产品")}</MyNavLink>
+                <MyNavLink href="/News">{t("新闻")}</MyNavLink>
 
-              <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
-                <div className="nav_link">{t("文档")}</div>
-              </a>
+                <MyNavLink href="/Products">{t("产品")}</MyNavLink>
+
+                <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
+                  <div className="nav_link">{t("文档")}</div>
+                </a>
+              </div>
+
+
+            </Space>
+          </nav>
+
+
+
+
+          <div className="DropdownA">
+
+            <div className="button_header">
+
+              <div className="button_header_1"><ModeThemes /></div>
+
+              <div className="button_header_1"><Locales /></div>
             </div>
-            <ModeThemes />
-
-            <Locales />
-
-          </Space>
-        </nav>
-
-
-        <nav className="Header_left">
-         {/*  <Clerk_Header /> */}
-        </nav>
-
-
-        <DropdownA />  {/* 小于450px显示 下拉菜单 */}
+            
+            <DropdownA />  {/* 小于750px显示 下拉菜单 */}
+          </div>
 
 
         </div>{/* max_header */}
@@ -75,9 +80,10 @@ const DropdownA = () => {
       label: (
         <Link href="/about">
           <div className="DropdownA_nav_link">
-          {t("关于")}
+            {t("关于")}
           </div>
         </Link>
+
       ),
       key: "1",
     },
@@ -85,7 +91,7 @@ const DropdownA = () => {
       label: (
         <Link href="/News">
           <div className="DropdownA_nav_link">
-          {t("新闻")}
+            {t("新闻")}
           </div>
         </Link>
       ),
@@ -108,38 +114,25 @@ const DropdownA = () => {
         </Link>
       ),
       key: "4",
-    },
-    {
-      label: <hr />,
-      key: "5",
-    },
-    {
-      label: <div><ModeThemes /></div>,
-      key: "6",
-    },
-    {
-      label: <Locales />,
-      key: "7",
-    },
+    }
+
   ];
   ////
 
   return (
     <Dropdown
-    trigger={['click']}
+      trigger={['click']}
       menu={{
         items,
         style: {
-          height: "50vh",
+          height: "100vh",
           width: "100vw",
           background: "var(--background-ant-color)",
           color: "var(--color-ant)",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "left",
+
         },
         multiple: false,
-        
+
       }}
 
 

@@ -1,10 +1,13 @@
-import AppsFooter from '@/UI/AppsFooter/AppsFooter'
+import Navbar from '@/UI/Navbar/Navbar'
 import AppsHeader from '@/UI/AppsHeader/AppsHeader'
 import './layout.css'
+
 
 export default function Navlayout({ children }) {
    return (
       <>
+
+
 
          <AppsHeader />
  
@@ -14,9 +17,9 @@ export default function Navlayout({ children }) {
          <div className="appspage-container">
 
             <div className="appspage-left">
-               <AppsFooter />
+               <Navbar />
             </div>
-
+       
             <div className="appspage-right">
                {children}
             </div>
@@ -24,8 +27,7 @@ export default function Navlayout({ children }) {
          </div>
 
 
-       
-
+     
       </>
    )
 }

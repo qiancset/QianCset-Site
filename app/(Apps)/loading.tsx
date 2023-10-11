@@ -1,4 +1,4 @@
-
+import '@/CSS/loading.css'
 
 export default function loading() {
     return (

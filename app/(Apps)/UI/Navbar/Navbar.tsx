@@ -1,19 +1,22 @@
 "use client";
 import Link from "next/link";
-import "./AppsFooter.css";
+import "./Navbar.css";
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { GoHome, GoHomeFill, GoHeart, GoHeartFill, GoPerson, GoPersonFill } from "react-icons/go";
 import { AiOutlineMessage, AiFillMessage } from "react-icons/ai"
 
-export default function AppsFooter() {
+
+export default function Navbar() {
 
   return (
-    <footer className="AppsFooter">
+    <>
+  
+    <div className="Navbar">
 
-      <div className="max_AppsFooter">
+   
 
-        <div className="TabBar">
+       
           <NavLink
             href='/Home'
             icon={<GoHome className="Navicon" />}
@@ -37,10 +40,12 @@ export default function AppsFooter() {
             icon={<GoPerson className="Navicon" />}
             activeIcon={<GoPersonFill className="Navicon" />}
           >我的</NavLink>
-        </div>
+      
 
-      </div>
-    </footer>
+      
+    </div>
+
+    </>
   );
 }
 
