@@ -1,7 +1,7 @@
 .User {
-	background: var(--background);
 	margin: auto;
-
+	color: var(--color);
+	
 }
 
 .Button_User {

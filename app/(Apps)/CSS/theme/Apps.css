@@ -1,11 +1,9 @@
 :root {
 	--color: #000;
 	--box: rgb(47, 51, 54);
-
-
-	/* Footer */
+	--background:#f4f0f0;
+	/* Navbar */
 	--Navbar-background: #ffffff;
-
 	--nav_link-color: #000000d3;
 
 	/* Header */

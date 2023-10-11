@@ -1,8 +1,8 @@
 [data-theme='dark'] {
 	--color: #fff;
 	--box:rgb(239, 243, 244);
-
-	/* Footer */
+	--background: #1f1f1f;
+	/* Navbar */
 	--Navbar-background: #0d0d0d;
 	--nav_link-color: #ffffff;
 	
