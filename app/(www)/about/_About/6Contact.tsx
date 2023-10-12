@@ -22,7 +22,7 @@ export default function Contact() {
         <section className="intro4">
           <h3>
             {t("合作发展")}
-            <hr className="home_hr"/>
+            <hr className="About_hr"/>
           </h3>
           <Link href="/Donation" target="_blank">
             <button className="Bbutton pulse w-button" >

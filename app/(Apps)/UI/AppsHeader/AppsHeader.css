@@ -14,7 +14,9 @@
 		border-bottom: 1px solid rgba(204, 204, 204, 0.3);
 
 	}
+	.QianCset_lef{
 
+	}
 	.max_AppsHeader {
 		margin: auto;
 		width: 100%;
@@ -29,6 +31,15 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+
+	.Header_left_home {
+		margin-right: auto;
+		margin-left: 1%;
+	}
+
+	.Header_center_home {
+		display: none;
 	}
 
 	.Header_left {
@@ -116,7 +127,9 @@
 		align-items: center;
 		justify-content: center;
 	}
-
+	.Header_left_home {
+		display: none;
+	}
 
 
 	.Header_User {
@@ -136,6 +149,3 @@
 		margin-right: 1%;
 	}
 }
-
-
-

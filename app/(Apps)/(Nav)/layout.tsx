@@ -10,7 +10,7 @@ export default function Navlayout({ children }) {
 
 
          <AppsHeader />
- 
+
 
 
 
@@ -19,15 +19,17 @@ export default function Navlayout({ children }) {
             <div className="appspage-left">
                <Navbar />
             </div>
-       
+
             <div className="appspage-right">
-               {children}
+               <div className='max-width'>
+                  {children}
+               </div>
             </div>
-            
+
          </div>
 
 
-     
+
       </>
    )
 }

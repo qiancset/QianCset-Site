@@ -12,24 +12,29 @@
     left: 0;
     width: 10vw;
     height: 100vh;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
     margin-top: 56px;
   }
 
   .appspage-right {
 
+    height: 100%;
     margin-left: 11vw;
     width: 89vw;
     margin-top: 56px;
- 
+padding: 5px;
+
+  }
+  .max-width{
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    max-width: 1520px;
+    
   }
 }
 
 @media only screen and (max-width: 700px) {
-  .appspage-left {
-
-  }
+  .appspage-left {}
 
   .appspage-right {
     margin-top: 56px;

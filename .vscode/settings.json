@@ -1,3 +1,6 @@
 {
-    "i18next.i18nPaths": "d:/AAAAAAAA-VSCode/Qiancset/Qiancset-Site/locales,d:/AAAAAAAA-VSCode/Qiancset/Qiancset-Site/locales/i18n"
+    "i18next.customWrapX": "t('')",
+    "i18next.defaultTranslatedLocale": "en",
+    "i18next.sourceLocale": "zh",
+    "i18next.i18nPaths": "D:\\AAAAAAAAA-VSCode\\Qiancset\\Qiancset-Site\\locales"
 }

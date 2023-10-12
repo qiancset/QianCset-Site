@@ -5,10 +5,10 @@ import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { GoHome, GoHomeFill, GoHeart, GoHeartFill, GoPerson, GoPersonFill } from "react-icons/go";
 import { AiOutlineMessage, AiFillMessage } from "react-icons/ai"
-
+import { useTranslation } from 'react-i18next';
 
 export default function Navbar() {
-
+const { t } = useTranslation();
   return (
     <>
   
@@ -21,25 +21,25 @@ export default function Navbar() {
             href='/Home'
             icon={<GoHome className="Navicon" />}
             activeIcon={<GoHomeFill className="Navicon" />}
-          >首页</NavLink>
+          >{t('首页')}</NavLink>
 
           <NavLink
-            href='/Heart'
+            href='/Concern'
             icon={<GoHeart className="Navicon" />}
             activeIcon={<GoHeartFill className="Navicon" />}
-          >关注</NavLink>
+          >{t('关注')}</NavLink>
 
           <NavLink
             href='/Message'
             icon={<AiOutlineMessage className="Navicon" />}
             activeIcon={<AiFillMessage className="Navicon" />}
-          >消息</NavLink>
+          >{t('消息')}</NavLink>
 
           <NavLink
             href='/User'
             icon={<GoPerson className="Navicon" />}
             activeIcon={<GoPersonFill className="Navicon" />}
-          >我的</NavLink>
+          >{t('我的')}</NavLink>
       
 
       
@@ -74,7 +74,7 @@ function NavLink({ href, activeIcon, icon, children }) {
           {isActive ? activeIcon : icon}
         </div>
 
-        <div className="NavLink-right">
+        <div className="NavLink-center">
           <p className="Link_children">{children}</p>
         </div>
 

@@ -1,13 +1,13 @@
 [data-theme='dark'] {
 	--color: #fff;
 	--box:rgb(239, 243, 244);
-	--background: #1f1f1f;
+	--background: #1b1b1d;
 	/* Navbar */
-	--Navbar-background: #0d0d0d;
+	--Navbar-background: #242526;
 	--nav_link-color: #ffffff;
 	
 	/* Header */
-	--header-background: #0d0d0d;
+	--header-background: #242526;
 	--nav_link-background-hover: #ffffff31;
 }
 
