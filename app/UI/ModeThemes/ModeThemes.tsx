@@ -30,7 +30,7 @@ export default function ModeThemes({})  {
         title={t("切换浅色/暗黑模式")}  
         className={theme === "light" ? "antisNight" : "antisNight"}  
         onClick={handleThemeChange}  
-        icon={theme === "light" ? <Moon /> : <Sun />}  
+        icon={theme === "dark" ? <Sun /> : <Moon />}  
       />  
       </div>
   );

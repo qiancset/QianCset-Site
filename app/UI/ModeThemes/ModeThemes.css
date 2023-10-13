@@ -1,14 +1,12 @@
-.lightToggleIcon_pyhR {
-	color: #ffffff;
-
-}
-
-.ModeThemes{
+.ModeThemes {
 	display: flex;
-    position: center;
-    align-items: space-around;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
+	-webkit-border-radius: 30;
+	-moz-border-radius: 30;
+	border-radius: 30px;
 }
+
 .ModeThemes:hover{
 	background: var(--nav-link-hover-background);
 	-webkit-border-radius: 16;
@@ -16,3 +14,30 @@
 	border-radius: 16px;
 }
 
+.Sun_icon,
+.Moon_icon {
+	color: var(--color);
+	height: 22px;
+	width: 22px;
+	-webkit-border-radius: 30;
+	-moz-border-radius: 30;
+	border-radius: 30px;
+}
+
+.Sun_after,
+.Moon_after {
+	border: none;
+	background: var(--ModeThemes);
+	-webkit-border-radius: 30;
+	-moz-border-radius: 30;
+	border-radius: 30px;
+}
+
+.Sun,
+.Moon {
+	background: none;
+	border: none;
+	-webkit-border-radius: 30;
+	-moz-border-radius: 30;
+	border-radius: 30px;
+}

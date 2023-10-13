@@ -21,15 +21,16 @@
     margin-left: 11vw;
     width: 89vw;
     margin-top: 56px;
-padding: 5px;
+    padding: 5px;
 
   }
-  .max-width{
+
+  .max-width {
     align-items: center;
     margin: auto;
     justify-content: center;
     max-width: 1520px;
-    
+
   }
 }
 

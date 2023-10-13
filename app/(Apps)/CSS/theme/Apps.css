@@ -1,10 +1,11 @@
+
 :root {
 	--color: #000;
 	--background: #f4f0f0;
 
 	/* theme */
 	--theme-color: #ea7411;
-	
+
 	/* Navbar */
 	--Navbar-background: #ffffff;
 	--nav_link-color: #545353d3;
@@ -12,6 +13,9 @@
 	/* Header */
 	--header-background: #ffffffa8;
 	--nav_link-background-hover: #0000000f;
+	/* UI */
+	--nav-link-hover-background: #0000002b;
+	--ModeThemes: #0000002b;
 }
 
 body {}

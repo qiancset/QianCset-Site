@@ -4,8 +4,8 @@
     "paths": {
       "@/*": ["./*"],
       "@/UI/*": ["app/UI/*"],
-      "@/locales/*": ["app/locales/*"],
-      "@/Providers/*":["app/Providers/*"],
+      "@/locales/*": ["locales/*"],
+      "@/Providers/*":["Providers/*"],
       "@/public/*":["public/*"],
 
       "@/Component/*":["app/(Apps)/Component/*"],

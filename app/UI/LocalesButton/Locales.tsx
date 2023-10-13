@@ -56,7 +56,7 @@ export default function Locales({}) {
       <div className="language-toggle">
         <Button
           type="text"
-          icon={<GlobalOutlined style={{marginTop:'2px'}}/>}
+          icon={<GlobalOutlined style={{marginTop:'1px'}}/>}
           style={styles}
           onClick={toggleMenu}
         />
