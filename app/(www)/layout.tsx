@@ -20,23 +20,12 @@ export default function wwwLayout({ children }) {
 
   return (
 
-    <html lang="zh">
-      <head>
-        <meta charSet="utf-8" />
-
-      </head>
-
-      <body>
         <>
           <Header />
-
           <div style={{ height: "56px" }} />
-
           {children}
 
         </>
-      </body>
-    </html>
 
   );
 }
