@@ -2,18 +2,19 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { Space, Dropdown, Divider } from "antd";
+import { Space, Dropdown } from "antd";
 import { MenuUnfoldOutlined } from "@ant-design/icons";
 
 import "./Header.css";
 import MyNavLink from "./zujian/MyNavLink"; //封装 Link 组件
 
-import Link from "next/link";
+
 
 import Locales from "@/UI/LocalesButton/Locales";
 import ModeThemes from "@/UI/ModeThemes/ModeThemes";
+import Link from "next/link";
 
-/* import Clerk_Header from "../Clerk/Clerk_Header"; */
+
 
 
 export default function Header() {
@@ -40,9 +41,9 @@ export default function Header() {
 
                 <MyNavLink href="/Products">{t("产品")}</MyNavLink>
 
-                <a href="https://docs.qiancset.com/" id="Wen" target="_blank">
-                  <div className="nav_link">{t("文档")}</div>
-                </a>
+                <Link href="https://docs.qiancset.com/" target="_blank">
+                  <p className="nav_link">{t("文档")}</p>
+                </Link>
               </div>
 
 
@@ -79,9 +80,9 @@ const DropdownA = () => {
     {
       label: (
         <MyNavLink href="/about">
-          <div className="DropdownA_nav_link">
+          <p className="DropdownA_nav_link">
             {t("关于")}
-          </div>
+          </p>
         </MyNavLink>
 
       ),
@@ -90,9 +91,9 @@ const DropdownA = () => {
     {
       label: (
         <MyNavLink href="/News">
-          <div className="DropdownA_nav_link">
+          <picture className="DropdownA_nav_link">
             {t("新闻")}
-          </div>
+          </picture>
         </MyNavLink>
       ),
       key: "2",
@@ -100,18 +101,18 @@ const DropdownA = () => {
     {
       label: (
         <MyNavLink href="/Products">
-          <div className="DropdownA_nav_link">
+          <p className="DropdownA_nav_link">
             {t("产品")}
-          </div>
+          </p>
         </MyNavLink>
       ),
       key: "3",
     },
     {
       label: (
-        <MyNavLink href="https://docs.qiancset.com" newTab>
-          <div className="DropdownA_nav_link">{t("文档")}</div>
-        </MyNavLink>
+        <Link href="https://docs.qiancset.com/" target="_blank">
+          <p className="DropdownA_nav_link">{t("文档")}</p>
+        </Link>
       ),
       key: "4",
     }

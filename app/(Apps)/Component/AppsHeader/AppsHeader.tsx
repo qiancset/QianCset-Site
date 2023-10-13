@@ -113,12 +113,4 @@ function My() {
     );
 }
 
-function Github() {
-    return (
-        <>
-            <div className="Header_center">
-                <p className="Header_P">Github</p>
-            </div>
-        </>
-    );
-}
+

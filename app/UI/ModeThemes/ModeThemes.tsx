@@ -1,6 +1,6 @@
 "use client";
 import "./ModeThemes.css";
-import { useState,useEffect } from "react";
+
 
 import { useTheme } from "next-themes";
 import { Button } from "antd";

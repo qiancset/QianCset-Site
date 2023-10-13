@@ -10,7 +10,7 @@ export default function MyNavLink({ href, children,newTab = false  }) {
 
   const className = `nav_link ${pathname === `${href}` ? 'active' : ''}`;  
   return newTab ? (  
-    <Link href={href} target="_blank" rel="noopener noreferrer" prefetch={true} passHref >  
+    <Link href={href} target="_blank" prefetch={true} passHref>  
       <div className={className}> {children} </div>
     </Link>  
   ) : (  

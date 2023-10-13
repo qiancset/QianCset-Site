@@ -3,16 +3,16 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@/components/*": ["app/(www)/components/*"],
-      "@/css/*": ["app/(www)/css/*"],
-      
-      "@/UI/*": ["UI/*"],
-      "@/locales/*": ["locales/*"],
-      "@/_Providers/*":["Providers/*"],
+      "@/UI/*": ["app/UI/*"],
+      "@/locales/*": ["app/locales/*"],
+      "@/Providers/*":["app/Providers/*"],
       "@/public/*":["public/*"],
 
       "@/Component/*":["app/(Apps)/Component/*"],
-      "@/CSS/*":["app/(Apps)/CSS/*"]
+      "@/CSS/*":["app/(Apps)/CSS/*"],  
+
+      "@/components/*": ["app/(www)/components/*"],
+      "@/css/*": ["app/(www)/css/*"]
     },
     "lib": [
       "dom",

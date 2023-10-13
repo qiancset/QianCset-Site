@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import Providers from "@/Providers/Providers";
 import { Analytics } from "@vercel/analytics/react";
-
+import "@/locales/i18n";
 
 export const metadata = {
    title: {
