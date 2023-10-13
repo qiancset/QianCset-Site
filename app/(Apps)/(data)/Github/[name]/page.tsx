@@ -3,13 +3,13 @@ export default function Githubname({ params: { name } }) {
 
   return (
     <>
-      <div className="card">
+      <div className='name'>
 
-
-        <h2>{name}</h2>
+        <div className="card">
+          <h2>{name}</h2>
+        </div>
 
       </div>
-
     </>
   )
 }

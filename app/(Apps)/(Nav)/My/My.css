@@ -1,0 +1,28 @@
+.My {
+	margin: auto;
+	color: var(--color);
+
+}
+
+.My_Button {
+
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	/* position: fixed;
+	top: 3.5rem; */
+}
+
+.My_left_Button {
+	margin: 1%;
+	margin-right: auto;
+	margin-left: 2vw;
+}
+
+.My_right_Button {
+	margin: 1%;
+	margin-left: auto;
+	margin-right: 2vw;
+}

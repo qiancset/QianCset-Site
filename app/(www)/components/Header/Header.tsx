@@ -10,8 +10,8 @@ import MyNavLink from "./zujian/MyNavLink"; //封装 Link 组件
 
 import Link from "next/link";
 
-import Locales from "../LocalesButton/Locales";
-import ModeThemes from "../ModeThemes/ModeThemes";
+import Locales from "@/UI/LocalesButton/Locales";
+import ModeThemes from "@/UI/ModeThemes/ModeThemes";
 
 /* import Clerk_Header from "../Clerk/Clerk_Header"; */
 
@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <>
-      <header>
+      <div className="header">
 
         <div className="max_header">
 
@@ -56,17 +56,17 @@ export default function Header() {
 
             <div className="button_header">
 
+              <div className="button_header_1"><Locales /></div>
               <div className="button_header_1"><ModeThemes /></div>
 
-              <div className="button_header_1"><Locales /></div>
             </div>
-            
+
             <DropdownA />  {/* 小于750px显示 下拉菜单 */}
           </div>
 
 
         </div>{/* max_header */}
-      </header>
+      </div>
     </>
   );
 }
@@ -78,40 +78,40 @@ const DropdownA = () => {
   const items = [
     {
       label: (
-        <Link href="/about">
+        <MyNavLink href="/about">
           <div className="DropdownA_nav_link">
             {t("关于")}
           </div>
-        </Link>
+        </MyNavLink>
 
       ),
       key: "1",
     },
     {
       label: (
-        <Link href="/News">
+        <MyNavLink href="/News">
           <div className="DropdownA_nav_link">
             {t("新闻")}
           </div>
-        </Link>
+        </MyNavLink>
       ),
       key: "2",
     },
     {
       label: (
-        <Link href="/Products">
+        <MyNavLink href="/Products">
           <div className="DropdownA_nav_link">
             {t("产品")}
           </div>
-        </Link>
+        </MyNavLink>
       ),
       key: "3",
     },
     {
       label: (
-        <Link href="https://docs.qiancset.com/" target="_blank">
+        <MyNavLink href="https://docs.qiancset.com" newTab>
           <div className="DropdownA_nav_link">{t("文档")}</div>
-        </Link>
+        </MyNavLink>
       ),
       key: "4",
     }
@@ -125,8 +125,8 @@ const DropdownA = () => {
       menu={{
         items,
         style: {
-          height: "100vh",
-          width: "100vw",
+          height: "100%",
+          width: "100%",
           background: "var(--background-ant-color)",
           color: "var(--color-ant)",
 

@@ -1,20 +1,20 @@
 :root {
 	--color: #000;
-	--box: rgb(47, 51, 54);
 	--background: #f4f0f0;
+
+	/* theme */
+	--theme-color: #ea7411;
+	
 	/* Navbar */
 	--Navbar-background: #ffffff;
-	--nav_link-color: #000000d3;
+	--nav_link-color: #545353d3;
 
 	/* Header */
 	--header-background: #ffffffa8;
 	--nav_link-background-hover: #0000000f;
 }
 
-body {
-	
-
-}
+body {}
 
 * {
 	margin: 0;

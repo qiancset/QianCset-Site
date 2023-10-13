@@ -3,20 +3,25 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import './MyNavLink.css';
-import { useEffect, useState } from 'react';
 
-export default function MyNavLink({ href, children }) {
-  const [isActive, setIsActive] = useState(false);
+export default function MyNavLink({ href, children,newTab = false  }) {
+
   const pathname = usePathname();
-  const isActiveLink = pathname === href;
 
-  useEffect(() => {
-    setIsActive(isActiveLink);
-  }, [isActiveLink]);
+  const className = `nav_link ${pathname === `${href}` ? 'active' : ''}`;  
+  return newTab ? (  
+    <Link href={href} target="_blank" rel="noopener noreferrer" prefetch={true} passHref >  
+      <div className={className}> {children} </div>
+    </Link>  
+  ) : (  
+    <Link href={href} prefetch={true} passHref>  
+     <div className={className}> {children} </div>
+    </Link>  
+  ); 
   
-  return (
+/*   return (
     <Link href={href} prefetch={true} passHref>
-      <div className={`nav_link ${isActive ? 'active' : ''}`}>{children}</div>
+      <div className={`nav_link ${pathname === `${href}` ? 'active' : ''}`}>{children}</div>
     </Link>
-  );
+  ); */
 }

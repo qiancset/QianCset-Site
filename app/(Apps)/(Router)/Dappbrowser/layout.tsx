@@ -1,5 +1,5 @@
-import Headerchildren from "@/UI/AppsHeader/HeaderChildren"
-import Rainbowkit from "@/app/(Apps)/UI/Wallet/Rainbowkit";
+import HeaderChildren from "@/Component/AppsHeader/HeaderChildren"
+import Rainbowkit from "@/UI/Wallet/Rainbowkit";
 
 export const metadata = {
     title: {
@@ -22,14 +22,14 @@ export default function Dappbrowserlayout({ children }) {
 function DappbrowserHeader() {
     return (
         <>
-            <Headerchildren>
+            <HeaderChildren>
                 <div className="Header_center">
                     <h1>Dapp 浏览器</h1>
                 </div>
                 <div className="Header_right">
                     <Rainbowkit />
                 </div>
-            </Headerchildren>
+            </HeaderChildren>
         </>
     );
 }

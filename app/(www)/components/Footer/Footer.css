@@ -123,8 +123,8 @@ footer {
 }
 
 .content a:hover {
-    color: var(--content-a-color-hover);
-    text-decoration: underline 1px;
+    color: #ea7411;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 275px) {

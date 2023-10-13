@@ -1,4 +1,4 @@
-import Headerchildren from "@/UI/AppsHeader/HeaderChildren"
+import HeaderChildren from "@/Component/AppsHeader/HeaderChildren"
 
 
 export default function Settingslayout({ children }) {
@@ -15,11 +15,11 @@ export default function Settingslayout({ children }) {
 function SettingsHeader() {
     return (
         <>
-            <Headerchildren>
+            <HeaderChildren>
                 <div className="Header_center">
                     <h1>Settings</h1>
                 </div>
-            </Headerchildren>
+            </HeaderChildren>
         </>
     );
 }

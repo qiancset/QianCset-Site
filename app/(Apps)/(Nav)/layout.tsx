@@ -1,7 +1,6 @@
-import Navbar from '@/UI/Navbar/Navbar'
-import AppsHeader from '@/UI/AppsHeader/AppsHeader'
+import AppsHeader from '@/Component/AppsHeader/AppsHeader'
+import Navbar from '@/Component/Navbar/Navbar'
 import './layout.css'
-
 
 export default function Navlayout({ children }) {
    return (
@@ -9,7 +8,7 @@ export default function Navlayout({ children }) {
 
 
 
-         <AppsHeader />
+         <AppsHeader/>
 
 
 

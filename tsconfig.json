@@ -4,11 +4,14 @@
     "paths": {
       "@/*": ["./*"],
       "@/components/*": ["app/(www)/components/*"],
-      "@/styles/*": ["app/(www)/styles/*"],
+      "@/css/*": ["app/(www)/css/*"],
+      
+      "@/UI/*": ["UI/*"],
       "@/locales/*": ["locales/*"],
       "@/_Providers/*":["Providers/*"],
       "@/public/*":["public/*"],
-      "@/UI/*":["app/(Apps)/UI/*"],
+
+      "@/Component/*":["app/(Apps)/Component/*"],
       "@/CSS/*":["app/(Apps)/CSS/*"]
     },
     "lib": [
