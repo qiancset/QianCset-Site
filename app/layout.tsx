@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import './globals.css'
+
 import Providers from "@/Providers/Providers";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -29,13 +29,17 @@ export default function Layout({ children }) {
          <head>
             <meta charSet="utf-8" />
             <meta name="theme-color" content="#ea7411" />
+            <link
+               rel="stylesheet"
+               href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.1/css/all.css"
+            />
          </head>
          <body className={inter.className}>
             <Providers>
 
-           
-                  {children}
-         
+
+               {children}
+
 
                <Analytics />
 

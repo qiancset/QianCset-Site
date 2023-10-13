@@ -5,7 +5,6 @@ import "@/css/App1.css";
 import "@/css/Anniu.css";
 
 import Header from "@/components/Header/Header";
-import Head from "next/head";
 
 
 export const metadata = {
@@ -22,12 +21,7 @@ export default function wwwLayout({ children }) {
   return (
 
     <>
-      <Head>
-      <link
-               rel="stylesheet"
-               href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.1/css/all.css"
-            />
-      </Head>
+
       <Header />
       <div style={{ height: "56px" }} />
       {children}
