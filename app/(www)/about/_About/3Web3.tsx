@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { FaAddressCard, FaCubes, FaLink } from "react-icons/fa";
 export default function Web3() {
   const { t } = useTranslation();
   return (
@@ -9,7 +10,7 @@ export default function Web3() {
         <section className="intro2">
           <Kapianweb3>
             <Web3card>
-              <i className="fa fa-cubes"></i>
+              <FaLink className="fa_icon_4"/>
               <p>
                 {t("一个基于区块链技术的开放、反垄断、去中心化的加密网络")}
                 <br />
@@ -18,7 +19,7 @@ export default function Web3() {
             </Web3card>
 
             <Web3card>
-              <i className="fas fa-sitemap"></i>
+              <FaCubes className="fa_icon_4"/>
               <p>
                 {t("一切由中心化引发的问题可实现去中心化或弱中心化")}
                 <br />
@@ -27,7 +28,8 @@ export default function Web3() {
             </Web3card>
 
             <Web3card>
-              <i className="fas fa-thumbs-up"></i>
+             
+              <FaAddressCard className="fa_icon_4"/>
               <p>
                 {t("web3网络只需要一个")}
                 <Link href="https://ethereum.org/zh/wallets/" target="_blank">

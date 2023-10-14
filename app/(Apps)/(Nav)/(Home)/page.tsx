@@ -11,6 +11,20 @@ export default async function Home() {
 
       <h1>开发中...</h1>
       <Github />
+      <Github />
+      <Github />
+      <Github />
+      <Github />
+      <Github />
+      <Github />
+      <Github />
+      <Github />
+      <Github />
+      <Github />
+      <Github />
+      <Github />
+      <Github />
+      <Github />
     </>
   )
 }

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/cssinjs": "^1.17.2",
     "@rainbow-me/rainbowkit": "^1.0.8",
     "@uniswap/widgets": "^2.53.1",
     "@vercel/analytics": "^1.0.1",
@@ -18,7 +19,6 @@
     "ethers": "^5.7.2",
     "eventemitter3": "^5.0.1",
     "i18next": "^23.2.11",
-    "lokijs": "^1.5.12",
     "next": "^13.5.1",
     "next-themes": "^0.2.1",
     "pino-pretty": "^10.2.0",

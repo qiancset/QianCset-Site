@@ -9,42 +9,45 @@ import ModeThemes from "@/UI/ModeThemes/ModeThemes";
 import Locales from "@/UI/LocalesButton/Locales";
 import { useTranslation } from 'react-i18next';
 export default function AppsHeader() {
-    const pathname = usePathname();  
- 
+    const pathname = usePathname();
+
 
 
 
 
     return (
         <>
-            {pathname === "/" &&
-                <Header >
-                    <Home />
-                </Header>
-            }
-            {pathname.startsWith("/Home") &&
-                <Header >
-                    <Home />
-                </Header>
-            }
-            {pathname === "/Concern" &&
-                <Header >
-                    <Concern />
-                </Header>
-            }
+            <header className='AppsHeader'>
 
-            {pathname === "/Message" &&
-                <Header >
-                    <Message />
-                </Header>
-            }
+                {pathname === "/" &&
+                    <Header >
+                        <Home />
+                    </Header>
+                }
+                {pathname.startsWith("/Home") &&
+                    <Header >
+                        <Home />
+                    </Header>
+                }
+                {pathname === "/Concern" &&
+                    <Header >
+                        <Concern />
+                    </Header>
+                }
 
-            {pathname === "/My" &&
-                <Header >
-                    <My />
-                </Header>
-            }
+                {pathname === "/Message" &&
+                    <Header >
+                        <Message />
+                    </Header>
+                }
 
+                {pathname === "/My" &&
+                    <Header >
+                        <My />
+                    </Header>
+                }
+
+            </header>
 
         </>
     );
@@ -52,11 +55,11 @@ export default function AppsHeader() {
 function Header({ children }) {
     return (
         <>
-            <header className="AppsHeader">
+           
                 <div className="max_AppsHeader">
                     {children}
                 </div>
-            </header>
+          
         </>
     )
 }
@@ -105,8 +108,10 @@ function My() {
         <>
 
             <div className='Header_right'>
-                <Locales />
-                <ModeThemes />
+                <div className='Header_My'>
+                    <Locales />
+                    <ModeThemes />
+                </div>
             </div>
 
         </>

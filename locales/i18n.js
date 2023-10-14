@@ -5,12 +5,10 @@ import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import en from './en.json'
 import zh from './zh.json'
-import fr from './fr.json'
-import ja from './ja.json'
 
 // 配置json的格式
 const resources = {
-  en,zh,fr,ja
+  en,zh
 };
 
 

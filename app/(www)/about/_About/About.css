@@ -7,7 +7,6 @@
 	width: 100%;
 	height: 100%;
 	padding: 0;
-
 }
 
 /*──────────────────
@@ -26,13 +25,13 @@
 }
 
 
-.Abouth1 {
+.About_h1 {
 	padding-bottom: 15px;
 	letter-spacing: normal;
 	font-family: #000000;
 	font-style: normal;
 	font-size: 4rem;
-	color: #000000;
+	color: var(--color);
 	text-shadow:
 		2px 2px 40px #ea7411,
 		-2px 2px 0 #ea7411,
@@ -42,7 +41,7 @@
 }
 
 @media only screen and (max-width: 236px) {
-	.Abouth1 {
+	.About_h1 {
 		font-size: 1.2rem;
 	}
 
@@ -103,7 +102,7 @@
 
 @media only screen and (max-width: 850px) {
 
-	.Abouth1 {
+	.About_h1 {
 		font-size: 3rem;
 	}
 
@@ -145,7 +144,7 @@
 		align-items: center;
 	}
 
-	.Abouth1 {
+	.About_h1 {
 		font-size: 2rem;
 
 	}
@@ -233,8 +232,9 @@
 	margin: 5px;
 }
 
-.feature-card p i {
+.fa_icon_4 {
 	color: #ea7411;
+	font-size: 4rem;
 }
 
 .social-media1 img {
@@ -242,7 +242,18 @@
 	height: 32px;
 	width: 32px;
 }
+@media only screen and (max-width: 390px) {
 
+	.social-media1 img {
+	  height: 10px;
+	  width: 20px;
+	}
+	.fa_icon_4 {
+		color: #ea7411;
+		font-size: 2rem;
+	}
+  }
+  
 .feature-card h4 {
 	font-size: 1.1rem;
 	font-family: #020202;
@@ -408,7 +419,7 @@
 	margin: 5%;
 }
 
-.Web3card1 i {
+.fa_icon_4{
 	font-size: 48px;
 	color: #ea7411;
 	margin-top: 20px;
@@ -468,7 +479,7 @@
 		border-radius: 30px;
 	}
 
-	.Web3card1 i {
+	.fa_icon_4{
 		font-size: 30px;
 		color: #ea7411;
 		margin-top: 0px;

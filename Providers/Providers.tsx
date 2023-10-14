@@ -4,22 +4,23 @@ import "@/locales/i18n";
 import Antd from "./Antd";
 import Themes from "./Themes";
 import RainbowkitP from "./RainbowkitP";
-
+import StyledComponentsRegistry from './lib/AntdRegistry'
 
 export default function Providers({ children }) {
   return (
     <>
-      <Themes>
+      <StyledComponentsRegistry>
+        <Themes>
 
-        <RainbowkitP>
-        
+          <RainbowkitP>
 
             <Antd>{children}</Antd>
-    
 
-        </RainbowkitP>
+          </RainbowkitP>
 
-      </Themes>
+        </Themes>
+      </StyledComponentsRegistry>
+
     </>
   );
 }

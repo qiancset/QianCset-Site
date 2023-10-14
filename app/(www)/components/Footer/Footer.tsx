@@ -5,6 +5,7 @@ import "./Footer.css";
 
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { FaDiscord, FaGithub, FaQq, FaTiktok, FaTwitter } from "react-icons/fa";
 
 
 function Linkli({ children, href }) {
@@ -18,11 +19,11 @@ function Linkli({ children, href }) {
     </>
   );
 }
-function SocialMedia({ href, className }) {
+function SocialMedia({ href, faicon }) {
   return (
     <>
       <a href={href} target="_blank" rel="noopener noreferrer">
-        <i className={className} />
+        <i>{faicon}</i>
       </a>
     </>
   );
@@ -39,23 +40,23 @@ export default function Footer() {
         <div className="social-media">
           <SocialMedia
             href="https://twitter.com/qiancset"
-            className="fab fa-twitter"
+            faicon={<FaTwitter/>}
           />
           <SocialMedia
             href="https://www.tiktok.com/@qiancset"
-            className="fab fa-tiktok"
+            faicon={<FaTiktok/>}
           />
           <SocialMedia
             href="https://discord.gg/pMzB7fSs9E"
-            className="fab fa-discord"
+            faicon={<FaDiscord/>}
           />
           <SocialMedia
             href="https://pd.qq.com/s/8z8x37o4v"
-            className="fab fa-qq"
+            faicon={<FaQq/>}
           />
           <SocialMedia
             href="https://github.com/Qiancset"
-            className="fab fa-github"
+            faicon={<FaGithub/>}
           />
 
         </div>

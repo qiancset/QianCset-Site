@@ -1,19 +1,21 @@
 'use client'
 import './My_List.css'
-import { SettingOutlined, RightOutlined, QuestionCircleOutlined, ExperimentOutlined, SolutionOutlined, WalletOutlined, AppstoreOutlined } from '@ant-design/icons'
+
+
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
+import { GoQuestion, GoGear, GoMention, GoBriefcase, GoBeaker, GoChevronRight, GoBrowser } from 'react-icons/go';
 
 export default function My_List() {
     const { t } = useTranslation();
     return (
         <>
- <My_List_card href={`/a`} text={t('资料')} ico={<SolutionOutlined />} />
- <My_List_card href={`/a`} text={t('测试')} ico={<ExperimentOutlined />} />
- <My_List_card href={`/Dappbrowser`} text={t('Dapp浏览器')} ico={<AppstoreOutlined />} />
- <My_List_card href={`/Function`} text={t('功能')} ico={<WalletOutlined />} />
- <My_List_card href={`/Settings`} text={t('设置')} ico={<SettingOutlined />} />
- <My_List_card href={`/about`} text={t('关于')} ico={<QuestionCircleOutlined />} />
+            <My_List_card href={`/a`} text={t('资料')} ico={<GoMention />} />
+            <My_List_card href={`/a`} text={t('测试')} ico={<GoBeaker />} />
+            <My_List_card href={`/Dappbrowser`} text={t('Dapp浏览器')} ico={<GoBrowser />} />
+            <My_List_card href={`/Function`} text={t('功能')} ico={<GoBriefcase />} />
+            <My_List_card href={`/Settings`} text={t('设置')} ico={<GoGear />} />
+            <My_List_card href={`/about`} text={t('关于')} ico={<GoQuestion />} />
 
 
         </>
@@ -40,8 +42,8 @@ function My_List_card({ href, ico, text }) {
                             </div>
 
                             <div className='List_My_right'>
-                                <RightOutlined className='RightOutlined'/>
-                                </div>
+                                <GoChevronRight className='GoChevronRight' />
+                            </div>
 
                         </div>
                     </Link>

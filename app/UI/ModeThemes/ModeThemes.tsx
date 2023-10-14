@@ -5,8 +5,8 @@ import "./ModeThemes.css";
 import { useTheme } from "next-themes";
 import { Button } from "antd";
 import { useTranslation } from "react-i18next";
-import Sun from "./Sun";
-import Moon from "./Moon";
+
+import { GoMoon, GoSun } from "react-icons/go";
 
 export default function ModeThemes({})  {
 
@@ -30,7 +30,7 @@ export default function ModeThemes({})  {
         title={t("切换浅色/暗黑模式")}  
         className={theme === "light" ? "antisNight" : "antisNight"}  
         onClick={handleThemeChange}  
-        icon={theme === "dark" ? <Sun /> : <Moon />}  
+        icon={theme === "dark" ? <GoSun className="Sun_icon"/> : <GoMoon className="Moon_icon"/>}  
       />  
       </div>
   );

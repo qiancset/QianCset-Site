@@ -1,9 +1,10 @@
 "use client";
 
-import { LikeOutlined } from "@ant-design/icons";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+
 
 function LogoCard({ imageUrl, altText }) {
   return (
@@ -25,8 +26,8 @@ export default function Contact() {
             <hr className="About_hr"/>
           </h3>
           <Link href="/Donation" target="_blank">
-            <button className="Bbutton pulse w-button" >
-              {t("捐赠代币")} <LikeOutlined />
+            <button className="button_About pulse w-button" >
+              {t("捐赠代币")}
             </button>
           </Link>
 

@@ -7,7 +7,7 @@ export const metadata = {
 export default function Newspage() {
    return (
      <>
-     News
+     <h1>新闻</h1>
      </>
    )
 }

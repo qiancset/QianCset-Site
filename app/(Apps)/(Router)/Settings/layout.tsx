@@ -5,7 +5,6 @@ export default function Settingslayout({ children }) {
     return (
         <>
             <SettingsHeader />
-            <div style={{ height: "56px" }} />
             {children}
 
         </>

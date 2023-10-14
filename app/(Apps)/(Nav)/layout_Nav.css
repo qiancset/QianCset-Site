@@ -1,0 +1,58 @@
+@media screen and (min-width:701px) {
+  .layout_Nav {
+    max-width: 1520px;
+    justify-content: space-evenly;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .appspage-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 56px;
+    width: 100%;
+    height: 100%;
+    max-width: 1520px;
+  }
+
+  .appspage-left {
+    max-width: 152px;
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    
+  }
+
+  .appspage-right {
+    max-width: 1520px;
+    margin-left: 11%;
+    width: 89%;
+    height: 100%;
+    padding: 1%;
+  }
+
+  .max-width {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    max-width: 1520px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .layout_Nav {}
+
+  .appspage-left {
+    width: 100%;
+    height: 100%;
+    /* 设置高度为100%以使其占据整个页面高度 */
+  }
+
+  .appspage-right {
+    margin-top: 56px;
+    margin-bottom: 57px;
+    margin-left: 0;
+    padding: 5px;
+  }
+}

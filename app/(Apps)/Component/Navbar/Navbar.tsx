@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
 import "./Navbar.css";
-
-import { usePathname } from 'next/navigation'
-import { GoHome, GoHomeFill, GoHeart, GoHeartFill, GoPerson, GoPersonFill } from "react-icons/go";
-import { AiOutlineMessage, AiFillMessage } from "react-icons/ai"
 import { useTranslation } from 'react-i18next';
+import { usePathname } from 'next/navigation'
+
+import { GoHome, GoHomeFill, GoHeart, GoHeartFill,GoBell,GoBellFill, GoPerson, GoPersonFill } from "react-icons/go";
+
 
 export default function Navbar() {
 const { t } = useTranslation();
@@ -31,8 +31,8 @@ const { t } = useTranslation();
 
           <NavLink
             href='/Message'
-            icon={<AiOutlineMessage className="Navicon" />}
-            activeIcon={<AiFillMessage className="Navicon" />}
+            icon={<GoBell className="Navicon" />}
+            activeIcon={<GoBellFill className="Navicon" />}
           >{t('消息')}</NavLink>
 
           <NavLink

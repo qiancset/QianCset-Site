@@ -1,0 +1,51 @@
+@import url('./UI/ModeThemes/ModeThemes.css');
+@import url('./UI/LocalesButton/Locales.css');
+
+:root {
+    /* 全局css */
+    --color: #000;
+    --theme-color: #ea7411;
+
+    /* UI */
+    --nav-link-hover-background: #0000002b;
+    --ModeThemes: #0000002b;
+
+    /* antd */
+    --background-color-antd: #ffffff;
+    --color-antd:#ea7411 !important;
+
+}
+
+[data-theme='dark'] {
+    /* 全局css */
+    --color: #fff;
+
+    /* UI */
+    --nav-link-hover-background: #ffffff31;
+    --ModeThemes: #ffffff31;
+
+    /* antd */
+    --background-color-antd: #1f1f1f;
+    --color-antd:#ea7411 !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fa_icon {
+    color: #ea7411;
+    font-size: 4rem;
+}
+
+/*--选择器----*/
+::selection {
+    background: #ea7411;
+    color: var(--color);
+}
+
+::-moz-selection {
+    color: var(--color);
+    background: #ea7411;
+}

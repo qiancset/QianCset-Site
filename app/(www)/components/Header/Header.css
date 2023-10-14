@@ -145,7 +145,7 @@
 
 	.MenuUnfoldOutlined {
 		color: var(--header-decor-color);
-		font-size: 40px;
+		font-size: 2.3rem;
 		padding: 2px;
 	}
 
@@ -167,8 +167,9 @@
 	.DropdownA_nav_link {
 		transition: all 0.5s;
 		font-size: 1.2rem;
-		margin: 5px;
-		padding: 5px 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 5px 20px;
 		text-decoration: none;
 		color: var(--nav-link-color);
 		cursor: pointer;

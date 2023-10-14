@@ -1,34 +1,37 @@
 import AppsHeader from '@/Component/AppsHeader/AppsHeader'
 import Navbar from '@/Component/Navbar/Navbar'
-import './layout.css'
+import './layout_Nav.css'
 
 export default function Navlayout({ children }) {
    return (
+
       <>
 
 
 
-         <AppsHeader />
+            <AppsHeader />
 
 
 
+         <div className='layout_Nav'>
 
-         <div className="appspage-container">
 
-            <div className="appspage-left">
-               <Navbar />
-            </div>
+            <div className="appspage-container">
 
-            <div className="appspage-right">
-               <div className='max-width'>
-                  {children}
+               <div className="appspage-left">
+                  <Navbar />
                </div>
+
+               <div className="appspage-right">
+
+                  {children}
+
+               </div>
+
             </div>
 
          </div>
-
-
-
+         
       </>
    )
 }

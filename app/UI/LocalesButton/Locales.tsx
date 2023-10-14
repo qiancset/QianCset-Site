@@ -3,11 +3,14 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Menu, Dropdown, Button } from "antd";
-import { GlobalOutlined } from "@ant-design/icons";
+
 import "./Locales.css";
+import { GoGlobe } from "react-icons/go";
+import { useTheme } from "next-themes";
 
 
-export default function Locales({}) {
+export default function Locales({ }) {
+  const { resolvedTheme } = useTheme();
   const { i18n } = useTranslation();
   const [showMenu, setShowMenu] = useState(false);
 
@@ -31,17 +34,22 @@ export default function Locales({}) {
       onClick={handleMenuClick}
       selectable={true}
       selectedKeys={[defaultLanguage]}
+      style={{
+        height: "100%",
+        width: "100%",
+        background: "var(--background-color-antd)",
+        color: "var(--color-antd)",
+      }}
     >
-      <Menu.Item key="zh">中文</Menu.Item>
-      <Menu.Item key="en">English</Menu.Item>
-      <Menu.Item key="fr">Français</Menu.Item>
-      <Menu.Item key="ko">한국어</Menu.Item>
+      <Menu.Item key="zh" className="Locales_text">中文</Menu.Item>
+      <Menu.Item key="en" className="Locales_text">English</Menu.Item>
     </Menu>
   );
 
 
   const styles = {
     color: "var(--color)",
+
   };
 
   return (
@@ -51,12 +59,12 @@ export default function Locales({}) {
       onOpenChange={toggleMenu}
       trigger={["click"]}
       placement="bottomRight"
-      
+
     >
       <div className="language-toggle">
         <Button
           type="text"
-          icon={<GlobalOutlined style={{marginTop:'1px'}}/>}
+          icon={<GoGlobe />}
           style={styles}
           onClick={toggleMenu}
         />

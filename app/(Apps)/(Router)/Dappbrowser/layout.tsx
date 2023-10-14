@@ -12,7 +12,7 @@ export default function Dappbrowserlayout({ children }) {
     return (
         <>
             <DappbrowserHeader />
-            <div style={{ height: "56px" }} />
+   
             {children}
 
         </>

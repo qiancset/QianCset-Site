@@ -7,16 +7,14 @@
 	--body-color: #000;
 
 	/* 首页色 */
-	--homemian-background-color: repeating-linear-gradient(190deg, #fff3cb, #fdecb4 7%, #fff3cb 10%);
+	--Aboutmian-background-color: repeating-linear-gradient(190deg, #fff3cb, #fdecb4 7%, #fff3cb 10%);
 
 	/* 主题色 */
 	--main-decor-color: #ea7411;
 	--main-background: #fff3cb;
-	--ModeThemes: #0000002b;
 
-	/* antd */
-	--background-ant-color: #ffffff;
-	
+
+
 	/* 根header */
 	--header-background: linear-gradient(200.33deg, rgba(225, 137, 54, 0.9) 0.26%, rgba(240, 193, 68, 0.9) 108.32%);
 	--nav-link-color: #000;
@@ -56,11 +54,6 @@ body {
 	color: var(--body-color);
 }
 
-
-* {
-	margin: 0;
-	padding: 0;
-}
 
 .loading{
 	display: flex;

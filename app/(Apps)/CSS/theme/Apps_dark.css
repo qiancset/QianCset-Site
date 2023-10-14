@@ -1,16 +1,11 @@
 [data-theme='dark'] {
-	--color: #fff;
-	--box: rgb(239, 243, 244);
-	--background: #1b1b1d;
+
 	/* Navbar */
-	--Navbar-background: #1f1f1f;
-	--nav_link-color: #afadadd3;
+	--Navbar-background: #121212;
+	--nav_link-color: #ece1e1d3;
 
 	/* Header */
-	--header-background: #1f1f1f;
+	--header-background: #121212;
 	--nav_link-background-hover: #ffffff31;
 
-	/* UI */
-	--nav-link-hover-background: #ffffff31;
-	--ModeThemes: #ffffff31;
 }

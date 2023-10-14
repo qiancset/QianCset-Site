@@ -1,7 +1,8 @@
 import { Inter } from "next/font/google";
-
-import Providers from "@/Providers/Providers";
 import { Analytics } from "@vercel/analytics/react";
+
+import './layout.css'
+import Providers from "@/Providers/Providers";
 
 
 export const metadata = {
@@ -23,7 +24,7 @@ export const metadata = {
 
 };
 const inter = Inter({ subsets: ["latin"] });
-export default function Layout({ children }) {
+export default function Layout({ children }: React.PropsWithChildren) {
    return (
       <html lang="zh">
          <head>
@@ -35,16 +36,18 @@ export default function Layout({ children }) {
             />
          </head>
          <body className={inter.className}>
-            <Providers>
+           
+               <Providers>
 
 
-               {children}
+                  {children}
 
 
-               <Analytics />
+                  <Analytics />
 
 
-            </Providers>
+               </Providers>
+           
          </body>
       </html>
    )

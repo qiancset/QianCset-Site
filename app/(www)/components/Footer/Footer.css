@@ -198,29 +198,21 @@ footer {
 
 .social-media a i {
     cursor: pointer;
-    font-size: 40px;
-
+    font-size: 2rem;
 }
 
-.social-media Image {
-    cursor: pointer;
-    height: 40px;
-}
+
 
 @media only screen and (max-width: 450px) {
     .social-media a i {
         cursor: pointer;
-        font-size: 30px;
+        font-size: 1.5rem;
     }
 
-    .social-media Image {
-        cursor: pointer;
-        height: 30px;
-    }
 }
 
 
-.social-media a i:hover {
+.social-media a:hover {
     color: #ea7411;
     text-shadow: 0 0 100px var(--main-decor-color);
 }

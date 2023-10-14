@@ -5,12 +5,13 @@
 		top: 0;
 		z-index: 6;
 		width: 100%;
+		
 		height: 56px;
 
 		-webkit-backdrop-filter: saturate(300%) blur(5px);
 		backdrop-filter: saturate(300%) blur(5px);
 		background: var(--header-background);
-
+		
 		border-bottom: 1px solid rgba(204, 204, 204, 0.3);
 
 	}
@@ -18,7 +19,11 @@
 	.max_AppsHeader {
 		width: 100%;
 		height: 100%;
-
+		max-width: 1520px;
+		justify-content: space-evenly;
+		margin: auto;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.Header_layout {
@@ -74,6 +79,14 @@
 		justify-content: center;
 	}
 
+	.Header_My {
+		margin-right: 1%;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
 
 }
 
@@ -101,12 +114,14 @@
 		height: 100%;
 
 	}
+
 	.Header_layout {
 		width: 100%;
 		height: 100%;
 		display: flex;
 		align-items: center;
 	}
+
 	.Header_P {
 		width: 100%;
 		height: 100%;
@@ -154,6 +169,13 @@
 		align-items: center;
 		justify-content: center;
 	}
-
+	.Header_My {
+		margin-right: 2%;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
 
 }
