@@ -85,6 +85,9 @@
 }
 
 .ico {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: #ea7411;
 	font-size: 1.7rem;
 }

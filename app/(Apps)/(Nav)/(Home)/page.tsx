@@ -1,5 +1,5 @@
+'use client'
 
-import Link from "next/link"
 import Github from "../../(data)/Github/Github"
 /* import Typicode from "../../(data)/Typicode/Typicode" */
 

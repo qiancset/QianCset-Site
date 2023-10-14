@@ -8,7 +8,7 @@ const { t } = useTranslation();
   return (
     <>
     <ConnectButton 
-    label={t("连接钱包")}
+    /* label={t("连接钱包")} */
     accountStatus='address'
     showBalance={{
       smallScreen: false,

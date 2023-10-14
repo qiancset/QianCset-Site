@@ -1,3 +1,5 @@
+'use client'
+
 import AppsHeader from '@/Component/AppsHeader/AppsHeader'
 import Navbar from '@/Component/Navbar/Navbar'
 import './layout_Nav.css'

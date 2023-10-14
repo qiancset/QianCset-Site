@@ -34,12 +34,12 @@ export default function Locales({ }) {
       onClick={handleMenuClick}
       selectable={true}
       selectedKeys={[defaultLanguage]}
-      style={{
+/*       style={{
         height: "100%",
         width: "100%",
         background: "var(--background-color-antd)",
         color: "var(--color-antd)",
-      }}
+      }} */
     >
       <Menu.Item key="zh" className="Locales_text">中文</Menu.Item>
       <Menu.Item key="en" className="Locales_text">English</Menu.Item>
