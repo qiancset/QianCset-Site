@@ -1,4 +1,7 @@
-
+.Github{
+    width: 100%;
+    height: 100%;
+}
 .repo_list {
     list-style-type: none;
     padding: 0;

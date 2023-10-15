@@ -16,7 +16,7 @@ export default async function Github() {
 
 
 
-      <div>
+      <div className='Github'>
         <ul className='repo_list'>
           {repos.map((repo) => (
 

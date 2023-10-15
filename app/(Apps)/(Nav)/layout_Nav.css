@@ -1,6 +1,6 @@
 @media screen and (min-width:701px) {
   .layout_Nav {
-    max-width: 1520px;
+    max-width: 1440px;
     justify-content: space-evenly;
     margin: auto;
     flex-direction: column;
@@ -13,11 +13,11 @@
     margin-top: 57px;
     width: 100%;
     height: 100%;
-    max-width: 1520px;
+    max-width: 1440px;
   }
 
   .appspage-left {
-    max-width: 152px;
+    max-width: 144px;
     position: fixed;
     width: 10%;
     height: 100%;
@@ -25,17 +25,23 @@
   }
 
   .appspage-right {
-    max-width: 1520px;
+    max-width: 1440px;
     margin-left: calc(11% + 1px);
     width: 89%;
     height: 100%;
+
   }
 
   .max-width {
     display: block;
     align-items: center;
     justify-content: center;
-    max-width: 1520px;
+    max-width: 1440px;
+  }
+
+  html {  
+    overflow-y: scroll;  
+    height: 100%;  
   }
 }
 
