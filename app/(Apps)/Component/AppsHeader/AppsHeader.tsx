@@ -1,13 +1,15 @@
 "use client";
 
-
 import './AppsHeader.css'
 import { usePathname } from "next/navigation";
-
+import Link from 'next/link';
 import Image from "next/image";
+import { useTranslation } from 'react-i18next';
 import ModeThemes from "@/UI/ModeThemes/ModeThemes";
 import Locales from "@/UI/LocalesButton/Locales";
-import { useTranslation } from 'react-i18next';
+
+import { GoArrowLeft } from 'react-icons/go';
+
 export default function AppsHeader() {
     const pathname = usePathname();
 
@@ -16,36 +18,82 @@ export default function AppsHeader() {
             <header className='AppsHeader'>
                 <div className="max_AppsHeader">
 
+
                     {pathname === "/" && <Home />}
-                    {pathname.startsWith("/Home") && <Home />}
+                    {pathname && pathname.startsWith("/Home") && <Home />}
                     {pathname === "/Concern" && <Concern />}
                     {pathname === "/Message" && <Message />}
                     {pathname === "/My" && <My />}
-
                     <HeaderChildern />
 
+
+
                 </div>
+
             </header>
 
         </>
     );
 }
 
-
-function HeaderChildern() {
+function Pathname({ href, children }) {
     const pathname = usePathname();
+    return pathname === href ? <div className="Header_layout">{children}</div> : null;
+}
+function BackLink({ href }) {
+    return (
+        <div className="Header_left">
+            <Link href={`${href}`} prefetch={true} passHref>
+                <div className="BackLink">
+                    <GoArrowLeft />
+                </div>
+            </Link>
+        </div>
+    )
+}
+function HeaderChildern({ }) {
+    const pathname = usePathname();
+
     return (
         <>
-            {pathname === "/Dappbrowser" &&
+            <Pathname href='/Dappbrowser'>
+                <BackLink href='/My' />
+
                 <div className="Header_center">
-                    <h1 className="Header_P">Dapp 浏览器</h1>
+                    <p className='Header_P'>Dapp 浏览器</p>
+                </div>
+
+                <div className="Header_right"></div>
+
+            </Pathname>
+
+            <Pathname href='/Settings'>
+                <BackLink href='/My' />
+
+                <div className="Header_center">
+                    <p className='Header_P'>Settings</p>
+                </div>
+
+                <div className="Header_right"></div>
+
+            </Pathname>
+
+            {pathname && pathname.startsWith("/Github") &&
+                <div className="Header_layout">
+                    <BackLink href='/' />
+
+                    <div className="Header_center">
+                        <p className='Header_P'>Github存储库</p>
+                    </div>
+
+                    <div className="Header_right"></div>
+
                 </div>
             }
-            {pathname === "/Settings" &&
-                <div className="Header_center">
-                    <h1>Settings</h1>
-                </div>
-            }
+
+
+
+
 
 
         </>
@@ -93,16 +141,16 @@ function Message() {
 function My() {
 
     return (
-        <>
+        <div className='Header_layout'>
 
-            <div className='Header_right'>
-                <div className='Header_My'>
+            <div className='Header_My'>
+                
                     <Locales />
                     <ModeThemes />
-                </div>
+              
             </div>
 
-        </>
+        </div>
     );
 }
 

@@ -13,7 +13,7 @@ export default async function Github() {
 
   return (
     <>
-      <h1>Github</h1>
+
 
 
       <div>

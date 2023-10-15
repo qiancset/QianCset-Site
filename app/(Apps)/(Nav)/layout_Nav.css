@@ -10,7 +10,7 @@
   .appspage-container {
     display: flex;
     flex-direction: row;
-    margin-top: 56px;
+    margin-top: 57px;
     width: 100%;
     height: 100%;
     max-width: 1520px;
@@ -26,7 +26,7 @@
 
   .appspage-right {
     max-width: 1520px;
-    margin-left: 11%;
+    margin-left: calc(11% + 1px);
     width: 89%;
     height: 100%;
   }
@@ -49,7 +49,7 @@
   }
 
   .appspage-right {
-    margin-top: 56px;
+    margin-top: 57px;
     margin-bottom: 57px;
     margin-left: 0;
     padding: 5px;

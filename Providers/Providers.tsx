@@ -11,13 +11,13 @@ export default function Providers({ children }) {
     <>
       <StyledComponentsRegistry>
         <Themes>
-
+        <Antd>
           <RainbowkitP>
 
-            <Antd>{children}</Antd>
+           {children}
 
           </RainbowkitP>
-
+          </Antd>
         </Themes>
       </StyledComponentsRegistry>
 

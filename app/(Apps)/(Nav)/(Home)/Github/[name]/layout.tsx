@@ -1,18 +1,18 @@
-import HeaderChildren from "@/app/(Apps)/Component/AppsHeader/HeaderChildren"
+import HeaderChildren from "@/Component/AppsHeader/HeaderChildren"
 import Link from "next/link"
-import { ArrowLeftOutlined } from "@ant-design/icons";
 import './name.css'
+import { GoArrowLeft } from "react-icons/go";
 
 export default function layout({ children, params: { name } }) {
     return (
         <>
-            <HeaderChildren>
+{/*             <HeaderChildren>
                 <div className="Header_layout">
 
                     <div className="Header_left">
                         <Link href={`/`} prefetch={true} passHref>
-                            <div className="LeftOutlined">
-                            <ArrowLeftOutlined />
+                            <div className="BackLink">
+                            <GoArrowLeft />
                             </div>
                         </Link>
                     </div>
@@ -20,11 +20,12 @@ export default function layout({ children, params: { name } }) {
                     <div className="Header_center">
                         {name}
                     </div>
-                    <div className="Header_right">
 
+                    <div className="Header_right">
                     </div>
+
                 </div>
-            </HeaderChildren>
+            </HeaderChildren> */}
 
             {children}
         </>

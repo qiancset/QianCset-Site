@@ -2,79 +2,83 @@
 import Link from "next/link";
 import "./Navbar.css";
 import { useTranslation } from 'react-i18next';
-import { usePathname } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation'
 
-import { GoHome, GoHomeFill, GoHeart, GoHeartFill,GoBell,GoBellFill, GoPerson, GoPersonFill } from "react-icons/go";
+import { GoHome, GoHomeFill, GoHeart, GoHeartFill, GoBell, GoBellFill, GoPerson, GoPersonFill } from "react-icons/go";
+
 
 
 export default function Navbar() {
-const { t } = useTranslation();
+  const { t } = useTranslation();
+  const pathname = usePathname();
+
+
   return (
     <>
-  
-    <div className="Navbar">
 
-   
+      <div className="Navbar">
 
-       
-          <NavLink
-            href='/'
-            icon={<GoHome className="Navicon" />}
-            activeIcon={<GoHomeFill className="Navicon" />}
-          >{t('首页')}</NavLink>
 
-          <NavLink
-            href='/Concern'
-            icon={<GoHeart className="Navicon" />}
-            activeIcon={<GoHeartFill className="Navicon" />}
-          >{t('关注')}</NavLink>
+        <NavLink
+          href='/'
+          activeHrefs={['/',`/Github/${pathname}`,'/A','/B','/C',]}
+          icon={<GoHome className="Navicon" />}
+          activeIcon={<GoHomeFill className="Navicon" />}
+        >{t('首页')}</NavLink>
 
-          <NavLink
-            href='/Message'
-            icon={<GoBell className="Navicon" />}
-            activeIcon={<GoBellFill className="Navicon" />}
-          >{t('消息')}</NavLink>
+        <NavLink
+          href='/Concern'
+          activeHrefs={['/Concern']}
+          icon={<GoHeart className="Navicon" />}
+          activeIcon={<GoHeartFill className="Navicon" />}
+        >{t('关注')}</NavLink>
 
-          <NavLink
-            href='/My'
-            icon={<GoPerson className="Navicon" />}
-            activeIcon={<GoPersonFill className="Navicon" />}
-          >{t('我的')}</NavLink>
-      
+        <NavLink
+          href='/Message'
+          activeHrefs={['/Message']}
+          icon={<GoBell className="Navicon" />}
+          activeIcon={<GoBellFill className="Navicon" />}
+        >{t('消息')}</NavLink>
 
-      
-    </div>
+        <NavLink
+          href='/My'
+          activeHrefs={['/My', '/Dappbrowser', '/Function', '/Settings',]}
+          icon={<GoPerson className="Navicon" />}
+          activeIcon={<GoPersonFill className="Navicon" />}
+        >{t('我的')}</NavLink>
+
+
+      </div>
 
     </>
   );
 }
 
 
-function NavLink({ href, activeIcon, icon, children }) {
+function NavLink({ href, activeIcon, icon, children, activeHrefs }) {
   const pathname = usePathname();
+  const className = `nav_link ${activeHrefs.includes(pathname) ? 'active' : ''}`
 
   return (
     <div className="Link">
 
-  
-    <Link
-      className={`nav_link ${pathname === `${href}` ? 'active' : ''}`}
-      href={href}
-      prefetch={true} passHref
-    >
-      <div className="NavLink-container">
+      <Link
+        className={className}
+        href={href}
+        prefetch={true} passHref
+      >
+        <div className="NavLink-container">
 
-        <div className="NavLink-left"> 
-          {pathname === `${href}` ? activeIcon : icon}
+          <div className="NavLink-left">
+            {activeHrefs.includes(pathname) ? activeIcon : icon}
+          </div>
+
+          <div className="NavLink-center">
+            <p className="Link_children">{children}</p>
+          </div>
+
         </div>
-
-        <div className="NavLink-center">
-          <p className="Link_children">{children}</p>
-        </div>
-
-
-      </div>
-    </Link>
+      </Link>
 
 
     </div>

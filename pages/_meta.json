@@ -2,18 +2,7 @@
     "*": {"type": "page"},
 
     "about": {
-        "title": "关于about",
-        "theme": {
-            "layout": "raw",
-            "breadcrumb": false,
-            "footer": false,
-            "sidebar": false,
-            "toc": false,
-            "pagination": false
-        }
-    },
-    "business": {
-        "title": "业务business",
+        "title": "关于",
         "theme": {
             "layout": "raw",
             "breadcrumb": false,
@@ -24,7 +13,7 @@
         }
     },
     "blog": {
-        "title": "博客Blog",
+        "title": "博客",
         "theme": {
             "breadcrumb": false,
             "footer": true,
@@ -34,10 +23,18 @@
         }
     },
     "docs": {
-        "title": "文档Docs"
+        "title": "文档",
+        "theme": {
+            "breadcrumb": true,
+            "footer": false,
+            "sidebar": true,
+            "toc": true,
+            "pagination": true
+        }
     },
-    "news": {
-        "title": "新闻news",
+    
+    "business": {
+        "title": "业务",
         "theme": {
             "layout": "raw",
             "breadcrumb": false,
@@ -47,18 +44,15 @@
             "pagination": false
         }
     },
-    "company": {
-        "title": "Company",
-        "type": "menu",
-        "items": {
-          "about": {
-            "title": "About",
-            "href": "/about"
-          },
-          "contact": {
-            "title": "Contact Us",
-            "href": "mailto:hi@example.com"
-          }
+    "news": {
+        "title": "新闻",
+        "theme": {
+            "layout": "raw",
+            "breadcrumb": false,
+            "footer": false,
+            "sidebar": false,
+            "toc": false,
+            "pagination": false
         }
-      }
+    }
 }

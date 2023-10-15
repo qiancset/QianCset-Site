@@ -6,11 +6,10 @@ import { Menu, Dropdown, Button } from "antd";
 
 import "./Locales.css";
 import { GoGlobe } from "react-icons/go";
-import { useTheme } from "next-themes";
 
 
 export default function Locales({ }) {
-  const { resolvedTheme } = useTheme();
+
   const { i18n } = useTranslation();
   const [showMenu, setShowMenu] = useState(false);
 
