@@ -1,0 +1,64 @@
+{
+    "*": {"type": "page"},
+
+    "about": {
+        "title": "关于about",
+        "theme": {
+            "layout": "raw",
+            "breadcrumb": false,
+            "footer": false,
+            "sidebar": false,
+            "toc": false,
+            "pagination": false
+        }
+    },
+    "business": {
+        "title": "业务business",
+        "theme": {
+            "layout": "raw",
+            "breadcrumb": false,
+            "footer": false,
+            "sidebar": false,
+            "toc": false,
+            "pagination": false
+        }
+    },
+    "blog": {
+        "title": "博客Blog",
+        "theme": {
+            "breadcrumb": false,
+            "footer": true,
+            "sidebar": true,
+            "toc": false,
+            "pagination": false
+        }
+    },
+    "docs": {
+        "title": "文档Docs"
+    },
+    "news": {
+        "title": "新闻news",
+        "theme": {
+            "layout": "raw",
+            "breadcrumb": false,
+            "footer": false,
+            "sidebar": false,
+            "toc": false,
+            "pagination": false
+        }
+    },
+    "company": {
+        "title": "Company",
+        "type": "menu",
+        "items": {
+          "about": {
+            "title": "About",
+            "href": "/about"
+          },
+          "contact": {
+            "title": "Contact Us",
+            "href": "mailto:hi@example.com"
+          }
+        }
+      }
+}

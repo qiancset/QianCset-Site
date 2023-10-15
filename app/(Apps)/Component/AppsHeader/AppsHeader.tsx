@@ -11,57 +11,45 @@ import { useTranslation } from 'react-i18next';
 export default function AppsHeader() {
     const pathname = usePathname();
 
-
-
-
-
     return (
         <>
             <header className='AppsHeader'>
+                <div className="max_AppsHeader">
 
-                {pathname === "/" &&
-                    <Header >
-                        <Home />
-                    </Header>
-                }
-                {pathname.startsWith("/Home") &&
-                    <Header >
-                        <Home />
-                    </Header>
-                }
-                {pathname === "/Concern" &&
-                    <Header >
-                        <Concern />
-                    </Header>
-                }
+                    {pathname === "/" && <Home />}
+                    {pathname.startsWith("/Home") && <Home />}
+                    {pathname === "/Concern" && <Concern />}
+                    {pathname === "/Message" && <Message />}
+                    {pathname === "/My" && <My />}
 
-                {pathname === "/Message" &&
-                    <Header >
-                        <Message />
-                    </Header>
-                }
+                    <HeaderChildern />
 
-                {pathname === "/My" &&
-                    <Header >
-                        <My />
-                    </Header>
-                }
-
+                </div>
             </header>
 
         </>
     );
 }
-function Header({ children }) {
+
+
+function HeaderChildern() {
+    const pathname = usePathname();
     return (
         <>
-           
-                <div className="max_AppsHeader">
-                    {children}
+            {pathname === "/Dappbrowser" &&
+                <div className="Header_center">
+                    <h1 className="Header_P">Dapp 浏览器</h1>
                 </div>
-          
+            }
+            {pathname === "/Settings" &&
+                <div className="Header_center">
+                    <h1>Settings</h1>
+                </div>
+            }
+
+
         </>
-    )
+    );
 }
 
 

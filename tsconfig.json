@@ -2,17 +2,33 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
-      "@/UI/*": ["app/UI/*"],
-      "@/locales/*": ["locales/*"],
-      "@/Providers/*":["Providers/*"],
-      "@/public/*":["public/*"],
-
-      "@/Component/*":["app/(Apps)/Component/*"],
-      "@/CSS/*":["app/(Apps)/CSS/*"],  
-
-      "@/components/*": ["app/(www)/components/*"],
-      "@/css/*": ["app/(www)/css/*"]
+      "@/*": [
+        "./*"
+      ],
+      "@/UI/*": [
+        "app/UI/*"
+      ],
+      "@/locales/*": [
+        "locales/*"
+      ],
+      "@/Providers/*": [
+        "Providers/*"
+      ],
+      "@/public/*": [
+        "public/*"
+      ],
+      "@/Component/*": [
+        "app/(Apps)/Component/*"
+      ],
+      "@/CSS/*": [
+        "app/(Apps)/CSS/*"
+      ],
+      "@/components/*": [
+        "pages/components/*"
+      ],
+      "@/css/*": [
+        "pages/css/*"
+      ]
     },
     "lib": [
       "dom",
@@ -35,14 +51,16 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx", "app/middleware.js", 
-    
+    "**/*.tsx",
+    "**/*.mdx",
+    "app/middleware.js"
   ],
   "exclude": [
     "node_modules"

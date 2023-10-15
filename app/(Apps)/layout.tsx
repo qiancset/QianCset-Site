@@ -11,7 +11,6 @@ export default function AppsLayout({ children }) {
 
        
                 <Suspense fallback={<Loading />}>
-
                     {children}
                 </Suspense>
 

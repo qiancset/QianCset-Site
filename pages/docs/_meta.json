@@ -1,0 +1,20 @@
+{
+  "company": {
+    "title": "Company",
+    "type": "menu",
+    "items": {
+      "docs1": {
+        "title": "Docs1",
+        "href": "/Docs1"
+      },
+      "docs2": {
+        "title": "Docs2",
+        "href": "docs2"
+      }
+    }
+  },
+  "index": "文档概述",
+  "---": {
+    "type": "separator"
+  }
+}
