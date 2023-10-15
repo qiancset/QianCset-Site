@@ -1,5 +1,6 @@
 ---
 title: 入门指南
+route: Getting_Started_Guide
 ---
 
 # 入门指南

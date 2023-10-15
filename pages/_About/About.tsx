@@ -37,7 +37,7 @@ export default function About() {
             </button>
           </Link>
 
-          <Link href="https://docs.qiancset.com/" target="_blank">
+          <Link href="/docs">
             <button type="button" className="button_About_2">
               {t("阅读文档")} 
             </button>

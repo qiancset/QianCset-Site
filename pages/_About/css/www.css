@@ -2,7 +2,7 @@
 
 
 	/* 首页色 */
-	--Aboutmian-background-color: repeating-linear-gradient(190deg, #fff3cb, #fdecb4 7%, #fff3cb 10%);
+	--Aboutmian-background-color: #fff;
 
 	/* 主题色 */
 	--main-decor-color: #ea7411;
@@ -11,7 +11,7 @@
 
 
 	/* 根header */
-	--header-background: linear-gradient(200.33deg, rgba(225, 137, 54, 0.9) 0.26%, rgba(240, 193, 68, 0.9) 108.32%);
+	--header-background: #fff;
 	--nav-link-color: #000;
 	--nav-link-color-hover: #fff;
 	--nav-link-hover-background:#0000000f;
@@ -24,29 +24,24 @@
 	--feature-card-border-hover: solid #ea7411 1px;
 
 	/* 3 web3 */
-	--web3-background: linear-gradient(0deg, #ea7411 0.26%, #f0c144 100.32%);
+	--web3-background: #fff;
 	--Web3card-border: solid transparent 1px;
 	--Web3card-background: #fff2c5;
 
 	/* 4 学习文档 */
 	--card-box-shadow: 0 0 0.1rem #fff;
-	--card-background: linear-gradient(126.33deg, #ea7411 26.26%, #f0c144 108.32%);
+	--card-background: #fff;
 
 	/* footer页眉 */
 	--ff-color: #000;
 	--content-a-color: #000;
 	--content-a-color-hover: #000;
-	--ffaa-background: #e4a817;
-	--ffbb-background: linear-gradient(200.33deg, #ea7411 0.26%, #f0c144 108.32%);
+	--ffaa-background: #fff2c5;
+	--ffbb-background: #fff;
 	--ffbbxx-a-color: #000;
 }
 
 
-
-
-body {
-
-}
 
 
 .loading{

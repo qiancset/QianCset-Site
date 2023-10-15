@@ -152,7 +152,7 @@ export default function Footer() {
 
 
       <div className="页眉">
-        <div className="版权">{t("版权所有")} © 2023 Qiancset 千赛特</div>
+        <div className="版权"> Copyright © 2023 Qiancset 千赛特 {t("版权所有")}</div>
       </div>
 
 

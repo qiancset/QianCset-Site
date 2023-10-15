@@ -5,8 +5,9 @@ import { ThemeProvider } from "next-themes";
 export default function Themes({ children }) {
   return (
     <ThemeProvider
+      storageKey='theme'
       disableTransitionOnChange
-      enableSystem={false}
+      enableColorScheme={true}
     >
       {children}
     </ThemeProvider>

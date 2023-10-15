@@ -12,16 +12,6 @@
             "pagination": false
         }
     },
-    "blog": {
-        "title": "博客",
-        "theme": {
-            "breadcrumb": false,
-            "footer": true,
-            "sidebar": true,
-            "toc": false,
-            "pagination": false
-        }
-    },
     "docs": {
         "title": "文档",
         "theme": {

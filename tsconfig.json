@@ -24,10 +24,10 @@
         "app/(Apps)/CSS/*"
       ],
       "@/components/*": [
-        "pages/components/*"
+        "pages/_About/components/*"
       ],
       "@/css/*": [
-        "pages/css/*"
+        "pages/_About/css/*"
       ]
     },
     "lib": [
@@ -61,7 +61,7 @@
     "**/*.tsx",
     "**/*.mdx",
     "app/middleware.js"
-  ],
+, "theme.config.tsx"  ],
   "exclude": [
     "node_modules"
   ]

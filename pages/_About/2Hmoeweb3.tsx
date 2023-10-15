@@ -49,18 +49,7 @@ export default function HmoeWeb3() {
 
         </div>
 
-        <div className="social-media1">
-          <a
-            href="https://admin.daohaus.fun/#/molochv3/0x89/0xf403bb02187fe7184722f0575e59578e4f649269"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="button_About">
-              {t("加入Daohaus")}
-              <Image src="/images/COMLOGO/DAOhaus.svg" alt="DAOhaus" height={40} width={40} />
-            </button>
-          </a>
-        </div>
+
 
 
 

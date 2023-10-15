@@ -1,12 +1,15 @@
 {
-  "company": {
-    "title": "Company",
-    "type": "menu",
-    "items": {
-    }
-  },
   "index": "文档概述",
-  "---": {
+  "a": {
     "type": "separator"
-  }
+  },
+  "guide": "指南",
+  "whitepaper": "白皮书",
+  "Cryptocurrencies": "加密货币",
+  "b": {
+    "type": "separator"
+  },
+  "Concerning": "有关",
+  "Learning_docs": "学习文档",
+  "Serve": "服务"
 }

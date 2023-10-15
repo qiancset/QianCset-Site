@@ -143,11 +143,11 @@ function My() {
     return (
         <div className='Header_layout'>
 
-            <div className='Header_My'>
-                
-                    <Locales />
-                    <ModeThemes />
-              
+            <div className="Header_left"></div>
+            <div className="Header_center"></div>
+            <div className='Header_right'>
+                <Locales />
+                <ModeThemes />
             </div>
 
         </div>

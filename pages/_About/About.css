@@ -1,5 +1,5 @@
 .Aboutmian {
-	background: var(--Aboutmian-background-color);
+
 	justify-content: space-evenly;
 	margin: auto;
 	flex-direction: column;
@@ -55,7 +55,7 @@
 .About_strong {
 	font-size: 2.5rem;
 	margin: 2vh;
-	color: var(--color);
+
 }
 
 
@@ -130,7 +130,6 @@
 
 		height: 80px;
 		width: 100%;
-		background-color: #f0c144;
 		flex: 2 0 80px;
 
 	}
@@ -198,7 +197,7 @@
 
 /*──────卡片───*/
 .kapian {
-	color: var(--color);
+
 	display: flex;
 	flex: 1;
 	flex-wrap: wrap;
@@ -212,24 +211,20 @@
 	-moz-border-radius: 30;
 	border-radius: 30px;
 	height: 100%;
-	background: var(--feature-card-background);
+	box-shadow: 0 0 0.2rem #ea7411;
+
 	flex: 1 0 170px;
-	border: var(--feature-card-border);
+
+
 }
 
 .feature-card:hover {
 	transition: all 0.5s;
-	box-shadow: 0 0 0.5rem #ea7411;
-	border: var(--feature-card-border-hover);
+	box-shadow: 0 0 0.9rem #ea7411;
+
 }
 
-.social-media1 {
-	margin: 20px;
-}
 
-.social-media1 a {
-	margin: 5px;
-}
 
 .fa_icon_4 {
 	color: #ea7411;
@@ -238,18 +233,9 @@
 	justify-content: center;
 }
 
-.social-media1 img {
-	margin-bottom: -4px;
-	height: 32px;
-	width: 32px;
-}
+
 
 @media only screen and (max-width: 390px) {
-
-	.social-media1 img {
-		height: 10px;
-		width: 20px;
-	}
 
 	.fa_icon_4 {
 		color: #ea7411;
@@ -287,15 +273,17 @@
 	margin-top: 10px !important;
 	margin-bottom: 10px !important;
 }
+
 .feature-card p {
 	display: flex;
 	justify-content: center;
 }
+
 @media screen and (min-width:550px) and (max-width:9999px) {
 	.feature-card {
 		height: 230px;
 		flex: 1 0 150px;
-		border: var(--feature-card-border);
+
 		-webkit-border-radius: 50;
 		-moz-border-radius: 50;
 		border-radius: 50px;
@@ -347,11 +335,11 @@
 ──────────────────*/
 #web3 {
 	margin: auto;
-	background: var(--web3-background);
+
 	margin-top: 5%;
 	width: 100%;
 	height: 100%;
-	color: var(--body-color);
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -363,7 +351,7 @@
 .intro2 {
 	margin-top: 10%;
 	text-align: center;
-	color: var(--body-color);
+
 	max-width: 1520px;
 	z-index: 1;
 	margin: auto;
@@ -376,7 +364,7 @@
 	font-family: var(--body-color);
 	font-style: normal;
 	font-size: 2rem;
-	color: var(--body-color);
+
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
 
@@ -405,17 +393,18 @@
 	height: 270px;
 	flex: 1 0 200px;
 	transition: all 0.5s;
-	border: var(--Web3card-border);
-	background-color: var(--Web3card-background);
+
+	box-shadow: 0 0 0.2rem #ea7411;
+
 }
 
 .Web3card:hover {
 	box-shadow: 0 0 0.9rem #ea7411;
-	border: solid #ea7411 1px;
+
 
 }
 
-.Web3card1 span{
+.Web3card1 span {
 	background-color: transparent;
 	display: flex;
 	justify-content: center;
@@ -425,7 +414,7 @@
 	text-align: left;
 	font-size: 1rem;
 	margin: 5%;
-	color: var(--color);
+
 }
 
 .fa_icon_4 {
@@ -517,7 +506,7 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	color: var(--color);
+
 }
 
 .projectsh3 {
@@ -526,7 +515,7 @@
 
 	font-style: normal;
 	font-size: 2rem;
-	color: var(--color);
+
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
 
@@ -570,10 +559,10 @@
 	height: 250px;
 	border-radius: 12px;
 	background: transparent;
-	box-shadow: var(--card-box-shadow);
+	box-shadow: 0 0 0.1rem #ea7411;
+
 	text-decoration: none;
-	color: #000;
-	background: var(--card-background);
+
 }
 
 .card img {
@@ -592,7 +581,7 @@
 .work a {
 	text-align: center;
 	font-size: 1rem;
-	color: var(--color);
+
 
 	cursor: pointer;
 }
@@ -602,7 +591,7 @@
 .card:hover {
 	color: #000;
 	transition: all 0.8s;
-	box-shadow: 0 0 0.9rem #000000;
+	box-shadow: 0 0 0.9rem #ea7411;
 	background: linear-gradient(126.33deg, #ea7411 26.26%, #f0c144 108.32%);
 
 }
@@ -616,7 +605,6 @@
 		width: 96px;
 		height: 120px;
 		border-radius: 6px;
-		background: var(--card-background);
 	}
 
 	.card img {
@@ -635,7 +623,7 @@
 
 		text-align: center;
 		font-size: 0.8rem;
-		color: var(--color);
+
 
 		cursor: pointer;
 	}
@@ -669,7 +657,7 @@
 		text-align: center;
 
 		font-size: 0.5rem;
-		color: var(--color);
+
 
 		cursor: pointer;
 	}
@@ -684,7 +672,7 @@
 	margin: auto;
 
 	height: 85vh;
-	color: var(--color);
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -702,12 +690,12 @@
 .intro4 {
 	max-width: 1520px;
 	justify-content: space-evenly;
-
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	text-align: center;
-	color: var(--color);
+
 	z-index: 1;
 	margin: auto;
 	padding: 20px;
@@ -730,7 +718,7 @@
 
 	font-style: normal;
 	font-size: 2rem;
-	color: var(--color);
+
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
 
@@ -745,17 +733,17 @@
 
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
-	gap: 5%;
+
+	justify-content: center;
+	align-items: center;
 
 }
 
 .kapianLOGOP {
 	text-align: center;
-	margin: 5px;
+	margin: 5%;
 	font-size: 1.2rem;
 
-	margin-bottom: 2%;
 }
 
 .feature-cardLOGO {
@@ -769,7 +757,7 @@
 	width: 40px;
 	background-color: transparent;
 	flex: 1 1 40px;
-	margin-bottom: 2%;
+
 
 }
 
@@ -780,7 +768,6 @@
 	width: 40px;
 	background-color: transparent;
 	flex: 1 1 40px;
-	margin-bottom: 2%;
 
 }
 

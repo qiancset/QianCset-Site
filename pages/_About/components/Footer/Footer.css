@@ -1,17 +1,15 @@
 /*────────────────── 
        页眉
 ──────────────────*/
-footer {
 
-}
 
 .footer {
-    color: var(--color);
-    background-color: var(--ffaa-background);
+    border-top: 1px solid rgba(204, 204, 204, 0.3);
+  padding: 1vh;
 }
 
 .footer a {
-    color: #000000;
+ 
 
     letter-spacing: 1px;
     text-decoration: none;
@@ -64,7 +62,7 @@ footer {
     height: 100%;
     display: left;
     justify-content: left;
-    color: var(--ff-color);
+ 
     font-size: 1rem;
     line-height: 30px;
     text-align: flex-start;
@@ -79,16 +77,19 @@ footer {
 
 .页眉{
     display: flex;
-    background: var(--ffbb-background);
+ 
     font-size: 1em;
     padding:10px ;
 }
 
 .版权 {
     font-size: 1em;
-    margin: 1%;
+ 
 }
-
+.link_name h2{
+font-size: 1.5rem;
+margin-bottom: 1vh;
+}
 
 .link_boxes {
     width: 100%;
@@ -116,7 +117,7 @@ footer {
 }
 
 .content a {
-    color: var(--content-a-color);
+   
     letter-spacing: 1px;
     text-decoration: none;
 }
@@ -173,7 +174,7 @@ footer {
 ──────────────────*/
 
 .social-media {
-    background: var(--ffaa-background);
+   
     padding: 10px;
     display: flex;
     position: center;
@@ -191,7 +192,7 @@ footer {
     font-size: 2rem;
     text-align: center;
     display: inline-block;
-    color: var(--color);
+
 
 }
 

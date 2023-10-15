@@ -1,41 +1,98 @@
 import Image from "next/image";
-
-
+import ModeThemesPages from "@/components/ModeThemesPages";
+import Themes from '@/Providers/Themes'
+import "./app/layout.css";
+import "@/css/www.css";
+import "@/css/www_dark.css";
+import "@/css/Anniu.css";
+import { FaTwitter } from "react-icons/fa";
 
 export default {
-
-
-  logo: (<><Image src='/favicon.ico' width={40} height={40} alt="logo" /></>),
-
-  project: {
-    link: 'https://github.com/Qiancset/Qiancset-Site',
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 256 256">
-        <path
-          fill="currentColor"
-          d="m231.9 169.8l-94.8 65.6a15.7 15.7 0 0 1-18.2 0l-94.8-65.6a16.1 16.1 0 0 1-6.4-17.3L45 50a12 12 0 0 1 22.9-1.1L88.5 104h79l20.6-55.1A12 12 0 0 1 211 50l27.3 102.5a16.1 16.1 0 0 1-6.4 17.3Z"
-        ></path>
-      </svg>
-    )
+  //搜索引擎优化选项
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s —— 千赛特 QianCset Web3'
+    }
   },
 
+  //网站徽标的 React 组件
+  logo: (<><Image src='/favicon.ico' width={40} height={40} alt="logo" /></>),
+  //logo组件的链接
+  logoLink: {},
+
+  //在导航栏上显示链接到项目主页的按钮
+  project: {
+    link: 'https://github.com/Qiancset/Qiancset-Site'
+  },
+
+  //显示一个按钮该按钮链接到您的项目论坛或其他社交媒体 导航栏
   chat: {
     link: 'https://twitter.com/shuding_',
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 248 204">
-        <path
-          fill="currentColor"
-          d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07a50.338 50.338 0 0 0 22.8-.87C27.8 117.2 10.85 96.5 10.85 72.46v-.64a50.18 50.18 0 0 0 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71a143.333 143.333 0 0 0 104.08 52.76 50.532 50.532 0 0 1 14.61-48.25c20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26a50.69 50.69 0 0 1-22.2 27.93c10.01-1.18 19.79-3.86 29-7.95a102.594 102.594 0 0 1-25.2 26.16z"
-        />
-      </svg>
-    )
+    icon: (<FaTwitter style={{ fontSize:'1.5rem'}}/>)
   },
- 
+
+  //自定义导航栏
+  navbar: {
+
+    //在最后一个图标之后显示额外的内容
+    extraContent: <Themes><ModeThemesPages /></Themes>
+  },
+
+  //导航的选项
+  //navigation: {},
+
+  //指向文档存储库的链接字符串
+  docsRepositoryBase: 'https://github.com/Qiancset/Qiancset-Site/tree/dev',
+  //反馈链接
+  feedback: { content: '给我们反馈问题↗' },
+  //编辑链接
+  editLink: { text: '在 GitHub 上编辑此页面↗' },
+
+  //呈现上次更新日期的函数
+  //gitTimestamp:{},
+
+  //侧边栏
+  sidebar: {
+    defaultMenuCollapseLevel: 1,//指定默认情况下折叠左侧菜单的文件夹级别。
+    autoCollapse: true,//自动折叠非活动文件夹
+    toggleButton: true,//侧边栏隐藏按钮
+  },
+
+  //目录侧边栏
+  toc: {
+    title: '页面目录',//标题
+    backToTop: true //添加“滚动到顶部”链接
+  },
 
 
-  docsRepositoryBase: 'https://github.com/Qiancset/Qiancset-Site/tree/main',
+  //主题颜色
+  //primaryHue: { dark: '#ea7411', light: '#ea7411' },
+  //primarySaturation: { dark: '100%', light: '100%' },
 
+  //主题配置
+  //nextThemes: {},
+
+  //主题切换
+  themeSwitch: {
+    /*     component:{//用于呈现主题切换的组件。
+    
+        }, */
+
+    useOptions() {//主题开关中的选项。
+      return {
+        light: '光亮',
+        dark: '暗黑',
+        system: '系统'
+      }
+    }
+  },
+
+  //国际化
+  //i18n: {},
+
+  //横幅
   banner: {
+    dismissible: true,
     key: '2.0-release',
     text: (
       <a href="https://nextra.site" target="_blank">
@@ -44,13 +101,12 @@ export default {
     )
   },
 
+  //页脚
   footer: {
-    text: (
-      <div className="版权">版权所有 © 2023 Qiancset 千赛特</div>
-    )
+    //默认页脚组件的内容。
+    text: (<div className="版权">Copyright © 2023 Qiancset 千赛特 版权所有</div>),
+
+    //自定义页脚组件。
+    component: (<div className="版权">Copyright © 2023 Qiancset 千赛特 版权所有</div>)
   },
-
- toggleButton:true
-  
-
 }

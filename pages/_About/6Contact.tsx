@@ -26,7 +26,7 @@ export default function Contact() {
             <hr className="About_hr"/>
           </h3>
           <Link href="/Donation" target="_blank">
-            <button className="button_About pulse w-button" >
+            <button className="button_About" >
               {t("捐赠代币")}
             </button>
           </Link>
@@ -45,7 +45,7 @@ export default function Contact() {
               <LogoCard imageUrl="/images/COMLOGO/Rainbow.svg" altText="Rainbow" />
               <LogoCard imageUrl="/images/COMLOGO/wallet_connect.png" altText="wallet_connect" />
               <LogoCard imageUrl="/images/COMLOGO/Alcheny.svg" altText="Alcheny" />
-              <LogoCard imageUrl="/images/COMLOGO/DAOhaus.svg" altText="DAOhaus" />
+          
             </div>
 
 
