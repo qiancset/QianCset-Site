@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ModeThemesPages from "@/components/ModeThemesPages";
 import Themes from '@/Providers/Themes'
+import 'locales/i18n'
 import "./app/layout.css";
 import "@/css/www.css";
 import "@/css/www_dark.css";
@@ -18,7 +19,7 @@ export default {
   //网站徽标的 React 组件
   logo: (<><Image src='/favicon.ico' width={40} height={40} alt="logo" /></>),
   //logo组件的链接
-  logoLink: {},
+  logoLink: '/about',
 
   //在导航栏上显示链接到项目主页的按钮
   project: {
@@ -27,7 +28,7 @@ export default {
 
   //显示一个按钮该按钮链接到您的项目论坛或其他社交媒体 导航栏
   chat: {
-    link: 'https://twitter.com/shuding_',
+    link: 'https://twitter.com/qiancset',
     icon: (<FaTwitter style={{ fontSize:'1.5rem'}}/>)
   },
 
@@ -46,7 +47,7 @@ export default {
   //反馈链接
   feedback: { content: '给我们反馈问题↗' },
   //编辑链接
-  editLink: { text: '在 GitHub 上编辑此页面↗' },
+  editLink: { text: '在 GitHub 上编辑此页面 ↗' },
 
   //呈现上次更新日期的函数
   //gitTimestamp:{},
@@ -95,8 +96,8 @@ export default {
     dismissible: true,
     key: '2.0-release',
     text: (
-      <a href="https://nextra.site" target="_blank">
-        🎉 Nextra 2.0 is released. Read more →
+      <a href="https://twitter.com/qiancset" target="_blank">
+        🎉 关注 Twitter →
       </a>
     )
   },

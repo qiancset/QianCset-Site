@@ -15,10 +15,20 @@ export default function Antd({ children }) {
 const light = {
   token: {
     colorPrimary: "#ea7411",
-    borderRadius: 20,
-    wireframe: false,
     colorInfo: "#ea7411",
-    sizeUnit: 4,
-    sizeStep: 6,
+    borderRadius: 16,
+    colorLinkHover: "#ea7411",
+    colorLinkActive: "#ea7411",
   },
+};
+
+const dark = {
+  token: {
+    colorPrimary: "#ea7411",
+    colorInfo: "#ea7411",
+    borderRadius: 16,
+    colorLinkHover: "#ea7411",
+    colorLinkActive: "#ea7411",
+  },
+  "algorithm": "dark"
 };

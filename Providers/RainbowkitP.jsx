@@ -3,13 +3,6 @@
 import { useTheme } from "next-themes";
 
 import "@rainbow-me/rainbowkit/styles.css";
-import {
-  getDefaultWallets,
-  RainbowKitProvider,
-  Locale,
-  darkTheme,
-  lightTheme,
-} from "@rainbow-me/rainbowkit";
 
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import {
@@ -22,15 +15,25 @@ import {
   bsc,
   localhost,
 } from "wagmi/chains";
+import {
+  getDefaultWallets,
+  RainbowKitProvider,
+  Locale,
+  darkTheme,
+  lightTheme,
+} from "@rainbow-me/rainbowkit";
 import { publicProvider } from "wagmi/providers/public";
 import { infuraProvider } from "wagmi/providers/infura";
 import { useTranslation } from 'react-i18next';
 
 
+
 export default function RainbowkitP({ children }) {
   const { t } = useTranslation();
-
+// 确保 t('zh-CN') 返回一个有效的 Locale 类型  
+const locale = t('zh-CN') ;   
   const { theme } = useTheme();
+
   // 根据当前的 theme 值来选择不同的主题
   const selectedTheme =
     theme === "dark"
@@ -52,7 +55,7 @@ export default function RainbowkitP({ children }) {
   return (
     <WagmiConfig config={wagmiConfig} >
       <RainbowKitProvider
-        locale={t("zh-CN")}
+        locale={locale}
         chains={chains}
         theme={{
           lightMode: selectedTheme,
@@ -69,6 +72,10 @@ export default function RainbowkitP({ children }) {
     </WagmiConfig>
   );
 }
+
+
+
+
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [mainnet, polygon, optimism, arbitrum, zora, zkSync, bsc, localhost],
