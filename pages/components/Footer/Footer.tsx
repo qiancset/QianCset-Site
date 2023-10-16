@@ -136,10 +136,10 @@ export default function Footer() {
               </ul>
             </div>
             <div className="content2"></div>
-          </div>
+          </div>png
           <div className="logofooter">
             <Image
-              src="/images/icon/QianCset.jpg"
+              src="/images/icon/QianCset.png"
               alt="QianCset"
               className="QianCset"
               height={132} width={400}

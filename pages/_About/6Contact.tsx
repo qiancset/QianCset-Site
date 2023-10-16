@@ -25,7 +25,7 @@ export default function Contact() {
             {t("合作发展")}
             <hr className="About_hr"/>
           </h3>
-          <Link href="/Donation" target="_blank">
+          <Link href="/" target="_blank">
             <button className="button_About" >
               {t("捐赠代币")}
             </button>

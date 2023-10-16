@@ -12,16 +12,6 @@
             "pagination": false
         }
     },
-    "docs": {
-        "title": "文档",
-        "theme": {
-            "breadcrumb": true,
-            "footer": false,
-            "sidebar": true,
-            "toc": true,
-            "pagination": true
-        }
-    },
     
     "business": {
         "title": "业务",
@@ -43,6 +33,17 @@
             "sidebar": false,
             "toc": false,
             "pagination": false
+        }
+    }
+    ,
+    "docs": {
+        "title": "文档",
+        "theme": {
+            "breadcrumb": true,
+            "footer": false,
+            "sidebar": true,
+            "toc": true,
+            "pagination": true
         }
     }
 }
