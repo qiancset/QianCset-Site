@@ -1,11 +1,21 @@
 [data-theme='dark'] {
+	/* 全局css */
+	--shiki-color: #fff !important;
+	--theme-color: #ea7411;
+
+	/* UI hover */
+	--shiki-link-hover-background: #ffffff31;
 
 	/* Navbar */
-	--Navbar-background: #121212;
-	--nav_link-color: #ece1e1d3;
+	--shiki-Navbar-background: #121212;
+	--shiki-nav_link-color: #ece1e1d3;
 
 	/* Header */
-	--header-background: #121212;
-	--nav_link-background-hover: #ffffff31;
+	--shiki-header-background: #121212;
+	--shiki-Header-background-hover: #ffffff31;
+
+	/* antd */
+	--background-color-antd: #1f1f1f;
+	--color-antd: #ea7411 !important;
 
 }

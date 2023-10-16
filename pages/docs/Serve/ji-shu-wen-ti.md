@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+title: 技术问题
 ---
 # 技术问题
 

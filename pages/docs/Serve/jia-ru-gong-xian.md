@@ -1,4 +1,4 @@
 ---
-sidebar_position: 4
+title: 加入贡献
 ---
 # 加入贡献

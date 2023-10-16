@@ -6,11 +6,11 @@
 		z-index: 6;
 		width: 100%;
 
-		height: 56px;
+		height: 64px;
 
 		-webkit-backdrop-filter: saturate(300%) blur(5px);
 		backdrop-filter: saturate(300%) blur(5px);
-		background: var(--header-background);
+		background: var(--shiki-header-background);
 
 		border-bottom: 1px solid rgba(204, 204, 204, 0.3);
 
@@ -46,6 +46,8 @@
 		display: none;
 	}
 
+
+
 	.Header_left {
 		margin-left: 1%;
 		width: 100%;
@@ -79,6 +81,16 @@
 		justify-content: center;
 	}
 
+	.Header_right_My {
+		gap: 0.5rem;
+		margin-right: 1.5rem;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
 
 }
 
@@ -89,13 +101,13 @@
 		top: 0;
 		z-index: 6;
 		width: 100%;
-		height: 56px;
+		height: 64px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		-webkit-backdrop-filter: saturate(180%) blur(5px);
 		backdrop-filter: saturate(180%) blur(5px);
-		background: var(--header-background);
+		background: var(--shiki-header-background);
 
 		border-bottom: 1px solid rgba(204, 204, 204, 0.3);
 	}
@@ -171,4 +183,31 @@
 		justify-content: flex-end;
 	}
 
+}
+
+.BackLink {
+	width: 100%;
+	height: 100%;
+	padding: 40% 40% 40% 40%;
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: var(--shiki-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.BackLink:hover {
+	width: 100%;
+	height: 100%;
+	padding: 40% 40% 40% 40%;
+	text-decoration: none;
+	font-size: 1.3rem;
+	background: #ea7411;
+	background-color: var(--shiki-link-hover-background);
+	-webkit-border-radius: 30;
+	-moz-border-radius: 30;
+	border-radius: 30px;
 }

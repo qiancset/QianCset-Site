@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+title: 去中心化自治组织 (DAO)
 ---
 # 去中心化自治组织 (DAO)
 

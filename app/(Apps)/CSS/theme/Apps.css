@@ -1,12 +1,22 @@
 :root {
+    /* 全局css */
+    --shiki-color: #000 !important;
+    --theme-color: #ea7411;
+
+    /* UI */
+    --shiki-link-hover-background: #0000000f;
 
 	/* Navbar */
-	--Navbar-background: #ffffff;
-	--nav_link-color: #545353d3;
+	--shiki-Navbar-background: #ffffff;
+	--shiki-nav_link-color: #545353d3;
 
+	
 	/* Header */
-	--header-background: #ffffffa8;
-	--nav_link-background-hover: #0000000f;
+	--shiki-header-background: #ffffffa8;
+	--shiki-nav_link-background-hover: #0000000f;
+
+    /* antd */
+    --background-color-antd: #ffffff;
+    --color-antd: #ea7411 !important;
 
 }
-

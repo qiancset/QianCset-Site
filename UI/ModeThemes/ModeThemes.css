@@ -8,15 +8,17 @@
 }
 
 .ModeThemes:hover{
-	background: var(--nav-link-hover-background);
+	background: var(--shiki-link-hover-background);
 	-webkit-border-radius: 16;
 	-moz-border-radius: 16;
 	border-radius: 16px;
 }
 
+
 .Sun_icon,
 .Moon_icon {
-	color: var(--color);
+	color: var( --shiki-color);
+
 	height: 22px;
 	width: 22px;
 	-webkit-border-radius: 30;
@@ -27,7 +29,7 @@
 .Sun_after,
 .Moon_after {
 	border: none;
-	background: var(--ModeThemes);
+	background: var(--shiki-link-hover-background);
 	-webkit-border-radius: 30;
 	-moz-border-radius: 30;
 	border-radius: 30px;

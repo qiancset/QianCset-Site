@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+title: 什么是跨链？
 ---
 # 什么是跨链？
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+title: 二层网络 Layer 2 
 ---
 # 二层网络
 在不影响安全性与去中心化的情况下扩展以太坊。

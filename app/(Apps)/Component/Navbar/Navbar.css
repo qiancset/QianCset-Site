@@ -6,7 +6,7 @@
     border-right: 1px solid rgba(204, 204, 204, 0.3);
 
     color: var(--color);
-    background: var(--Navbar-background);
+    background: var(--shiki-Navbar-background);
     padding: 5%;
   }
 
@@ -38,7 +38,7 @@
     width: 100%;
     text-decoration: none;
     font-size: 1.7rem;
-    color: var(--nav_link-color);
+    color: var(--shiki-nav_link-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@
   .nav_link:hover {
     height: 100%;
     width: 100%;
-    background: var(--nav_link-background-hover);
+    background: var(--shiki-link-hover-background);
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
     border-radius: 30px;
@@ -80,7 +80,7 @@
 
   .Navbar {
     width: 100%;
-    height: 56px;
+    height: 64px;
     z-index: 5;
     position: fixed;
     bottom: 0;
@@ -89,7 +89,7 @@
     align-items: center;
     -webkit-backdrop-filter: saturate(180%) blur(5px);
     backdrop-filter: saturate(180%) blur(5px);
-    background: var(--Navbar-background);
+    background: var(--shiki-Navbar-background);
     /*   box-shadow: 0 0 1px var(--color); */
     border-top: 1px solid rgba(204, 204, 204, 0.3);
   }
@@ -149,7 +149,7 @@
   .NavLink-container {
     display: flex;
    
-    height: 56px;
+    height: 64px;
     justify-content: center;
     align-items: center;
     gap: 12px;
@@ -166,7 +166,7 @@
   .NavLink-container {
     display: flex;
     width: 100%;
-    height: 56px;
+    height: 64px;
     align-items: center;
     justify-content: flex-start;
 

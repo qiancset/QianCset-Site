@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+title: 去中心化身份
 ---
 # 去中心化身份
 

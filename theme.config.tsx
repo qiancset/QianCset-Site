@@ -1,11 +1,8 @@
 import Image from "next/image";
-import ModeThemesPages from "@/components/ModeThemesPages";
+import ModeThemes from "@/UI/ModeThemes/ModeThemes";
+import Locales from "@/UI/LocalesButton/Locales";
 import Themes from '@/Providers/Themes'
-import 'locales/i18n'
-import "./app/layout.css";
-import "@/css/www.css";
-import "@/css/www_dark.css";
-import "@/css/Anniu.css";
+
 import { FaTwitter } from "react-icons/fa";
 
 export default {
@@ -17,7 +14,7 @@ export default {
   },
 
   //网站徽标的 React 组件
-  logo: (<><Image src='/favicon.ico' width={40} height={40} alt="logo" /></>),
+  logo: (<><Image src='/images/icon/QianCset.png' width={120} height={45} alt="logo" /></>),
   //logo组件的链接
   logoLink: '/about',
 
@@ -29,14 +26,14 @@ export default {
   //显示一个按钮该按钮链接到您的项目论坛或其他社交媒体 导航栏
   chat: {
     link: 'https://twitter.com/qiancset',
-    icon: (<FaTwitter style={{ fontSize:'1.5rem'}}/>)
+    icon: (<FaTwitter style={{ fontSize: '1.5rem' }} />)
   },
 
   //自定义导航栏
   navbar: {
 
     //在最后一个图标之后显示额外的内容
-    extraContent: <Themes><ModeThemesPages /></Themes>
+    extraContent: <Themes><Locales /><ModeThemes /></Themes>
   },
 
   //导航的选项
@@ -66,12 +63,15 @@ export default {
   },
 
 
-  //主题颜色
-  //primaryHue: { dark: '#ea7411', light: '#ea7411' },
-  //primarySaturation: { dark: '100%', light: '100%' },
+/*   //主题颜色
+  primaryHue: { dark: '#ea7411', light: '#ea7411' },
+  primarySaturation: { dark: '100%', light: '100%' },
 
   //主题配置
-  //nextThemes: {},
+  nextThemes: {
+    primaryHue: { dark: '#ea7411', light: '#ea7411' },
+    primarySaturation: { dark: '100%', light: '100%' },
+  }, */
 
   //主题切换
   themeSwitch: {

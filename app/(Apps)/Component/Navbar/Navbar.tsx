@@ -42,7 +42,7 @@ export default function Navbar() {
 
         <NavLink
           href='/My'
-          activeHrefs={['/My', '/Dappbrowser', '/Function', '/Settings',]}
+          activeHrefs={['/My', '/Dappbrowser', '/Function', '/Settings','/a',]}
           icon={<GoPerson className="Navicon" />}
           activeIcon={<GoPersonFill className="Navicon" />}
         >{t('我的')}</NavLink>

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+title: 数字所有权
 ---
 # 数字所有权
 

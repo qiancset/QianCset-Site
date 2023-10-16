@@ -105,7 +105,7 @@ function Home() {
     return (
         <>
             <div className="Header_left_home">
-                <Image src="/images/icon/QianCset.jpg" className="QianCset_lef" alt="Q" width={120} height={37} />
+                <Image src="/images/icon/QianCset.png" className="QianCset_left" alt="Q" width={120} height={40} />
             </div>
 
             <div className="Header_center_home">
@@ -145,7 +145,7 @@ function My() {
 
             <div className="Header_left"></div>
             <div className="Header_center"></div>
-            <div className='Header_right'>
+            <div className='Header_right_My'>
                 <Locales />
                 <ModeThemes />
             </div>

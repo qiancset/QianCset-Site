@@ -6,7 +6,7 @@
         "./*"
       ],
       "@/UI/*": [
-        "app/UI/*"
+        "UI/*"
       ],
       "@/locales/*": [
         "locales/*"
@@ -24,10 +24,10 @@
         "app/(Apps)/CSS/*"
       ],
       "@/components/*": [
-        "pages/_About/components/*"
+        "pages/components/*"
       ],
       "@/css/*": [
-        "pages/_About/css/*"
+        "pages/css/*"
       ]
     },
     "lib": [

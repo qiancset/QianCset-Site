@@ -1,4 +1,4 @@
 ---
-sidebar_position: 3
+title: 赞助商
 ---
 # 赞助商

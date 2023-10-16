@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+title: 非同质化代币 NFT
 ---
 # 非同质化代币 NFT
 

@@ -5,7 +5,7 @@
 }
 
 .List_Link {
-	color: var(--color);
+	color: var(--shiki-color);
 	text-decoration: none;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .List_Item:hover {
-	background: var(--nav_link-background-hover);
+	background: var(--shiki-link-hover-background);
 	-webkit-border-radius: 30;
 	-moz-border-radius: 30;
 	border-radius: 30px;
