@@ -727,12 +727,8 @@
 
 .kapianLOGO {
 	max-width: 1520px;
-
-
-
 	width: 100%;
 	display: flex;
-
 	justify-content: center;
 	align-items: center;
 
@@ -742,13 +738,9 @@
 	text-align: center;
 	margin: 5%;
 	font-size: 1.2rem;
-
 }
 
 .feature-cardLOGO {
-
-
-
 	display: flex;
 	justify-self: center;
 	text-align: center;
@@ -756,11 +748,10 @@
 	width: 40px;
 	background-color: transparent;
 	flex: 1 1 40px;
-
-
 }
 
-.feature-cardLOGO svg {
+
+.feature-cardLOGO svg img {
 
 	text-align: center;
 	height: 40px;
@@ -768,6 +759,23 @@
 	background-color: transparent;
 	flex: 1 1 40px;
 
+}
+
+@media only screen and (max-width: 400px) {
+	.feature-cardLOGO {
+		height: 2rem;
+		width: 2rem;
+
+	}
+
+	.feature-cardLOGO img,
+	.feature-cardLOGO svg {
+
+		height: 2rem;
+		width: 2rem;
+
+
+	}
 }
 
 
