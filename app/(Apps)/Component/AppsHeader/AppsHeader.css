@@ -96,6 +96,7 @@
 
 /* 手机 */
 @media only screen and (max-width: 700px) {
+
 	.AppsHeader {
 		position: fixed;
 		top: 0;
@@ -174,8 +175,9 @@
 		justify-content: center;
 	}
 
-	.Header_My {
-		margin-right: 2%;
+		.Header_right_My {
+		gap: 0.5rem;
+		margin-right: 1.5rem;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -184,6 +186,8 @@
 	}
 
 }
+
+
 
 .BackLink {
 	width: 100%;
