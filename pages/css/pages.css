@@ -1,3 +1,41 @@
+.nx-text-sm {
+    font-size: 1rem !important;
+    color: #ea7411 !important;
+}
+
+.nx-text-sm:hover {
+    font-size: 1rem !important;
+    background: var(--shiki-link-hover-background) !important;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+}
+
+.nx-text-center {
+    text-align: center !important;
+    font-size: 1rem !important;
+}
+
+.nx-text-gray-600 {
+    font-size: 1rem !important;
+    color: var(--shiki-color) !important;
+}
+
+.nx-text-gray-600:hover {
+    font-size: 1rem !important;
+    background: var(--shiki-link-hover-background) !important;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .nx-text-current {
+        color: currentColor;
+        display: none;
+    }
+}
+
 /*--选择器----*/
 ::selection {
     background: #ea7411;
