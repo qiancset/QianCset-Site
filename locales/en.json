@@ -96,6 +96,21 @@
     "功能": "Function",
     "设置": "Settings",
     "去中心化社交网络": "Decentralized social network",
-    "业务": "business"
+    "业务": "business",
+    "更新时间": "Update time",
+    "页面目录": "Page table of contents",
+    "光亮": "light",
+    "暗黑": "dark",
+    "系统": "system",
+    "搜索文档": {
+      "": {
+        "": {
+          "": "Search documents..."
+        }
+      }
+    },
+    "建议": "Suggested",
+    "在 GitHub 上编辑此页面": "Edit this page on GitHub",
+    "给我们反馈问题↗": "Give us feedback questions ↗"
   }
 }

@@ -115,8 +115,7 @@
     padding: 20% 20% 20% 20%;
     text-decoration: none;
     font-size: 1.7rem;
-
-    color: var(--nav_link-color);
+    color: var(--shiki-nav_link-color);
     display: flex;
     justify-content: center;
     align-items: center;

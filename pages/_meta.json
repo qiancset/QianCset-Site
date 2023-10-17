@@ -1,8 +1,8 @@
 {
-    "*": {"type": "page"},
-
+    "*": {
+        "type": "page"
+    },
     "about": {
-        "title": "关于",
         "theme": {
             "layout": "raw",
             "breadcrumb": false,
@@ -12,9 +12,7 @@
             "pagination": false
         }
     },
-    
     "business": {
-        "title": "业务",
         "theme": {
             "layout": "full",
             "breadcrumb": false,
@@ -25,7 +23,6 @@
         }
     },
     "news": {
-        "title": "新闻",
         "theme": {
             "layout": "full",
             "breadcrumb": false,
@@ -34,8 +31,7 @@
             "toc": false,
             "pagination": false
         }
-    }
-    ,
+    },
     "docs": {
         "title": "文档",
         "theme": {
