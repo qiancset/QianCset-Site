@@ -175,7 +175,11 @@
 		justify-content: center;
 	}
 
+<<<<<<< HEAD
 		.Header_right_My {
+=======
+	.Header_right_My {
+>>>>>>> dev
 		gap: 0.5rem;
 		margin-right: 1.5rem;
 		width: 100%;
@@ -184,7 +188,14 @@
 		align-items: center;
 		justify-content: flex-end;
 	}
-
+	.Header_right_GoGear {
+		color: var( --shiki-color);
+		height: 22px;
+		width: 22px;
+		-webkit-border-radius: 30;
+		-moz-border-radius: 30;
+		border-radius: 30px;
+	}
 }
 
 

@@ -8,6 +8,10 @@
 }
 
 .ModeThemes:hover{
+<<<<<<< HEAD
+=======
+	background: var(--shiki-link-hover-background);
+>>>>>>> dev
 	-webkit-border-radius: 30;
 	-moz-border-radius: 30;
 	border-radius: 30px;
