@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 import ModeThemes from "@/UI/ModeThemes/ModeThemes";
 import Locales from "@/UI/LocalesButton/Locales";
 
-import { GoArrowLeft, GoGear } from 'react-icons/go';
+import { GoArrowLeft } from 'react-icons/go';
 
 export default function AppsHeader() {
     const pathname = usePathname();
@@ -105,7 +105,7 @@ function Home() {
     return (
         <>
             <div className="Header_left_home">
-                <Image src="/images/icon/QianCset.png" className="QianCset_left" alt="Q" width={120} height={45} />
+                <Image src="/images/icon/QianCset.png" className="QianCset_left" alt="Q" width={120} height={40} />
             </div>
 
             <div className="Header_center_home">
@@ -148,9 +148,6 @@ function My() {
             <div className='Header_right_My'>
                 <Locales />
                 <ModeThemes />
-{/*                 <div>
-                    <GoGear className='Header_right_GoGear' />
-                </div> */}
             </div>
 
         </div>

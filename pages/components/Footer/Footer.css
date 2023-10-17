@@ -174,7 +174,8 @@ margin-bottom: 1vh;
 ──────────────────*/
 
 .social-media {
-    padding: 0.5rem;
+   
+    padding: 10px;
     display: flex;
     position: center;
     align-items: space-around;
@@ -187,7 +188,7 @@ margin-bottom: 1vh;
 
 .social-media a {
     transition: all 0.2s;
-    margin: 0.5rem;
+    margin: 10px;
     font-size: 2rem;
     text-align: center;
     display: inline-block;

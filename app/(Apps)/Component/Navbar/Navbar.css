@@ -80,7 +80,7 @@
 
   .Navbar {
     width: 100%;
-    height: 56px;
+    height: 64px;
     z-index: 5;
     position: fixed;
     bottom: 0;
@@ -149,7 +149,7 @@
   .NavLink-container {
     display: flex;
    
-    height: 56px;
+    height: 64px;
     justify-content: center;
     align-items: center;
     gap: 12px;
@@ -166,7 +166,7 @@
   .NavLink-container {
     display: flex;
     width: 100%;
-    height: 56px;
+    height: 64px;
     align-items: center;
     justify-content: flex-start;
 
