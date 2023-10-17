@@ -1,4 +1,4 @@
-/* 电脑 */
+}/* 电脑 */
 @media screen and (min-width:701px) {
 	.AppsHeader {
 		position: fixed;
@@ -96,6 +96,7 @@
 
 /* 手机 */
 @media only screen and (max-width: 700px) {
+
 	.AppsHeader {
 		position: fixed;
 		top: 0;
@@ -183,6 +184,10 @@
 		align-items: center;
 		justify-content: flex-end;
 	}
+
+}
+
+
 
 .BackLink {
 	width: 100%;
