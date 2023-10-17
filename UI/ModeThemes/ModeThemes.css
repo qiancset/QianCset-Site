@@ -9,9 +9,9 @@
 
 .ModeThemes:hover{
 	background: var(--shiki-link-hover-background);
-	-webkit-border-radius: 16;
-	-moz-border-radius: 16;
-	border-radius: 16px;
+	-webkit-border-radius: 30;
+	-moz-border-radius: 30;
+	border-radius: 30px;
 }
 
 
