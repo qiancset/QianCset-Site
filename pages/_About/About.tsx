@@ -21,13 +21,15 @@ export default function About() {
         </div>
         <h1 className="About_h1">
           {t("千赛特")}
-          <hr className="About_hr"/>
+          <hr className="About_hr" />
         </h1>
 
         <strong className="About_strong">
-          
-            {t("去中心化社区")},{t("Web3互动交流的区块链世界")}
-        
+
+          {t('让互联网变得可拥有、可信任、有价值')}
+          <br />
+          {t('探索创新的Web3商业模式')}
+
         </strong>
 
         <div className="Aboutbtn">
@@ -39,7 +41,7 @@ export default function About() {
 
           <Link href="/docs">
             <button type="button" className="button_About_2">
-              {t("阅读文档")} 
+              {t("阅读文档")}
             </button>
           </Link>
         </div>
@@ -48,7 +50,7 @@ export default function About() {
 
       <HmoeWeb3 />
       <Web3 />
-  
+
       <Projects />
 
       <Contact />

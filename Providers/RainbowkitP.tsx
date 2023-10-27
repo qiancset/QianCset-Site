@@ -8,6 +8,7 @@ import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import {
   arbitrum,
   mainnet,
+  polygonZkEvm,
   optimism,
   polygon,
   zora,
@@ -25,7 +26,7 @@ import {
 } from "@rainbow-me/rainbowkit";
 
 import {
-  walletConnectWallet ,
+  walletConnectWallet,
   injectedWallet,
   metaMaskWallet,
   coinbaseWallet,
@@ -50,19 +51,19 @@ export default function RainbowkitP({ children }) {
   const selectedTheme =
     theme === "dark"
       ? darkTheme({
-          accentColor: "#ea7411",
-          accentColorForeground: "white",
-          borderRadius: "medium",
-          fontStack: "system",
-          overlayBlur: "small",
-        })
+        accentColor: "#ea7411",
+        accentColorForeground: "white",
+        borderRadius: "medium",
+        fontStack: "system",
+        overlayBlur: "small",
+      })
       : lightTheme({
-          accentColor: "#ea7411",
-          accentColorForeground: "white",
-          borderRadius: "medium",
-          fontStack: "system",
-          overlayBlur: "small",
-        });
+        accentColor: "#ea7411",
+        accentColorForeground: "white",
+        borderRadius: "medium",
+        fontStack: "system",
+        overlayBlur: "small",
+      });
 
   return (
     <WagmiConfig config={wagmiConfig}>
@@ -75,8 +76,9 @@ export default function RainbowkitP({ children }) {
         }}
         appInfo={{
           appName: "QianCset Dapp",
-          learnMoreUrl: "https://docs.qiancset.com/Learning_docs/Crypto_Wallet",
+          learnMoreUrl: "https://www.qiancset.com/docs/Learning_docs/Crypto_Wallet",
         }}
+      
       >
         {children}
       </RainbowKitProvider>
@@ -85,22 +87,17 @@ export default function RainbowkitP({ children }) {
 }
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [mainnet, polygon, optimism, arbitrum, zora, zkSync, bsc, localhost],
+  [mainnet, polygon, polygonZkEvm, optimism, arbitrum, zora, zkSync, bsc, localhost],
   [
     infuraProvider({ apiKey: process.env.NEXT_PUBLIC_INFURA_API_KEY }),
     publicProvider(),
   ]
 );
 
-/* const { connectors } = getDefaultWallets({
-  appName: "QianCset DAPP",
-  projectId: "ab4ee6ab51756c44ab8f80eb2fad1d22",
-  chains,
-}); */
+
 const projectId = "ab4ee6ab51756c44ab8f80eb2fad1d22";
 const connectors = connectorsForWallets([
   {
-    appName: "QianCset DAPP",
     groupName: "Recommended",
     wallets: [
       injectedWallet({ chains }),
@@ -112,9 +109,9 @@ const connectors = connectorsForWallets([
   {
     groupName: "Others",
     wallets: [
-      tokenPocketWallet({projectId: projectId,chains,}),
-      coinbaseWallet({ chains, appName: 'My RainbowKit App' }),
+      tokenPocketWallet({ projectId: projectId, chains, }),
       okxWallet({ projectId: projectId, chains }),
+      coinbaseWallet({ chains }),
       rainbowWallet({ projectId: projectId, chains }),
       uniswapWallet({ projectId: projectId, chains }),
 
@@ -129,3 +126,4 @@ const wagmiConfig = createConfig({
   publicClient,
   webSocketPublicClient,
 });
+

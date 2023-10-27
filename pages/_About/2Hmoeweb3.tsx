@@ -8,9 +8,13 @@ export default function HmoeWeb3() {
   return (
     <>
       <div id="hmoeWeb3">
-
-
-
+      <h3 className="projectsh3">
+      {t("去中心化社区")}
+          <hr className="About_hr"/>
+        </h3>
+<h3>
+{t("Web3互动交流的区块链世界")}
+</h3>
         <div className="hmoeWeb3_card">
 
           <div className="kapian">
