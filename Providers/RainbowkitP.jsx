@@ -44,7 +44,7 @@ import { useTranslation } from "react-i18next";
 export default function RainbowkitP({ children }) {
   const { t } = useTranslation();
   // 确保 t('zh-CN') 返回一个有效的 Locale 类型
-  const locale = t("zh-CN");
+  const Locale = t("zh-CN");
   const { theme } = useTheme();
 
   // 根据当前的 theme 值来选择不同的主题
@@ -68,7 +68,7 @@ export default function RainbowkitP({ children }) {
   return (
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider
-        locale={locale}
+        locale={Locale}
         chains={chains}
         theme={{
           lightMode: selectedTheme,
