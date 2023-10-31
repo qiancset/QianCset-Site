@@ -34,15 +34,15 @@ export default function About() {
 
         <div className="Aboutbtn">
           <Link href="/" target="_blank">
-            <button type="button" className="button_About_1 pulse w-button">
+            <div  className="button_About_1 pulse w-button">
               {t("前往应用")}
-            </button>
+            </div>
           </Link>
 
           <Link href="/docs">
-            <button type="button" className="button_About_2">
+            <div  className="button_About_2">
               {t("阅读文档")}
-            </button>
+            </div>
           </Link>
         </div>
       </div>

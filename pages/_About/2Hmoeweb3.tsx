@@ -19,34 +19,33 @@ export default function HmoeWeb3() {
 
           <div className="kapian">
             <HmoeWeb3card>
-              <p>
+              <div className="feature-card-img">
               <FaLaptopCode className="fa_icon_4"/>
-             
-              </p>
+              </div>
               <h4>{t("Web3技术解决方案")}</h4>
             </HmoeWeb3card>
 
             <HmoeWeb3card>
-              <p>
+              <div className="feature-card-img">
                 <FaRegShareSquare className="fa_icon_4"/>
-              </p>
+              </div>
               <h4>{t("分享想法和经验")}</h4>
             </HmoeWeb3card>
           </div>
 
           <div className="kapian">
             <HmoeWeb3card>
-              <p>
+              <div className="feature-card-img">
                 <FaCode className="fa_icon_4"/>
-              </p>
+              </div>
               <h4>{t("用技术推动web3发展")}</h4>
             </HmoeWeb3card>
 
             <HmoeWeb3card>
-              <p>
+              <div className="feature-card-img">
               <FaUsers className="fa_icon_4"/>
             
-              </p>
+              </div>
               <h4>{t("学习交流web3的社区")}</h4>
             </HmoeWeb3card>
           </div>

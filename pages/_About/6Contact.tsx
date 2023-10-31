@@ -20,15 +20,15 @@ export default function Contact() {
   return (
     <div>
       <div id="contact">
-        <section className="intro4">
+        <div className="intro4">
           <h3>
             {t("合作发展")}
             <hr className="About_hr"/>
           </h3>
           <Link href="/" target="_blank">
-            <button className="button_About" >
+            <div className="button_About" >
               {t("捐赠代币")}
-            </button>
+            </div>
           </Link>
 
 
@@ -51,7 +51,7 @@ export default function Contact() {
 
 
           </div>
-        </section>
+        </div>
 
       </div>
     </div>
