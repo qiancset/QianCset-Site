@@ -15,6 +15,10 @@ export default function About() {
 
   return (
     <div className="Aboutmian">
+      <div className="background_About">
+        <div className="circle_About"></div>
+        <div className="circle_About"></div>
+      </div>
       <div id="About">
         <div className="rotate1">
           <img src="favicon.ico" alt="About-Q" className="Imagelogo" />
@@ -34,13 +38,13 @@ export default function About() {
 
         <div className="Aboutbtn">
           <Link href="/" target="_blank">
-            <div  className="button_About_1 pulse w-button">
+            <div className="button_About_1 pulse w-button">
               {t("前往应用")}
             </div>
           </Link>
 
           <Link href="/docs">
-            <div  className="button_About_2">
+            <div className="button_About_2">
               {t("阅读文档")}
             </div>
           </Link>

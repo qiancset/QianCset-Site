@@ -1,10 +1,10 @@
+import '@/locales/i18n'
 
 import Image from "next/image";
 import ModeThemes from "@/UI/ModeThemes/ModeThemes";
 import Locales from "@/UI/LocalesButton/Locales";
 import Themes from '@/Providers/Themes'
 import { FaTwitter } from "react-icons/fa";
-import '@/locales/i18n'
 import { useTranslation } from 'react-i18next';
 
 

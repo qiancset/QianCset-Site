@@ -46,3 +46,23 @@
 	--nextra-primary-saturation: 100%;
 }
 
+
+.circle {  
+    width: 10vw;  
+    height: 10vh;  
+ 
+    background-color: #ea7411;  
+    filter: blur(20vh);
+    position: absolute;  
+}  
+    
+.circle:first-child {  
+  /* 第一个圆的样式 */  
+  top: 60vh;  
+  left:10vw;  
+}  
+.circle:last-child {  
+    /* 第二个圆的样式 */  
+    bottom: 50vh;  
+    right: 10vw;  
+}  

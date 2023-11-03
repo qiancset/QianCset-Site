@@ -14,12 +14,12 @@ export const metadata = {
       "Qiancset Web3,千赛特区块链社区服务平台,去中心化点对点交易,web3互动交流的加密世界,官方网站:www.qiancset.com, 千赛特去中心化服务平台,qiancset web3一个点对点交易swap,NFT,nft,加密货币的Dapps,使用react-nextjs的webdapp,",
    icons: {
       icon: '/favicon.ico',
-/*       shortcut: '/shortcut-icon.png',
-      apple: '/apple-icon.png',
-      other: {
-         rel: 'apple-touch-icon-precomposed',
-         url: '/apple-touch-icon-precomposed.png',
-      }, */
+      /*       shortcut: '/shortcut-icon.png',
+            apple: '/apple-icon.png',
+            other: {
+               rel: 'apple-touch-icon-precomposed',
+               url: '/apple-touch-icon-precomposed.png',
+            }, */
    },
 
 };
@@ -31,18 +31,23 @@ export default function Layout({ children }: React.PropsWithChildren) {
             <meta charSet="utf-8" />
          </head>
          <body className={inter.className}>
-           
-               <Providers>
+
+            <Providers>
+               <div className="background-container">
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+               </div>
 
 
                   {children}
-
-
                   <Analytics />
+       
+
+          
 
 
-               </Providers>
-           
+            </Providers>
+
          </body>
       </html>
    )

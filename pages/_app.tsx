@@ -8,7 +8,6 @@ import "@/css/Anniu.css";
 import { Inter } from "next/font/google";
 import AntdRegistry from '@/Providers/lib/AntdRegistry'
 import Antd from '@/Providers/Antd'
-import 'locales/i18n'
 const inter = Inter({ subsets: ["latin"] });
 export default function MyApp({ Component, pageProps }) {
 
@@ -17,7 +16,10 @@ export default function MyApp({ Component, pageProps }) {
         <AntdRegistry>
             <Antd>
 
-
+            <div className="background-container">
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+               </div>
                 <Component {...pageProps} />
 
 

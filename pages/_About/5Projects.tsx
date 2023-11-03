@@ -58,7 +58,7 @@ export default function Projects() {
               link="https://ethereum.org/zh/developers/docs/smart-contracts/"
             />
             <Card
-              imageUrl="/images/TU/Gaming.jpeg"
+              imageUrl="/images/TU/Gaming.jpg"
               title={t("去中心化游戏")}
               link="https://ethereum.org/zh/layer-2/"
             />

@@ -39,8 +39,8 @@
     "扫码捐赠加密货币": "Scan the code to donate cryptocurrency",
     "复制地址": "Copy address",
     "千赛特": "QianCset",
-    "去中心化社区": "Decentralized communities",
-    "Web3互动交流的区块链世界": "The blockchain world of Web3 interactive communication",
+    "让互联网变得可拥有、可信任、有价值": "Make the Internet ownerable, credible, and valuable",
+    "探索创新的Web3商业模式": "Explore innovative Web3 business models",
     "获取代币": "Get token",
     "阅读文档": "Read Docs",
     "Web3技术解决方案": "Web3 technology solutions",
@@ -102,18 +102,9 @@
     "光亮": "light",
     "暗黑": "dark",
     "系统": "system",
-    "搜索文档": {
-      "": {
-        "": {
-          "": "Search documents..."
-        }
-      }
-    },
+    "搜索文档":"Search documents...",
     "建议": "Suggested",
     "在 GitHub 上编辑此页面": "Edit this page on GitHub",
-    "给我们反馈问题↗": "Give us feedback questions ↗",
-    "让互联网变得可拥有、可信任、有价值": "Make the Internet ownerable, credible, and valuable",
-    "探索创新Web3商业模式": "Explore innovative Web3 business models",
-    "探索创新的Web3商业模式": "Explore innovative Web3 business models"
+    "给我们反馈问题↗": "Give us feedback questions ↗"
   }
 }
