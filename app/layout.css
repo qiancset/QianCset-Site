@@ -1,62 +1,104 @@
 :root {
-    /* 全局css */
-    --shiki-color: #000 !important;
+  /* 全局css */
+  --shiki-color: #000 !important;
 
-    /* UI */
-    --shiki-link-hover-background: #0000000f;
+  /* UI */
+  --shiki-link-hover-background: #0000000f;
 
 }
+
 [data-theme='dark'] {
-	/* 全局css */
-	--shiki-color: #fff !important;
+  /* 全局css */
+  --shiki-color: #fff !important;
 
-	/* UI hover */
-	--shiki-link-hover-background: #ffffff31;
+  /* UI hover */
+  --shiki-link-hover-background: #ffffff31;
 
 }
 
-.background-container {  
-    position: absolute;  
-    top: 0;  
-    left: 0;  
-    width: 100%;  
-    height: 100%;  
-    z-index: -1;  
-  }  
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
-.circle {  
-    width: 10vw;  
-    height: 10vh;  
-    border-radius: 50%;  
-    background-color: #ea7411;  
+.circle {
+  width: 10vw;
+  height: 10vh;
+  border-radius: 50%;
+  background-color: #ea7411;
+  filter: blur(150px);
+  position: absolute;
+}
+
+.circle:first-child {
+  /* 第一个圆的样式 */
+  top: 60vh;
+  left: 1vw;
+}
+
+.circle:last-child {
+  /* 第二个圆的样式 */
+  bottom: 70vh;
+  right: 1vw;
+}
+
+
+/* 手机 */
+@media only screen and (max-width: 700px) {
+  .background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .circle {
+    width: 50vw;
+    height: 10vh;
+    border-radius: 50%;
+    background-color: #ea7411;
     filter: blur(150px);
-    position: absolute;  
-  }  
-    
-.circle:first-child {  
-  /* 第一个圆的样式 */  
-  top: 60vh;  
-  left:10vw;  
-}  
-.circle:last-child {  
-    /* 第二个圆的样式 */  
-    bottom: 70vh;  
-    right: 5vw;  
-}  
+    position: absolute;
+  }
+
+  .circle:first-child {
+    /* 第一个圆的样式 */
+    top: 10vh;
+    left: 1vw;
+  }
+
+  .circle:last-child {
+    /* 第二个圆的样式 */
+    top: 10vh;
+    right: 1vw;
+  }
+}
+
+
+
+
+
+
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 
 /*--选择器----*/
 ::selection {
-    background: #ea7411;
-    color: var(--shiki-color);
+  background: #ea7411;
+  color: var(--shiki-color);
 }
 
 ::-moz-selection {
-    color: var(--shiki-color);
-    background: #ea7411;
+  color: var(--shiki-color);
+  background: #ea7411;
 }
