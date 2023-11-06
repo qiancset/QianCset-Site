@@ -15,10 +15,13 @@ export default function About() {
 
   return (
     <div className="Aboutmian">
-      <div className="background_About">
-        <div className="circle_About"></div>
-        <div className="circle_About"></div>
-      </div>
+
+
+<div className="background-container">
+                  <div className="circle_About"></div>
+                  <div className="circle_About"></div>
+               </div>
+
       <div id="About">
         <div className="rotate1">
           <img src="favicon.ico" alt="About-Q" className="Imagelogo" />

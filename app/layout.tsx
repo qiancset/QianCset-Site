@@ -33,10 +33,7 @@ export default function Layout({ children }: React.PropsWithChildren) {
          <body className={inter.className}>
 
             <Providers>
-               <div className="background-container">
-                  <div className="circle"></div>
-                  <div className="circle"></div>
-               </div>
+
 
 
                   {children}

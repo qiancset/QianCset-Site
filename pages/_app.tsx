@@ -16,10 +16,6 @@ export default function MyApp({ Component, pageProps }) {
         <AntdRegistry>
             <Antd>
 
-            <div className="background-container">
-                  <div className="circle"></div>
-                  <div className="circle"></div>
-               </div>
                 <Component {...pageProps} />
 
 

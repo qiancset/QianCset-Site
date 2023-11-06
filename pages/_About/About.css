@@ -9,9 +9,9 @@
 .circle_About {  
     width: 20vw;  
     height: 20vh;  
- 
+    border-radius: 50%;
     background-color: #ea7411;  
-    filter: blur(25vh);
+    filter: blur(250px);
     position: absolute;  
 }  
     

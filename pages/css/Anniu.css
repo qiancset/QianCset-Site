@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(234, 115, 17, 0.33) !important;
+  background-color: rgba(234, 115, 17, 0.33) ;
   padding: 5px 25px;
   border: solid black 1px;
   cursor: pointer;
@@ -21,7 +21,7 @@
 }
 
 .button_About_1:hover {
-  background-color: #ea7411 !important;
+  background-color: #ea7411;
 }
 
 .button_About_2 {
