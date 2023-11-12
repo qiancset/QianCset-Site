@@ -38,8 +38,8 @@ export default function Contact() {
             
             <div className="kapianLOGO">
 
-              <LogoCard imageUrl="/images/WEB3/ETH.svg" altText="ETH" />
-              <LogoCard imageUrl="/images/WEB3/UINSWAP.png" altText="UINSWAP" />
+              <LogoCard imageUrl="/images/COMLOGO/ETH.svg" altText="ETH" />
+              <LogoCard imageUrl="/images/COMLOGO/UINSWAP.png" altText="UINSWAP" />
 
               <LogoCard imageUrl="/images/COMLOGO/MetaMask.svg" altText="MetaMask" />
               <LogoCard imageUrl="/images/COMLOGO/Rainbow.svg" altText="Rainbow" />

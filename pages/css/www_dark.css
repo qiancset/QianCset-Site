@@ -1,5 +1,5 @@
 .dark {
-	
+
 	/* pages-root */
 	--shiki-color: #fff;
 	--shiki-color-text: #d1d1d1;
@@ -15,9 +15,9 @@
 
 
 
-	
-	
-	
+
+
+
 	/* 首页色 */
 	--Aboutmian-background-color: #111111;
 	/* button_About_1 */
@@ -37,14 +37,16 @@
 	--card-box-shadow: 0 0 0.1rem #fff;
 	--card-background: #1f1f1f;
 	/* footer页眉 */
-
-
+	--footer-background: rgba(26, 26, 26, 0.3) ;
 	/* UI hover */
 	--shiki-link-hover-background: #ffffff31;
 
 
 	/* docs */
-	--nextra-primary-hue: 27.37deg;      /* 主要色调 */
-	--nextra-primary-saturation: 86.45%;   /* 初级饱和度 */
-}
+	--nextra-primary-hue: 27.37deg;
+	/* 主要色调 */
+	--nextra-primary-saturation: 86.45%;
+	/* 初级饱和度 */
 
+	--QianCset_svg: #fff;
+}

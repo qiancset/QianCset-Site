@@ -8,6 +8,8 @@ import Projects from "./5Projects";
 import Contact from "./6Contact";
 import { useTranslation } from "react-i18next";
 import { FloatButton } from "antd";
+import Script from "next/script";
+
 
 
 export default function About() {
@@ -17,10 +19,12 @@ export default function About() {
     <div className="Aboutmian">
 
 
-<div className="background-container">
-                  <div className="circle_About"></div>
-                  <div className="circle_About"></div>
-               </div>
+
+      {/* 高斯模糊 */}
+      <div className="background-container">
+        <div className="circle_About"></div>
+        <div className="circle_About"></div>
+      </div>
 
       <div id="About">
         <div className="rotate1">
@@ -40,7 +44,7 @@ export default function About() {
         </strong>
 
         <div className="Aboutbtn">
-          <Link href="/" target="_blank">
+          <Link href="/" /* target="_blank" */>
             <div className="button_About_1 pulse w-button">
               {t("前往应用")}
             </div>

@@ -40,23 +40,23 @@ export default function Footer() {
         <div className="social-media">
           <SocialMedia
             href="https://twitter.com/qiancset"
-            faicon={<FaTwitter/>}
+            faicon={<FaTwitter />}
           />
           <SocialMedia
             href="https://www.tiktok.com/@qiancset"
-            faicon={<FaTiktok/>}
+            faicon={<FaTiktok />}
           />
           <SocialMedia
             href="https://discord.gg/pMzB7fSs9E"
-            faicon={<FaDiscord/>}
+            faicon={<FaDiscord />}
           />
           <SocialMedia
             href="https://pd.qq.com/s/8z8x37o4v"
-            faicon={<FaQq/>}
+            faicon={<FaQq />}
           />
           <SocialMedia
             href="https://github.com/Qiancset"
-            faicon={<FaGithub/>}
+            faicon={<FaGithub />}
           />
 
         </div>
@@ -142,8 +142,10 @@ export default function Footer() {
               src="/images/icon/QianCset.png"
               alt="QianCset"
               className="QianCset"
-              width={400} height={149} 
+              width={600} height={150}
             />
+          
+
           </div>
         </div>
 

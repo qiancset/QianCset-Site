@@ -5,20 +5,22 @@ import { useTheme } from "next-themes";
 import "@rainbow-me/rainbowkit/styles.css";
 
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
+
 import {
-  arbitrum,
   mainnet,
-  polygonZkEvm,
+  linea,
+  arbitrum,
   optimism,
   polygon,
-  zora,
+  polygonZkEvm,
   zkSync,
   bsc,
+  okc,
+  hardhat,
   localhost,
 } from "wagmi/chains";
 
 import {
-  getDefaultWallets,
   RainbowKitProvider,
   Locale,
   darkTheme,
@@ -34,6 +36,7 @@ import {
   rainbowWallet,
   tokenPocketWallet,
   uniswapWallet,
+  trustWallet,
 } from "@rainbow-me/rainbowkit/wallets";
 import { connectorsForWallets } from "@rainbow-me/rainbowkit";
 
@@ -51,49 +54,62 @@ export default function RainbowkitP({ children }) {
   const selectedTheme =
     theme === "dark"
       ? darkTheme({
-        accentColor: "#ea7411",
-        accentColorForeground: "white",
-        borderRadius: "medium",
-        fontStack: "system",
-        overlayBlur: "small",
-      })
+          accentColor: "#ea7411",
+          accentColorForeground: "white",
+          borderRadius: "medium",
+          fontStack: "system",
+          overlayBlur: "small",
+        })
       : lightTheme({
-        accentColor: "#ea7411",
-        accentColorForeground: "white",
-        borderRadius: "medium",
-        fontStack: "system",
-        overlayBlur: "small",
-      });
+          accentColor: "#ea7411",
+          accentColorForeground: "white",
+          borderRadius: "medium",
+          fontStack: "system",
+          overlayBlur: "small",
+        });
 
   return (
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider
         locale={Locale}
         chains={chains}
+        initialChain={1}
         theme={{
           lightMode: selectedTheme,
           darkMode: selectedTheme,
         }}
         appInfo={{
           appName: "QianCset Dapp",
-          learnMoreUrl: "https://www.qiancset.com/docs/Learning_docs/Crypto_Wallet",
+          learnMoreUrl:
+            "https://www.qiancset.com/docs/Learning_docs/Crypto_Wallet",
         }}
-      
       >
         {children}
       </RainbowKitProvider>
     </WagmiConfig>
   );
 }
-
+/* 自定义链 */
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [mainnet, polygon, polygonZkEvm, optimism, arbitrum, zora, zkSync, bsc, localhost],
+  [
+    mainnet,
+    linea,
+    arbitrum,
+    optimism,
+    polygon,
+    polygonZkEvm,
+    zkSync,
+    bsc,
+    okc,
+    hardhat,
+    localhost,
+  ],
+
   [
     infuraProvider({ apiKey: process.env.NEXT_PUBLIC_INFURA_API_KEY }),
     publicProvider(),
   ]
 );
-
 
 const projectId = "ab4ee6ab51756c44ab8f80eb2fad1d22";
 const connectors = connectorsForWallets([
@@ -109,12 +125,13 @@ const connectors = connectorsForWallets([
   {
     groupName: "Others",
     wallets: [
-      tokenPocketWallet({ projectId: projectId, chains, }),
+      tokenPocketWallet({ projectId: projectId, chains }),
       okxWallet({ projectId: projectId, chains }),
       coinbaseWallet({ chains }),
       rainbowWallet({ projectId: projectId, chains }),
       uniswapWallet({ projectId: projectId, chains }),
-
+      walletConnectWallet({ projectId: projectId, chains }),
+      trustWallet({ projectId: projectId, chains }),
     ],
   },
 ]);
@@ -126,4 +143,3 @@ const wagmiConfig = createConfig({
   publicClient,
   webSocketPublicClient,
 });
-

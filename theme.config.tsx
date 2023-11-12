@@ -53,7 +53,7 @@ export default {
   },
 
   //网站徽标的 React 组件
-  logo: (<><Image src='/images/icon/QianCset.png' width={120} height={45} alt="logo" /></>),
+  logo: (<><Image src='/images/icon/QianCset.png' width={120} height={30} alt="logo" /></>),
   //logo组件的链接
   logoLink: '/about',
 

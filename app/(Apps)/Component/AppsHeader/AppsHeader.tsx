@@ -51,6 +51,10 @@ function BackLink({ href }) {
         </div>
     )
 }
+function QianCset() {
+    return <Image src="/images/icon/QianCset.png" alt="Q" width={120} height={30} />
+}
+
 function HeaderChildern({ }) {
     const pathname = usePathname();
 
@@ -105,25 +109,32 @@ function Home() {
     return (
         <>
             <div className="Header_left_home">
-                <Image src="/images/icon/QianCset.png" className="QianCset_left" alt="Q" width={120} height={45} />
+                <QianCset />
             </div>
 
             <div className="Header_center_home">
-                <Image src="/favicon.ico" className="QianCset" alt="header-Q" width={40} height={40} />
+                <Image src="/favicon.ico" alt="header-Q" width={40} height={40} />
 
             </div>
 
         </>
     );
 }
+
 function Concern() {
     const { t } = useTranslation();
     return (
-        <>
+        <div className='Header_layout'>
+
+            <div className="Header_left_home">
+                <QianCset />
+            </div>
+
             <div className="Header_center">
                 <p className="Header_P">{t('关注')}</p>
             </div>
-        </>
+
+        </div>
     );
 }
 
@@ -131,8 +142,16 @@ function Message() {
     const { t } = useTranslation();
     return (
         <>
-            <div className="Header_center">
-                <p className="Header_P">{t('消息')}</p>
+            <div className='Header_layout'>
+
+                <div className="Header_left_home">
+                    <QianCset />
+                </div>
+
+                <div className="Header_center">
+                    <p className="Header_P">{t('消息')}</p>
+                </div>
+
             </div>
         </>
     );
@@ -143,12 +162,16 @@ function My() {
     return (
         <div className='Header_layout'>
 
+            <div className="Header_left_home">
+                <QianCset />
+            </div>
+
             <div className="Header_left"></div>
             <div className="Header_center"></div>
             <div className='Header_right_My'>
                 <Locales />
                 <ModeThemes />
-{/*                 <div>
+                {/*                 <div>
                     <GoGear className='Header_right_GoGear' />
                 </div> */}
             </div>

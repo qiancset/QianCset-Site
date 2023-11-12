@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import { FaCode, FaLaptopCode, FaRegShareSquare, FaUsers } from "react-icons/fa";
 
+
 export default function HmoeWeb3() {
   const { t } = useTranslation();
   return (
@@ -17,6 +18,7 @@ export default function HmoeWeb3() {
 </h3>
         <div className="hmoeWeb3_card">
 
+     
           <div className="kapian">
             <HmoeWeb3card>
               <div className="feature-card-img">

@@ -34,6 +34,7 @@
 	--card-box-shadow: 0 0 0.1rem #fff;
 	--card-background: #fff;
 	/* footer页眉 */
+	--footer-background: rgba(204, 204, 204, 0.3);
 
 
 	/* UI */
@@ -44,6 +45,11 @@
 	/* docs */
 	--nextra-primary-hue: 27.37deg;
 	--nextra-primary-saturation: 100%;
+
+	--QianCset_svg: #000;
 }
 
+.QianCset_svg svg{
+	color: var(--QianCset_svg);
 
+}

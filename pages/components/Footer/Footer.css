@@ -5,11 +5,13 @@
 
 .footer {
     border-top: 1px solid rgba(204, 204, 204, 0.3);
-  padding: 1vh;
+    padding: 1vh;
+    background: var(--footer-background) ;
+    
 }
 
 .footer a {
- 
+
 
     letter-spacing: 1px;
     text-decoration: none;
@@ -22,12 +24,14 @@
 .footer .a1:hover {
     color: #ffffff;
 }
-.footer_background{
+
+.footer_background {
     margin: auto;
-	max-width: 1520px;
-	width: 100%;
-	height: 100%;
+    max-width: 1520px;
+    width: 100%;
+    height: 100%;
 }
+
 @media only screen and (max-width: 390px) {
 
     .footer a {
@@ -62,7 +66,7 @@
     height: 100%;
     display: left;
     justify-content: left;
- 
+
     font-size: 1rem;
     line-height: 30px;
     text-align: flex-start;
@@ -71,24 +75,25 @@
 }
 
 .ffaa {
-   
+
     height: 100%;
 }
 
-.页眉{
+.页眉 {
     display: flex;
- 
+
     font-size: 1em;
-    padding:10px ;
+    padding: 10px;
 }
 
 .版权 {
     font-size: 1em;
- 
+
 }
-.link_name h2{
-font-size: 1.5rem;
-margin-bottom: 1vh;
+
+.link_name h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
 }
 
 .link_boxes {
@@ -117,7 +122,7 @@ margin-bottom: 1vh;
 }
 
 .content a {
-   
+
     letter-spacing: 1px;
     text-decoration: none;
 }
@@ -150,20 +155,21 @@ margin-bottom: 1vh;
 
 
 .logofooter {
-    
+
     padding: 20px;
     display: flex;
     position: center;
     align-items: space-around;
     justify-content: center;
 }
-.QianCset{
-    width: 40%;
-    height: 13.2%;
+
+.QianCset {
+
     opacity: 50%;
     transition: 0.5s;
 }
-.QianCset:hover{
+
+.QianCset:hover {
     opacity: 100%;
     transition: 0.5s;
 }
