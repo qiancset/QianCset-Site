@@ -4,7 +4,7 @@ import './TabsButton.css'
 export default function TabsButton({ icons, text, fenlei }) {
     return (
         <>
-            <Link href={`/Home/${fenlei}`} className='TabsButton'>
+            <Link href={`/home/${fenlei}`} className='TabsButton'>
 
                 {icons}
 

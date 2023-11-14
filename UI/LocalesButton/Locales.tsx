@@ -8,9 +8,10 @@ import "./Locales.css";
 import { GoGlobe } from "react-icons/go";
 
 
-export default function Locales({ }) {
+export default function Locales({  }) {
 
   const { i18n } = useTranslation();
+  
   const [showMenu, setShowMenu] = useState(false);
 
   function handleLanguageChange(value) {
