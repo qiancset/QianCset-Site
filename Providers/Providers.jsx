@@ -4,7 +4,7 @@ import StyledComponentsRegistry from './lib/AntdRegistry'
 import Antd from "./Antd";
 import Themes from "./Themes";
 import Rainbowkit from "./Rainbowkit"
-import Web3Modal from './Web3Modal'
+
 
 export default function Providers({ children }) {
   return (

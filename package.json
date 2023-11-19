@@ -14,7 +14,6 @@
     "@uniswap/widgets": "^2.53.1",
     "@vercel/analytics": "^1.0.1",
     "@vercel/edge-config": "^0.2.1",
-    "@web3modal/wagmi": "^3.3.2",
     "antd": "^5.7.0",
     "eslint-config-next": "^13.5.1",
     "ethers": "^5.7.2",
