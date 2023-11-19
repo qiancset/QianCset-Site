@@ -55,9 +55,9 @@ function BackLink({ href }) {
 }
 function QianCset() {
     return (
-        <div className="Header_left_home">
-            <Image src="/images/icon/QianCset.png" alt="Q" width={120} height={30} />
-        </div>
+
+        <Image src="/images/icon/QianCset.png" className='QianCset_home'  width={120} height={30} alt="Q"/>
+
     )
 }
 
@@ -68,7 +68,7 @@ function HeaderChildern({ }) {
 
     return (
         <>
-        
+
             <Pathname href='/dappbrowser'>
                 <BackLink href='/my' />
                 <div className="Header_center">
@@ -119,14 +119,15 @@ function HeaderChildern({ }) {
 function Home() {
     return (
         <>
-            <div className="Header_left_home">
+            <div className='QianCset_left_home'>
                 <QianCset />
             </div>
 
-            <div className="Header_center_home">
+            <div className="QianCset_center_home">
                 <Image src="/favicon.ico" alt="header-Q" width={40} height={40} />
-
             </div>
+
+            <div className="Header_right"></div>
 
         </>
     );
@@ -137,8 +138,9 @@ function Concern() {
     return (
         <div className='Header_layout'>
 
-
-            <QianCset />
+            <div className='Header_left'>
+                <QianCset />
+            </div>
 
             <div className="Header_center">
                 <p className="Header_P">{t('关注')}</p>
@@ -157,9 +159,11 @@ function Message() {
         <>
             <div className='Header_layout'>
 
-                <div className="Header_left_home">
+
+                <div className='Header_left'>
                     <QianCset />
                 </div>
+
 
                 <div className="Header_center">
                     <p className="Header_P">{t('消息')}</p>
@@ -178,7 +182,9 @@ function My() {
         <div className='Header_layout'>
 
 
-            <QianCset />
+            <div className='Header_left'>
+                <QianCset />
+            </div>
 
 
             <div className="Header_center"></div>
