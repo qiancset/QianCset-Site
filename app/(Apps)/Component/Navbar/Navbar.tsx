@@ -21,28 +21,28 @@ export default function Navbar() {
 
         <NavLink
           href='/'
-          activeHrefs={['/',`/Github/${pathname}`,`/home/${pathname}`,'/home/1','/home/2','/home/3','/home/4',]}
+          activeHrefs={['/',`/Github/${pathname}`,`/Home/${pathname}`,'/Home/1','/Home/2','/Home/3','/Home/4',]}
           icon={<GoHome className="Navicon" />}
           activeIcon={<GoHomeFill className="Navicon" />}
         >{t('首页')}</NavLink>
 
         <NavLink
-          href='/concern'
-          activeHrefs={['/concern']}
+          href='/Concern'
+          activeHrefs={['/Concern']}
           icon={<GoHeart className="Navicon" />}
           activeIcon={<GoHeartFill className="Navicon" />}
         >{t('关注')}</NavLink>
 
         <NavLink
-          href='/message'
-          activeHrefs={['/message']}
+          href='/Message'
+          activeHrefs={['/Message']}
           icon={<GoBell className="Navicon" />}
           activeIcon={<GoBellFill className="Navicon" />}
         >{t('消息')}</NavLink>
 
         <NavLink
-          href='/my'
-          activeHrefs={['/my', '/dappbrowser', '/function', '/settings','/a',]}
+          href='/My'
+          activeHrefs={['/My', '/Dappbrowser', '/Function', '/Settings','/a',]}
           icon={<GoPerson className="Navicon" />}
           activeIcon={<GoPersonFill className="Navicon" />}
         >{t('我的')}</NavLink>

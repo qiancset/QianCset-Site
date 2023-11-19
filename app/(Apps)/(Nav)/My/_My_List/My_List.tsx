@@ -12,9 +12,9 @@ export default function My_List() {
         <>
             <My_List_card href={`/a`} text={t('资料')} ico={<GoMention />} />
             <My_List_card href={`/a`} text={t('测试')} ico={<GoBeaker />} />
-            <My_List_card href={`/dappbrowser`} text={t('Dapp浏览器')} ico={<GoBrowser />} />
-            <My_List_card href={`/function`} text={t('功能')} ico={<GoBriefcase />} />
-            <My_List_card href={`/settings`} text={t('设置')} ico={<GoGear />} />
+            <My_List_card href={`/Dappbrowser`} text={t('Dapp浏览器')} ico={<GoBrowser />} />
+            <My_List_card href={`/Function`} text={t('功能')} ico={<GoBriefcase />} />
+            <My_List_card href={`/Settings`} text={t('设置')} ico={<GoGear />} />
             <My_List_card href={`/about`} text={t('关于')} ico={<GoQuestion />} />
 
 

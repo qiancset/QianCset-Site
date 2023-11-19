@@ -48,7 +48,7 @@ export default {
   //搜索引擎优化选项
   useNextSeoProps() {
     return {
-      titleTemplate: '%s - 千赛特 QianCset Web3'
+      titleTemplate: '%s — 千赛特 QianCset Web3'
     }
   },
 
@@ -75,7 +75,7 @@ export default {
   navbar: {
 
     //在最后一个图标之后显示额外的内容
-    extraContent: <Themes><Locales/><ModeThemes /></Themes>
+    extraContent: <Themes><Locales /><ModeThemes /></Themes>
   },
 
   //导航的选项
@@ -134,10 +134,7 @@ export default {
   },
 
   //国际化
-/*   i18n: [
-    { locale: 'zh', text: '中文' },
-    { locale: 'en', text: 'English' },
-  ], */
+  //i18n: {},
 
   //横幅
   banner: {
@@ -156,7 +153,7 @@ export default {
     text: (<div className="版权">Copyright © 2023 Qiancset 千赛特 版权所有</div>),
 
     //自定义页脚组件。
-    //component: (<div className="版权">Copyright © 2023 Qiancset 千赛特 版权所有</div>)
+    component: (<div className="版权">Copyright © 2023 Qiancset 千赛特 版权所有</div>)
   },
 }
 

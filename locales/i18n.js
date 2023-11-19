@@ -3,7 +3,6 @@
 
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
 import en from './en.json'
 import zh from './zh.json'
 
@@ -15,7 +14,6 @@ const resources = {
 
 
 export default i18next
-.use(LanguageDetector)  //i18next-浏览器语言检测器
 .use(initReactI18next)  // 绑定 React-i18 旁边的实例
 .init({             // 初始化 i18next
 
@@ -24,5 +22,5 @@ lng: 'zh',           // 指定默认的语言中文（zh）。如果启动时未
 fallbackLng: 'zh',    // 如果指定的语言不存在，则默认使用这个
 debug: false,
 
-});
+  });
 
