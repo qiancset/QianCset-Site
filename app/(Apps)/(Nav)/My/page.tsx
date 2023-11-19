@@ -1,4 +1,4 @@
-
+'use client'
 import My_List from "./_My_List/My_List";
 import Rainbowkit from "@/UI/Wallet/Rainbowkit";
 
