@@ -1,10 +1,10 @@
 "use client";
-
 import "@/locales/i18n";
+import StyledComponentsRegistry from './lib/AntdRegistry'
 import Antd from "./Antd";
 import Themes from "./Themes";
-import RainbowkitP from "./RainbowkitP";
-import StyledComponentsRegistry from './lib/AntdRegistry'
+import Rainbowkit from "./Rainbowkit"
+import Web3Modal from './Web3Modal'
 
 export default function Providers({ children }) {
   return (
@@ -12,11 +12,11 @@ export default function Providers({ children }) {
       <StyledComponentsRegistry>
         <Themes>
         <Antd>
-          <RainbowkitP>
+          <Rainbowkit>
 
            {children}
 
-          </RainbowkitP>
+          </Rainbowkit>
           </Antd>
         </Themes>
       </StyledComponentsRegistry>

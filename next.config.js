@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   /* Next.js config options here */
+  webpack: config => {
+    config.externals.push('pino-pretty', 'lokijs', 'encoding')
+    return config
+  }
 }
 
 const withNextra = require('nextra')({
