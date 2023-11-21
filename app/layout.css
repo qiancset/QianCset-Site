@@ -1,6 +1,6 @@
 :root {
   /* 全局css */
-  --shiki-color: #000 !important;
+  --shiki-color: #000 ;
 
   /* UI */
   --shiki-link-hover-background: #0000000f;
@@ -9,7 +9,7 @@
 
 [data-theme='dark'] {
   /* 全局css */
-  --shiki-color: #fff !important;
+  --shiki-color: #fff ;
 
   /* UI hover */
   --shiki-link-hover-background: #ffffff31;
