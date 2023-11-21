@@ -1,6 +1,5 @@
 'use client'
 import './Home.css'
-import Link from "next/link"
 import { BsHouseCheck, BsHouses, BsHouseUp, BsPinMap } from 'react-icons/bs'
 import TabsButton from '@/Component/Button/TabsButton'
 
