@@ -45,12 +45,19 @@ const Placeholder: React.FC = () => {
 };
 export default {
 
+
   //搜索引擎优化选项
   useNextSeoProps() {
     return {
       titleTemplate: '%s - 千赛特 QianCset Web3'
     }
   },
+  head: (
+    <>
+      <link rel="icon" href="/images/icon/favicon.ico" type="/images/icon"/>
+    </>
+  ),
+
 
   //网站徽标的 React 组件
   logo: (<><Image src='/images/icon/QianCset.png' width={120} height={30} alt="logo" /></>),
