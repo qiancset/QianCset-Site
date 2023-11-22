@@ -56,7 +56,7 @@ function BackLink({ href }) {
 function QianCset() {
     return (
 
-        <Image src="/images/icon/QianCset.png" className='QianCset_home'  width={120} height={30} alt="Q"/>
+        <Image src="/images/icon/QianCset.png" className='QianCset_home' width={120} height={30} alt="Q" />
 
     )
 }
@@ -118,18 +118,22 @@ function HeaderChildern({ }) {
 
 function Home() {
     return (
-        <>
-            <div className='QianCset_left_home'>
-                <QianCset />
+        <div className='Header_layout'>
+
+            <div className='Header_left'>
+                <div className='QianCset_left_home'><QianCset /></div>
             </div>
 
-            <div className="QianCset_center_home">
-                <Image src="/favicon.ico" alt="header-Q" width={40} height={40} />
+            <div className="Header_center">
+
+                <div className="QianCset_center_home">
+                    <Image src="/favicon.ico" alt="header-Q" width={40} height={40} />
+                </div>
             </div>
 
             <div className="Header_right"></div>
 
-        </>
+        </div>
     );
 }
 

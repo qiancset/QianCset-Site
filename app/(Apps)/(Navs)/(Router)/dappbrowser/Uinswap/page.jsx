@@ -12,12 +12,10 @@ import { useConnectModal } from "@rainbow-me/rainbowkit";
 export default function Uniswap() {
   const { t } = useTranslation();
   const { resolvedTheme } = useTheme();
-
+const Theme = resolvedTheme === "dark" ? darkTheme : customTheme
   const { openConnectModal } = useConnectModal(); // 添加这行来获取 openConnectModal 函数
 
-  const onConnectWalletClick = () => {
-    openConnectModal(); // 调用 openConnectModal 函数以打开连接钱包的模态框
-  };
+
 
   return (
     <div className="Uniswap1">
@@ -30,11 +28,11 @@ export default function Uniswap() {
           convenienceFeeRecipient="0xcd284038f2E68c6A43b04695f84377f38686eE56" //便利费收款方
           width={"100%"}
           locale={t("zh-CN")} //指定小组件界面的显式区域设置为中文
-          theme={resolvedTheme === "dark" ? darkTheme : customTheme} //覆盖样式属性
+          theme={Theme} //覆盖样式属性
           brandedFooter={false} //启用小部件底部的“由 Uniswap 提供支持”页脚。
           hideConnectionUI={true} //隐藏小部件的内置钱包连接UI,'true'
 
-          onConnectWalletClick={onConnectWalletClick}
+          onConnectWalletClick={openConnectModal}
           jsonRpcUrlMap={jsonRpcUrlMap} //Api节点
         //tokenList={UNISWAP_TOKEN_LIST}          //令牌列表
         //defaultInputTokenAddress="NATIVE" //本机令牌的特殊地址

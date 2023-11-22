@@ -4,8 +4,29 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    -webkit-backdrop-filter: saturate(180%) blur(5px);
-    backdrop-filter: saturate(180%) blur(5px);
-    background: var(--shiki-Navbar-background);
+
     /* border-top: 1px solid rgba(204, 204, 204, 0.3); */
 }
+.TabsButton {
+    height: 100%;
+    width: 100%;
+    font-size: 1.3rem;
+  
+    color: #ea7411;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .TabsButton:hover {
+    height: 100%;
+    width: 100%;
+    background: var(--shiki-link-hover-background);
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+  }
+  

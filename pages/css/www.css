@@ -53,3 +53,9 @@
 	color: var(--QianCset_svg);
 
 }
+@media screen and (min-width:701px) {
+html {  
+    overflow-y: scroll;  
+    height: 100%;  
+  }
+}
