@@ -1,4 +1,4 @@
-import  'locales/i18n'
+import  '@/locales/i18n'
 
 import "@/css/pages.css";
 import "@/css/www.css";
