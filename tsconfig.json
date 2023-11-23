@@ -27,11 +27,8 @@
         "app/(Apps)/CSS/*"
       ],
       "@/components/*": [
-        "pages/components/*"
+        "app/(www}/components/*"
       ],
-      "@/css/*": [
-        "pages/css/*"
-      ]
     },
     "lib": [
       "dom",

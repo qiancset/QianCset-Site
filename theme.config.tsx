@@ -1,9 +1,15 @@
-import '@/locales/i18n'
+
+
+import './locales/i18n';
+import "./app/(www)/css/Anniu.css";
+import "./app/(www)/css/pages.css";
+import "./app/(www)/css/www.css";
+import "./app/(www)/css/www_dark.css";
 
 import Image from "next/image";
-import ModeThemes from "@/UI/ModeThemes/ModeThemes";
-import Locales from "@/UI/LocalesButton/Locales";
-import Themes from '@/Providers/Themes'
+import ModeThemes from "./UI/ModeThemes/ModeThemes";
+import Locales from "./UI/LocalesButton/Locales";
+import Themes from './Providers/Themes'
 import { FaTwitter } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
 
@@ -54,7 +60,7 @@ export default {
   },
   head: (
     <>
-      <link rel="icon" href="/images/icon/favicon.ico" type="/images/icon"/>
+      <link rel="icon" href="/images/icon/favicon.ico" type="/images/icon" />
     </>
   ),
 
@@ -82,7 +88,7 @@ export default {
   navbar: {
 
     //在最后一个图标之后显示额外的内容
-    extraContent: <Themes><Locales/><ModeThemes /></Themes>
+    extraContent: <Themes><Locales /><ModeThemes /></Themes>
   },
 
   //导航的选项
@@ -122,14 +128,14 @@ export default {
       primaryHue: { dark: '#ea7411', light: '#ea7411' },
       primarySaturation: { dark: '100%', light: '100%' },
     }, */
-    darkMode:false,
+  darkMode: false,
 
 
   //国际化
-/*   i18n: [
-    { locale: 'zh', text: '中文' },
-    { locale: 'en', text: 'English' },
-  ], */
+  /*   i18n: [
+      { locale: 'zh', text: '中文' },
+      { locale: 'en', text: 'English' },
+    ], */
 
   //横幅
   banner: {

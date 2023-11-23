@@ -7,8 +7,8 @@ import Web3 from "./3Web3";
 import Projects from "./5Projects";
 import Contact from "./6Contact";
 import { useTranslation } from "react-i18next";
-import { FloatButton } from "antd";
-import Script from "next/script";
+
+
 
 
 
@@ -65,7 +65,7 @@ export default function About() {
       <Projects />
 
       <Contact />
-      <FloatButton.BackTop visibilityHeight={3000} />
+
     </div>
   );
 }
