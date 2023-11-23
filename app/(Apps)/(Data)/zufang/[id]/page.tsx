@@ -1,6 +1,7 @@
 'use client'
 
 
+import { Empty } from 'antd';
 import './zufangdata.css'
 
 
@@ -9,23 +10,30 @@ export default function page({ params: { id } }) {
 
     const selectedHouse = zufangData.find(zufang => zufang.id === parseInt(id, 10));
     if (!selectedHouse) {
-        return <div>未找到房屋信息</div>;
+        return <div><Empty image={Empty.PRESENTED_IMAGE_SIMPLE} /></div>;
     }
     return (
         <div className='zufangdata'>
 
-         
-                {selectedHouse.imageUrl.map((url, index) => (
-                    <div key={index} className='zufangdata_div'>
-                        <img src={url} className='zufangdata_img' alt={`${selectedHouse.title} - Image ${index + 1}`} />
-                    </div>
-                ))}
+            <div className='zufang_Descriptions'>
+
+                <div className='zufangdata_text'>
+                    <h2>{selectedHouse.title}</h2>
+                    <h4>{selectedHouse.position}</h4>
+                    <p>{selectedHouse.price}</p>
+                </div>
 
 
-            <div className='zufangdata_text'>
-                <h4>{selectedHouse.position}</h4>
-                <p>{selectedHouse.price}</p>
+                <div className='zufangdata_div'>
+                    {selectedHouse.imageUrl.map((url, index) => (
+                        <img key={index} src={url} className='zufangdata_img' alt={`${selectedHouse.title} - Image ${index + 1}`} />
+                    ))}
+                </div>
+
             </div>
+
+
+
 
         </div>
     )

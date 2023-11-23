@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import './Github.css'
 import { FaStar, FaCodeBranch, FaEye } from 'react-icons/fa'
+
+
 async function fetchRepos() {
   const response = await fetch("https://api.github.com/users/QinJiangBan/repos");
 /*   await new Promise((resolve) => setTimeout(resolve,3000)); */
@@ -20,7 +22,7 @@ export default async function Github() {
         <ul className='repo_list'>
           {repos.map((repo) => (
 
-            <li>
+            <li  key={repo.id}>
               <Link href={`/Github/${repo.name}`} /* target='_blank' */>
                 <h3>{repo.name}</h3>
                 <p>{repo.description}</p>
@@ -40,10 +42,10 @@ export default async function Github() {
               </Link>
             </li>
           
-          )
-
-          )}
+          ))}
         </ul>
+
+        
       </div>
 
     </>

@@ -12,7 +12,7 @@
     width: 100%;
     font-size: 1.3rem;
   
-    color: #ea7411;
+    color: var(--shiki-color);
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
     border-radius: 30px;
@@ -24,6 +24,7 @@
   .TabsButton:hover {
     height: 100%;
     width: 100%;
+    color: #ea7411;
     background: var(--shiki-link-hover-background);
     -webkit-border-radius: 30;
     -moz-border-radius: 30;

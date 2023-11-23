@@ -123,7 +123,7 @@ function HeaderChildern({ }) {
                     <div className="Header_center">
                         <p className='Header_P'>房屋信息</p>
                     </div>
-                    <div className="Header_right"></div>
+                    <div className="Header_right"><Rainbowkit /></div>
                 </div>
             }
 

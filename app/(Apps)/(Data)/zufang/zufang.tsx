@@ -1,36 +1,34 @@
 'use client'
 import Link from 'next/link';
 import './zufang.css'
-import { Carousel } from 'antd';
+
+import { Suspense } from 'react';
+import Loading from './loading';
 
 
 export default function zufang() {
 
-    const onChange = (currentSlide) => {
-        console.log(currentSlide);
-      };
+
     return (
         <div className='zufang'>
 
             <div className="house_list">
                 {houseData.map((house) => (
-
-                  
+                    <Suspense fallback={<Loading />}>
                         <Link href={`/zufang/${house.id}`} target="_blank"
-                        className="house_card" key={house.id}>
-                            <Carousel afterChange={onChange}>
+                            className="house_card" key={house.id}>
 
-                                {house.imageUrl.map((url, index) => (
-                                    <div key={index} className='Carousel_div'>
-                                        <img 
-                                        src={url} 
-                                        className='Carousel_img' 
 
-                                        alt={`${house.title} - Image ${index + 1}`} />
-                                    </div>
-                                ))}
 
-                            </Carousel>
+                            <div key={0} className='Carousel_div'>
+                                <img
+                                    src={house.imageUrl[0]}
+                                    className='Carousel_img'
+
+                                    alt={`${house.title}`} />
+                            </div>
+
+
 
                             <div className='house_text'>
                                 <h4 className='house_text_h4'>{house.position}</h4>
@@ -38,7 +36,7 @@ export default function zufang() {
                             </div>
 
                         </Link>
-               
+                    </Suspense>
 
                 ))}
             </div>
