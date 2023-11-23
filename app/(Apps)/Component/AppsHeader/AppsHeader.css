@@ -74,7 +74,9 @@
 	}
 
 
-	.QianCset_left_home {
+
+	.Header_left_My {
+		margin-left: 1.5rem;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -82,12 +84,16 @@
 		justify-content: flex-start;
 	}
 
-	.QianCset_center_home {
-		display: none;
+	.Header_center_My {
+		gap: 0.5rem;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.Header_right_My {
-		gap: 0.5rem;
 		margin-right: 1.5rem;
 		width: 100%;
 		height: 100%;
@@ -132,9 +138,9 @@
 		align-items: center;
 	}
 
-
-
-
+	.Header_QianCset {
+		display: none;
+	}
 
 
 	.Header_left {
@@ -172,22 +178,23 @@
 		justify-content: center;
 	}
 
-	.QianCset_home {
+
+
+	.Header_left_My {
 		display: none;
 	}
 
-	.QianCset_center_home {
+	.Header_center_My {
+		gap: 0.5rem;
+		margin-left: 1.5rem;
 		width: 100%;
 		height: 100%;
 		display: flex;
 		align-items: center;
-		justify-content: center;
-
+		justify-content: flex-start;
 	}
 
-
 	.Header_right_My {
-		gap: 0.5rem;
 		margin-right: 1.5rem;
 		width: 100%;
 		height: 100%;

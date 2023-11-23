@@ -3,7 +3,7 @@
     position: center;
     align-items: space-around;
     justify-content: center;
-	margin: 5px;
+
 }
 .language-toggle:hover {
 	-webkit-border-radius: 16;

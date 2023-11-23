@@ -20,6 +20,7 @@
 	/* 首页色 */
 	--Aboutmian-background-color: #fff;
 	/* 主题色 */
+	--theme-color: #ea7411;
 	--main-decor-color: #ea7411;
 	--main-background: #fff3cb;
 	/* 2 加入社区 */
@@ -47,15 +48,21 @@
 	--nextra-primary-saturation: 100%;
 
 	--QianCset_svg: #000;
+
+
+	/* antd */
+	--background-color-antd: #ffffff !important;
+	--color-antd: #ea7411 !important;
 }
 
-.QianCset_svg svg{
+.QianCset_svg svg {
 	color: var(--QianCset_svg);
 
 }
+
 @media screen and (min-width:701px) {
-html {  
-    overflow-y: scroll;  
-    height: 100%;  
-  }
+	html {
+		overflow-y: scroll;
+		height: 100%;
+	}
 }

@@ -1,6 +1,6 @@
 
 import My_List from "./_My_List/My_List";
-import Rainbowkit from "@/UI/Wallet/Rainbowkit";
+
 
 
 
@@ -11,7 +11,7 @@ export default function Ppage() {
   return (
     <div className='My_Page'>
 
-      <div className="My_Button">
+{/*       <div className="My_Button">
 
         <div className="My_left_Button">
           我的
@@ -21,7 +21,7 @@ export default function Ppage() {
           <Rainbowkit />
         </div>
 
-      </div>
+      </div> */}
 
 <div className="My_List">
       <My_List />

@@ -2,74 +2,74 @@
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Menu, Dropdown, Button } from "antd";
-
+import { Button, Modal } from "antd";
+import { AiOutlineTranslation } from "react-icons/ai";
 import "./Locales.css";
-import { GoGlobe } from "react-icons/go";
 
 
-export default function Locales({  }) {
 
-  const { i18n } = useTranslation();
-  
-  const [showMenu, setShowMenu] = useState(false);
+export default function Locales({ }) {
+  const { t, i18n } = useTranslation();  
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);  
+    
+  const switchLanguage = (lng) => {  
+    i18n.changeLanguage(lng);  
+    setCurrentLanguage(lng);  
+  };  
 
-  function handleLanguageChange(value) {
-    i18n.changeLanguage(value);
-    setShowMenu(false);
-
-  }
-
-  function handleMenuClick({ key }) {
-    handleLanguageChange(key);
-  }
-
-  function toggleMenu() {
-    setShowMenu(!showMenu);
-  }
-
-  const defaultLanguage = i18n.language;
-  const menuItem = (
-    <Menu
-      onClick={handleMenuClick}
-      selectable={true}
-      selectedKeys={[defaultLanguage]}
-/*       style={{
-        height: "100%",
-        width: "100%",
-        background: "var(--background-color-antd)",
-        color: "var(--color-antd)",
-      }} */
-    >
-      <Menu.Item key="zh" className="Locales_text">中文</Menu.Item>
-      <Menu.Item key="en" className="Locales_text">English</Menu.Item>
-    </Menu>
-  );
-
-
-  const styles = {
-    color: "var(--color)",
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
   };
 
-  return (
-    <Dropdown
-      overlay={menuItem}
-      open={showMenu}
-      onOpenChange={toggleMenu}
-      trigger={["click"]}
-      placement="bottomRight"
 
+  return (<>
+
+    <div className="language-toggle">
+      <Button
+        type="text"
+        onClick={showModal}
+        icon={<AiOutlineTranslation />}
+
+      />
+
+    </div>
+    <Modal
+      title={`当前主题选项`}
+      style={{}}
+      focusTriggerAfterClose={false}
+      mask={true}
+      zIndex={1000}
+      open={isModalOpen}
+      footer={null}
+      onOk={handleOk} //点击确定回调
+      okText={"确定"} //确定按钮文字
+      confirmLoading={false} //确定按钮 loading
+      onCancel={handleCancel} //点击遮罩层或右上角叉或取消按钮的回调
+      cancelText={"取消"} //取消按钮文字
     >
-      <div className="language-toggle">
-        <Button
-          type="text"
-          icon={<GoGlobe />}
-          style={styles}
-          onClick={toggleMenu}
-        />
+      <div>
+        <div 
+        onClick={() => switchLanguage('zh')}  
+        className={currentLanguage === 'zh' ? 'theme_button_active' : 'theme_button'}>
+          中文 zh-CN Chinese
+        </div>
+        <div 
+        onClick={() => switchLanguage('en')}  
+        className={currentLanguage === 'en' ? 'theme_button_active' : 'theme_button'}>
+          英文 en-US English
+        </div>
       </div>
-    </Dropdown>
+
+    </Modal>
+  </>
+
   );
 }
 

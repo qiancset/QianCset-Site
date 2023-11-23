@@ -8,7 +8,7 @@ import Image from "next/image";
 import { useTranslation } from 'react-i18next';
 import ModeThemes from "@/UI/ModeThemes/ModeThemes";
 import Locales from "@/UI/LocalesButton/Locales";
-
+import Rainbowkit from "@/UI/Wallet/Rainbowkit";
 import { GoArrowLeft, GoGear } from 'react-icons/go';
 
 export default function AppsHeader() {
@@ -55,11 +55,15 @@ function BackLink({ href }) {
 }
 function QianCset() {
     return (
-
-        <Image src="/images/icon/QianCset.png" className='QianCset_home' width={120} height={30} alt="Q" />
-
+        <Image src='/favicon.ico' width={40} height={40} className='Header_QianCset' alt="Q" />
     )
 }
+function RainbowkitPAGE() {
+    return (
+        <Rainbowkit />
+    )
+}
+
 
 
 // 显示的内容
@@ -121,17 +125,14 @@ function Home() {
         <div className='Header_layout'>
 
             <div className='Header_left'>
-                <div className='QianCset_left_home'><QianCset /></div>
+            <Image src='/favicon.ico' width={40} height={40} alt="Q" />
             </div>
 
             <div className="Header_center">
 
-                <div className="QianCset_center_home">
-                    <Image src="/favicon.ico" alt="header-Q" width={40} height={40} />
-                </div>
             </div>
 
-            <div className="Header_right"></div>
+            <div className="Header_right"><RainbowkitPAGE /></div>
 
         </div>
     );
@@ -160,23 +161,23 @@ function Message() {
     const { t } = useTranslation();
 
     return (
-        <>
-            <div className='Header_layout'>
+
+        <div className='Header_layout'>
 
 
-                <div className='Header_left'>
-                    <QianCset />
-                </div>
-
-
-                <div className="Header_center">
-                    <p className="Header_P">{t('消息')}</p>
-                </div>
-
-                <div className="Header_right"></div>
-
+            <div className='Header_left'>
+                <QianCset />
             </div>
-        </>
+
+
+            <div className="Header_center">
+                <p className="Header_P">{t('消息')}</p>
+            </div>
+
+            <div className="Header_right"></div>
+
+        </div>
+
     );
 }
 
@@ -186,16 +187,18 @@ function My() {
         <div className='Header_layout'>
 
 
-            <div className='Header_left'>
+            <div className='Header_left_My'>
                 <QianCset />
             </div>
 
 
-            <div className="Header_center"></div>
-            <div className='Header_right_My'>
+            <div className="Header_center_My">
                 <Locales />
                 <ModeThemes />
+            </div>
+            <div className='Header_right_My'>
 
+                <Rainbowkit />
             </div>
 
         </div>

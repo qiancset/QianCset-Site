@@ -23,6 +23,7 @@
 	/* button_About_1 */
 	--button_About_1: #f5a609;
 	/* 主题色 */
+	--theme-color: #ea7411;
 	--main-decor-color: #ea7411;
 	--main-background: #fff3cb;
 	/*  2 加入社区 */
@@ -37,7 +38,7 @@
 	--card-box-shadow: 0 0 0.1rem #fff;
 	--card-background: #1f1f1f;
 	/* footer页眉 */
-	--footer-background: rgba(26, 26, 26, 0.3) ;
+	--footer-background: rgba(26, 26, 26, 0.3);
 	/* UI hover */
 	--shiki-link-hover-background: #ffffff31;
 
@@ -49,4 +50,8 @@
 	/* 初级饱和度 */
 
 	--QianCset_svg: #fff;
+
+	/* antd */
+	--background-color-antd: #1f1f1f !important;
+	--color-antd: #ea7411 !important;
 }

@@ -1,5 +1,6 @@
-import  '@/locales/i18n'
+'use client'
 
+import '@/locales/i18n';
 import "@/css/pages.css";
 import "@/css/www.css";
 import "@/css/www_dark.css";
@@ -17,12 +18,14 @@ export default function MyApp({ Component, pageProps }) {
     return (<div className={inter.className}>
 
         <AntdRegistry>
-            <Antd>
+         
+                <Antd>
 
-                <Component {...pageProps} />
+                    <Component {...pageProps} />
 
 
-            </Antd>
+                </Antd>
+            
         </AntdRegistry>
 
 

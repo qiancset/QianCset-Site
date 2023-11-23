@@ -9,10 +9,13 @@ const { t } = useTranslation();
     <>
     <ConnectButton 
     /* label={t("连接钱包")} */
-    accountStatus='address'
+    accountStatus={{
+      smallScreen: 'avatar',
+      largeScreen: 'full',
+    }}
     showBalance={{
       smallScreen: false,
-      largeScreen: true,
+      largeScreen: false,
     }}
     />
     </>

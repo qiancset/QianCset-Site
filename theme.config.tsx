@@ -60,7 +60,7 @@ export default {
 
 
   //网站徽标的 React 组件
-  logo: (<><Image src='/images/icon/QianCset.png' width={120} height={30} alt="logo" /></>),
+  logo: (<><Image src='/images/icon/favicon.ico' width={40} height={40} alt="logo" /></>),
   //logo组件的链接
   logoLink: '/about',
 
@@ -122,23 +122,8 @@ export default {
       primaryHue: { dark: '#ea7411', light: '#ea7411' },
       primarySaturation: { dark: '100%', light: '100%' },
     }, */
+    darkMode:false,
 
-  //主题切换
-  themeSwitch: {
-    /*     component:{//用于呈现主题切换的组件。
-    
-        }, */
-
-    useOptions() {//主题开关中的选项。
-      const { t } = useTranslation();
-
-      return {
-        light: t('光亮'),
-        dark: t('暗黑'),
-        system: t('系统')
-      }
-    }
-  },
 
   //国际化
 /*   i18n: [

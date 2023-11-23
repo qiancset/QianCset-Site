@@ -14,11 +14,53 @@
 	border-radius: 30px;
 }
 
+.theme_button{
+	transition: all 0.5s;
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	font-family: Arial;
+	font-size: 1rem;
+	padding: 5px 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid black 1px;
+	cursor: pointer;
+	border: none;
+	margin: 15px;
+	border: 1px solid #ea7411;
+	color: var(--shiki-color); 
+	background-color: transparent !important;
+
+}
+.theme_button_active {  
+	transition: all 0.5s;
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	font-family: Arial;
+	font-size: 1rem;
+	padding: 5px 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid black 1px;
+	cursor: pointer;
+	border: none;
+	margin: 15px;
+	border: 1px solid #ea7411;
+	color: var(--shiki-color); 
+	background-color: #ea7411 !important;
+
+  }
+  .theme_button:hover {
+	background-color: #ea7411 !important;
+  }
 
 .Sun_icon,
 .Moon_icon {
 	color: var( --shiki-color);
-
 	height: 22px;
 	width: 22px;
 	-webkit-border-radius: 30;
@@ -26,14 +68,7 @@
 	border-radius: 30px;
 }
 
-.Sun_after,
-.Moon_after {
-	border: none;
-	background: var(--shiki-link-hover-background);
-	-webkit-border-radius: 30;
-	-moz-border-radius: 30;
-	border-radius: 30px;
-}
+
 
 .Sun,
 .Moon {
