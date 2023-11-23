@@ -1,12 +1,12 @@
 
 
-//import Github from "./Github/Github"
+import ZuFang from "@/Data/zufang/zufang"
 
 export default async function Home() {
 
   return (
     <>
-
+<ZuFang />
 
 
     </>

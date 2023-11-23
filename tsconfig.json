@@ -17,6 +17,9 @@
       "@/public/*": [
         "public/*"
       ],
+      "@/Data/*":[
+        "app/(Apps)/(Data)/*"
+      ],
       "@/Component/*": [
         "app/(Apps)/Component/*"
       ],

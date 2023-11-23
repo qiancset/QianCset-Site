@@ -21,7 +21,7 @@ export default function AppsHeader() {
 
 
                     {pathname === "/" && <Home />}
-                    {pathname && pathname.startsWith("/home") && <Home />}
+                    {pathname && pathname.startsWith("/house") && <Home />}
                     {pathname === "/concern" && <Concern />}
                     {pathname === "/message" && <Message />}
                     {pathname === "/my" && <My />}
@@ -72,6 +72,13 @@ function HeaderChildern({ }) {
 
     return (
         <>
+            <Pathname href='/a'>
+                <BackLink href='/my' />
+                <div className="Header_center">
+                    <p className='Header_P'>Dapp 浏览器</p>
+                </div>
+                <div className="Header_right"></div>
+            </Pathname>
 
             <Pathname href='/dappbrowser'>
                 <BackLink href='/my' />
@@ -110,6 +117,15 @@ function HeaderChildern({ }) {
                 </div>
             }
 
+            {pathname && pathname.startsWith("/zufang") &&
+                <div className="Header_layout">
+                    <BackLink href='/' />
+                    <div className="Header_center">
+                        <p className='Header_P'>房屋信息</p>
+                    </div>
+                    <div className="Header_right"></div>
+                </div>
+            }
 
 
 

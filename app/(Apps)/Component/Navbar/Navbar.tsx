@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { usePathname, useSearchParams } from 'next/navigation'
 
 import { GoHome, GoHomeFill, GoHeart, GoHeartFill, GoBell, GoBellFill, GoPerson, GoPersonFill } from "react-icons/go";
+import { useEffect, useState } from "react";
 
 
 
@@ -16,12 +17,12 @@ export default function Navbar() {
   return (
     <>
 
-      <div className="Navbar">
+      <div className={`Navbar`}>
 
 
         <NavLink
           href='/'
-          activeHrefs={['/',`/Github/${pathname}`,`/home/${pathname}`,'/home/1','/home/2','/home/3','/home/4',]}
+          activeHrefs={['/',`/Github/${pathname}`,`/house/${pathname}`,'/house/1','/house/2','/house/3','/house/4',]}
           icon={<GoHome className="Navicon" />}
           activeIcon={<GoHomeFill className="Navicon" />}
         >{t('首页')}</NavLink>

@@ -30,12 +30,17 @@
 }
 
 a {  
-  text-decoration: none; /* 去除下划线 */   
+  text-decoration: none !important; /* 去除下划线 */ 
+  color: var(--shiki-color);  
 }  
 
 a:hover {  
-  text-decoration: none; /* 去除下划线 */  
+  text-decoration: none !important; /* 去除下划线 */  
+  color: var(--shiki-color);  
+
 }  
+
+
 
 /*--选择器----*/
 ::selection {

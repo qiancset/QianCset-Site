@@ -3,7 +3,7 @@
 export default function page() {
    return (
      <>
-     地图
+  3
      </>
    )
 }

@@ -8,8 +8,8 @@
 
 		height: 64px;
 
-		-webkit-backdrop-filter: saturate(300%) blur(5px);
-		backdrop-filter: saturate(300%) blur(5px);
+		-webkit-backdrop-filter: saturate(300%) blur(15px);
+		backdrop-filter: saturate(300%) blur(15px);
 		background: var(--shiki-header-background);
 
 		border-bottom: 1px solid rgba(204, 204, 204, 0.3);
@@ -117,8 +117,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		-webkit-backdrop-filter: saturate(180%) blur(5px);
-		backdrop-filter: saturate(180%) blur(5px);
+		-webkit-backdrop-filter: saturate(180%) blur(15px);
+		backdrop-filter: saturate(180%) blur(15px);
 		background: var(--shiki-header-background);
 
 		border-bottom: 1px solid rgba(204, 204, 204, 0.3);

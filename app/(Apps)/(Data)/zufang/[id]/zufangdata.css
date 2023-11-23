@@ -1,0 +1,34 @@
+/* 电脑 */
+@media screen and (min-width:701px) {
+    .zufangdata{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .zufangdata_div{
+        max-width: 700px;
+        width: 100%;
+        height:100%;
+    }
+    .zufangdata_img{
+        width: 100%;
+        height:100%;
+    }
+}
+/* 手机 */
+@media only screen and (max-width: 700px) {
+.zufangdata_div{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-self: center;
+}
+.zufangdata_img{
+    width: 100%;
+    height:100%;
+}
+}

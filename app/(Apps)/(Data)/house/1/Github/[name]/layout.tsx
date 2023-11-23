@@ -1,7 +1,6 @@
-import HeaderChildren from "@/Component/AppsHeader/HeaderChildren"
-import Link from "next/link"
+
 import './name.css'
-import { GoArrowLeft } from "react-icons/go";
+
 
 export default function layout({ children, params: { name } }) {
     return (

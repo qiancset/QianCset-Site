@@ -17,10 +17,9 @@ const light = {
     colorPrimary: "#ea7411",//品牌色
     colorInfo: "#ea7411",//用于表示操作信息的 Token 序列
     borderRadius: 30,//基础组件的圆角大小
-    colorTextBase:"var(--shiki-color)",//用于派生文本色梯度
     colorLinkHover: "#ea7411",//控制超链接悬浮的颜色。
     colorLinkActive: "#ea7411",//控制超链接点击的颜色。
-    colorBgContainer:"var(--background-color-antd)",//组件的容器背景色，
+
 
     colorBgMask:"rgba(0, 0, 0, 0.75)",//浮层的背景蒙层颜色，用于遮罩浮层下面的内容，
     colorIcon:"var(--shiki-color)",//控制弱操作图标的颜色

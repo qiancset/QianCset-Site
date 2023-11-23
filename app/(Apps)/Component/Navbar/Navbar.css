@@ -86,14 +86,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    -webkit-backdrop-filter: saturate(180%) blur(5px);
-    backdrop-filter: saturate(180%) blur(5px);
+		-webkit-backdrop-filter: saturate(180%) blur(15px);
+		backdrop-filter: saturate(180%) blur(15px);
     background: var(--shiki-Navbar-background);
     /*   box-shadow: 0 0 1px var(--color); */
     border-top: 1px solid rgba(204, 204, 204, 0.3);
   }
 
-
+  .Navbar.hidden {  
+    display: none;  
+  }
 
   .Navicon {
     font-size: 1.7rem;
