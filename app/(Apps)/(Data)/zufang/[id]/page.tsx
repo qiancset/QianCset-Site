@@ -1,11 +1,9 @@
+'use client'
+
 
 import './zufangdata.css'
 
-export const metadata = {
-    title: {
-        default: ` 房屋信息`,
-    }
-}
+
 
 export default function page({ params: { id } }) {
 

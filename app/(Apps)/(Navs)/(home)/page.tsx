@@ -1,3 +1,4 @@
+'use client'
 
 
 import ZuFang from "@/Data/zufang/zufang"
