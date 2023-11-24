@@ -32,13 +32,10 @@
 
 a {  
   text-decoration: none !important; /* 去除下划线 */ 
-  color: var(--shiki-color);  
 }  
 
 a:hover {  
   text-decoration: none !important; /* 去除下划线 */  
-  color: var(--shiki-color);  
-
 }  
 
 

@@ -1,11 +1,14 @@
 "use client";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import "./Navbar.css";
 import { useTranslation } from 'react-i18next';
 import { usePathname, useSearchParams } from 'next/navigation'
+import "./Navbar.css";
 
 import { GoHome, GoHomeFill, GoHeart, GoHeartFill, GoBell, GoBellFill, GoPerson, GoPersonFill } from "react-icons/go";
-import { useEffect, useState } from "react";
+import { AiOutlineMessage,AiFillMessage  } from "react-icons/ai";
+
+
 
 
 
@@ -37,8 +40,8 @@ export default function Navbar() {
         <NavLink
           href='/message'
           activeHrefs={['/message']}
-          icon={<GoBell className="Navicon" />}
-          activeIcon={<GoBellFill className="Navicon" />}
+          icon={<AiOutlineMessage className="Navicon" />}
+          activeIcon={<AiFillMessage className="Navicon" />}
         >{t('消息')}</NavLink>
 
         <NavLink

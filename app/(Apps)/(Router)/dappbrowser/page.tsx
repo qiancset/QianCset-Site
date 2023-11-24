@@ -24,7 +24,7 @@ const dataSource = [
     </div>,
     name: 'Uinswap',
     profile: '在以太坊上构建 Defi 应用程序和工具',
-    URL: <Link href='/Dappbrowser/Uinswap'>Uinswap</Link>,
+    URL: <Link href='/dappbrowser/Uinswap'>Uinswap</Link>,
   },
   {
     key: '2',

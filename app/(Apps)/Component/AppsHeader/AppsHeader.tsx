@@ -1,7 +1,7 @@
 "use client";
 
 import './AppsHeader.css'
-import { usePathname } from "next/navigation";
+import { usePathname,useRouter  } from "next/navigation";
 import Link from 'next/link';
 import Image from "next/image";
 
@@ -10,6 +10,7 @@ import ModeThemes from "@/UI/ModeThemes/ModeThemes";
 import Locales from "@/UI/LocalesButton/Locales";
 import Rainbowkit from "@/UI/Wallet/Rainbowkit";
 import { GoArrowLeft, GoGear } from 'react-icons/go';
+import { useEffect } from 'react';
 
 export default function AppsHeader() {
     const pathname = usePathname();
@@ -42,7 +43,10 @@ function Pathname({ href, children }) {
     const pathname = usePathname();
     return pathname === href ? <div className="Header_layout">{children}</div> : null;
 }
+
 function BackLink({ href }) {
+
+    
     return (
         <div className="Header_left">
             <Link href={`${href}`} prefetch={true} passHref>
@@ -104,6 +108,13 @@ function HeaderChildern({ }) {
                 <div className="Header_right"></div>
             </Pathname>
 
+            <Pathname href='/dappbrowser/Uinswap'>
+                <BackLink href='/my' />
+                <div className="Header_center">
+                    <p className='Header_P'>Swap</p>
+                </div>
+                <div className="Header_right"><RainbowkitPAGE /></div>
+            </Pathname>
 
 
 
@@ -123,7 +134,7 @@ function HeaderChildern({ }) {
                     <div className="Header_center">
                         <p className='Header_P'>房屋信息</p>
                     </div>
-                    <div className="Header_right"><Rainbowkit /></div>
+                    <div className="Header_right"><RainbowkitPAGE /></div>
                 </div>
             }
 
@@ -141,7 +152,7 @@ function Home() {
         <div className='Header_layout'>
 
             <div className='Header_left'>
-            <Image src='/favicon.ico' width={40} height={40} alt="Q" />
+            <Image src='/favicon.ico' width={40} height={40} className='Home_QianCset' alt="Q" />
             </div>
 
             <div className="Header_center">
@@ -214,7 +225,7 @@ function My() {
             </div>
             <div className='Header_right_My'>
 
-                <Rainbowkit />
+                <RainbowkitPAGE />
             </div>
 
         </div>
