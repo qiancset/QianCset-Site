@@ -17,6 +17,7 @@
 }
 
 
+
 .Router{
   max-width: 1440px;
   justify-content: space-evenly;
@@ -34,9 +35,7 @@ a {
   text-decoration: none !important; /* 去除下划线 */ 
 }  
 
-a:hover {  
-  text-decoration: none !important; /* 去除下划线 */  
-}  
+
 
 
 

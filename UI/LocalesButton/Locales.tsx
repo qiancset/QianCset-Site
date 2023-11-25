@@ -6,17 +6,14 @@ import { Button, Modal } from "antd";
 import { AiOutlineTranslation } from "react-icons/ai";
 import "./Locales.css";
 
-
-
 export default function Locales({ }) {
-  const { t, i18n } = useTranslation();  
-  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);  
-    
-  const switchLanguage = (lng) => {  
-    i18n.changeLanguage(lng);  
-    setCurrentLanguage(lng);  
-  };  
+  const { t, i18n } = useTranslation();
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
 
+  const switchLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setCurrentLanguage(lng);
+  };
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
@@ -27,8 +24,6 @@ export default function Locales({ }) {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
-
-
   return (<>
 
     <div className="language-toggle">
@@ -36,12 +31,11 @@ export default function Locales({ }) {
         type="text"
         onClick={showModal}
         icon={<AiOutlineTranslation />}
-
       />
 
     </div>
     <Modal
-      title={`当前主题选项`}
+      title={t('选择语言')}
       style={{}}
       focusTriggerAfterClose={false}
       mask={true}
@@ -55,18 +49,62 @@ export default function Locales({ }) {
       cancelText={"取消"} //取消按钮文字
     >
       <div>
-        <div 
-        onClick={() => switchLanguage('zh')}  
-        className={currentLanguage === 'zh' ? 'theme_button_active' : 'theme_button'}>
-          中文 zh-CN Chinese
-        </div>
-        <div 
-        onClick={() => switchLanguage('en')}  
-        className={currentLanguage === 'en' ? 'theme_button_active' : 'theme_button'}>
-          英文 en-US English
-        </div>
-      </div>
 
+
+
+
+        <div
+          onClick={() => switchLanguage('zh_CN')}
+          className={currentLanguage === 'zh_CN' ? 'theme_button_active' : 'theme_button'}>
+          简体中文
+        </div>
+
+        <div
+          onClick={() => switchLanguage('zh_TW')}
+          className={currentLanguage === 'zh_TW' ? 'theme_button_active' : 'theme_button'}>
+          繁体中文
+        </div>
+
+        <div
+          onClick={() => switchLanguage('en')}
+          className={currentLanguage === 'en' ? 'theme_button_active' : 'theme_button'}>
+          English
+        </div>
+
+        <div
+          onClick={() => switchLanguage('fr')}
+          className={currentLanguage === 'fr' ? 'theme_button_active' : 'theme_button'}>
+          Français
+        </div>
+
+        <div
+          onClick={() => switchLanguage('ko')}
+          className={currentLanguage === 'ko' ? 'theme_button_active' : 'theme_button'}>
+          한국어
+        </div>
+
+        <div
+          onClick={() => switchLanguage('ja')}
+          className={currentLanguage === 'ja' ? 'theme_button_active' : 'theme_button'}>
+          日本語
+        </div>
+
+        <div
+          onClick={() => switchLanguage('ar')}
+          className={currentLanguage === 'ar' ? 'theme_button_active' : 'theme_button'}>
+          بالعربية
+        </div>
+
+        <div
+          onClick={() => switchLanguage('bt')}
+          className={currentLanguage === 'bt' ? 'theme_button_active' : 'theme_button'}>
+          Português
+        </div>
+
+
+
+
+      </div>
     </Modal>
   </>
 

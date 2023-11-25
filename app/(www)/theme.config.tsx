@@ -1,5 +1,6 @@
 
 
+
 import '@/locales/i18n';
 import "@/app/(www)/css/Anniu.css";
 import "@/app/(www)/css/pages.css";
@@ -60,7 +61,7 @@ const Toc: React.FC = () => {
 };
 const Placeholder: React.FC = () => {
   const { t } = useTranslation();
-  return t('搜索文档...')
+  return t('搜索文档')
 };
 const I18N: React.FC = (initialI18nStore, initialLanguage ) => {
   useSSR(initialI18nStore, initialLanguage);
