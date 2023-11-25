@@ -1,18 +1,30 @@
 
 
-import './locales/i18n';
-import "./app/(www)/css/Anniu.css";
-import "./app/(www)/css/pages.css";
-import "./app/(www)/css/www.css";
-import "./app/(www)/css/www_dark.css";
+import '@/locales/i18n';
+import "@/app/(www)/css/Anniu.css";
+import "@/app/(www)/css/pages.css";
+import "@/app/(www)/css/www.css";
+import "@/app/(www)/css/www_dark.css";
 
 import Image from "next/image";
-import ModeThemes from "./UI/ModeThemes/ModeThemes";
-import Locales from "./UI/LocalesButton/Locales";
-import Themes from './Providers/Themes'
+import ModeThemes from "@/UI/ModeThemes/ModeThemes";
+import Locales from "@/UI/LocalesButton/Locales";
+import Themes from '@/Providers/Themes'
 import { FaTwitter } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { useSSR } from 'react-i18next';
+
+
+interface EditLinkProps {
+  filePath?: string;
+  className?: string;
+}
+
+interface EditLinkProps {
+  filePath?: string;
+  className?: string;
+}
 
 
 const Feedback: React.FC = () => {
@@ -50,8 +62,14 @@ const Placeholder: React.FC = () => {
   const { t } = useTranslation();
   return t('搜索文档...')
 };
-export default {
+const I18N: React.FC = (initialI18nStore, initialLanguage ) => {
+  useSSR(initialI18nStore, initialLanguage);
+  return (
+    <>
+    </>
+  )};
 
+export default  {
 
   //搜索引擎优化选项
   useNextSeoProps() {

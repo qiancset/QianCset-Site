@@ -22,8 +22,8 @@ export default i18next
   .init({             // 初始化 i18next
 
     resources,            //获取json
-    lng: 'zh',           // 指定默认的语言中文（zh）。如果启动时未指定语言，则将默认使用此语言。
-    fallbackLng: 'zh',    // 如果指定的语言不存在，则默认使用这个
+              // 指定默认的语言中文（zh）。如果启动时未指定语言，则将默认使用此语言。
+    fallbackLng: 'en',    // 如果指定的语言不存在，则默认使用这个
     debug: false,
 
   });
