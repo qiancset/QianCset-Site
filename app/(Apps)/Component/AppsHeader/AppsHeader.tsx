@@ -1,7 +1,7 @@
 "use client";
 
 import './AppsHeader.css'
-import { usePathname,useRouter  } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from 'next/link';
 import Image from "next/image";
 
@@ -11,7 +11,7 @@ import Locales from "@/UI/LocalesButton/Locales";
 import Rainbowkit from "@/UI/Wallet/Rainbowkit";
 import { GoArrowLeft, GoGear } from 'react-icons/go';
 import { useEffect } from 'react';
-
+import { motion } from "framer-motion"
 export default function AppsHeader() {
     const pathname = usePathname();
 
@@ -46,7 +46,7 @@ function Pathname({ href, children }) {
 
 function BackLink({ href }) {
 
-    
+
     return (
         <div className="Header_left">
             <Link href={`${href}`} prefetch={true} passHref>
@@ -59,7 +59,12 @@ function BackLink({ href }) {
 }
 function QianCset() {
     return (
-        <Image src='/favicon.ico' width={40} height={40} className='Header_QianCset' alt="Q" />
+        <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+        >
+            <Image src='/favicon.ico' width={40} height={40} className='Header_QianCset' alt="Q" />
+        </motion.div>
     )
 }
 function RainbowkitPAGE() {
@@ -152,9 +157,21 @@ function Home() {
         <div className='Header_layout'>
 
             <div className='Header_left'>
-            <Image src='/favicon.ico' width={40} height={40} className='Home_QianCset' alt="Q" />
+                <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                >
+                    <Image src='/favicon.ico' width={40} height={40} className='Home_QianCset' alt="Q" />
+                </motion.div>
             </div>
 
+            <motion.div
+                animate={{
+                    scale: [1, 2, 2, 1, 1],
+                    rotate: [0, 0, 270, 270, 0],
+                    borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                }}
+            />
             <div className="Header_center">
 
             </div>

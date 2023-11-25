@@ -7,7 +7,6 @@
 }
 
 .house_list {
-
     padding: 1.5rem;
     display: flex;
     flex-wrap: wrap;
@@ -17,13 +16,21 @@
 .house_card {
     width: 300px;
     height: 400px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     border-radius: 16px;
+    color: var(--shiki-color);
     box-shadow: 0 0 0.1rem rgb(142, 140, 140);
     background: var(--shiki-Navbar-background);
-
 }
-
+.house_card:hover {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 50px;
+    border-radius: 16px;
+    color: var(--shiki-color);
+    box-shadow: 0 0 0.1rem rgb(142, 140, 140);
+    background: var(--shiki-link-hover-background);
+}
 .Carousel {
     border-radius: 16px;
 }
@@ -39,8 +46,6 @@
     height: 100%;
     object-fit: cover;
     border-radius: 16px;
-
-
 }
 
 .house_text {
@@ -72,12 +77,19 @@
         height: 400px;
         margin-bottom: 5vh;
         border-radius: 16px;
+        color: var(--shiki-color);
         box-shadow: 0 0 0.1rem rgb(142, 140, 140);
         background: var(--shiki-Navbar-background);
-
-
     }
-
+    .house_card:hover {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 5vh;
+        border-radius: 16px;
+        color: var(--shiki-color);
+        box-shadow: 0 0 0.1rem rgb(142, 140, 140);
+        background: var(--shiki-link-hover-background);
+    }
     .Carousel_div {
         width: 100%;
         height: 300px;

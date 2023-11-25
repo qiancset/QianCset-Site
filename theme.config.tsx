@@ -12,6 +12,7 @@ import Locales from "./UI/LocalesButton/Locales";
 import Themes from './Providers/Themes'
 import { FaTwitter } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 
 const Feedback: React.FC = () => {
@@ -66,10 +67,14 @@ export default {
 
 
   //网站徽标的 React 组件
-  logo: (<><Image src='/images/icon/favicon.ico' width={40} height={40} alt="logo" /></>),
-  //logo组件的链接
+  logo: (<>
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}>
+      <Image src='/images/icon/favicon.ico' width={40} height={40} alt="logo" />
+    </motion.div>
+  </>),
   logoLink: '/about',
-
   //搜索组件的数据
   search: { placeholder: Placeholder },
 
@@ -104,30 +109,22 @@ export default {
   //呈现上次更新日期的函数
   gitTimestamp: GitTimestamp,
 
+
   //侧边栏
   sidebar: {
-    defaultMenuCollapseLevel: 1,//指定默认情况下折叠左侧菜单的文件夹级别。
-    autoCollapse: true,//自动折叠非活动文件夹
+    defaultMenuCollapseLevel: 2,//指定默认情况下折叠左侧菜单的文件夹级别。
+    autoCollapse: false,//自动折叠非活动文件夹
     toggleButton: true,//侧边栏隐藏按钮
   },
 
   //目录侧边栏
   toc: {
-
     title: <Toc />,//标题
-    backToTop: true //添加“滚动到顶部”链接
+    //backToTop: true //添加“滚动到顶部”链接
   },
 
 
-  /*   //主题颜色
-    primaryHue: { dark: '#ea7411', light: '#ea7411' },
-    primarySaturation: { dark: '100%', light: '100%' },
-  
-    //主题配置
-    nextThemes: {
-      primaryHue: { dark: '#ea7411', light: '#ea7411' },
-      primarySaturation: { dark: '100%', light: '100%' },
-    }, */
+
   darkMode: false,
 
 
@@ -136,6 +133,7 @@ export default {
       { locale: 'zh', text: '中文' },
       { locale: 'en', text: 'English' },
     ], */
+
 
   //横幅
   banner: {
@@ -147,6 +145,7 @@ export default {
       </a>
     )
   },
+
 
   //页脚
   footer: {

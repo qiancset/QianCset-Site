@@ -6,7 +6,7 @@ import { usePathname, useSearchParams } from 'next/navigation'
 import "./Navbar.css";
 
 import { GoHome, GoHomeFill, GoHeart, GoHeartFill, GoBell, GoBellFill, GoPerson, GoPersonFill } from "react-icons/go";
-import { AiOutlineMessage,AiFillMessage  } from "react-icons/ai";
+import { AiOutlineMessage, AiFillMessage } from "react-icons/ai";
 
 
 
@@ -25,7 +25,7 @@ export default function Navbar() {
 
         <NavLink
           href='/'
-          activeHrefs={['/',`/Github/${pathname}`,`/house/${pathname}`,'/house/1','/house/2','/house/3','/house/4',]}
+          activeHrefs={['/', `/Github/${pathname}`, `/house/${pathname}`, '/house/1', '/house/2', '/house/3', '/house/4',]}
           icon={<GoHome className="Navicon" />}
           activeIcon={<GoHomeFill className="Navicon" />}
         >{t('首页')}</NavLink>
@@ -46,7 +46,7 @@ export default function Navbar() {
 
         <NavLink
           href='/my'
-          activeHrefs={['/my', '/dappbrowser', '/function', '/settings','/a',]}
+          activeHrefs={['/my', '/dappbrowser', '/function', '/settings', '/a',]}
           icon={<GoPerson className="Navicon" />}
           activeIcon={<GoPersonFill className="Navicon" />}
         >{t('我的')}</NavLink>
@@ -71,17 +71,22 @@ function NavLink({ href, activeIcon, icon, children, activeHrefs }) {
         href={href}
         prefetch={true} passHref
       >
+
+
         <div className="NavLink-container">
 
-          <div className="NavLink-left">
-            {activeHrefs.includes(pathname) ? activeIcon : icon}
-          </div>
+
+            <div className="NavLink-left">
+              {activeHrefs.includes(pathname) ? activeIcon : icon}
+            </div>
+ 
 
           <div className="NavLink-center">
             <p className="Link_children">{children}</p>
           </div>
 
         </div>
+
       </Link>
 
 

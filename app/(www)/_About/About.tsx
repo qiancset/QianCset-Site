@@ -7,6 +7,7 @@ import Web3 from "./3Web3";
 import Projects from "./5Projects";
 import Contact from "./6Contact";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 
 
@@ -27,23 +28,26 @@ export default function About() {
       </div>
 
       <div id="About">
+
         <div className="rotate1">
-          <img src="favicon.ico" alt="About-Q" className="Imagelogo" />
+
+            <img src="favicon.ico" alt="About-Q" className="Imagelogo" />
+
         </div>
+
         <h1 className="About_h1">
           {t("千赛特")}
           <hr className="About_hr" />
         </h1>
 
         <strong className="About_strong">
-
           {t('让互联网变得可拥有、可信任、有价值')}
           <br />
           {t('探索创新的Web3商业模式')}
-
         </strong>
 
         <div className="Aboutbtn">
+
           <Link href="/" /* target="_blank" */>
             <div className="button_About_1 pulse w-button">
               {t("前往应用")}
@@ -55,7 +59,11 @@ export default function About() {
               {t("阅读文档")}
             </div>
           </Link>
+
         </div>
+
+
+
       </div>
 
 

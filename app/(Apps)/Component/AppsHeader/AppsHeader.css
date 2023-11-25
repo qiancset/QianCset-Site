@@ -33,9 +33,16 @@
 		align-items: center;
 	}
 
+	.Header_QianCset {
 
+		display: flex;
+		align-items: center;
+	}
 
-
+	.Home_QianCset {
+		display: flex;
+		align-items: center;
+	}
 
 	.Header_left {
 		margin-left: 1.5rem;
@@ -143,7 +150,9 @@
 	}
 
 	.Home_QianCset {
-		margin-left: 1.3rem;
+/* 		margin-left: 1.3rem; */
+		display: flex;
+		align-items: center;
 	}
 
 	.Header_left {
@@ -233,7 +242,7 @@
 	font-size: 1.3rem;
 	background: #ea7411;
 	background-color: var(--shiki-link-hover-background);
-	-webkit-border-radius: 30;
-	-moz-border-radius: 30;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
 	border-radius: 30px;
 }

@@ -14,19 +14,21 @@ export default function zufang() {
 
             <div className="house_list">
                 {houseData.map((house) => (
-                    <Suspense fallback={<Loading />}>
-                        <Link href={`/zufang/${house.id}`} target="_blank"
-                            className="house_card" key={house.id}>
+
+                    <Link href={`/zufang/${house.id}`} /* target="_blank" */
+                        className="house_card" key={house.id}>
+
+                        <Suspense fallback={<Loading />}>
 
 
+                                <div key={0} className='Carousel_div'>
+                                    <img
+                                        src={house.imageUrl[0]}
+                                        className='Carousel_img'
 
-                            <div key={0} className='Carousel_div'>
-                                <img
-                                    src={house.imageUrl[0]}
-                                    className='Carousel_img'
-
-                                    alt={`${house.title}`} />
-                            </div>
+                                        alt={`${house.title}`} />
+                                </div>
+               
 
 
 
@@ -35,9 +37,8 @@ export default function zufang() {
                                 <p>{house.price}</p>
                             </div>
 
-                        </Link>
-                    </Suspense>
-
+                        </Suspense>
+                    </Link>
                 ))}
             </div>
 

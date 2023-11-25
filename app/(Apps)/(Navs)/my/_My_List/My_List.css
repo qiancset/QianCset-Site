@@ -79,6 +79,7 @@
 }
 .GoChevronRight{
     font-size: 1.5rem;
+	color: var(--shiki-nav_link-color);
 }
 .gap {
 	width: 5%;

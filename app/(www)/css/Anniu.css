@@ -3,8 +3,8 @@
 }
 .button_About_1 {
   transition: all 0.5s;
-  -webkit-border-radius: 30;
-  -moz-border-radius: 30;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
   border-radius: 30px;
   font-family: Arial;
   font-size: 2rem;
@@ -26,8 +26,8 @@
 
 .button_About_2 {
   transition: all 0.5s;
-  -webkit-border-radius: 30;
-  -moz-border-radius: 30;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
   border-radius: 30px;
   font-family: Arial;
   font-size: 2rem;
@@ -52,8 +52,8 @@
 
 .button_About {
   transition: all 0.5s;
-  -webkit-border-radius: 30;
-  -moz-border-radius: 30;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
   border-radius: 30px;
   font-family: Arial;
   display: flex;

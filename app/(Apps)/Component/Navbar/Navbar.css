@@ -49,8 +49,8 @@
     height: 100%;
     width: 100%;
     background: var(--shiki-link-hover-background);
-    -webkit-border-radius: 30;
-    -moz-border-radius: 30;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     border-radius: 30px;
   }
 
@@ -61,15 +61,15 @@
     text-decoration: none;
     font-size: 1.7rem;
     color: #ea7411;
-    -webkit-border-radius: 30;
-    -moz-border-radius: 30;
-    border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    background: var(--shiki-link-hover-background);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
   }
-
 
 }
 
@@ -116,8 +116,8 @@
     text-decoration: none;
     font-size: 1.7rem;
     color: var(--shiki-nav_link-color);
-    -webkit-border-radius: 30;
-    -moz-border-radius: 30;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -132,8 +132,8 @@
     text-decoration: none;
     font-size: 1.7rem;
     color: #ea7411;
-    -webkit-border-radius: 30;
-    -moz-border-radius: 30;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     border-radius: 30px;
     display: flex;
     justify-content: center;

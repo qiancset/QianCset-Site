@@ -14,8 +14,8 @@
     font-size: 1.3rem;
   
     color: var(--shiki-color);
-    -webkit-border-radius: 30;
-    -moz-border-radius: 30;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -27,8 +27,8 @@
     width: 100%;
     color: #ea7411;
     background: var(--shiki-link-hover-background);
-    -webkit-border-radius: 30;
-    -moz-border-radius: 30;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     border-radius: 30px;
   }
   

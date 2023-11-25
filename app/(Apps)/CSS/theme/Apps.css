@@ -5,7 +5,7 @@
 
 
     /* UI */
-    --shiki-link-hover-background: #0000000f !important;
+    --shiki-link-hover-background: rgba(0,0,0,0.03) !important;
 
     /* Navbar */
     --shiki-Navbar-background: #fffffff7 !important;

@@ -10,7 +10,7 @@ export default function page({ params: { id } }) {
 
     const selectedHouse = zufangData.find(zufang => zufang.id === parseInt(id, 10));
     if (!selectedHouse) {
-        return <div><Empty image={Empty.PRESENTED_IMAGE_SIMPLE} /></div>;
+        return <div>链接空数据</div>;
     }
     return (
         <div className='zufangdata'>

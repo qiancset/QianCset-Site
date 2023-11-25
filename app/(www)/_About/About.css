@@ -225,8 +225,8 @@
 
 .feature-card {
 	position: relative;
-	-webkit-border-radius: 30;
-	-moz-border-radius: 30;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
 	border-radius: 30px;
 	height: 100%;
 	box-shadow: 0 0 0.2rem #ea7411;
@@ -463,8 +463,8 @@
 	.Web3card {
 		height: 230px;
 		flex: 1 0 200px;
-		-webkit-border-radius: 30;
-		-moz-border-radius: 30;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
 		border-radius: 30px;
 	}
 
@@ -490,8 +490,8 @@
 	.Web3card {
 		height: 200px;
 		flex: 1 0 150px;
-		-webkit-border-radius: 30;
-		-moz-border-radius: 30;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
 		border-radius: 30px;
 	}
 
@@ -717,8 +717,8 @@
 	margin: auto;
 	padding: 20px;
 
-	-webkit-border-radius: 30;
-	-moz-border-radius: 30;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
 	border-radius: 30px;
 }
 

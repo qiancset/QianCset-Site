@@ -3,7 +3,7 @@
   --shiki-color: #000 ;
 
   /* UI */
-  --shiki-link-hover-background: #0000000f;
+  --shiki-link-hover-background: rgba(0,0,0,0.03);
 
 }
 
@@ -12,7 +12,7 @@
   --shiki-color: #fff ;
 
   /* UI hover */
-  --shiki-link-hover-background: #ffffff31;
+  --shiki-link-hover-background: hsla(0,0%,100%,0.04);
 
 }
 
