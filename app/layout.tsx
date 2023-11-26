@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 //import 'nextra-theme-docs/style.css'
 import './layout.css'
 import Providers from "@/Providers/Providers";
-import i18next from "i18next";
+
 
 export const metadata = {
    title: {
@@ -26,9 +26,9 @@ export const metadata = {
 };
 const inter = Inter({ subsets: ["latin"] });
 export default function Layout({ children }: React.PropsWithChildren) {
-   const lang = i18next.language;  
+ 
    return (
-      <html lang={lang}>
+      <html lang='zh_CN'>
          <head>
             <meta charSet="utf-8" />
          </head>

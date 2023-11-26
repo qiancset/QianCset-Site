@@ -23,7 +23,7 @@ export default i18next
 
     resources,            //获取json
     nonExplicitSupportedLngs:true,
-    //lng: 'zh_CN',// 指定默认的语言中文（zh）。
+   lng: 'zh_CN',// 指定默认的语言中文（zh）。
     fallbackLng: 'en',  // 如果指定的语言不存在，则默认使用这个
     debug: false,
     react: {
@@ -31,7 +31,7 @@ export default i18next
       useSuspense: true,
     },
 
-    detection: {  
+    /* detection: {  
       order: ['localStorage', 'sessionStorage', 'navigator','cookie', 'htmlTag','path', 'default',], // 检测语言设置的顺序  
       lookupQuerystring: 'lng', // 从URL中解析语言代码的参数名  
       lookupCookie: 'lng', // 从Cookie中解析语言代码的参数名  
@@ -41,7 +41,7 @@ export default i18next
       //excludeCacheFor: ['cib'], // 需要排除缓存的语言代码（可选）  
       cookieMinutes: 1440, // Cookie的有效时间（分钟）（可选）  
       cookieDomain: 'myDomain', // Cookie的域名（可选）  
-    },  
+    },   */
   });  
   
 // 获取检测到的语言代码并写入HTML的lang属性  
