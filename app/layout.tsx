@@ -26,7 +26,7 @@ export const metadata = {
 };
 const inter = Inter({ subsets: ["latin"] });
 export default function Layout({ children }: React.PropsWithChildren) {
- 
+
    return (
       <html lang='zh_CN'>
          <head>

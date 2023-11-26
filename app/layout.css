@@ -1,24 +1,24 @@
 :root {
   /* 全局css */
-  --shiki-color: #000 ;
+  --shiki-color: #000;
 
   /* UI */
-  --shiki-link-hover-background: rgba(0,0,0,0.03);
+  --shiki-link-hover-background: rgba(0, 0, 0, 0.03);
 
 }
 
 [data-theme='dark'] {
   /* 全局css */
-  --shiki-color: #fff ;
+  --shiki-color: #fff;
 
   /* UI hover */
-  --shiki-link-hover-background: hsla(0,0%,100%,0.04);
+  --shiki-link-hover-background: hsla(0, 0%, 100%, 0.04);
 
 }
 
 
 
-.Router{
+.Router {
   max-width: 1440px;
   justify-content: space-evenly;
   margin: auto;
@@ -31,9 +31,10 @@
   padding: 0;
 }
 
-a {  
-  text-decoration: none !important; /* 去除下划线 */ 
-}  
+a {
+  text-decoration: none !important;
+  /* 去除下划线 */
+}
 
 
 
@@ -49,8 +50,3 @@ a {
   color: var(--shiki-color);
   background: #ea7411;
 }
-
-
-
-
-
