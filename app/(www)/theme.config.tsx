@@ -17,6 +17,7 @@ import { motion } from 'framer-motion';
 import { useSSR } from 'react-i18next';
 
 
+
 interface EditLinkProps {
   filePath?: string;
   className?: string;
@@ -29,7 +30,8 @@ interface EditLinkProps {
 
 
 const Feedback: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
   return t('给我们反馈问题↗')
 };
 
@@ -63,14 +65,16 @@ const Placeholder: React.FC = () => {
   const { t } = useTranslation();
   return t('搜索文档')
 };
-const I18N: React.FC = (initialI18nStore, initialLanguage ) => {
+const I18N: React.FC = (initialI18nStore, initialLanguage) => {
   useSSR(initialI18nStore, initialLanguage);
   return (
     <>
     </>
-  )};
+  )
+};
 
-export default  {
+
+export default {
 
   //搜索引擎优化选项
   useNextSeoProps() {
@@ -112,7 +116,7 @@ export default  {
   navbar: {
 
     //在最后一个图标之后显示额外的内容
-    extraContent: <Themes><Locales /><ModeThemes /></Themes>
+    extraContent: <Themes><Locales/><ModeThemes /></Themes>
   },
 
   //导航的选项

@@ -1,17 +1,16 @@
 "use client";
 
 import './AppsHeader.css'
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from 'next/link';
 import Image from "next/image";
-
 import { useTranslation } from 'react-i18next';
 import ModeThemes from "@/UI/ModeThemes/ModeThemes";
-import Locales from "@/UI/LocalesButton/Locales";
+
 import Rainbowkit from "@/UI/Wallet/Rainbowkit";
-import { GoArrowLeft, GoGear } from 'react-icons/go';
-import { useEffect } from 'react';
+import { GoArrowLeft } from 'react-icons/go';
 import { motion } from "framer-motion"
+import Locales from '@/UI/LocalesButton/Locales';
 export default function AppsHeader() {
     const pathname = usePathname();
 
@@ -237,7 +236,7 @@ function My() {
 
 
             <div className="Header_center_My">
-                <Locales />
+           <Locales/> 
                 <ModeThemes />
             </div>
             <div className='Header_right_My'>

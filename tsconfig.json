@@ -61,7 +61,7 @@
     "**/*.tsx",
     "**/*.mdx",
     "app/middleware.js"
-, "theme.config.tsx", "Providers/Rainbowkit.jsx", "Providers/Themes.jsx", "app/(Apps)/(Nav)/(Router)/Dappbrowser/Uinswap/page.jsx", "Providers/Antd.jsx", "Providers/Providers.tsx", "Providers/lib/AntdRegistry.tsx", "UI/ModeThemes/ModeThemes.jsx", "pages/_app.jsx"  ],
+, "theme.config.tsx", "Providers/Rainbowkit.jsx", "Providers/Themes.jsx", "app/(Apps)/(Nav)/(Router)/Dappbrowser/Uinswap/page.jsx", "Providers/Antd.jsx", "Providers/Providers.tsx", "Providers/lib/AntdRegistry.tsx", "UI/ModeThemes/ModeThemes.jsx", "pages/_app.jsx", "UI/LocalesButton/LocaleContext.jsx", "UI/LocalesButton/Locales.jsx"  ],
   "exclude": [
     "node_modules"
   ]
