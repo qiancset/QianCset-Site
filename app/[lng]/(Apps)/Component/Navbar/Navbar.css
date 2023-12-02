@@ -1,0 +1,210 @@
+/* 电脑 */
+@media screen and (min-width:701px) {
+  .Navbar {
+    width: 100%;
+    height: 100%;
+    z-index: 800;
+    border-right: 1px solid rgba(204, 204, 204, 0.3);
+    color: var(--color);
+    /* background: var(--shiki-Navbar-background); */
+
+    padding: 5%;
+  }
+
+  .Navicon {
+    margin-left: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+  }
+
+  .Link_children {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .Link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+  }
+
+  /* 未选中 */
+  .nav_link {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: var(--shiki-nav_link-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav_link:hover {
+    height: 100%;
+    width: 100%;
+    background: var(--shiki-link-hover-background);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+
+  /* 选中 */
+  .nav_link.active {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #ea7411;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background: var(--shiki-link-hover-background);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+
+}
+
+
+
+/* 手机 */
+@media only screen and (max-width: 700px) {
+
+  .Navbar {
+    width: 100%;
+    height: 56px;
+    z-index: 800;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+		-webkit-backdrop-filter: saturate(180%) blur(15px);
+		backdrop-filter: saturate(180%) blur(15px);
+    background: var(--shiki-Navbar-background);
+    /*   box-shadow: 0 0 1px var(--color); */
+    border-top: 1px solid rgba(204, 204, 204, 0.3);
+  }
+
+  .Navbar.hidden {  
+    display: none;  
+  }
+
+  .Navicon {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .NavLink-center {
+    display: none;
+  }
+
+  /* 未选中 */
+  .nav_link {
+    height: 56px;
+    width: 25vw;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: var(--shiki-nav_link-color);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 选中 */
+  .nav_link.active {
+    height: 56px;
+    width: 25vw;
+
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #ea7411;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .NavLink-right {
+    display: none;
+  }
+
+
+
+}
+
+
+
+@media screen and (min-width:701px) and (max-width:1079px) {
+
+  .NavLink-container {
+    display: flex;
+
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .NavLink-center {
+    display: none;
+  }
+
+}
+
+
+
+/* 电脑 */
+@media screen and (min-width:1080px) {
+  .NavLink-container {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+
+  .NavLink-left {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5vw;
+  }
+
+  .NavLink-center {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5vw;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width:1520px) {
+  .NavLink-left {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+  }
+}
+

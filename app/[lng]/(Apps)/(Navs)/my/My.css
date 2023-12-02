@@ -1,0 +1,32 @@
+
+
+.My_Button {
+
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.My_left_Button {
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.My_right_Button {
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+
+.My_List{
+	padding: 10px;
+}

@@ -118,6 +118,8 @@ const connectors = connectorsForWallets([
     wallets: [
       injectedWallet({ chains }),
       metaMaskWallet({ projectId: projectId, chains }),
+      okxWallet({ projectId: projectId, chains }),
+      tokenPocketWallet({ projectId: projectId, chains }),
       /* walletConnectWallet({projectId: projectId, chains,}), */
     ],
   },
@@ -125,12 +127,10 @@ const connectors = connectorsForWallets([
   {
     groupName: "Others",
     wallets: [
-      tokenPocketWallet({ projectId: projectId, chains }),
-      okxWallet({ projectId: projectId, chains }),
+      walletConnectWallet({ projectId: projectId, chains }),
       coinbaseWallet({ chains }),
       rainbowWallet({ projectId: projectId, chains }),
       uniswapWallet({ projectId: projectId, chains }),
-      walletConnectWallet({ projectId: projectId, chains }),
       trustWallet({ projectId: projectId, chains }),
     ],
   },

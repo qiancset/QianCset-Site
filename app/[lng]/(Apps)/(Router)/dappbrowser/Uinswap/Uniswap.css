@@ -1,0 +1,13 @@
+
+.Uniswap1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+	justify-content: space-around; 
+    background-repeat: no-repeat;
+}
+
+.TokenOptions__OnHover-sc-xx1k3q-2{
+    display: none;
+  }

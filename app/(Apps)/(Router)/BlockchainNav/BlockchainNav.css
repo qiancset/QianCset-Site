@@ -1,0 +1,66 @@
+.blockchain-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 150px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #ea7411;
+}
+
+.menu-label {
+    margin-left: 10px;
+}
+
+.menu-icon {
+    font-size: 1rem;
+}
+
+.menu-divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 5px 0;
+}
+
+/* 手机 */
+@media only screen and (max-width: 700px) {
+    .blockchain-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0;
+        padding: 0px;
+        width: 40px;
+    }
+
+    .menu-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .menu-label {
+        display: none;
+        margin-left: 0px;
+        /* 隐藏图标 */
+    }
+
+    .menu-divider {
+        height: 1px;
+        background-color: #ccc;
+        margin: 0px 0;
+    }
+}

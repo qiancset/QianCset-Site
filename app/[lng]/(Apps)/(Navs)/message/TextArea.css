@@ -1,0 +1,25 @@
+.page{
+    margin: auto;
+    max-width: 1520px;
+    height: 100vh;
+
+}
+.Mpage{
+
+    width: 100%;
+    background: #fff3cb;
+}
+.message{
+    width: 100%;
+}
+.TextArea{
+    width: 90%;
+    margin-right: auto;
+    margin-left: 0%;
+}
+.IoSendOutline{
+    width: 10%;
+    margin-left: auto;
+    margin-right: 0%;
+    font-size: 2rem;
+}

@@ -1,0 +1,102 @@
+.custom_list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.List_Link {
+	color: var(--shiki-color);
+	text-decoration: none;
+}
+
+.List_Item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: 70px;
+	/* box-shadow: 0 0 0.08rem var(--box); */
+}
+
+.List_Item:hover {
+	background: var(--shiki-link-hover-background);
+	-webkit-border-radius: 30;
+	-moz-border-radius: 30;
+	border-radius: 30px;
+}
+
+.List_My_left {
+	margin-left: 3%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.List_My_right {
+	margin-right: 3%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+	.List_My_left {
+		margin-left: 3%;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.List_My_right {
+		margin-right: 3%;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+}
+
+/* .List_My_center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+} */
+
+.ico_text {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+.GoChevronRight{
+    font-size: 1.5rem;
+	color: var(--shiki-nav_link-color);
+}
+.gap {
+	width: 5%;
+}
+
+.ico {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ea7411;
+	font-size: 1.7rem;
+}
+
+.text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2rem;
+
+}

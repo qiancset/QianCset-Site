@@ -4,7 +4,7 @@ import './My_List.css'
 
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-import { GoQuestion, GoGear, GoMention, GoBriefcase, GoBeaker, GoChevronRight, GoBrowser, GoListOrdered } from 'react-icons/go';
+import { GoQuestion, GoGear, GoMention, GoBriefcase, GoBeaker, GoChevronRight, GoBrowser } from 'react-icons/go';
 
 export default function My_List() {
     const { t } = useTranslation();
@@ -12,7 +12,6 @@ export default function My_List() {
         <>
             <My_List_card href={`/a`} text={t('资料')} ico={<GoMention />} />
             <My_List_card href={`/a`} text={t('测试')} ico={<GoBeaker />} />
-            <My_List_card href={`/BlockchainNav`} text={t('区块链导航')} ico={<GoListOrdered  />} />
             <My_List_card href={`/dappbrowser`} text={t('Dapp浏览器')} ico={<GoBrowser />} />
             <My_List_card href={`/function`} text={t('功能')} ico={<GoBriefcase />} />
             <My_List_card href={`/settings`} text={t('设置')} ico={<GoGear />} />

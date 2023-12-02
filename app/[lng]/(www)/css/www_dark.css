@@ -1,0 +1,57 @@
+.dark {
+
+	/* pages-root */
+	--shiki-color: #fff;
+	--shiki-color-text: #d1d1d1;
+	--shiki-token-constant: #b32525;
+	--shiki-token-string: #ffab70;
+	--shiki-token-comment: #6b737c;
+	--shiki-token-keyword: #f97583;
+	--shiki-token-parameter: #ff9800;
+	--shiki-token-function: #b392f0;
+	--shiki-token-string-expression: #4bb74a;
+	--shiki-token-punctuation: #bbb;
+	--shiki-token-link: #ffab70;
+
+
+
+
+
+
+	/* 首页色 */
+	--Aboutmian-background-color: #111111;
+	/* button_About_1 */
+	--button_About_1: #f5a609;
+	/* 主题色 */
+	--theme-color: #ea7411;
+	--main-decor-color: #ea7411;
+	--main-background: #fff3cb;
+	/*  2 加入社区 */
+	--feature-card-background: #1f1f1f;
+	--feature-card-border: solid #948f8f 1px;
+	--feature-card-border-hover: solid #ea7411 1px;
+	/* 3 web3 */
+	--web3-background: #111111;
+	--Web3card-border: solid #948f8f 1px;
+	--Web3card-background: #1f1f1f;
+	/* 4 学习文档 */
+	--card-box-shadow: 0 0 0.1rem #fff;
+	--card-background: #1f1f1f;
+	/* footer页眉 */
+	--footer-background: rgba(26, 26, 26, 0.3);
+	/* UI hover */
+	--shiki-link-hover-background: #ffffff31;
+
+
+	/* docs */
+	--nextra-primary-hue: 27.37deg;
+	/* 主要色调 */
+	--nextra-primary-saturation: 86.45%;
+	/* 初级饱和度 */
+
+	--QianCset_svg: #fff;
+
+	/* antd */
+	--background-color-antd: #1f1f1f !important;
+	--color-antd: #ea7411 !important;
+}

@@ -1,16 +1,17 @@
 "use client";
 
 import './AppsHeader.css'
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from 'next/link';
 import Image from "next/image";
+
 import { useTranslation } from 'react-i18next';
 import ModeThemes from "@/UI/ModeThemes/ModeThemes";
-
+import Locales from "@/UI/LocalesButton/Locales";
 import Rainbowkit from "@/UI/Wallet/Rainbowkit";
-import { GoArrowLeft } from 'react-icons/go';
+import { GoArrowLeft, GoGear } from 'react-icons/go';
+import { useEffect } from 'react';
 import { motion } from "framer-motion"
-import Locales from '@/UI/LocalesButton/Locales';
 export default function AppsHeader() {
     const pathname = usePathname();
 
@@ -83,17 +84,11 @@ function HeaderChildern({ }) {
             <Pathname href='/a'>
                 <BackLink href='/my' />
                 <div className="Header_center">
-                    <p className='Header_P'>A</p>
+                    <p className='Header_P'>Dapp 浏览器</p>
                 </div>
                 <div className="Header_right"></div>
             </Pathname>
-            <Pathname href='/BlockchainNav'>
-                <BackLink href='/my' />
-                <div className="Header_center">
-                    <p className='Header_P'>BlockchainNav</p>
-                </div>
-                <div className="Header_right"></div>
-            </Pathname>
+
             <Pathname href='/dappbrowser'>
                 <BackLink href='/my' />
                 <div className="Header_center">
@@ -242,7 +237,7 @@ function My() {
 
 
             <div className="Header_center_My">
-           <Locales/> 
+                <Locales />
                 <ModeThemes />
             </div>
             <div className='Header_right_My'>

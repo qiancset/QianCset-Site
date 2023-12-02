@@ -1,0 +1,23 @@
+:root {
+    /* 全局css */
+    --shiki-color: #000 !important;
+    --theme-color: #ea7411 !important;
+
+
+    /* UI */
+    --shiki-link-hover-background: rgba(0,0,0,0.03) !important;
+
+    /* Navbar */
+    --shiki-Navbar-background: #fffffff7 !important;
+    --shiki-nav_link-color: #545353d3 !important;
+
+
+    /* Header */
+    --shiki-header-background: #fffffff7 !important;
+    --shiki-nav_link-background-hover: #0000000f !important;
+
+    /* antd */
+    --background-color-antd: #ffffff !important;
+    --color-antd: #ffffff !important;
+
+}
