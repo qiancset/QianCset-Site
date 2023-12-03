@@ -12,6 +12,7 @@ import ModeThemes from "@/UI/ModeThemes/ModeThemes";
 import Locales from "@/UI/LocalesButton/Locales";
 import Themes from '@/Providers/Themes'
 import { FaTwitter } from "react-icons/fa";
+import { FaGithub, FaSquareXTwitter } from "react-icons/fa6";
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useSSR } from 'react-i18next';
@@ -103,13 +104,14 @@ export default {
 
   //在导航栏上显示链接到项目主页的按钮
   project: {
-    link: 'https://github.com/Qiancset/Qiancset-Site'
+    link: 'https://github.com/qiancset',
   },
 
   //显示一个按钮该按钮链接到您的项目论坛或其他社交媒体 导航栏
   chat: {
     link: 'https://twitter.com/qiancset',
-    icon: (<FaTwitter style={{ fontSize: '1.5rem' }} />)
+    icon: (<FaSquareXTwitter style={{ width: "27.5px", height: "27.5px" }}
+    />)
   },
 
   //自定义导航栏
