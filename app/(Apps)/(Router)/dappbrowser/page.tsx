@@ -19,7 +19,7 @@ const dataSource = [
     key: '1',
     apply: 
     <div>
-      <IOGO src='/images/WEB3/UINSWAP.png' alt="Uinswap" />
+      <IOGO src='/images/COMLOGO/UINSWAP.png' alt="Uinswap" />
       <p>Uinswap</p>
     </div>,
     name: 'Uinswap',
@@ -30,7 +30,7 @@ const dataSource = [
     key: '2',
     apply:
       <div>
-        <IOGO src='/images/WEB3/UINSWAP.png' alt="ENS" />
+        <IOGO src='/images/COMLOGO/ENS.png' alt="ENS" />
         <p>ENS</p>
       </div>,
     profile: 'Web3上的身份,一个名称就能解析到您所有的加密地址和您的去中心化网站。',

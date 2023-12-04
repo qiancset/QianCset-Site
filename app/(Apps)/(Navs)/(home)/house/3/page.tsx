@@ -2,8 +2,8 @@
 
 export default function page() {
    return (
-     <>
-  3
-     </>
+      <>
+         地图
+      </>
    )
 }

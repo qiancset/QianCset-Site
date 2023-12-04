@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.17.2",
+    "@dodoex/widgets": "^2.5.4",
     "@rainbow-me/rainbowkit": "^1.1.2",
     "@uniswap/widgets": "^2.53.1",
     "@vercel/analytics": "^1.0.1",

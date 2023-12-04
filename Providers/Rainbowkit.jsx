@@ -14,6 +14,7 @@ import {
   polygon,
   polygonZkEvm,
   zkSync,
+  base,
   bsc,
   okc,
   hardhat,
@@ -99,6 +100,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
     polygon,
     polygonZkEvm,
     zkSync,
+    base,
     bsc,
     okc,
     hardhat,
@@ -120,14 +122,13 @@ const connectors = connectorsForWallets([
       metaMaskWallet({ projectId: projectId, chains }),
       okxWallet({ projectId: projectId, chains }),
       tokenPocketWallet({ projectId: projectId, chains }),
-      /* walletConnectWallet({projectId: projectId, chains,}), */
+      walletConnectWallet({ projectId: projectId, chains }),
     ],
   },
 
   {
     groupName: "Others",
     wallets: [
-      walletConnectWallet({ projectId: projectId, chains }),
       coinbaseWallet({ chains }),
       rainbowWallet({ projectId: projectId, chains }),
       uniswapWallet({ projectId: projectId, chains }),
