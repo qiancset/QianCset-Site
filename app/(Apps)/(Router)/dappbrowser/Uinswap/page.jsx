@@ -15,8 +15,8 @@ export default function Uniswap() {
   return (
     <div className="Uniswap_page">
       <SwapWidget
-        convenienceFee={100} // 指定便利费为 1 个基点
-        convenienceFeeRecipient="0xcd284038f2E68c6A43b04695f84377f38686eE56" //便利费收款方
+        convenienceFee={100} // 指定便利费为 1 个基点（%）
+        convenienceFeeRecipient={process.env.ACCOUNT} 
         width={360}
         locale={t("zh-CN")} //指定小组件界面的显式区域设置为中文
         theme={Theme} //覆盖样式属性
@@ -38,9 +38,9 @@ const customTheme = {
   accent: "#ea7411",
   borderRadius: 0,
 };
-const jsonRpcUrlMap = {
-  1: ["https://mainnet.infura.io/v3/9a04612ffbfd4f82aee059c008a573ea"],
-  42161: ["https://arb-mainnet.g.alchemy.com/v2/oXLd4WF9YidqPZD9UIZcuMQd_Naik383",],
-  10: ["https://opt-mainnet.g.alchemy.com/v2/rcoFwvDV9bgw30NoddEZ4w5ClXunx1fU"],
-  137: ["https://polygon-mainnet.g.alchemy.com/v2/wJqXNtoc3TiNcEO_Ny7yNaKSN08Hjuhc",],
+const jsonRpcUrlMap = {  
+  1: [process.env.MAINNET_INFURA_URL],  
+  42161: [process.env.ARB_MAINNET_ALCHEMY_URL],  
+  10: [process.env.OPT_MAINNET_ALCHEMY_URL],  
+  137: [process.env.POLYGON_MAINNET_ALCHEMY_URL],  
 };
