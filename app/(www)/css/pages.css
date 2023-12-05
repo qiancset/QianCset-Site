@@ -1,38 +1,3 @@
-.nx-inset-x-0 {
-    font-size: 1rem !important;
-}
-
-.nx-inset-x-0:hover {
-    font-size: 1rem !important;
-    color: #ea7411;
-}
-
-.nx-text-center {
-    text-align: center !important;
-    font-size: 1rem !important;
-}
-.nx-text-center:hover {
-    text-align: center !important;
-    font-size: 1rem !important;
-    color: #ea7411;
-}
-
-.nx-whitespace-nowrap{
-    font-size: 1rem !important;
-    color: #ea7411;
-}
-
-:is(html[class~=dark] .dark\:nx-bg-neutral-800) {
-    --tw-bg-opacity: 1;
-color: #ea7411;
-}
-
-@media only screen and (max-width: 767px) {
-    .nx-text-current {
-        color: currentColor;
-        display: none;
-    }
-}
 
 /*--选择器----*/
 ::selection {

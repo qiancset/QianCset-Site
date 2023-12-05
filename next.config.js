@@ -1,14 +1,22 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  /* Next.js config options here */
 
-}
-
-const withNextra = require('nextra')({
-  theme: 'nextra-theme-docs',
-  themeConfig: './app/(www)/theme.config.tsx',
+const withMDX = require('@next/mdx')({
+  // Optionally provide remark and rehype plugins
+  options: {
+    // If you use remark-gfm, you'll need to use next.config.mjs
+    // as the package is ESM only
+    // https://github.com/remarkjs/remark-gfm#install
+    remarkPlugins: [],
+    rehypePlugins: [],
+    // If you use `MDXProvider`, uncomment the following line.
+    // providerImportSource: "@mdx-js/react",
+  },
 })
 
-module.exports = withNextra(
-  nextConfig
-)
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  reactStrictMode: false,
+}
+
+
+module.exports = withMDX(nextConfig)

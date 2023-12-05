@@ -1,5 +1,4 @@
-.dark {
-
+[data-theme='dark'] {
 	/* pages-root */
 	--shiki-color: #fff;
 	--shiki-color-text: #d1d1d1;

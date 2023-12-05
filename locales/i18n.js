@@ -1,17 +1,17 @@
-
+'use client'
 
 import i18next from 'i18next';
 import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 import en from './en.json'
-import zh_CN from './zh_CN.json'
+import zhCN from './zhCN.json'
 //import zh_Hant from './zh_Hant.json'
 
 
 // 配置json的格式
 const resources = {
-  en, zh_CN
+  en, zhCN
 };
 
 
@@ -23,7 +23,7 @@ export default i18next
 
     resources,            //获取json
     nonExplicitSupportedLngs:true,
-   lng: 'zh_CN',// 指定默认的语言中文（zh）。
+   lng: 'zhCN',// 指定默认的语言中文（zh）。
     fallbackLng: 'en',  // 如果指定的语言不存在，则默认使用这个
     debug: false,
     react: {

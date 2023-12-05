@@ -1,4 +1,4 @@
-import AppsHeader from "@/Component/AppsHeader/AppsHeader";
+import AppsHeader from "@/app/(Apps)/Component/AppsHeader/AppsHeader";
 
 
 

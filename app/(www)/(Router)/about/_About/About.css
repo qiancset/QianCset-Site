@@ -687,7 +687,6 @@
 #contact {
 	max-width: 1520px;
 	margin: auto;
-
 	height: 85vh;
 
 	display: flex;
@@ -712,10 +711,11 @@
 	align-items: center;
 
 	text-align: center;
+	width: 100vw;
 
 	z-index: 1;
 	margin: auto;
-	padding: 20px;
+
 
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -723,7 +723,7 @@
 }
 
 .intro4 p {
-	margin: 5px;
+	
 	font-size: 1.2rem;
 
 	text-align: center;

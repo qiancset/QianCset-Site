@@ -1,6 +1,6 @@
 {
 	"NextPage use client": {
-		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"scope": "javascript,javascriptreact,typescript,typescriptreact,mdx,md",
 		"prefix": "rfcuse", // 触发片段的快捷键
 		"body": [
             "'use client'",
@@ -17,7 +17,7 @@
 	},
 
 	"Next Layout": {
-		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"scope": "javascript,javascriptreact,typescript,typescriptreact,mdx,md",
 		"prefix": "rfclayout", // 触发片段的快捷键
 		"body": [
 			"",
@@ -37,7 +37,7 @@
 	},
 
 	"use client": {
-		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"scope": "javascript,javascriptreact,typescript,typescriptreact,mdx,md",
 		"prefix": "useclient", // 触发片段的快捷键
 		"body": [
 			"'use client'",

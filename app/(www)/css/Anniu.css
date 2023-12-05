@@ -82,19 +82,19 @@
 @media only screen and (max-width: 767px) {
   .button_About_1 {
     font-size: 1.5rem;
-    width: 90vw;
+    width: 70vw;
     margin: 5px;
   }
 
   .button_About_2 {
     font-size: 1.5rem;
-    width: 90vw;
+    width: 70vw;
     margin: 5px;
   }
 
   .button_About {
     font-size: 1.5rem;
-    width: 90vw;
+    width: 70vw;
   }
 }
 
