@@ -9,8 +9,6 @@ export default function AppsLayout({ children }) {
         <div>
 
 
-
-
                 <AppsHeader />
 
 

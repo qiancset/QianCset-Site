@@ -1,0 +1,50 @@
+@media screen and (min-width:701px) {
+  .layout_Nav {
+    width: 100%;
+    height: 100%;
+  }
+
+  .www_page_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .www_page_left {
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .www_page_center {
+    max-width: 1240px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .www_page_right {
+    max-width: 0px;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
+
+  html {
+    overflow-y: scroll;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .www_page_left {
+    width: 100%;
+    height: 100%;
+  }
+
+  .www_page_container {
+    margin-top: 105px;
+  }
+}

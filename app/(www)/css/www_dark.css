@@ -43,10 +43,7 @@
 
 
 	/* docs */
-	--nextra-primary-hue: 27.37deg;
-	/* 主要色调 */
-	--nextra-primary-saturation: 86.45%;
-	/* 初级饱和度 */
+	--pc_link-color:#ece1e1d3;
 
 	--QianCset_svg: #fff;
 

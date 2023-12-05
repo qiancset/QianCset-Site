@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button, Modal } from "antd";
-import { AiOutlineTranslation } from "react-icons/ai";
+import { AiOutlineTranslation,AiOutlineClose } from "react-icons/ai";
 import "./Locales.css";
 
 export default function Locales() {
@@ -35,7 +35,7 @@ export default function Locales() {
       </div>
       <Modal
         title={t("选择语言")}
-        style={{}}
+        closeIcon={<AiOutlineClose className="icon"/>}
         focusTriggerAfterClose={false}
         mask={true}
         zIndex={1000}

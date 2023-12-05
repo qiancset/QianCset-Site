@@ -1,0 +1,96 @@
+.pc {
+    max-width: 200px;
+    height: 100%;
+    z-index: 800;
+    border-right: 1px solid rgba(204, 204, 204, 0.3);
+    color: var(--shiki-color);
+    position: fixed;
+    overflow-y: auto;
+}
+
+.group-title {
+    font-size: 1.1rem;
+    margin-top: 30px;
+    color: var(--shiki-color);
+}
+
+/* Sidebar 链接样式 */
+.pc_link {
+    display: block;
+    color: #666;
+    text-decoration: none;
+    padding: 5px 5px;
+    margin: 5px;
+}
+
+/* Sidebar 链接悬停样式 */
+.pc_link:hover {
+    color: var(--shiki-color);
+    background: var(--shiki-link-hover-background);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.pc_link.active {
+    color: #ea7411;
+    background: var(--shiki-link-hover-background);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.mobile {
+    display: none;
+}
+
+
+
+
+/* 移动设备屏幕下的样式 */
+@media only screen and (max-width: 700px) {
+    .pc {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        position: relative;
+        /* 相对定位，以便下拉菜单能够正确显示 */
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 64px;
+        z-index: 800;
+        width: 100%;
+        height: 40px;
+        background: var(--background-color-antd);
+        border-top: 1px solid rgba(204, 204, 204, 0.3);
+        border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+
+    }
+
+    .AiOutlineMenuUnfold {
+        font-size: 1.5rem;
+    }
+
+    .Modal_children {
+        overflow-y: auto;
+
+    }
+
+    .group-title {
+        font-size: 1rem;
+        margin-top: 30px;
+        color: var(--shiki-color);
+    }
+
+    .pc_link {
+        display: block;
+        color: var(--pc_link-color);
+        text-decoration: none;
+        padding: 5px 5px;
+        margin: 5px;
+    }
+}

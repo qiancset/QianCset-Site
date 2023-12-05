@@ -1,7 +1,7 @@
 {
     "i18next.customWrapX": "t('')",
     "i18next.defaultTranslatedLocale": "en",
-    "i18next.sourceLocale": "zhCN",
     "i18next.i18nPaths": "E:/AAAAAAAAA-VSCode/Qiancset/Qiancset-Site/locales",
-    "i18next.namespace": ""
+    "i18next.namespace": "translation",
+    "i18next.sourceLocale": "zhCN",
 }

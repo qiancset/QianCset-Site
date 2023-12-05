@@ -12,8 +12,8 @@ export default function Providers({ children }) {
   return (
     <>
 
-      <StyledComponentsRegistry>
         <Themes>
+      <StyledComponentsRegistry>
           <Antd>
             <>
               <Rainbowkit>
@@ -23,8 +23,8 @@ export default function Providers({ children }) {
               </Rainbowkit>
             </>
           </Antd>
-        </Themes>
       </StyledComponentsRegistry>
+        </Themes>
 
     </>
   );
