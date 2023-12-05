@@ -45,9 +45,9 @@ export default i18next
   });  
   
 // 获取检测到的语言代码并写入HTML的lang属性  
-/* const detectedLng = i18next.language;  
+const detectedLng = i18next.language;  
 
 if (typeof document !== 'undefined') {  
   document.documentElement.lang = detectedLng;  
-} */
+}
 

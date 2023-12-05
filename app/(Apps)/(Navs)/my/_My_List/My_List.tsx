@@ -22,7 +22,7 @@ export default function My_List() {
     );
 }
 function My_List_card({ href, ico, text }) {
-    const isAboutPage = href === '/about';
+    const isAboutPage = href === '';
     return (
         <>
             <ul className='custom_list'>
