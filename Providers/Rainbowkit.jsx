@@ -113,7 +113,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
   ]
 );
 
-const projectId = "ab4ee6ab51756c44ab8f80eb2fad1d22";
+const projectId = 'ab4ee6ab51756c44ab8f80eb2fad1d22'/* process.env.WALLET_PROJECTID_KEY */;
 const connectors = connectorsForWallets([
   {
     groupName: "Recommended",

@@ -5,7 +5,7 @@
     border-right: 1px solid rgba(204, 204, 204, 0.3);
     color: var(--shiki-color);
     position: fixed;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 .group-title {
@@ -94,3 +94,25 @@
         margin: 5px;
     }
 }
+
+
+/* 滚动条样式 */
+.pc::-webkit-scrollbar {
+    width: 6px; /* 设置滚动条宽度 */
+  }
+  
+  /* 滚动槽样式 */
+  .pc::-webkit-scrollbar-track {
+    background-color: transparent; /* 设置滚动槽背景色 */
+  }
+  
+  /* 滚动块样式 */
+  .pc::-webkit-scrollbar-thumb {
+    background-color: transparent; /* 设置滚动块背景色 */
+    border-radius: 4px; /* 设置滚动块边角 */
+  }
+  
+  /* 鼠标悬停时滚动块样式 */
+  .pc:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(204, 204, 204, 0.5); /* 设置鼠标悬停时滚动块背景色 */
+  }

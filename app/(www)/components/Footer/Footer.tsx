@@ -12,7 +12,7 @@ function Linkli({ children, href }) {
   return (
     <>
       <li>
-        <Link href={href} target="_blank">
+        <Link href={`/docs${href}`}>
           {children}
         </Link>
       </li>
@@ -78,17 +78,16 @@ export default function Footer() {
                 <li className="link_name">
                   <h2>{t("介绍")}</h2>
                 </li>
-                <Linkli href="https://docs.qiancset.com/ru-men-zhi-nan">
+                <Linkli href="/guide">
                   {t("入门指南")}
                 </Linkli>
 
                 <li>
-                  <Link
-                    target="_blank"
-                    href="https://docs.qiancset.com/bai-pi-shu"
+                  <Linkli
+                    href="/whitepaper"
                   >
                     {t("白皮书")}
-                  </Link>
+                  </Linkli>
                 </li>
               </ul>
 
@@ -97,19 +96,19 @@ export default function Footer() {
                   <h2>{t("服务")}</h2>
                 </li>
 
-                <Linkli href="https://docs.qiancset.com/Serve/ji-shu-wen-ti">
+                <Linkli href="/TechnicalProblem">
                   {t("技术问题")}
                 </Linkli>
 
-                <Linkli href="https://docs.qiancset.com/Serve/jia-ru-gong-xian">
+                <Linkli href="/JoinTheContribution">
                   {t("加入贡献")}
                 </Linkli>
 
-                <Linkli href="https://docs.qiancset.com/category/he-zuo">
+                <Linkli href="/he-zuo">
                   {t("合作")}
                 </Linkli>
 
-                <Linkli href="https://docs.qiancset.com/category/zan-zhu-shang">
+                <Linkli href="/zan-zhu-shang">
                   {t("赞助商")}
                 </Linkli>
               </ul>
@@ -119,18 +118,18 @@ export default function Footer() {
                   <h2>{t("关于")}</h2>
                 </li>
 
-                <Linkli href="https://docs.qiancset.com/category/guan-yu-she-qu">
+                <Linkli href="/guan-yu-she-qu">
                   {t("关于社区")}
                 </Linkli>
 
-                <Linkli href="https://docs.qiancset.com/category/Legal_Terms/cookie-zheng-ce">
+                <Linkli href="/cookie_zheng_ce">
                   {t("Cookie政策")}
                 </Linkli>
 
-                <Linkli href="https://docs.qiancset.com/category/Legal_Terms/shi-yong-tiao-kuan">
+                <Linkli href="/shi-yong-tiao-kuan">
                   {t("使用条款")}
                 </Linkli>
-                <Linkli href="https://docs.qiancset.com/category/Legal_Terms/yin-si-zheng-cen">
+                <Linkli href="/yin-si-zheng-ce">
                   {t("隐私政策")}
                 </Linkli>
               </ul>

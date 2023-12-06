@@ -13,7 +13,8 @@
 	--shiki-token-string-expression: #22863a;
 	--shiki-token-punctuation: #212121;
 	--shiki-token-link: #22863a;
-
+	/* Header */
+	--shiki-header-background: #fffffff7;
 
 
 
@@ -44,7 +45,7 @@
 
 
 	/* docs */
-	--pc_link-color:#545353d3;
+	--pc_link-color: #545353d3;
 	--QianCset_svg: #000;
 
 

@@ -5,6 +5,8 @@
   }
 
   .www_page_container {
+    max-width: 1440px;
+
     width: 100%;
     height: 100%;
     display: flex;
@@ -13,12 +15,13 @@
 
   .www_page_left {
     max-width: 200px;
-    width: 100%;
+    width: 200px;
     height: 100%;
     justify-content: flex-start;
   }
 
   .www_page_center {
+    padding: 5px;
     max-width: 1240px;
     width: 100%;
     height: 100%;
@@ -45,6 +48,8 @@
   }
 
   .www_page_container {
+    padding: 5px;
+
     margin-top: 105px;
   }
 }
