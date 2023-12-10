@@ -36,8 +36,7 @@ import {
   okxWallet,
   rainbowWallet,
   tokenPocketWallet,
-  uniswapWallet,
-  trustWallet,
+  uniswapWallet
 } from "@rainbow-me/rainbowkit/wallets";
 import { connectorsForWallets } from "@rainbow-me/rainbowkit";
 
@@ -82,7 +81,7 @@ export default function RainbowkitP({ children }) {
         appInfo={{
           appName: "QianCset Dapp",
           learnMoreUrl:
-            "https://www.qiancset.com/docs/Learning_docs/Crypto_Wallet",
+            "/docs/Crypto_Wallet",
         }}
       >
         {children}
@@ -121,18 +120,17 @@ const connectors = connectorsForWallets([
       injectedWallet({ chains }),
       metaMaskWallet({ projectId: projectId, chains }),
       okxWallet({ projectId: projectId, chains }),
-      tokenPocketWallet({ projectId: projectId, chains }),
       walletConnectWallet({ projectId: projectId, chains }),
     ],
   },
-
+  
   {
     groupName: "Others",
     wallets: [
+      tokenPocketWallet({ projectId: projectId, chains }),
       coinbaseWallet({ chains }),
       rainbowWallet({ projectId: projectId, chains }),
       uniswapWallet({ projectId: projectId, chains }),
-      trustWallet({ projectId: projectId, chains }),
     ],
   },
 ]);

@@ -1,7 +1,7 @@
 import '@/CSS/theme/Apps.css'
 import '@/CSS/theme/Apps_dark.css'
 import './layout_Nav.css'
-import AppsHeader from '@/app/(Apps)/Component/AppsHeader/AppsHeader'
+import AppsHeader from '@/Component/AppsHeader/AppsHeader'
 import Navbar from '@/Component/Navbar/Navbar'
 
 export default function AppsLayout({ children }) {

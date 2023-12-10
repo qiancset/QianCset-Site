@@ -1,17 +1,17 @@
 "use client";
 import Image from "next/image";
-import "./Header.css";
+import "./header.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import ModeThemes from "@/UI/ModeThemes/ModeThemes";
-import Locales from "@/UI/LocalesButton/Locales";
+import ModeThemes from "@/gui/ModeThemes/ModeThemes";
+import Locales from "@/gui/LocalesButton/Locales";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Dropdown, Space, ConfigProvider, Button, Drawer, Radio } from "antd";
 
-export default function Header() {
+export default function header() {
   const { t } = useTranslation();
   const pathname = usePathname();
   const [selectedItem, setSelectedItem] = useState(null);
@@ -35,7 +35,7 @@ export default function Header() {
       label: (
         <Link
           href="/about"
-          className={`Header_linkA ${pathname === "/about" ? "active" : ""}`}
+          className={`header_linkA ${pathname === "/about" ? "active" : ""}`}
         >
           {t("关于")}
         </Link>
@@ -46,7 +46,7 @@ export default function Header() {
       label: (
         <Link
           href="/business"
-          className={`Header_linkA ${
+          className={`header_linkA ${
             pathname && pathname.startsWith("/business") ? "active" : ""
           }`}
         >
@@ -59,7 +59,7 @@ export default function Header() {
       label: (
         <Link
           href="/docs"
-          className={`Header_linkA ${
+          className={`header_linkA ${
             pathname && pathname.startsWith("/docs") ? "active" : ""
           }`}
         >
@@ -72,7 +72,7 @@ export default function Header() {
       label: (
         <Link
           href="/news"
-          className={`Header_linkA ${
+          className={`header_linkA ${
             pathname && pathname.startsWith("/news") ? "active" : ""
           }`}
         >
@@ -84,10 +84,10 @@ export default function Header() {
 
   return (
     <>
-      <div className="Header">
-        <div className="max_Header">
-          <div className="Header_layout">
-            <div className="Header_left">
+      <div className="header">
+        <div className="max_header">
+          <div className="header_layout">
+            <div className="header_left">
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Image
                   src="/favicon.ico"
@@ -99,11 +99,11 @@ export default function Header() {
               </motion.div>
             </div>
 
-            <div className="Header_center">
-              <div className="Header_center_link">
+            <div className="header_center">
+              <div className="header_center_link">
                 <Link
                   href="/about"
-                  className={`Header_link ${
+                  className={`header_link ${
                     pathname === "/about" ? "active" : ""
                   }`}
                 >
@@ -111,7 +111,7 @@ export default function Header() {
                 </Link>
                 <Link
                   href="/business"
-                  className={`Header_link ${
+                  className={`header_link ${
                     pathname && pathname.startsWith("/business") ? "active" : ""
                   }`}
                 >
@@ -119,7 +119,7 @@ export default function Header() {
                 </Link>
                 <Link
                   href="/docs"
-                  className={`Header_link ${
+                  className={`header_link ${
                     pathname && pathname.startsWith("/docs") ? "active" : ""
                   }`}
                 >
@@ -127,7 +127,7 @@ export default function Header() {
                 </Link>
                 <Link
                   href="/news"
-                  className={`Header_link ${
+                  className={`header_link ${
                     pathname && pathname.startsWith("/news") ? "active" : ""
                   }`}
                 >
@@ -136,7 +136,7 @@ export default function Header() {
               </div>
             </div>
 
-            <div className="Header_right">
+            <div className="header_right">
               <Locales />
               <ModeThemes />
               <ConfigProvider

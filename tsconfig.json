@@ -5,14 +5,14 @@
       "@/*": [
         "./*"
       ],
-      "@/UI/*": [
-        "UI/*"
+      "@/config/*": [
+        "config/*"
+      ],
+      "@/gui/*": [
+        "gui/*"
       ],
       "@/locales/*": [
         "locales/*"
-      ],
-      "@/Providers/*": [
-        "Providers/*"
       ],
       "@/public/*": [
         "public/*"
@@ -26,8 +26,8 @@
       "@/CSS/*": [
         "app/(Apps)/CSS/*"
       ],
-      "@/components/*": [
-        "app/(www}/components/*"
+      "@/component/*": [
+        "app/(www)/component/*"
       ],
     },
     "lib": [
@@ -61,7 +61,7 @@
     "**/*.tsx",
     "**/*.mdx",
     "app/middleware.js"
-, "theme.config.tsx", "Providers/Rainbowkit.jsx", "Providers/Themes.jsx", "app/(Apps)/(Nav)/(Router)/Dappbrowser/Uinswap/page.jsx", "Providers/Antd.jsx", "Providers/Providers.jsx", "Providers/lib/AntdRegistry.tsx", "UI/ModeThemes/ModeThemes.jsx", "pages/_app.jsx", "UI/LocalesButton/LocaleContext.jsx", "UI/LocalesButton/Locales.jsx", "app/(www)/layout.tsx", "app/(Apps)/Component/AppsHeader/AppsHeader.jsx", "mdx-components.js", "app/(www)/(Router)/docs/page.jsx", "app/(www)/components/Header/Header.jsx"  ],
+, "theme.config.tsx", "Providers/Rainbowkit.jsx", "Providers/Themes.jsx", "app/(Apps)/(Nav)/(Router)/Dappbrowser/Uinswap/page.jsx", "Providers/Antd.jsx", "Providers/Providers.jsx", "Providers/lib/AntdRegistry.tsx", "gui/ModeThemes/ModeThemes.jsx", "pages/_app.jsx", "gui/LocalesButton/LocaleContext.jsx", "gui/LocalesButton/Locales.jsx", "app/(www)/layout.tsx", "app/(Apps)/Component/AppsHeader/AppsHeader.jsx", "mdx-components.js", "app/(www)/(Router)/docs/page.jsx", "app/(www)/components/Header/Header.jsx"  ],
   "exclude": [
     "node_modules"
   ]

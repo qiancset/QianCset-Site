@@ -1,5 +1,5 @@
 
-import Footer from "../../components/Footer/Footer";
+import Footer from "@/component/footer/footer";
 import About from "./_About/About"
 
 

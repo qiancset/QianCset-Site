@@ -5,12 +5,13 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import ModeThemes from "@/UI/ModeThemes/ModeThemes";
-
-import Rainbowkit from "@/UI/Wallet/Rainbowkit";
-import { GoArrowLeft } from "react-icons/go";
 import { motion } from "framer-motion";
-import Locales from "@/UI/LocalesButton/Locales";
+import ModeThemes from "@/gui/ModeThemes/ModeThemes";
+import Locales from "@/gui/LocalesButton/Locales";
+import Rainbowkit from "@/gui/Wallet/Rainbowkit";
+import { GoArrowLeft } from "react-icons/go";
+
+
 export default function AppsHeader() {
   const pathname = usePathname();
 
