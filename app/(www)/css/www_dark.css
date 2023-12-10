@@ -1,16 +1,5 @@
 [data-theme='dark'] {
-	/* pages-root */
-	--shiki-color: #fff;
-	--shiki-color-text: #d1d1d1;
-	--shiki-token-constant: #b32525;
-	--shiki-token-string: #ffab70;
-	--shiki-token-comment: #6b737c;
-	--shiki-token-keyword: #f97583;
-	--shiki-token-parameter: #ff9800;
-	--shiki-token-function: #b392f0;
-	--shiki-token-string-expression: #4bb74a;
-	--shiki-token-punctuation: #bbb;
-	--shiki-token-link: #ffab70;
+
 
 	/* Header */
 	--shiki-header-background: #121212;

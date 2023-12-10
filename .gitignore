@@ -3,11 +3,12 @@
 /.pnp
 .pnp.js
 
-# 测试
+# Hardhat
 /coverage
 /.React代码片段/
 /Hardhat
 /hardhat.config.js
+/dapp-core
 
 # next.js
 /.next/
@@ -47,7 +48,4 @@ coverage.json
 typechain
 typechain-types
 
-# Hardhat files
-cache
-artifacts
 

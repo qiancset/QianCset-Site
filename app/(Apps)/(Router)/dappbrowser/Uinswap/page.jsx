@@ -16,7 +16,7 @@ export default function Uniswap() {
     <div className="Uniswap_page">
       <SwapWidget
         convenienceFee={100} // 指定便利费为 1 个基点（%）
-        convenienceFeeRecipient={process.env.ACCOUNT} 
+        convenienceFeeRecipient={"0xcd284038f2E68c6A43b04695f84377f38686eE56"} 
         width={360}
         locale={t("zh-CN")} //指定小组件界面的显式区域设置为中文
         theme={Theme} //覆盖样式属性
