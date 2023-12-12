@@ -44,7 +44,7 @@ import { publicProvider } from "wagmi/providers/public";
 import { infuraProvider } from "wagmi/providers/infura";
 import { useTranslation } from "react-i18next";
 
-export default function RainbowkitP({ children }) {
+export default function Rainbowkit({ children }) {
   const { t } = useTranslation();
   // 确保 t('zh-CN') 返回一个有效的 Locale 类型
   const Locale = t("zh-CN");

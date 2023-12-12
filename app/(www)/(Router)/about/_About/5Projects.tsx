@@ -65,7 +65,7 @@ export default function Projects() {
             <Card
               imageUrl="/images/TU/ling.jpg"
               title={t("去中心化社交网络")}
-              link="https://ethereum.org/zh/what-is-ethereum/"
+              link="https://ethereum.org/zh/social-networks/"
             />
             <Card
               imageUrl="/images/TU/web3.0.jpg"
