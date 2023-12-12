@@ -15,13 +15,13 @@ export default function Providers({ children }) {
         <Themes>
       <StyledComponentsRegistry>
           <Antd>
-            <>
+          
               <Rainbowkit>
 
                 {children}
 
               </Rainbowkit>
-            </>
+           
           </Antd>
       </StyledComponentsRegistry>
         </Themes>

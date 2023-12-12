@@ -1,13 +1,13 @@
 'use client'
 import Link from 'next/link';
 import './zufang.css'
-
 import { Suspense } from 'react';
-import Loading from './loading';
+
+import Image from 'next/image';
+import { Skeleton, Space } from 'antd';
 
 
 export default function zufang() {
-
 
     return (
         <div className='zufang'>
@@ -18,26 +18,27 @@ export default function zufang() {
                     <Link href={`/zufang/${house.id}`} /* target="_blank" */
                         className="house_card" key={house.id}>
 
-                        <Suspense fallback={<Loading />}>
+                        <Suspense fallback={<Loading_Image />}>
+                            <div key={0} className='Carousel_div'>
+                                <Image
+                                    src={house.imageUrl[0]}
+                                    className='Carousel_img'
+                                    width={300}
+                                    height={300}
+                                    alt={`${house.title}`}
+                                />
+                            </div>
+                        </Suspense>
 
 
-                                <div key={0} className='Carousel_div'>
-                                    <img
-                                        src={house.imageUrl[0]}
-                                        className='Carousel_img'
-
-                                        alt={`${house.title}`} />
-                                </div>
-               
-
-
-
+                        <Suspense fallback={<Loading_Input />}>
                             <div className='house_text'>
                                 <h4 className='house_text_h4'>{house.position}</h4>
                                 <p>{house.price}</p>
                             </div>
-
                         </Suspense>
+
+
                     </Link>
                 ))}
             </div>
@@ -46,6 +47,31 @@ export default function zufang() {
         </div>
     );
 };
+const Loading_Image = () => {
+    return (
+        <div className='Loading_Image'>
+            <Space>
+                <Skeleton.Image active />
+            </Space>
+        </div>
+    )
+}
+const Loading_Input = () => {
+    return (
+        <div className='Loading_Input'>
+            <br />
+            <Space>
+                <Skeleton.Avatar active size={'default'} shape={'circle'} />
+                <Skeleton.Input active size={'default'} block={true} />
+            </Space>
+            <br />
+            <br />
+            <Space>
+                <Skeleton.Input active size={'default'} />
+            </Space>
+        </div>
+    )
+}
 const houseData = [
     {
         id: 1,

@@ -39,8 +39,7 @@
 @media only screen and (max-width: 700px) {
     .zufang_Descriptions {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        flex-direction: column;
         padding: 0.2rem;
 
     }

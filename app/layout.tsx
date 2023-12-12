@@ -16,12 +16,11 @@ export const metadata = {
    icons: {
       icon: '/favicon.ico',
       shortcut: '/shortcut-icon.png',
-      /*       
       apple: '/apple-icon.png',
-            other: {
-               rel: 'apple-touch-icon-precomposed',
-               url: '/apple-touch-icon-precomposed.png',
-            }, */
+      other: {
+         rel: 'apple-touch-icon-precomposed',
+         url: '/apple-touch-icon-precomposed.png',
+      },
    },
 
 };
@@ -30,9 +29,8 @@ export default function Layout({ children }) {
 
    return (
       <html>
-         <head>
-            <meta charSet="utf-8" />
-         </head>
+
+
          <body className={inter.className}>
 
 
@@ -46,7 +44,7 @@ export default function Layout({ children }) {
             </Providers>
 
 
-
+         
          </body>
       </html>
    )

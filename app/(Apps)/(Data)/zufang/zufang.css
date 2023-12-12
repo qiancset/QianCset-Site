@@ -22,6 +22,7 @@
     box-shadow: 0 0 0.1rem rgb(142, 140, 140);
     background: var(--shiki-Navbar-background);
 }
+
 .house_card:hover {
     width: 300px;
     height: 400px;
@@ -31,19 +32,19 @@
     box-shadow: 0 0 0.1rem rgb(142, 140, 140);
     background: var(--shiki-link-hover-background);
 }
+
 .Carousel {
     border-radius: 16px;
 }
 
 .Carousel_div {
     border-radius: 16px;
-    width: 100%;
+    width: 300px;
     height: 300px;
 }
 
 .Carousel_img {
-    width: 100%;
-    height: 100%;
+
     object-fit: cover;
     border-radius: 16px;
 }
@@ -81,6 +82,7 @@
         box-shadow: 0 0 0.1rem rgb(142, 140, 140);
         background: var(--shiki-Navbar-background);
     }
+
     .house_card:hover {
         width: 100%;
         height: 400px;
@@ -90,6 +92,7 @@
         box-shadow: 0 0 0.1rem rgb(142, 140, 140);
         background: var(--shiki-link-hover-background);
     }
+
     .Carousel_div {
         width: 100%;
         height: 300px;
@@ -98,11 +101,8 @@
 
     .Carousel_img {
         width: 100%;
-        height: 100%;
         object-fit: cover;
         border-radius: 16px;
-
-
     }
 
     .house_text {
@@ -111,4 +111,15 @@
         border-radius: 16px;
 
     }
+}
+
+
+.Loading_Image{
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.Loading_Input{
+
 }

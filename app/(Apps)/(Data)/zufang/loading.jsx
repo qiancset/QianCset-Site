@@ -17,7 +17,6 @@ const Loading = () => {
 
       <Space>
         <Skeleton.Input active={active} size={size} />
-
       </Space>
 
       <br />

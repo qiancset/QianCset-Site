@@ -21,7 +21,7 @@
     position: fixed;
     width: 10%;
     height: 100%;
-    
+
   }
 
   .appspage-right {
@@ -39,9 +39,9 @@
     max-width: 1440px;
   }
 
-  html {  
-    overflow-y: scroll;  
-    height: 100%;  
+  html {
+    overflow-y: scroll;
+    height: 100%;
   }
 }
 
@@ -58,6 +58,6 @@
     margin-top: 65px;
     margin-bottom: 65px;
     margin-left: 0;
-    
+
   }
 }

@@ -1,8 +1,9 @@
 'use client'
 
+import Image from 'next/image';
+import './zufangdata.css'
 
 import { Empty } from 'antd';
-import './zufangdata.css'
 
 
 
@@ -17,17 +18,22 @@ export default function page({ params: { id } }) {
 
             <div className='zufang_Descriptions'>
 
+                <div className='zufangdata_div'>
+                    {selectedHouse.imageUrl.map((url, index) => (
+                        <Image
+                            key={index}
+                            src={url}
+                            className='zufangdata_img'
+                            width={1980}
+                            height={1080}
+                            alt={`${selectedHouse.title} - Image ${index + 1}`} />
+                    ))}
+                </div>
+
                 <div className='zufangdata_text'>
                     <h2>{selectedHouse.title}</h2>
                     <h4>{selectedHouse.position}</h4>
                     <p>{selectedHouse.price}</p>
-                </div>
-
-
-                <div className='zufangdata_div'>
-                    {selectedHouse.imageUrl.map((url, index) => (
-                        <img key={index} src={url} className='zufangdata_img' alt={`${selectedHouse.title} - Image ${index + 1}`} />
-                    ))}
                 </div>
 
             </div>
