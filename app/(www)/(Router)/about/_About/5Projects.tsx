@@ -24,7 +24,7 @@ export default function Projects() {
   return (
     <>
       <div id="projects">
-        <h3 className="projectsh3">
+        <h3 className="h3">
           {t("学习文档")}
           <hr className="About_hr"/>
         </h3>

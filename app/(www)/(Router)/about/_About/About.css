@@ -6,25 +6,28 @@
 	align-items: center;
 	padding: 0;
 }
-.circle_About {  
-    width: 20vw;  
-    height: 20vh;  
-    border-radius: 50%;
-    background-color: #ea7411;  
-    filter: blur(250px);
-    position: absolute;  
-}  
-    
-.circle_About:first-child {  
-  /* 第一个圆的样式 */  
-  top: 40vh;  
-  left:25vw;  
-}  
-.circle_About:last-child {  
-    /* 第二个圆的样式 */  
-    bottom: 60vh;  
-    right: 25vw;  
-}  
+
+.circle_About {
+	width: 20vw;
+	height: 20vh;
+	border-radius: 50%;
+	background-color: #ea7411;
+	filter: blur(250px);
+	position: absolute;
+}
+
+.circle_About:first-child {
+	/* 第一个圆的样式 */
+	top: 40vh;
+	left: 25vw;
+}
+
+.circle_About:last-child {
+	/* 第二个圆的样式 */
+	bottom: 60vh;
+	right: 25vw;
+}
+
 /*──────────────────
        About
 ──────────────────*/
@@ -54,6 +57,14 @@
 		2px -2px 0 #ea7411,
 		-2px -2px 0 #ea7411;
 	text-align: center;
+}
+
+.h3 {
+	padding-bottom: 15px;
+	letter-spacing: normal;
+	font-style: normal;
+	font-size: 2rem;
+	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
 
 @media only screen and (max-width: 236px) {
@@ -203,177 +214,112 @@
 #hmoeWeb3 {
 	text-align: center;
 	margin: auto;
-	max-width: 1520px;
+	max-width: 1440px;
 }
 
 .hmoeWeb3_card {
-	text-align: center;
-	margin: auto;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.hmoeWeb3_box {
 	height: 100%;
 	width: 90%;
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	gap: 2rem;
+}
+
+@media only screen and (max-width: 350px) {
+	.hmoeWeb3_card {
+		height: 100%;
+		width: 100vw;
+		flex-wrap: nowrap;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.hmoeWeb3_box {
+		height: 100%;
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 2rem;
+		gap: 2rem;
+	}
 }
 
 /*──────卡片───*/
 .kapian {
-
-	display: flex;
-	flex: 1;
-	flex-wrap: wrap;
 	gap: 10px;
 	margin-top: 10px;
 }
 
-.feature-card {
-	position: relative;
+.feature_card {
+	height: 150px;
+	width: 100%;
+	box-shadow: 0 0 0.2rem #ea7411;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
-	height: 100%;
-	box-shadow: 0 0 0.2rem #ea7411;
-
-	flex: 1 0 170px;
-
-
 }
 
-.feature-card:hover {
+.feature_card:hover {
 	transition: all 0.5s;
 	box-shadow: 0 0 0.9rem #ea7411;
+}
 
+.feature_card-img {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+.feature_card p {
+	font-size: 1rem;
+	padding: 1rem;
 }
 
 
 
 .fa_icon_4 {
+	margin-top: 1rem;
+	font-size: 2rem;
 	color: #ea7411;
-	font-size: 4rem;
 	display: flex;
 	justify-content: center;
 }
 
-
-
-@media only screen and (max-width: 390px) {
-
-	.fa_icon_4 {
-		color: #ea7411;
-		font-size: 2rem;
-	}
-}
-
-.feature-card h4 {
-	font-size: 1.1rem;
-	font-family: #020202;
-	text-align: cergb(0, 0, 0);
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.feature-card h1 {
-	/* text-align: right; */
-	margin: 10px;
-}
-
-.p-aragon {
-	font-size: 1rem;
-	font-family: #020202;
-	text-align: cergb(0, 0, 0);
-	text-align: center;
-	margin-top: 15px !important;
-}
-
-.h4-aragon {
-	font-size: 1.1rem;
-	font-family: #020202;
-	text-align: cergb(0, 0, 0);
-	text-align: center;
-	margin-top: 10px !important;
-	margin-bottom: 10px !important;
-}
-
-.feature-card-img {
-	display: flex;
-	justify-content: center;
-}
-
-@media screen and (min-width:550px) and (max-width:9999px) {
-	.feature-card {
-		height: 230px;
-		flex: 1 0 150px;
-
-		-webkit-border-radius: 50;
-		-moz-border-radius: 50;
-		border-radius: 50px;
-	}
-
-	.feature-card-img {
-		font-size: 1.5rem;
-		margin-top: 50px;
-		display: flex;
-		justify-content: center;
-	}
-
-	.feature-card h4 {
-		font-size: 1.5rem;
-
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-
-	.kapian {
-		gap: 30px;
-		margin-top: 30px;
-	}
-}
-
-@media only screen and (max-width: 275px) {
-	.feature-card h4 {
-		font-size: 0.5rem;
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
-
-	.kapian {
-		gap: 10px;
-		margin-top: 10px;
-	}
-
-	.feature-card {
-		height: 100%;
-		-webkit-border-radius: 20;
-		-moz-border-radius: 20;
-		border-radius: 20px;
-		flex: 1 0 155px;
-	}
-}
 
 /*────────────────── 
        3web3
 ──────────────────*/
 #web3 {
 	margin: auto;
-
-	margin-top: 5%;
+	margin-top: 5vh;
 	width: 100%;
 	height: 100%;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
 }
 
-
-
 .intro2 {
-	margin-top: 10%;
+	margin-top: 3vh;
 	text-align: center;
-
-	max-width: 1520px;
+	width: 100%;
+	height: 100%;
+	max-width: 1440px;
 	z-index: 1;
 	margin: auto;
-	padding: 20px;
 }
 
 .intro2 h3 {
@@ -382,21 +328,16 @@
 	font-family: var(--body-color);
 	font-style: normal;
 	font-size: 2rem;
-
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
 
 .intro2 div {
-
 	font-size: 1.2rem;
 	font-family: var(--body-color);
 	text-align: center;
 }
 
 .kapianweb3 {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
 	width: 90%;
 	height: 100%;
 	z-index: 1;
@@ -405,21 +346,18 @@
 }
 
 .Web3card {
-	-webkit-border-radius: 50;
-	-moz-border-radius: 50;
-	border-radius: 50px;
-	height: 270px;
-	flex: 1 0 200px;
+	margin-top: 2rem;
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
 	transition: all 0.5s;
-
 	box-shadow: 0 0 0.2rem #ea7411;
-
 }
 
 .Web3card:hover {
 	box-shadow: 0 0 0.9rem #ea7411;
-
-
 }
 
 .Web3card1 span {
@@ -431,79 +369,18 @@
 .Web3card1 p {
 	text-align: left;
 	font-size: 1rem;
-	margin: 5%;
-
+	padding: 3rem;
 }
 
-.fa_icon_4 {
-	font-size: 48px;
-	color: #ea7411;
-	margin-top: 20px;
-}
 
-@media screen and (min-width:1200px) and (max-width:9999px) {
-	.kapianweb3 {
-		gap: 30px;
-
-	}
-
-	.Web3card {
-		height: 350px;
-		flex: 1 0 400px;
-	}
-
+/* 手机 */
+@media only screen and (max-width: 350px) {
 	.Web3card1 p {
-		font-size: 1.5rem;
-		margin: 5%;
-	}
-
-}
-
-@media only screen and (max-width: 400px) {
-	.Web3card {
-		height: 230px;
-		flex: 1 0 200px;
-		-webkit-border-radius: 30px;
-		-moz-border-radius: 30px;
-		border-radius: 30px;
-	}
-
-	.Web3card1 p {
-		font-size: 0.8rem;
-		margin: 5%;
+		text-align: left;
+		font-size: 1rem;
+		padding: 1.5rem;
 	}
 }
-
-
-@media only screen and (max-width: 330px) {
-	.Web3card1 p {
-		font-size: 0.3rem;
-	}
-}
-
-@media only screen and (max-width: 240px) {
-	.Web3card1 p {
-		font-size: 0.3rem;
-		margin-top: 1%;
-	}
-
-	.Web3card {
-		height: 200px;
-		flex: 1 0 150px;
-		-webkit-border-radius: 30px;
-		-moz-border-radius: 30px;
-		border-radius: 30px;
-	}
-
-	.fa_icon_4 {
-		font-size: 30px;
-		color: #ea7411;
-		margin-top: 0px;
-	}
-}
-
-
-
 
 
 
@@ -512,10 +389,8 @@
 ──────────────────*/
 
 #projects {
-	max-width: 1520px;
-
+	max-width: 1440px;
 	margin: auto;
-
 	width: 100%;
 	margin-top: 100px;
 	height: 100%;
@@ -524,21 +399,11 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-
 }
 
-.projectsh3 {
-	padding-bottom: 15px;
-	letter-spacing: normal;
 
-	font-style: normal;
-	font-size: 2rem;
-
-	text-shadow: 0px 0px 40px var(--main-decor-color);
-}
 
 #projects p {
-
 	font-size: 1.2rem;
 	padding: 10px;
 }
@@ -549,12 +414,11 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	padding: 20px;
+	padding: 30px;
 }
 
 .work-content {
 	display: flex;
-
 	align-items: center;
 	margin: auto;
 	justify-content: center;
@@ -577,9 +441,7 @@
 	height: 250px;
 	border-radius: 12px;
 	box-shadow: 0 0 0.1rem #ea7411;
-
 	text-decoration: none;
-
 }
 
 .card img {
@@ -685,7 +547,7 @@
 ──────────────────*/
 
 #contact {
-	max-width: 1520px;
+	max-width: 1440px;
 	margin: auto;
 	height: 85vh;
 
@@ -699,12 +561,11 @@
 	padding: 10px;
 	text-align: center;
 	font-size: 1.2rem;
-
 }
 
 
 .intro4 {
-	max-width: 1520px;
+	max-width: 1440px;
 	justify-content: space-evenly;
 	display: flex;
 	flex-direction: column;
@@ -723,7 +584,7 @@
 }
 
 .intro4 p {
-	
+
 	font-size: 1.2rem;
 
 	text-align: center;
@@ -743,24 +604,23 @@
 	合作LOGO
 ──────────────────*/
 
+.kapianLOGOP {
+	text-align: center;
+	font-size: 1.2rem;
+}
+
 .kapianLOGO {
-	max-width: 1520px;
+	max-width: 1440px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
 
-.kapianLOGOP {
-	text-align: center;
-	margin: 5%;
-	font-size: 1.2rem;
-}
 
 .feature-cardLOGO {
 	display: flex;
-	justify-self: center;
+	justify-content: center;
 	text-align: center;
 	height: 40px;
 	width: 40px;

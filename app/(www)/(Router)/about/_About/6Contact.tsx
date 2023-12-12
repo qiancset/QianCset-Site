@@ -32,7 +32,7 @@ export default function Contact() {
           </Link>
 
 
-          <div>
+       
 
             <p className="kapianLOGOP">{t("技术和平台依赖、借鉴与参考")}</p>
             
@@ -50,7 +50,7 @@ export default function Contact() {
 
 
 
-          </div>
+        
         </div>
 
       </div>
