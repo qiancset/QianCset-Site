@@ -31,11 +31,18 @@
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-.TabsButton.active{
+
+.TabsButton.active {
   height: 100%;
   width: 100%;
   color: #ea7411;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
+}
+
+@media only screen and (max-width: 300px) {
+  .TabsButton p{
+    display: none;
+  }
 }

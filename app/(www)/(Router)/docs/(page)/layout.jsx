@@ -7,7 +7,7 @@ export default function layout({ children }) {
   return (
     <>
 
-      <article /* className="markdown-body" */>{children}</article>
+      <article className="markdown-body">{children}</article>
     </>
   );
 }

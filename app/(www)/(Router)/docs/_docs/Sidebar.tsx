@@ -99,7 +99,7 @@ export default function Sidebar() {
               </div>
             ))}
 
-            <div className="group-title">{t('服务')}</div>
+            <div className="group-title">-{t('服务')}-</div>
             {sectionGroups.group2.map((section) => (
               <div key={section.id}>
                 <Link
@@ -111,7 +111,7 @@ export default function Sidebar() {
               </div>
             ))}
 
-            <div className="group-title">{t('法律')}</div>
+            <div className="group-title">-{t('法律')}-</div>
             {sectionGroups.group3.map((section) => (
               <div key={section.id}>
                 <Link
@@ -123,7 +123,7 @@ export default function Sidebar() {
               </div>
             ))}
 
-            <div className="group-title">{t('学习文档')}</div>
+            <div className="group-title">-{t('学习文档')}-</div>
             {sectionGroups.group4.map((section) => (
               <div key={section.id}>
                 <Link

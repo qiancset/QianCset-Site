@@ -45,8 +45,14 @@
 
 a {
   text-decoration: none !important;
-  /* 去除下划线 */
-  color: var(--shiki-color);
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  -webkit-tap-highlight-color: transparent; /* Safari, UC Browser */
+  user-select: none; /* Disable text selection */
+  text-decoration: none; /* Remove underline from links */
+  outline: none; /* Remove outline from buttons */
 }
 li{
   list-style: none;
