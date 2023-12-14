@@ -5,13 +5,9 @@
 		top: 0;
 		z-index: 800;
 		width: 100%;
-
 		height: 64px;
-
-        background: var(--shiki-header-background);
-
+		background: var(--shiki-header-background);
 		border-bottom: 1px solid rgba(204, 204, 204, 0.3);
-
 	}
 
 	.max_header {
@@ -30,8 +26,6 @@
 		display: flex;
 		align-items: center;
 	}
-
-
 
 	.Home_QianCset {
 		display: flex;
@@ -81,7 +75,8 @@
 		align-items: center;
 		justify-content: flex-end;
 	}
-	.Dropdown{
+
+	.Dropdown {
 		display: none;
 	}
 }
@@ -98,15 +93,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-        background: var(--background-color-antd);
+		background: var(--background-color-antd);
 		border-bottom: 1px solid rgba(204, 204, 204, 0.3);
 	}
 
 	.max_header {
-
 		width: 100%;
 		height: 100%;
-
 	}
 
 	.header_layout {
@@ -128,7 +121,6 @@
 
 	.header_right {
 		margin-right: 1rem;
-
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -148,8 +140,6 @@
 		display: none;
 	}
 
-
-
 	.header_center_linkA {
 		position: relative;
 	}
@@ -158,9 +148,9 @@
 		font-size: 2rem;
 	}
 
-	.Dropdown{
+	.Dropdown {
 		margin-left: 1rem;
-		display:block;
+		display: block;
 	}
 
 }
