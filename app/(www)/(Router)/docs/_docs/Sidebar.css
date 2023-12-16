@@ -40,7 +40,7 @@
     border-radius: 5px;
 }
 
-.mobile {
+.DocsNav {
     display: none;
 }
 
@@ -53,31 +53,45 @@
         display: none;
     }
 
-    .mobile {
-        display: block;
-        position: relative;
+    .DocsNav {
         /* 相对定位，以便下拉菜单能够正确显示 */
         position: fixed;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         top: 64px;
         z-index: 800;
+        max-width: 100vw;
         width: 100%;
         height: 40px;
         background: var(--background-color-antd);
         border-top: 1px solid rgba(204, 204, 204, 0.3);
         border-bottom: 1px solid rgba(204, 204, 204, 0.3);
-
+        overflow-y: hidden;
     }
+
+    .DocsNav.drawer-open .AiOutlineMenuUnfold {
+        transform: rotate(90deg);
+    }
+
 
     .AiOutlineMenuUnfold {
         font-size: 1.5rem;
+        color: #ea7411;
+    }
+
+
+
+    .Drawer {
+
+        margin-top: 105px;
+        background: var(--background-color-antd);
+        border-top: 1px solid rgba(204, 204, 204, 0.3);
+        border-bottom: 1px solid rgba(204, 204, 204, 0.3);
     }
 
     .Modal_children {
-        overflow-y: auto;
-
+        /*         overflow-y: scroll;
+        max-height: 80vh; */
     }
 
     .group-title {
@@ -98,21 +112,26 @@
 
 /* 滚动条样式 */
 .pc::-webkit-scrollbar {
-    width: 6px; /* 设置滚动条宽度 */
-  }
-  
-  /* 滚动槽样式 */
-  .pc::-webkit-scrollbar-track {
-    background-color: transparent; /* 设置滚动槽背景色 */
-  }
-  
-  /* 滚动块样式 */
-  .pc::-webkit-scrollbar-thumb {
-    background-color: transparent; /* 设置滚动块背景色 */
-    border-radius: 4px; /* 设置滚动块边角 */
-  }
-  
-  /* 鼠标悬停时滚动块样式 */
-  .pc:hover::-webkit-scrollbar-thumb {
-    background-color: rgba(204, 204, 204, 0.5); /* 设置鼠标悬停时滚动块背景色 */
-  }
+    width: 6px;
+    /* 设置滚动条宽度 */
+}
+
+/* 滚动槽样式 */
+.pc::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* 设置滚动槽背景色 */
+}
+
+/* 滚动块样式 */
+.pc::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* 设置滚动块背景色 */
+    border-radius: 4px;
+    /* 设置滚动块边角 */
+}
+
+/* 鼠标悬停时滚动块样式 */
+.pc:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(204, 204, 204, 0.5);
+    /* 设置鼠标悬停时滚动块背景色 */
+}

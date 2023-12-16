@@ -28,7 +28,7 @@ export default function Navbar() {
           activeHrefs={['/', `/Github/${pathname}`, `/house/${pathname}`, '/house/1', '/house/2', '/house/3', '/house/4',]}
           icon={<GoHome className="Navicon" />}
           activeIcon={<GoHomeFill className="Navicon" />}
-        >{t('首页')}</NavLink>
+        >{t('主页')}</NavLink>
 
         <NavLink
           href='/concern'

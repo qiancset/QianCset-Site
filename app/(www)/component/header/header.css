@@ -1,10 +1,10 @@
 /* 电脑 */
 @media screen and (min-width:701px) {
-	.header {
+	.www_header {
 		position: fixed;
 		top: 0;
 		z-index: 800;
-		width: 100%;
+		width: 100vw;
 		height: 64px;
 		background: var(--shiki-header-background);
 		border-bottom: 1px solid rgba(204, 204, 204, 0.3);
@@ -84,7 +84,7 @@
 /* 手机 */
 @media only screen and (max-width: 700px) {
 
-	.header {
+	.www_header {
 		position: fixed;
 		top: 0;
 		z-index: 800;

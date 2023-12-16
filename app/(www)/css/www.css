@@ -47,10 +47,13 @@
 
 }
 
-@media screen and (min-width:701px) {
-	html {
-		overflow-y: scroll;
-		height: 100%;
-	}
+/*--选择器----*/
+::selection {
+	background: #ea7411;
+	color: var(--shiki-color);
 }
 
+::-moz-selection {
+	color: var(--shiki-color);
+	background: #ea7411;
+}

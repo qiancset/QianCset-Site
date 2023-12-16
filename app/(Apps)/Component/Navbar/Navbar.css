@@ -65,7 +65,7 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    background: var(--shiki-link-hover-background);
+    
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;

@@ -51,6 +51,7 @@ export default function ModeThemes({}) {
         confirmLoading={false} //确定按钮 loading
         onCancel={handleCancel} //点击遮罩层或右上角叉或取消按钮的回调
         cancelText={"取消"} //取消按钮文字
+        className="Modal"
       >
         <div
           onClick={() => setTheme("light")}

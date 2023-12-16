@@ -36,7 +36,7 @@ import {
   okxWallet,
   rainbowWallet,
   tokenPocketWallet,
-  uniswapWallet
+  uniswapWallet,
 } from "@rainbow-me/rainbowkit/wallets";
 import { connectorsForWallets } from "@rainbow-me/rainbowkit";
 
@@ -69,24 +69,24 @@ export default function Rainbowkit({ children }) {
         });
 
   return (
-    <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider
-        locale={Locale}
-        chains={chains}
-        initialChain={1}
-        theme={{
-          lightMode: selectedTheme,
-          darkMode: selectedTheme,
-        }}
-        appInfo={{
-          appName: "QianCset Dapp",
-          learnMoreUrl:
-            "/docs/Crypto_Wallet",
-        }}
-      >
-        {children}
-      </RainbowKitProvider>
-    </WagmiConfig>
+    <div className="Rainbowkit_WagmiConfig">
+      <WagmiConfig config={wagmiConfig}>
+        <RainbowKitProvider
+          locale={Locale}
+          chains={chains}
+          initialChain={1}
+          theme={{
+            lightMode: selectedTheme,
+            darkMode: selectedTheme,
+          }}
+          appInfo={{
+            appName: "QianCset Dapp",
+            learnMoreUrl: "/docs/Crypto_Wallet",
+          }}>
+          {children}
+        </RainbowKitProvider>
+      </WagmiConfig>
+    </div>
   );
 }
 /* 自定义链 */
@@ -112,25 +112,26 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
   ]
 );
 
-const projectId = 'ab4ee6ab51756c44ab8f80eb2fad1d22'/* process.env.WALLET_PROJECTID_KEY */;
+const projectId =
+  "ab4ee6ab51756c44ab8f80eb2fad1d22"; /* process.env.WALLET_PROJECTID_KEY */
 const connectors = connectorsForWallets([
   {
     groupName: "Recommended",
     wallets: [
       injectedWallet({ chains }),
-      metaMaskWallet({ projectId: projectId, chains }),
-      okxWallet({ projectId: projectId, chains }),
-      walletConnectWallet({ projectId: projectId, chains }),
+      metaMaskWallet({ projectId, chains }),
+      okxWallet({ projectId, chains }),
+      walletConnectWallet({ projectId, chains }),
     ],
   },
-  
+
   {
     groupName: "Others",
     wallets: [
-      tokenPocketWallet({ projectId: projectId, chains }),
+      tokenPocketWallet({ projectId, chains }),
       coinbaseWallet({ chains }),
-      rainbowWallet({ projectId: projectId, chains }),
-      uniswapWallet({ projectId: projectId, chains }),
+      rainbowWallet({ projectId, chains }),
+      uniswapWallet({ projectId, chains }),
     ],
   },
 ]);

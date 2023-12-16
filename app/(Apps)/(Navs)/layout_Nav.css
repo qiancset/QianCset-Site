@@ -5,13 +5,12 @@
     margin: auto;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
   }
 
   .appspage-container {
     display: flex;
     flex-direction: row;
-    margin-top: 65px;
-    width: 100%;
     height: 100%;
     max-width: 1440px;
   }
@@ -19,7 +18,7 @@
   .appspage-left {
     max-width: 144px;
     position: fixed;
-    width: 10%;
+    width: 10vw;
     height: 100%;
 
   }
@@ -27,7 +26,7 @@
   .appspage-right {
     max-width: 1440px;
     margin-left: calc(11% + 1px);
-    width: 89%;
+    width: 89vw;
     height: 100%;
 
   }
@@ -39,10 +38,7 @@
     max-width: 1440px;
   }
 
-  html {
-    overflow-y: scroll;
-    height: 100%;
-  }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -55,7 +51,6 @@
   }
 
   .appspage-right {
-    margin-top: 65px;
     margin-bottom: 65px;
     margin-left: 0;
 

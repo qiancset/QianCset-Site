@@ -3,7 +3,7 @@ import "./Sidebar.css";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
-import { Modal } from "antd";
+import { Modal, Drawer } from "antd";
 import { AiFillCaretRight, AiFillCaretLeft, AiOutlineClose } from "react-icons/ai";
 import { useTranslation } from 'react-i18next';
 export default function Sidebar() {
@@ -16,18 +16,18 @@ export default function Sidebar() {
     { id: 1, title: t('入门指南'), href: "/guide" },
     { id: 2, title: t('白皮书'), href: "/whitepaper" },
     { id: 3, title: t('加密货币'), href: "/Cryptocurrencies" },
-  
+
     { id: 4, title: t('技术问题'), href: "/TechnicalProblem" },
     { id: 5, title: t('加入贡献'), href: "/JoinTheContribution" },
     { id: 6, title: t('赞助商'), href: "/zan-zhu-shang" },
     { id: 7, title: t('关于社区'), href: "/guan-yu-she-qu" },
     { id: 8, title: t('合作'), href: "/he-zuo" },
-  
+
     { id: 9, title: t('Cookie政策'), href: "/cookie_zheng_ce" },
     { id: 10, title: t('使用条款'), href: "/shi-yong-tiao-kuan" },
     { id: 11, title: t('隐私政策'), href: "/yin-si-zheng-ce" },
-  
-  
+
+
     { id: 12, title: t('什么是跨链？'), href: "/Cross_chain" },
     { id: 13, title: t('什么是加密钱包？'), href: "/Crypto_Wallet" },
     { id: 14, title: t('去中心化自治组织'), href: "/DAO" },
@@ -38,9 +38,9 @@ export default function Sidebar() {
     { id: 19, title: t('二层网络'), href: "/Layer2" },
     { id: 20, title: t('非同质化代币'), href: "/NFT" },
     { id: 21, title: t('什么是自主托管？'), href: "/Self_Custody" },
-  
+
   ];
-  
+
   const sectionGroups = {
     group1: sections.slice(0, 4), // 索引 0 到 3  
     group2: sections.slice(4, 9), // 索引 4 到 8  
@@ -48,43 +48,38 @@ export default function Sidebar() {
     group4: sections.slice(12) // 索引 12 到 21  
   };
 
-  const [selectedSectionTitle, setSelectedSectionTitle] = useState('');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
+  const [open, setOpen] = useState(false);
 
-
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
+  const afterOpenChange  = (visible) => {
+    console.log('抽屉可见性变化', visible);
+  };
   return (
     <>
 
       <div className="Sidebar_nav">
 
-
-
-        <div onClick={showModal} className="mobile">
+        <div onClick={() => setOpen(!open)} className={`DocsNav ${open ? 'drawer-open' : ''}`}>
           <AiFillCaretRight className="AiOutlineMenuUnfold" />
-          <div> {selectedSectionTitle || t('文档导航栏')}  </div>
-          <AiFillCaretLeft className="AiOutlineMenuUnfold" />
+          <div> {t('文档导航栏')} </div>
         </div>
-        <Modal
-          title={t('文档导航栏')}
-          closeIcon={<AiOutlineClose className="icon" />}
-
-          open={isModalOpen}
-          centered={true}
-          footer={null}
-          onOk={handleOk} //点击确定回调
-          okText={"确定"} //确定按钮文字
-          confirmLoading={false} //确定按钮 loading
-          onCancel={handleCancel} //点击遮罩层或右上角叉或取消按钮的回调
-          cancelText={"取消"} //取消按钮文字
+        <Drawer
+          className='Drawer'//容器外层
+          placement="top"//抽屉的方向
+          size={'large'}//预设抽屉宽度
+          mask={false}//是否展示遮罩
+          maskClosable={true}//点击蒙层是否允许关闭
+          closeIcon={false}//自定义关闭图标
+          footer={null}//抽屉的页脚
+          open={open}//Drawer 是否可见
+          onClose={onClose}//取消的回调
+          //destroyOnClose={true}//关闭时销毁 Drawer 里的子元素
+          afterOpenChange={afterOpenChange }
         >
           <div className="Modal_children">
 
@@ -93,7 +88,7 @@ export default function Sidebar() {
                 <Link
                   className={`pc_link ${pathname === `/docs${section.href}` ? "active" : ""}`}
                   href={`/docs${section.href}`}
-                  onClick={() => { handleCancel(); setSelectedSectionTitle(section.title); }}  >
+                  onClick={() => { onClose(); }}  >
                   {section.title}
                 </Link>
               </div>
@@ -105,7 +100,7 @@ export default function Sidebar() {
                 <Link
                   className={`pc_link ${pathname === `/docs${section.href}` ? "active" : ""}`}
                   href={`/docs${section.href}`}
-                  onClick={() => { handleCancel(); setSelectedSectionTitle(section.title); }}  >
+                  onClick={() => { onClose(); }}  >
                   {section.title}
                 </Link>
               </div>
@@ -117,7 +112,7 @@ export default function Sidebar() {
                 <Link
                   className={`pc_link ${pathname === `/docs${section.href}` ? "active" : ""}`}
                   href={`/docs${section.href}`}
-                  onClick={() => { handleCancel(); setSelectedSectionTitle(section.title); }}  >
+                  onClick={() => { onClose(); }}  >
                   {section.title}
                 </Link>
               </div>
@@ -129,14 +124,14 @@ export default function Sidebar() {
                 <Link
                   className={`pc_link ${pathname === `/docs${section.href}` ? "active" : ""}`}
                   href={`/docs${section.href}`}
-                  onClick={() => { handleCancel(); setSelectedSectionTitle(section.title); }}  >
+                  onClick={() => { onClose(); }}  >
                   {section.title}
                 </Link>
               </div>
             ))}
           </div>
 
-        </Modal>
+        </Drawer>
 
         <div className="pc">
 

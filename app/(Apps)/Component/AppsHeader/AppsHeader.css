@@ -4,16 +4,12 @@
 		position: fixed;
 		top: 0;
 		z-index: 800;
-		width: 100%;
-
+		width: 100vw;
 		height: 64px;
-
 		-webkit-backdrop-filter: saturate(300%) blur(15px);
 		backdrop-filter: saturate(300%) blur(15px);
 		background: var(--shiki-header-background);
-
 		border-bottom: 1px solid rgba(204, 204, 204, 0.3);
-
 	}
 
 	.max_AppsHeader {
@@ -150,7 +146,7 @@
 	}
 
 	.Home_QianCset {
-/* 		margin-left: 1.3rem; */
+		/* 		margin-left: 1.3rem; */
 		display: flex;
 		align-items: center;
 	}
