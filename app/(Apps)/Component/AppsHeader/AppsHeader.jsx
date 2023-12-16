@@ -17,7 +17,7 @@ export default function AppsHeader() {
 
   return (
     <>
-      <header className="AppsHeader">
+      <div className="AppsHeader">
         <div className="max_AppsHeader">
           {pathname === "/" && <Home />}
           {pathname && pathname.startsWith("/house") && <Home />}
@@ -26,7 +26,7 @@ export default function AppsHeader() {
           {pathname === "/my" && <My />}
           <HeaderChildern />
         </div>
-      </header>
+      </div>
     </>
   );
 }

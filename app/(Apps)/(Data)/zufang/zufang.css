@@ -44,23 +44,20 @@
 }
 
 .Carousel_img {
-
     object-fit: cover;
     border-radius: 16px;
 }
 
-.house_text {
-    width: 300px;
-    height: 100px;
+.house_title {
+    width: 100%;
+    height: 60px;
 }
 
-.house_text_h4 {
+.house_title_h4 {
     padding: 5px;
 }
 
-.house_text p {
-    padding: 5px;
-}
+
 
 @media only screen and (max-width: 735px) {
     .house_list {
@@ -105,9 +102,9 @@
         border-radius: 16px;
     }
 
-    .house_text {
+    .house_title {
         width: 100%;
-        height: 100px;
+        height: 60px;
         border-radius: 16px;
 
     }

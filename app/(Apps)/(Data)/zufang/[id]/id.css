@@ -1,0 +1,291 @@
+/* 电脑 */
+@media screen and (min-width:701px) {
+    /* 在合适的位置引入你的图标样式或者使用默认样式 */
+
+    .component-container {
+        max-width: 5xl;
+        margin: 0 auto;
+        padding: 4px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .左 {
+        flex-direction: column;
+        justify-content: flex-end;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .右 {
+        justify-content: flex-start;
+        min-width: 400px;
+        padding: 10px;
+    }
+
+
+
+    .image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .grid-image {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4px;
+        gap: 4px;
+        align-content: stretch;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*  */
+    .title {
+        font-size: 1.875rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+
+    .position {
+        font-size: 0.875rem;
+        color: #777777;
+        margin-bottom: 1rem;
+    }
+
+    .avatar-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+
+    .avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 24px;
+        margin-right: 8px;
+    }
+
+    .user-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .property-info {
+        margin-top: 8px;
+    }
+
+    .icon-container {
+        display: flex;
+        margin-top: 5px;
+        align-items: center;
+    }
+
+    .icon {
+        margin-right: 4px;
+        color: #ea7411;
+    }
+
+    .icon-container span {
+        margin-right: 20px;
+    }
+
+    .price-container {
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        padding: 16px;
+        margin-top: 8px;
+    }
+
+    .price-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .租金 {
+        font-size: 2rem;
+    }
+
+    .date-input {
+        width: 48%;
+        margin-right: 4px;
+    }
+
+    .guests-select {
+        width: 48%;
+    }
+
+    .total-container {
+        border-top: 1px solid #ccc;
+        padding-top: 16px;
+        margin-top: 16px;
+    }
+
+    .total-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+
+    .total-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* 添加其他样式，如图标的颜色等 */
+}
+
+/* 手机 */
+@media only screen and (max-width: 880px) {
+
+    .component-container {
+        max-width: 5xl;
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .左 {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0px;
+    }
+
+    .右 {
+
+        min-width: 100%;
+        padding: 0px;
+    }
+
+
+
+
+
+    .image-container {
+        display: grid;
+        gap: 4px;
+    }
+
+    .image {
+        width: 100%;
+        height:100%;
+        border-radius: 0px;
+    }
+
+    .grid-image {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4px;
+        gap: 4px;
+        align-content: stretch;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*  */
+    .title {
+        font-size: 1.875rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .position {
+        font-size: 0.875rem;
+        color: #777777;
+        margin-bottom: 1rem;
+    }
+
+    .avatar-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+
+    .avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 24px;
+        margin-right: 8px;
+    }
+
+    .user-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .property-info {
+        margin-top: 8px;
+    }
+
+    .icon-container {
+        display: flex;
+        margin-top: 5px;
+        align-items: center;
+    }
+
+    .icon {
+        margin-right: 4px;
+        color: #ea7411;
+    }
+
+    .icon-container span {
+        margin-right: 20px;
+    }
+
+    .price-container {
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        padding: 16px;
+        margin-top: 8px;
+    }
+
+    .price-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .租金 {
+        font-size: 2rem;
+    }
+
+    .date-input {
+        width: 48%;
+        margin-right: 4px;
+    }
+
+    .guests-select {
+        width: 48%;
+    }
+
+    .total-container {
+        border-top: 1px solid #ccc;
+        padding-top: 16px;
+        margin-top: 16px;
+    }
+
+    .total-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+
+    .total-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+
+
+}

@@ -65,11 +65,11 @@ export default function Locales() {
 
 const languageOptions = [
   {
-    code: "zhCN",
+    code: "zh",
     label: "简体中文",
   },
   {
-    code: "zhTW",
+    code: "zhHK",
     label: "繁体中文",
   },
   {
