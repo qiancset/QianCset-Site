@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 
 export default function Antd({ children }) {
   const { resolvedTheme } = useTheme();
-  const antdTheme = resolvedTheme === "dark" ? [theme.darkAlgorithm, theme.compactAlgorithm] : null;
+  const antdTheme = resolvedTheme === "system" ? [theme.darkAlgorithm, theme.compactAlgorithm] : null;
 
   return (
     <ConfigProvider

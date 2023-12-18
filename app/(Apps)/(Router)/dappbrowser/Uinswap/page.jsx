@@ -9,7 +9,7 @@ import { useConnectModal } from "@rainbow-me/rainbowkit";
 export default function Uniswap() {
   const { t } = useTranslation();
   const { resolvedTheme } = useTheme();
-  const Theme = resolvedTheme === "dark" ? darkTheme : customTheme;
+  const Theme = resolvedTheme === "system" ? darkTheme : customTheme;
   const { openConnectModal } = useConnectModal(); // 添加这行来获取 openConnectModal 函数
 
   return (

@@ -7,10 +7,10 @@ export default function layout({ children }) {
         <div className="Apps">
             <AppsHeader />
             <div style={{ marginTop: '65px' }}></div>
-            <div className='Router'>
+            
 
                 {children}
-            </div>
+            
         </div>
     )
 }

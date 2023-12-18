@@ -10,7 +10,7 @@ export default function My_List() {
     const { t } = useTranslation();
     return (
         <>
-            <My_List_card href={`/a`} text={t('资料')} ico={<GoMention />} />
+            <My_List_card href={`/user`} text={t('资料')} ico={<GoMention />} />
             <My_List_card href={`/a`} text={t('测试')} ico={<GoBeaker />} />
             <My_List_card href={`/dappbrowser`} text={t('Dapp')} ico={<GoBrowser />} />
             <My_List_card href={`/function`} text={t('功能')} ico={<GoBriefcase />} />
