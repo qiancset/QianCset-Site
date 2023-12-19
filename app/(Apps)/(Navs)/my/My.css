@@ -9,7 +9,7 @@
 }
 
 .My_left_Button {
-	padding: 10px;
+
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -18,7 +18,6 @@
 }
 
 .My_right_Button {
-	padding: 10px;
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -28,5 +27,5 @@
 
 
 .My_List{
-	padding: 10px;
+
 }

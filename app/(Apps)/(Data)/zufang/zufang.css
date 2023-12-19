@@ -1,8 +1,8 @@
 .zufang {
-    max-width: 1440px;
+    max-width: 1536px;
     width: 100%;
     height: 100%;
-    color: var(--shiki-color);
+    color: var(--color);
 
 }
 
@@ -18,9 +18,9 @@
     height: 400px;
     margin-bottom: 50px;
     border-radius: 16px;
-    color: var(--shiki-color);
+    color: var(--color);
     box-shadow: 0 0 0.1rem rgb(142, 140, 140);
-    background: var(--shiki-Navbar-background);
+    background: var(--Navbar-background);
 }
 
 .house_card:hover {
@@ -28,9 +28,9 @@
     height: 400px;
     margin-bottom: 50px;
     border-radius: 16px;
-    color: var(--shiki-color);
+    color: var(--color);
     box-shadow: 0 0 0.1rem rgb(142, 140, 140);
-    background: var(--shiki-link-hover-background);
+    background: var(--link-hover-background);
 }
 
 .Carousel {
@@ -44,6 +44,8 @@
 }
 
 .Carousel_img {
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 16px;
 }
@@ -75,9 +77,9 @@
         height: 400px;
         margin-bottom: 5vh;
         border-radius: 16px;
-        color: var(--shiki-color);
+        color: var(--color);
         box-shadow: 0 0 0.1rem rgb(142, 140, 140);
-        background: var(--shiki-Navbar-background);
+        background: var(--Navbar-background);
     }
 
     .house_card:hover {
@@ -85,9 +87,9 @@
         height: 400px;
         margin-bottom: 5vh;
         border-radius: 16px;
-        color: var(--shiki-color);
+        color: var(--color);
         box-shadow: 0 0 0.1rem rgb(142, 140, 140);
-        background: var(--shiki-link-hover-background);
+        background: var(--link-hover-background);
     }
 
     .Carousel_div {

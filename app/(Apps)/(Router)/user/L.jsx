@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import "./Locales.css";
+import './Locales.css'
 import {
   Dropdown,
   DropdownTrigger,
@@ -11,27 +11,32 @@ import {
   Button,
 } from "@nextui-org/react";
 
-import { AiOutlineTranslation } from "react-icons/ai";
+import { AiOutlineTranslation, AiOutlineClose } from "react-icons/ai";
+
 
 export default function Locales() {
   const { t, i18n } = useTranslation();
 
-  const [selectedKeys, setCurrentLanguage] = React.useState(
-    new Set([i18n.language])
-  );
+
+  const [selectedKeys, setCurrentLanguage] = React.useState(i18n.language);
   const handleLanguageChange = (lng) => {
     i18n.changeLanguage(lng);
     setCurrentLanguage(lng);
   };
 
+  const selectedValue = React.useMemo(
+    () => Array.from(selectedKeys).join(", ").replaceAll("_", " "),
+    [selectedKeys]
+  );
   return (
     <>
-      <div>
+      <div className='language-toggle'>
         <Dropdown>
           <DropdownTrigger>
-            <Button isIconOnly color="primary" variant="light">
-              <AiOutlineTranslation className="AiOutlineTranslation"/>
+            <Button variant='bordered' className='capitalize'>
+            <AiOutlineTranslation />  {selectedValue}
             </Button>
+
           </DropdownTrigger>
 
           <DropdownMenu
@@ -42,11 +47,20 @@ export default function Locales() {
             selectedKeys={selectedKeys}
             onSelectionChange={handleLanguageChange}>
             {languageOptions.map((option) => (
-              <DropdownItem key={option.code} className={i18n.language === option.code ? "i18n_button_active" : "i18n_button"}>{option.label}</DropdownItem>
-            ))}
+            <DropdownItem
+              key={option.code}
+              onClick={() => handleLanguageChange(option.code)}
+              className={selectedKeys === option.code ? "theme_button_active" : "theme_button"}
+            >
+              {option.label}
+            </DropdownItem>
+          ))}
+
           </DropdownMenu>
+          
         </Dropdown>
       </div>
+
     </>
   );
 }

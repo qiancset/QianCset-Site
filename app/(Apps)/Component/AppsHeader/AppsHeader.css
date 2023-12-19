@@ -4,18 +4,20 @@
 		position: fixed;
 		top: 0;
 		z-index: 800;
-		width: 100vw;
+		width: 100%;
 		height: 64px;
-		-webkit-backdrop-filter: saturate(300%) blur(15px);
-		backdrop-filter: saturate(300%) blur(15px);
-		background: var(--shiki-header-background);
-		border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+		-webkit-backdrop-filter: saturate(300%) blur(16px);
+		backdrop-filter: saturate(300%) blur(16px);
+		background: var(--Header-background);
+		border-bottom: 1px solid rgba(204, 204, 204, 0.15);
 	}
 
 	.max_AppsHeader {
 		width: 100%;
 		height: 100%;
-		max-width: 1440px;
+		max-width: 1536px;
+/* 		padding-left: 24px;
+		padding-right: 24px; */
 		margin: auto;
 		flex-direction: column;
 		align-items: center;
@@ -41,7 +43,7 @@
 	}
 
 	.Header_left {
-		margin-left: 1.5rem;
+		margin-left: 24px;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -50,7 +52,7 @@
 	}
 
 	.Header_right {
-		margin-right: 1.5rem;
+		margin-right: 24px;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -79,7 +81,7 @@
 
 
 	.Header_left_My {
-		margin-left: 1.5rem;
+		margin-left: 24px;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -88,7 +90,7 @@
 	}
 
 	.Header_center_My {
-		gap: 0.5rem;
+		gap: 1rem;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -97,7 +99,7 @@
 	}
 
 	.Header_right_My {
-		margin-right: 1.5rem;
+		margin-right: 24px;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -120,15 +122,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		-webkit-backdrop-filter: saturate(180%) blur(15px);
-		backdrop-filter: saturate(180%) blur(15px);
-		background: var(--shiki-header-background);
+		-webkit-backdrop-filter: saturate(180%) blur(16px);
+		backdrop-filter: saturate(180%) blur(16px);
+		background: var(--Header-background);
 
-		border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+		border-bottom: 1px solid rgba(204, 204, 204, 0.15);
 	}
 
 	.max_AppsHeader {
-
 		width: 100%;
 		height: 100%;
 
@@ -152,7 +153,7 @@
 	}
 
 	.Header_left {
-		margin-left: 1rem;
+		margin-left: 24px;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -161,7 +162,7 @@
 	}
 
 	.Header_right {
-		margin-right: 1rem;
+		margin-right: 24px;
 
 		width: 100%;
 		height: 100%;
@@ -195,7 +196,7 @@
 
 	.Header_center_My {
 		gap: 0.5rem;
-		margin-left: 1rem;
+		margin-left: 24px;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -204,7 +205,7 @@
 	}
 
 	.Header_right_My {
-		margin-right: 1rem;
+		margin-right: 24px;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -219,26 +220,29 @@
 .BackLink {
 	width: 100%;
 	height: 100%;
-	padding: 40% 40% 40% 40%;
+	padding: 8px;
 	text-decoration: none;
-	font-size: 1.3rem;
-	color: var(--shiki-color);
+	font-size: 1.5rem;
+	color: var(--color);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 50%;
 }
 
 .BackLink:hover {
 	width: 100%;
 	height: 100%;
-	padding: 40% 40% 40% 40%;
+	padding: 8px;
 	text-decoration: none;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	background: #ea7411;
-	background-color: var(--shiki-link-hover-background);
+	background-color: var(--link-hover-background);
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
-	border-radius: 30px;
+	border-radius: 50%;
 }

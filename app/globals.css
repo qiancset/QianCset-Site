@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 全局css */
+  --color: #000 !important;
+
+  /* UI */
+  --link-hover-background: rgba(0, 0, 0, 0.03) !important;
+
+}
+
+[data-theme='dark'] {
+  /* 全局css */
+  --color: #fff !important;
+
+  /* UI hover */
+  --link-hover-background: hsla(0, 0%, 100%, 0.04) !important;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* button {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  text-decoration: none;
+  outline: none;
+} */
+
+li {
+  list-style: none !important;
+}
+
+.icon {
+  font-size: 1.5rem !important;
+}
+
+
+
+
+/*--选择器----*/
+::selection {
+  background: #ea7411;
+  color: var(--color);
+}
+
+::-moz-selection {
+  color: var(--color);
+  background: #ea7411;
+}

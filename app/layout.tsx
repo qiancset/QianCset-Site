@@ -1,8 +1,9 @@
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 //import 'nextra-theme-docs/style.css'
-import './layout.css'
+import './globals.css'
 import Providers from "@/config/Providers";
+
 
 
 
@@ -25,7 +26,7 @@ export const metadata = {
 
 };
 const inter = Inter({ subsets: ["latin"] });
-export default function Layout({ children }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
 
    return (
       <html>
@@ -37,14 +38,15 @@ export default function Layout({ children }) {
 
             <Providers>
 
-               {children}
-               <Analytics />
+                  {children}
+           
 
 
             </Providers>
 
+            <Analytics />
 
-         
+
          </body>
       </html>
    )

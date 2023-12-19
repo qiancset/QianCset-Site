@@ -5,13 +5,13 @@ import Navbar from '@/Component/Navbar/Navbar'
 
 export default function AppsLayout({ children }) {
     return (
-        <>
+        <div className='layout_Nav'>
 
 
            
 
 
-            <div className='layout_Nav'>
+           
                 <div className="appspage-container">
 
                     <div className="appspage-left">
@@ -25,9 +25,9 @@ export default function AppsLayout({ children }) {
                    
 
                 </div>
-            </div>
+           
 
 
-        </>
+        </div>
     )
 }

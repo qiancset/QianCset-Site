@@ -1,17 +1,17 @@
 .pc {
-    max-width: 200px;
+    max-width: 300px;
+    width: 200px;
     height: 100%;
     z-index: 800;
-    border-right: 1px solid rgba(204, 204, 204, 0.3);
-    color: var(--shiki-color);
+    border-right: 1px solid rgba(204, 204, 204, 0.15);
+    color: var(--color);
     position: fixed;
-    overflow-y: scroll;
 }
 
 .group-title {
     font-size: 1.1rem;
     margin-top: 30px;
-    color: var(--shiki-color);
+    color: var(--color);
 }
 
 /* Sidebar 链接样式 */
@@ -25,8 +25,8 @@
 
 /* Sidebar 链接悬停样式 */
 .pc_link:hover {
-    color: var(--shiki-color);
-    background: var(--shiki-link-hover-background);
+    color: var(--color);
+    background: var(--link-hover-background);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -34,7 +34,7 @@
 
 .pc_link.active {
     color: #ea7411;
-    background: var(--shiki-link-hover-background);
+    background: var(--link-hover-background);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -54,50 +54,21 @@
     }
 
     .DocsNav {
-        /* 相对定位，以便下拉菜单能够正确显示 */
         position: fixed;
+        top: 65px;
         display: flex;
-        align-items: center;
-        top: 64px;
-        z-index: 800;
-        max-width: 100vw;
-        width: 100%;
-        height: 40px;
-        background: var(--background-color-antd);
-        border-top: 1px solid rgba(204, 204, 204, 0.3);
-        border-bottom: 1px solid rgba(204, 204, 204, 0.3);
-        overflow-y: hidden;
+        width: 100vw;
     }
 
-    .DocsNav.drawer-open .AiOutlineMenuUnfold {
-        transform: rotate(90deg);
+    .DocsNav_NavbarMenu {
+        margin-top: 64px;
     }
 
-
-    .AiOutlineMenuUnfold {
-        font-size: 1.5rem;
-        color: #ea7411;
-    }
-
-
-
-    .Drawer {
-
-        margin-top: 105px;
-        background: var(--background-color-antd);
-        border-top: 1px solid rgba(204, 204, 204, 0.3);
-        border-bottom: 1px solid rgba(204, 204, 204, 0.3);
-    }
-
-    .Modal_children {
-        /*         overflow-y: scroll;
-        max-height: 80vh; */
-    }
 
     .group-title {
         font-size: 1rem;
         margin-top: 30px;
-        color: var(--shiki-color);
+        color: var(--color);
     }
 
     .pc_link {
@@ -132,6 +103,6 @@
 
 /* 鼠标悬停时滚动块样式 */
 .pc:hover::-webkit-scrollbar-thumb {
-    background-color: rgba(204, 204, 204, 0.5);
+    background-color: rgba(204, 204, 204, 0.3);
     /* 设置鼠标悬停时滚动块背景色 */
 }

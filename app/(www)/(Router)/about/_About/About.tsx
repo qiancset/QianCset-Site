@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 
 import "./About.css";
 import HmoeWeb3 from "./2Hmoeweb3";
@@ -31,7 +32,7 @@ export default function About() {
 
         <div className="rotate1">
 
-            <img src="favicon.ico" alt="About-Q" className="Imagelogo" />
+            <Image src="/favicon.ico" alt="About-Q" className="Imagelogo" width={900} height={900}/>
 
         </div>
 

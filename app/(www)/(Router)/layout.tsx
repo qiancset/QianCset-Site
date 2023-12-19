@@ -10,7 +10,7 @@ export default function layout({ children }) {
   return (
     <>
       <Header />
-      <div style={{ marginTop: '65px' }}></div>
+
       {children}
     </>
   )

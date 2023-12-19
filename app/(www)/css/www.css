@@ -2,12 +2,12 @@
 
 
 	/* Header */
-	--shiki-header-background: #fffffff7;
+	--header-background: #fffffff7 !important;
 
 
 
 	/* 首页色 */
-	--Aboutmian-background-color: #fff;
+	--Aboutmian-background-color: #fff !important;
 	/* 主题色 */
 	--theme-color: #ea7411;
 	--main-decor-color: #ea7411;
@@ -28,18 +28,18 @@
 
 
 	/* UI */
-	--shiki-link-hover-background: #0000000f;
+	--link-hover-background: #0000000f !important;
 
 
 
 	/* docs */
-	--pc_link-color: #545353d3;
-	--QianCset_svg: #000;
+	--pc_link-color: #545353d3 !important;
+	--QianCset_svg: #000 !important;
 
 
-	/* antd */
-	--background-color-antd: #ffffff !important;
-	--color-antd: #ea7411 !important;
+	/* nextui */
+	--background-color-nextui: #ffffff !important;
+	--color-nextui: #ea7411 !important;
 }
 
 .QianCset_svg svg {
@@ -50,10 +50,10 @@
 /*--选择器----*/
 ::selection {
 	background: #ea7411;
-	color: var(--shiki-color);
+	color: var(--color);
 }
 
 ::-moz-selection {
-	color: var(--shiki-color);
+	color: var(--color);
 	background: #ea7411;
 }

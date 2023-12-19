@@ -3,16 +3,75 @@ import './Home_Tabs.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { BsHouseCheck, BsHouses, BsHouseUp, BsPinMap } from 'react-icons/bs'
+import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
+import { useRouter } from 'next/navigation'
+import A from '../house/1/page'
+import B from '../house/2/page'
+import C from '../house/3/page'
+import D from '../house/4/page'
 export default function Home_Tabs() {
     const pathname = usePathname();
     return (
         <>
             <div className='Home_Tabs'>
-                <Link href='/house/1' className={`TabsButton ${pathname === `/house/1` ? 'active' : ''}`}><BsHouseCheck /><p>整租</p></Link>
-                <Link href='/house/2' className={`TabsButton ${pathname === `/house/2` ? 'active' : ''}`}><BsHouses /><p>合租</p></Link>
-                <Link href='/house/3' className={`TabsButton ${pathname === `/house/3` ? 'active' : ''}`}><BsPinMap /><p>地图</p></Link>
-                <Link href='/house/4' className={`TabsButton ${pathname === `/house/4` ? 'active' : ''}`}><BsHouseUp /><p>出租</p></Link>
+                <Taba />
             </div>
+
         </>
     )
+}
+
+
+
+
+function Taba() {
+    return (
+        <div className="flex w-full flex-col">
+            <Tabs
+                aria-label="Options"
+                color="primary"
+                variant="underlined"
+                classNames={{
+                    tabList: "gap-6 w-full relative rounded-none p-0 border-b border-divider justify-around",
+                    cursor: "w-full bg-[#ea7411]",
+                    tab: "max-w-fit px-0 h-12 text-xl",
+                    tabContent: "group-data-[selected=true]:text-[#ea7411]"
+                }}
+            >
+                <Tab key="1" title={
+                    <div className="flex items-center space-x-2">
+                        <BsHouseCheck /><span>整租</span>
+                    </div>
+                }>
+                    <A />
+                </Tab>
+
+                <Tab key="2" title={
+                    <div className="flex items-center space-x-2">
+                        <BsHouses /><span>合租</span>
+                    </div>
+                }>
+                    <B />
+                </Tab>
+
+                <Tab key="3" title={
+                    <div className="flex items-center space-x-2">
+                        <BsPinMap /><span>地图</span>
+                    </div>
+                }>
+                    <C />
+                </Tab>
+
+                <Tab key="4" title={
+                    <div className="flex items-center space-x-2">
+                        <BsHouseUp /><span>出租</span>
+                    </div>
+                }>
+                    <D />
+                </Tab>
+
+
+            </Tabs>
+        </div>
+    );
 }

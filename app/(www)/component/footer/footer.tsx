@@ -19,7 +19,7 @@ function SocialMedia({ href, faicon }) {
 
 function Linkli({ children, href }) {
   return (
-    <Link href={`/docs${href}`} className="Link">
+    <Link href={`/docs${href}`} className="footer_Link">
       {children}
     </Link>
   );
@@ -68,7 +68,7 @@ export default function Footer() {
           <div className="box">
             <h2 className="link_title">{t("产品")}</h2>
 
-            <Link href="/" className="Link">Qiancset</Link>
+            <Link href="/" className="footer_Link">Qiancset</Link>
           </div>
 
 
