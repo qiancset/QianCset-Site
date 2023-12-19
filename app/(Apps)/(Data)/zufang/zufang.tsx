@@ -4,7 +4,7 @@ import './zufang.css'
 import { Suspense } from 'react';
 
 import Image from 'next/image';
-import { Skeleton, Space } from 'antd';
+
 import houseData from './data/houseData';
 
 export default function zufang() {
@@ -18,7 +18,7 @@ export default function zufang() {
                     <Link href={`/zufang/${house.id}`} /* target="_blank" */
                         className="house_card" key={house.id}>
 
-                        <Suspense fallback={<Loading_Image />}>
+                        <Suspense fallback={<></>}>
                             <div key={0} className='Carousel_div'>
                                 <Image
                                     src={house.imageUrl[0]}
@@ -28,10 +28,10 @@ export default function zufang() {
                                     alt={`${house.title}`}
                                 />
                             </div>
-                        </Suspense>
+              </Suspense>
 
 
-                        <Suspense fallback={<Loading_Input />}>
+                        <Suspense fallback={<></>}>
                             <div className='house_title'>
                                 <h4 className='house_title_h4'>{house.title}</h4>
                             </div>
@@ -49,29 +49,4 @@ export default function zufang() {
         </div>
     );
 };
-const Loading_Image = () => {
-    return (
-        <div className='Loading_Image'>
-            <Space>
-                <Skeleton.Image active />
-            </Space>
-        </div>
-    )
-}
-const Loading_Input = () => {
-    return (
-        <div className='Loading_Input'>
-            <br />
-            <Space>
-                <Skeleton.Avatar active size={'default'} shape={'circle'} />
-                <Skeleton.Input active size={'default'} block={true} />
-            </Space>
-            <br />
-            <br />
-            <Space>
-                <Skeleton.Input active size={'default'} />
-            </Space>
-        </div>
-    )
-}
 

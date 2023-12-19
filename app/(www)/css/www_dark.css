@@ -2,15 +2,15 @@
 
 
 	/* Header */
-	--shiki-header-background: #121212;
+	--header-background: #121212 !important;
 
 
 
 
 	/* 首页色 */
-	--Aboutmian-background-color: #111111;
+	--Aboutmian-background-color: #111111 !important;
 	/* button_About_1 */
-	--button_About_1: #f5a609;
+	--button_About_1: #f5a609 !important;
 	/* 主题色 */
 	--theme-color: #ea7411;
 	--main-decor-color: #ea7411;
@@ -27,17 +27,17 @@
 	--card-box-shadow: 0 0 0.1rem #fff;
 	--card-background: #1f1f1f;
 	/* footer页眉 */
-	--footer-background: rgba(26, 26, 26, 0.3);
+	--footer-background: rgba(26, 26, 26, 0.3) !important;
 	/* UI hover */
-	--shiki-link-hover-background: #ffffff31;
+	--link-hover-background: #ffffff31 !important;
 
 
 	/* docs */
-	--pc_link-color:#ece1e1d3;
+	--pc_link-color:#ece1e1d3 !important;
 
 	--QianCset_svg: #fff;
 
-	/* antd */
-	--background-color-antd: #1f1f1f !important;
-	--color-antd: #ea7411 !important;
+	/* nextui */
+	--background-color-nextui: #1f1f1f !important;
+	--color-nextui: #ea7411 !important;
 }

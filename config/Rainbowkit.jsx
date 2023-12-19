@@ -70,7 +70,7 @@ export default function Rainbowkit({ children }) {
         });
 
   return (
-    <div className="Rainbowkit_WagmiConfig">
+    <div >
       <WagmiConfig config={wagmiConfig}>
         <RainbowKitProvider
           locale={Locale}

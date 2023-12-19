@@ -1,6 +1,10 @@
 'use client'
-export default function page() {
+import L from './L'
+export default function Page() {
   return (
-    <div>page</div>
+    <div>
+
+    </div>
+
   )
 }

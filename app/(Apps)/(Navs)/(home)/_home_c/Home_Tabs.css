@@ -1,9 +1,6 @@
 .Home_Tabs {
   width: 100%;
-  height: 56px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
 
   /* border-top: 1px solid rgba(204, 204, 204, 0.3); */
 }
@@ -13,33 +10,15 @@
   width: 100%;
   font-size: 1.3rem;
 
-  color: var(--shiki-color);
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  color: var(--color);
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.TabsButton:hover {
-  height: 100%;
-  width: 100%;
-  color: #ea7411;
-  background: var(--shiki-link-hover-background);
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-}
-
-.TabsButton.active {
-  height: 100%;
-  width: 100%;
-  color: #ea7411;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-}
 /* 手机 */
 @media only screen and (max-width: 700px) {
   .TabsButton:hover {
@@ -47,9 +26,9 @@
     width: 100%;
     color: #ea7411;
     background: transparent;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
   }
 }
 @media only screen and (max-width: 300px) {

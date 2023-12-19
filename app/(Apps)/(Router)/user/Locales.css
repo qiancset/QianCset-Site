@@ -1,0 +1,17 @@
+
+.theme_button_active{
+	background: #ea7411;
+}
+.language-toggle svg{
+	width: 22px;
+	height: 22px;
+	color: var(--shiki-color);
+}
+
+.Locales_text{
+	color: var(--shiki-color);
+}
+
+.Locales_text.after{
+	color: var(--shiki-color);
+}

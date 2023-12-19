@@ -2,11 +2,11 @@
 
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { useTranslation } from 'react-i18next';
-export default function Rainbowkit() {
+export default function RainbowkitButton() {
   const { t } = useTranslation();
 
   return (
-    <>
+    <div>
       <ConnectButton
         label={t("连接")}
         accountStatus={{
@@ -17,7 +17,8 @@ export default function Rainbowkit() {
           smallScreen: false,
           largeScreen: false,
         }}
+        
       />
-    </>
+    </div>
   )
 }

@@ -1,126 +1,14 @@
-
-.ModeThemes {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	-webkit-border-radius: 30;
-	-moz-border-radius: 30;
-	border-radius: 30px;
-}
-
-.ModeThemes:hover{
-	background: var(--shiki-link-hover-background);
-	-webkit-border-radius: 30;
-	-moz-border-radius: 30;
-	border-radius: 30px;
-}
-
-.theme_button{
-	transition: all 0.5s;
-	-webkit-border-radius: 10;
-	-moz-border-radius: 10;
-	border-radius: 10px;
-	font-family: Arial;
-	font-size: 1rem;
-	padding: 5px 25px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: solid black 1px;
-	cursor: pointer;
-	border: none;
-	margin: 15px;
-	border: 1px solid #ea7411;
-	color: var(--shiki-color); 
-	background-color: transparent !important;
-
-}
-.theme_button_active {  
-	transition: all 0.5s;
-	-webkit-border-radius: 10;
-	-moz-border-radius: 10;
-	border-radius: 10px;
-	font-family: Arial;
-	font-size: 1rem;
-	padding: 5px 25px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: solid black 1px;
-	cursor: pointer;
-	border: none;
-	margin: 15px;
-	border: 1px solid #ea7411;
-	color: var(--shiki-color); 
-	background-color: #ea7411 !important;
-
-  }
-  .theme_button:hover {
-	background-color: #ea7411 !important;
-  }
-
 .Sun_icon,
 .Moon_icon {
-	color: var( --shiki-color);
-	height: 22px;
-	width: 22px;
-	-webkit-border-radius: 30;
-	-moz-border-radius: 30;
-	border-radius: 30px;
+    color: var(--color);
+    font-size: 1.5rem;
 }
-
-
-
-.Sun,
-.Moon {
-	background: none;
-	border: none;
-	-webkit-border-radius: 30;
-	-moz-border-radius: 30;
-	border-radius: 30px;
+.theme_button_active{
+	color: #ea7411 !important;
 }
-
-.switch {  
-	position: relative;  
-	display: inline-block;  
-	width: 60px;  
-	height: 34px;  
-  }  
-
-  .switch input {  
-	display: none;  
-  }  
-
-  .slider {  
-	position: absolute;  
-	cursor: pointer;  
-	top: 0;  
-	left: 0;  
-	right: 0;  
-	bottom: 0;  
-	background-color: #ccc;  
-	-webkit-transition: .4s;  
-	transition: .4s;  
-  }  
-
-  .slider:before {  
-	position: absolute;  
-	content: "";  
-	height: 26px;  
-	width: 26px;  
-	left: 4px;  
-	bottom: 4px;  
-	background-color: white;  
-	-webkit-transition: .4s;  
-	transition: .4s;  
-  }  
-
-  input:checked + .slider {  
-	background-color: #2196F3;  
-  }  
-
-  input:checked + .slider:before {  
-	-webkit-transform: translateX(26px);  
-	-ms-transform: translateX(26px);  
-	transform: translateX(26px);  
-  }  
+.theme_button_active:hover{
+	color: #ea7411 !important;
+}
+.theme_button_active.active{
+	color: #ea7411 !important;
+}

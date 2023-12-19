@@ -1,7 +1,7 @@
 "use client";
-
+import Image from "next/image";
+import {Button} from "@nextui-org/react";
 import "./id.css";
-import { Image } from "antd";
 import { PiElevator } from "react-icons/pi";
 import {
   LuBed,
@@ -14,7 +14,6 @@ import {
   LuMessageSquare,
 } from "react-icons/lu";
 import { Suspense, useState } from "react";
-import { Skeleton, Space, Button, Carousel } from "antd";
 import data from "../data/houseData";
 export default function page({ params: { id } }) {
   const ID = data.find((zufang) => zufang.id === parseInt(id, 10));
@@ -26,35 +25,30 @@ export default function page({ params: { id } }) {
     <div className='component-container'>
       <div className='左'>
         <div className='image-container '>
-          {/*           <Image.PreviewGroup
-            mask={true}
-            preview={{
-              onChange: (current, prev) =>
-                console.log(`current index: ${current}, prev index: ${prev}`),
-            }}> */}
+
           <div>
-            <img
+            <Image
               src={ID.imageUrl[0]}
               alt='主图'
               className='image'
-              height='300'
+              width={2080}
+              height={1920}
               style={{
                 aspectRatio: "500/300",
                 objectFit: "cover",
               }}
-              width='500'
             />
 
             <div className='grid-image'>
               
                 {ID.imageUrl.slice(1).map((url, index) => (
-                  <img
+                  <Image
                     key={index}
                     src={url}
                     alt={`${ID.title} - Image ${index + 1}`}
                     className='image'
-                    height='140'
-                    width='195'
+                    height={1400}
+                    width={1950}
                     style={{
                       aspectRatio: "195/140",
                       objectFit: "cover",
@@ -64,7 +58,7 @@ export default function page({ params: { id } }) {
          
             </div>
           </div>
-          {/*      </Image.PreviewGroup> */}
+         
         </div>
       </div>
 
@@ -73,10 +67,12 @@ export default function page({ params: { id } }) {
         <p className='position'>{ID.position}</p>
 
         <div className='avatar-container'>
-          <img
+          <Image
             alt='房东头像'
             className='avatar'
-            src='https://vercel.com/api/www/avatar/YCxpATSSSsF3v8Hvgq4goGfw?s=64'
+            height={48}
+            width={48}
+            src={`data:image/png;base64,${base64String}`}
           />
           <div>
             <p className='user-info'>房东: 0xcd28...ee56</p>
@@ -139,9 +135,9 @@ export default function page({ params: { id } }) {
             </div>
 
             <div className='total-info'>
-              <Button className='total-button' type='primary'>
+              <Button  color="primary">
                 预订
-              </Button>{" "}
+              </Button>
             </div>
           </div>
         </div>
@@ -153,50 +149,12 @@ export default function page({ params: { id } }) {
           <span>评价: 15 条</span>
         </div>
 
-        <Price />
+   
       </div>
     </div>
   );
 }
 
-function Price() {
-  const contentStyle = {
-    margin: 0,
-    height: "160px",
-    color: "#fff",
-    lineHeight: "160px",
-    textAlign: "center",
-    background: "#364d79",
-  };
-  const onChange = (currentSlide) => {
-    console.log(currentSlide);
-  };
-  return (
-    <>
-      <Carousel /* afterChange={onChange} */ autoplay>
-        <div>
-          <h3 style={contentStyle}>1</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>2</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>3</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>4</h3>
-        </div>
-      </Carousel>
-    </>
-  );
-}
 
-const Loading_Image = () => {
-  return (
-    <div className='Loading_Image'>
-      <Space>
-        <Skeleton.Image active />
-      </Space>
-    </div>
-  );
-};
+
+const base64String = "iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAAchJREFUeF7t2jFOw0AURdFYokUiEqKgpqJlGakoWALbYCNZQgoqdkNNRcECIgWJEVKkeNC13oRx4Kb+M7aP37fHdoa75dVuAX6r7SWo+jslL2fv6GAGAcedBET5qRcJKGAoEA43gQKGAuFwEyhgKBAON4G/Bfh0foueROj+rJ8vUOnj/Qeqo0W9tjsISE/ReJ2Amd9CQAGLgNfAMAkCCti3lUygCTSBYQbKcPoM+ba5abK970muH17RfK2/7TRfBwqIzmO9SEABJwnYwpO4DosFFLAIeBcOkyCggC6kf8wAfVinQer1TaT1/uG7sIDj9AJWIkk7REABp71G8xpYEeh1jbaFbWFbmF6WZrlOtYVPtYWbxO6Ik8x+HXjEY28ytYAho4AChgLhcBMoYCgQDjeBAoYC4XATODfAcH8OhtP/0NDttv7XFd0ufhamE9I6AalUpU5AAb8EbOEwCAIKWAS8C4dJEFDAaQL/bhnT68M1PS299g/fhXvtoIAVAfq2Q0ABi4AtPJ4Er4FhhwgoYN9LjAk0gSeSQLoeo3Vzv6vT48AtTCekdQJSqUqdgAL2/SZiAk2gCQwzIKCAewKt3y9SXNeBVKpS9wkoT+0Sy3DWUwAAAABJRU5ErkJggg==";

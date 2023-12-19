@@ -3,7 +3,7 @@
 
 import ZuFang from "@/Data/zufang/zufang"
 
-export default async function Home() {
+export default function Home() {
 
 
 

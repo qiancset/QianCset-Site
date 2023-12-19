@@ -5,7 +5,7 @@
 }
 
 .List_Link {
-	color: var(--shiki-color);
+	color: var(--color);
 	text-decoration: none;
 }
 
@@ -15,14 +15,10 @@
 	justify-content: flex-start;
 	width: 100%;
 	height: 70px;
-	/* box-shadow: 0 0 0.08rem var(--box); */
 }
 
 .List_Item:hover {
-	background: var(--shiki-link-hover-background);
-	-webkit-border-radius: 30;
-	-moz-border-radius: 30;
-	border-radius: 30px;
+	background: var(--link-hover-background);
 }
 
 .List_My_left {
@@ -79,7 +75,7 @@
 }
 .GoChevronRight{
     font-size: 1.5rem;
-	color: var(--shiki-nav_link-color);
+	color: var(--nav_link-color);
 }
 .gap {
 	width: 5%;

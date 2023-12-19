@@ -1,28 +1,13 @@
-.language-toggle{
-	display: flex;
-    position: center;
-    align-items: space-around;
-    justify-content: center;
-
+.AiOutlineTranslation {
+	color: var(--color);
+	font-size: 1.5rem;
 }
-.language-toggle:hover {
-	-webkit-border-radius: 16;
-	-moz-border-radius: 16;
-	border-radius: 16px;
-	background: var(--shiki-link-hover-background);
-
+.i18n_button_active{
+	color: #ea7411 !important;
 }
-
-.language-toggle svg{
-	width: 22px;
-	height: 22px;
-	color: var(--shiki-color);
+.i18n_button_active:hover{
+	color: #ea7411 !important;
 }
-
-.Locales_text{
-	color: var(--shiki-color);
-}
-
-.Locales_text.after{
-	color: var(--shiki-color);
+.i18n_button_active.active{
+	color: #ea7411 !important;
 }

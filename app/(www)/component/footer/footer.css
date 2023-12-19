@@ -34,7 +34,7 @@
 }
 
 .social_media_div a:hover {
-    color: #ea7411;
+    color: #ea7411 !important;
     text-shadow: 0 0 100px var(--main-decor-color);
 }
 
@@ -67,16 +67,16 @@
     margin-bottom: 10px;
 }
 
-.Link {
+.footer_Link {
     padding-top: 10px;
     padding-bottom: 10px;
     color: var(--pc_link-color);
 }
 
-.Link:hover {
+.footer_Link:hover {
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #ea7411;
+    color: #ea7411 !important;
 }
 
 /* 大logo */
