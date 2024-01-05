@@ -2,7 +2,7 @@
 "use client";
 import Image from "next/image";
 import "./footer.css";
-
+//
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { FaDiscord, FaGithub, FaQq, FaTiktok, FaTwitter } from "react-icons/fa";
@@ -11,7 +11,7 @@ function SocialMedia({ href, faicon }) {
   return (
     <div className="social_media_div">
       <Link href={href} target="_blank" rel="noopener noreferrer">
-       {faicon}
+        {faicon}
       </Link>
     </div>
   );
@@ -49,10 +49,10 @@ export default function Footer() {
             href="https://discord.gg/pMzB7fSs9E"
             faicon={<FaDiscord />}
           />
-          <SocialMedia
+{/*           <SocialMedia
             href="https://pd.qq.com/s/8z8x37o4v"
             faicon={<FaQq />}
-          />
+          /> */}
           <SocialMedia
             href="https://github.com/Qiancset"
             faicon={<FaGithub />}
@@ -136,12 +136,7 @@ export default function Footer() {
 
         {/* 大logo */}
         <div className="footer_logo">
-          <Image
-            src="/images/icon/QianCset.png"
-            alt="QianCset"
-            className="QianCset"
-            width={600} height={150}
-          />
+          <ThemeImage/>
         </div>
 
 
@@ -161,4 +156,24 @@ export default function Footer() {
       </div>
     </footer>
   );
+}
+const ThemeImage = (props) => {
+  const { srcLight, srcDark, ...rest } = props
+
+  return (
+    <>
+      <Image {...rest}
+        src="/images/icon/QianCset.png"
+        alt="QianCset"
+        className={`imgLight QianCset`}
+        width={600} height={150}
+      />
+      <Image {...rest}
+        src="/images/icon/QianCset白.png"
+        alt="QianCset"
+        className={`imgDark QianCset`} 
+        width={600} height={150}
+      />
+    </>
+  )
 }

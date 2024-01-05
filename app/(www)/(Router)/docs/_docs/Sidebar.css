@@ -33,7 +33,7 @@
 }
 
 .pc_link.active {
-    color: #ea7411;
+    color: #ea7411 !important;
     background: var(--link-hover-background);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;

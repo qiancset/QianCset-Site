@@ -23,7 +23,7 @@ export default function Contact() {
         <div className="intro4">
           <h3>
             {t("合作发展")}
-            <hr className="About_hr"/>
+            <hr className="About_hr" />
           </h3>
           <Link href="/" target="_blank">
             <div className="button_About" >
@@ -32,25 +32,25 @@ export default function Contact() {
           </Link>
 
 
-       
-
-            <p className="kapianLOGOP">{t("技术和平台依赖、借鉴与参考")}</p>
-            
-            <div className="kapianLOGO">
-
-              <LogoCard imageUrl="/images/COMLOGO/ETH.svg" altText="ETH" />
-              <LogoCard imageUrl="/images/COMLOGO/UINSWAP.png" altText="UINSWAP" />
-
-              <LogoCard imageUrl="/images/COMLOGO/MetaMask.svg" altText="MetaMask" />
-              <LogoCard imageUrl="/images/COMLOGO/Rainbow.svg" altText="Rainbow" />
-              <LogoCard imageUrl="/images/COMLOGO/wallet_connect.png" altText="wallet_connect" />
-              <LogoCard imageUrl="/images/COMLOGO/Alcheny.svg" altText="Alcheny" />
-          
-            </div>
 
 
+          <p className="kapianLOGOP">{t("技术和平台依赖、借鉴与参考")}</p>
 
-        
+          <div className="kapianLOGO">
+
+            <LogoCard imageUrl="/images/COMLOGO/ETH.png" altText="ETH" />
+            <LogoCard imageUrl="/images/COMLOGO/UINSWAP.png" altText="UINSWAP" />
+
+            <LogoCard imageUrl="/images/COMLOGO/MetaMask.svg" altText="MetaMask" />
+            <LogoCard imageUrl="/images/COMLOGO/Rainbow.svg" altText="Rainbow" />
+            <LogoCard imageUrl="/images/COMLOGO/wallet_connect.png" altText="wallet_connect" />
+            <LogoCard imageUrl="/images/COMLOGO/Alcheny.svg" altText="Alcheny" />
+
+          </div>
+
+
+
+
         </div>
 
       </div>
