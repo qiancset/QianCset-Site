@@ -81,7 +81,6 @@ export default function Sidebar() {
               <NavbarMenuToggle
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               />{t('文档导航栏')}
-               <NavbarContent justify='end'><GoRepo  /></NavbarContent>
             </NavbarContent>
 
             <NavbarMenu className="DocsNav_NavbarMenu">
@@ -142,64 +141,10 @@ export default function Sidebar() {
           </Navbar>
         </div>
 
-        {/*        <Select
-          items={sections}
-          radius={'none'}
-          labelPlacement={'outside-left'}
-          label={t('文档导航栏')}
-          selectionMode={'single'}
-          defaultSelectedKeys={[0]}
-          className={`DocsNav `}
-        >
-
-          <SelectSection showDivider>
-            {sectionGroups.group1.map((section) => (
-              <SelectItem key={section.title} value={section.title}>
-                <Link
-                  href={`/docs${section.href}`} >
-                  {section.title}
-                </Link>
-              </SelectItem>
-            ))}
-          </SelectSection>
-
-          <SelectSection showDivider title={t('服务')} classNames={{ heading: headingClasses, }}>
-            {sectionGroups.group2.map((section) => (
-              <SelectItem key={section.id}>
-                <Link
-                  href={`/docs${section.href}`} >
-                  {section.title}
-                </Link>
-              </SelectItem>
-            ))}
-          </SelectSection>
-
-          <SelectSection showDivider title={t('法律')} classNames={{ heading: headingClasses, }}>
-            {sectionGroups.group3.map((section) => (
-              <SelectItem key={section.id}>
-                <Link
-                  href={`/docs${section.href}`} >
-                  {section.title}
-                </Link>
-              </SelectItem>
-            ))}
-          </SelectSection>
-
-          <SelectSection showDivider title={t('学习文档')} classNames={{ heading: headingClasses, }}>
-            {sectionGroups.group3.map((section) => (
-              <SelectItem key={section.id}>
-                <Link
-                  href={`/docs${section.href}`} >
-                  {section.title}
-                </Link>
-              </SelectItem>
-            ))}
-          </SelectSection>
-
-        </Select> */}
 
 
 
+{/* Pc */}
         <div className="pc">
           {sectionGroups.group1.map((section) => (
             <div key={section.id}>
