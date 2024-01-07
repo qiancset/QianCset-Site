@@ -3,14 +3,9 @@
 /.pnp
 .pnp.js
 
-# Hardhat
-/coverage
-/.React代码片段/
-/Hardhat
-/hardhat.config.js
-/qiancset-core
-/my-app
+
 # next.js
+/.React代码片段/
 /.next/
 /out/
 
@@ -42,7 +37,6 @@ yarn-error.log*
 next-env.d.ts
 
 node_modules
-.env
 coverage
 coverage.json
 typechain
