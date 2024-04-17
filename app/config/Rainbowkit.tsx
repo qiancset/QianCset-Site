@@ -9,16 +9,7 @@ import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import {
   mainnet,
   linea,
-  arbitrum,
-  optimism,
-  polygon,
-  polygonZkEvm,
   zkSync,
-  base,
-  bsc,
-  okc,
-  hardhat,
-  localhost,
 } from "wagmi/chains";
 
 import {
@@ -34,11 +25,16 @@ import {
   walletConnectWallet,
   injectedWallet,
   metaMaskWallet,
-  coinbaseWallet,
   okxWallet,
+  coinbaseWallet,
+  safeWallet,
+  safeheronWallet,
   rainbowWallet,
-  tokenPocketWallet,
   uniswapWallet,
+  tokenPocketWallet,
+  imTokenWallet,
+  oneKeyWallet,
+  trustWallet,
 } from "@rainbow-me/rainbowkit/wallets";
 
 import { publicProvider } from "wagmi/providers/public";
@@ -48,7 +44,7 @@ import { useTranslation } from "react-i18next";
 export default function Rainbowkit({ children }) {
   const { t } = useTranslation();
   // 确保 t('zh-CN') 返回一个有效的 Locale 类型
-  const Locale = t("zh-CN");
+  const Locale: any = t("zh-CN");
   const { theme } = useTheme();
 
   // 根据当前的 theme 值来选择不同的主题
@@ -61,26 +57,26 @@ export default function Rainbowkit({ children }) {
         borderRadius: "medium",
         fontStack: "system",
         overlayBlur: "small",
-      }):darkTheme({
+      }) : darkTheme({
         accentColor: "#ea7411",
         accentColorForeground: "white",
         borderRadius: "medium",
         fontStack: "system",
         overlayBlur: "none",
-      }) 
-      ;theme === "dark" ? darkTheme({
-        accentColor: "#ea7411",
-        accentColorForeground: "white",
-        borderRadius: "medium",
-        fontStack: "system",
-        overlayBlur: "none",
-      }) :  lightTheme({
-        accentColor: "#ea7411",
-        accentColorForeground: "white",
-        borderRadius: "medium",
-        fontStack: "system",
-        overlayBlur: "none",
-      });
+      })
+    ; theme === "dark" ? darkTheme({
+      accentColor: "#ea7411",
+      accentColorForeground: "white",
+      borderRadius: "medium",
+      fontStack: "system",
+      overlayBlur: "none",
+    }) : lightTheme({
+      accentColor: "#ea7411",
+      accentColorForeground: "white",
+      borderRadius: "medium",
+      fontStack: "system",
+      overlayBlur: "none",
+    });
 
   return (
     <div>
@@ -111,16 +107,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
     mainnet,
     linea,
-    arbitrum,
-    optimism,
-    polygon,
-    polygonZkEvm,
     zkSync,
-    base,
-    bsc,
-    okc,
-    hardhat,
-    localhost,
   ],
   [
     infuraProvider({ apiKey: process.env.NEXT_PUBLIC_INFURA_API_KEY }),
@@ -138,16 +125,19 @@ const connectors = connectorsForWallets([
       walletConnectWallet({ projectId, chains }),
       metaMaskWallet({ projectId, chains }),
       okxWallet({ projectId, chains }),
+      coinbaseWallet({ chains, appName: 'QianCset' }),
+      oneKeyWallet({ chains }),
     ],
   },
 
   {
     groupName: "Others",
     wallets: [
-      tokenPocketWallet({ projectId, chains }),
-      coinbaseWallet({ chains }),
       rainbowWallet({ projectId, chains }),
       uniswapWallet({ projectId, chains }),
+      tokenPocketWallet({ projectId, chains }),
+      imTokenWallet({ projectId, chains }),
+      trustWallet({ projectId, chains }),
     ],
   },
 ]);
