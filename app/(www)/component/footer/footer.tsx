@@ -19,7 +19,7 @@ function SocialMedia({ href, faicon }) {
 
 function Linkli({ children, href }) {
   return (
-    <Link href={`/docs${href}`} className="footer_Link">
+    <Link href={`/https://docs.qiancset.com/${href}`} className="footer_Link">
       {children}
     </Link>
   );

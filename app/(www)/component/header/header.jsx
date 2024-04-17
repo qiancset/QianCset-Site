@@ -32,7 +32,7 @@ export default function Headerwww() {
       setSelectedItem("1");
     } else if (pathname.startsWith("/business")) {
       setSelectedItem("2");
-    } else if (pathname.startsWith("/docs")) {
+    } else if (pathname.startsWith("https://docs.qiancset.com")) {
       setSelectedItem("3");
     } else if (pathname.startsWith("/news")) {
       setSelectedItem("4");
@@ -87,9 +87,10 @@ export default function Headerwww() {
 
           <NavbarItem>
             <Link
-              href='/docs'
+              href='https://docs.qiancset.com'
+              target='_blank'
               className={`header_link ${
-                pathname && pathname.startsWith("/docs") ? "active" : ""
+                pathname && pathname.startsWith("https://docs.qiancset.com") ? "active" : ""
               }`}>
               {t("文档")}
             </Link>
@@ -178,11 +179,12 @@ export default function Headerwww() {
           </NavbarMenuItem>
           <NavbarMenuItem>
             <Link
-              href='/docs'
+              href='https://docs.qiancset.com'
+              target='_blank'
               onClick={() => {
                 setIsMenuOpen(false);}}
               className={` header_link ${
-                pathname && pathname.startsWith("/docs") ? "active" : ""
+                pathname && pathname.startsWith("https://docs.qiancset.com") ? "active" : ""
               }`}>
               {t("文档")}
             </Link>
