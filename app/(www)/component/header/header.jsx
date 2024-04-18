@@ -47,7 +47,7 @@ export default function Headerwww() {
         isBordered
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
-        maxWidth={"2xl"} >
+        maxWidth={"2xl"}>
         {/* 左 */}
         <NavbarContent>
           <NavbarBrand>
@@ -87,22 +87,24 @@ export default function Headerwww() {
 
           <NavbarItem>
             <Link
-              href='https://docs.qiancset.com'
-              target='_blank'
-              className={`header_link ${
-                pathname && pathname.startsWith("https://docs.qiancset.com") ? "active" : ""
-              }`}>
-              {t("文档")}
-            </Link>
-          </NavbarItem>
-
-          <NavbarItem>
-            <Link
               href='/news'
               className={`header_link ${
                 pathname && pathname.startsWith("/news") ? "active" : ""
               }`}>
               {t("新闻")}
+            </Link>
+          </NavbarItem>
+
+          <NavbarItem>
+            <Link
+              href='https://docs.qiancset.com'
+              target='_blank'
+              className={`header_link ${
+                pathname && pathname.startsWith("https://docs.qiancset.com")
+                  ? "active"
+                  : ""
+              }`}>
+              {t("文档")}
             </Link>
           </NavbarItem>
         </NavbarContent>
@@ -118,7 +120,7 @@ export default function Headerwww() {
                 inputWrapper:
                   "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
               }}
-              placeholder={t('搜索')}
+              placeholder={t("搜索")}
               size='sm'
               startContent={<GoSearch size={18} />}
               type='search'
@@ -147,7 +149,7 @@ export default function Headerwww() {
                 inputWrapper:
                   "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
               }}
-              placeholder={t('搜索')}
+              placeholder={t("搜索")}
               size='sm'
               startContent={<GoSearch size={18} />}
               type='search'
@@ -158,7 +160,8 @@ export default function Headerwww() {
             <Link
               href='/about'
               onClick={() => {
-                setIsMenuOpen(false);}}
+                setIsMenuOpen(false);
+              }}
               className={` header_link ${
                 pathname === "/about" ? "active" : ""
               }`}>
@@ -170,34 +173,41 @@ export default function Headerwww() {
             <Link
               href='/business'
               onClick={() => {
-                setIsMenuOpen(false);}}
+                setIsMenuOpen(false);
+              }}
               className={` header_link ${
                 pathname && pathname.startsWith("/business") ? "active" : ""
               }`}>
               {t("业务")}
             </Link>
           </NavbarMenuItem>
+
+          <NavbarMenuItem>
+            <Link
+              href='/news'
+              onClick={() => {
+                setIsMenuOpen(false);
+              }}
+              className={` header_link ${
+                pathname && pathname.startsWith("/news") ? "active" : ""
+              }`}>
+              {t("新闻")}
+            </Link>
+          </NavbarMenuItem>
+
           <NavbarMenuItem>
             <Link
               href='https://docs.qiancset.com'
               target='_blank'
               onClick={() => {
-                setIsMenuOpen(false);}}
+                setIsMenuOpen(false);
+              }}
               className={` header_link ${
-                pathname && pathname.startsWith("https://docs.qiancset.com") ? "active" : ""
+                pathname && pathname.startsWith("https://docs.qiancset.com")
+                  ? "active"
+                  : ""
               }`}>
               {t("文档")}
-            </Link>
-          </NavbarMenuItem>
-          <NavbarMenuItem>
-            <Link
-              href='/news'
-              onClick={() => {
-                setIsMenuOpen(false);}}
-              className={` header_link ${
-                pathname && pathname.startsWith("/news") ? "active" : ""
-              }`}>
-              {t("新闻")}
             </Link>
           </NavbarMenuItem>
         </NavbarMenu>

@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 //import 'nextra-theme-docs/style.css'
 import './globals.css'
-import Providers from "@/app/config/Providers";
+import Providers from "@/config/Providers";
 
 
 

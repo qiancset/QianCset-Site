@@ -55,7 +55,7 @@ export default function About() {
             </div>
           </Link>
 
-          <Link href="/docs">
+          <Link href="https://docs.qiancset.com" target='_blank'>
             <div className="button_About_2">
               {t("阅读文档")}
             </div>
