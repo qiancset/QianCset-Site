@@ -19,7 +19,6 @@ export default function ModeThemes({}) {
   const { t } = useTranslation();
 
   const [selectedKeys, setSelectedKeys] = useState();
-
   // 使用 useEffect 监听主题的变化，并更新 selectedKeys
   useEffect(() => {
     setSelectedKeys(new Set([theme]));
