@@ -110,7 +110,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
     zkSync,
   ],
   [
-    infuraProvider({ apiKey: process.env.NEXT_PUBLIC_INFURA_API_KEY }),
+    infuraProvider({ apiKey: process.env.NEXT_PUBLIC_INFURA_API_KEY ||''}),
     publicProvider(),
   ]
 );
