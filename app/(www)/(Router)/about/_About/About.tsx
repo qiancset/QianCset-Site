@@ -42,9 +42,9 @@ export default function About() {
         </h1>
 
         <strong className="About_strong">
-          {t('让互联网变得可拥有、可信任、有价值')}
+          {t('去中心化的房屋租赁服务应用，提供创新方案')}
           <br />
-          {t('探索创新的Web3商业模式')}
+          {t('利用区块链探索创新的Web3模式')}
         </strong>
 
         <div className="Aboutbtn">

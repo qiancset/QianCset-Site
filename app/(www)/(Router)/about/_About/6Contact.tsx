@@ -45,6 +45,8 @@ export default function Contact() {
             <LogoCard imageUrl="/images/COMLOGO/Rainbow.svg" altText="Rainbow" />
             <LogoCard imageUrl="/images/COMLOGO/wallet_connect.png" altText="wallet_connect" />
             <LogoCard imageUrl="/images/COMLOGO/Alcheny.svg" altText="Alcheny" />
+            <LogoCard imageUrl="/images/COMLOGO/Alcheny.svg" altText="Alcheny" />
+            <LogoCard imageUrl="/images/COMLOGO/IPFS.svg" altText="IPFS" />
 
           </div>
 
