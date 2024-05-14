@@ -1,24 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
-
 import "@rainbow-me/rainbowkit/styles.css";
-
-import { configureChains, createConfig, WagmiConfig } from "wagmi";
-
-import {
-  mainnet,
-  linea,
-  zkSync,
-} from "wagmi/chains";
+import { useTheme } from "next-themes";
+import { useTranslation } from "react-i18next";
 
 import {
   RainbowKitProvider,
-  Locale,
+  connectorsForWallets,
   darkTheme,
   lightTheme,
-  AvatarComponent,
-  connectorsForWallets,
 } from "@rainbow-me/rainbowkit";
 
 import {
@@ -28,7 +18,6 @@ import {
   okxWallet,
   coinbaseWallet,
   safeWallet,
-  safeheronWallet,
   rainbowWallet,
   uniswapWallet,
   tokenPocketWallet,
@@ -37,9 +26,13 @@ import {
   trustWallet,
 } from "@rainbow-me/rainbowkit/wallets";
 
-import { publicProvider } from "wagmi/providers/public";
-import { infuraProvider } from "wagmi/providers/infura";
-import { useTranslation } from "react-i18next";
+
+
+
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { WagmiProvider, http, createConfig } from 'wagmi'
+import { mainnet, linea, zkSync } from "wagmi/chains";
+
 
 export default function Rainbowkit({ children }) {
   const { t } = useTranslation();
@@ -80,75 +73,85 @@ export default function Rainbowkit({ children }) {
 
   return (
     <div>
-      <WagmiConfig config={wagmiConfig}>
-        <RainbowKitProvider
-          locale={Locale}
-          chains={chains}
-          initialChain={1}
-          avatar={CustomAvatar}
-          showRecentTransactions={true}
-          theme={{
-            lightMode: selectedTheme,
-            darkMode: selectedTheme,
-          }}
-          appInfo={{
-            appName: "QianCset Dapp",
-            learnMoreUrl: "/docs/Crypto_Wallet",
-          }}>
-          {children}
-        </RainbowKitProvider>
-      </WagmiConfig>
+      <WagmiProvider config={wagmiconfig}>
+        <QueryClientProvider client={queryClient}>
+          <RainbowKitProvider
+            locale={Locale}
+            initialChain={mainnet}
+            avatar={CustomAvatar}
+            showRecentTransactions={true}
+
+            theme={{
+              lightMode: selectedTheme,
+              darkMode: selectedTheme,
+            }}
+            appInfo={{
+              appName: "QianCset Dapp",
+              learnMoreUrl: "/docs/Crypto_Wallet",
+            }}>
+            {children}
+          </RainbowKitProvider>
+        </QueryClientProvider>
+      </WagmiProvider>
     </div>
   );
 }
+const queryClient = new QueryClient()
 
-//自定义链
-const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [
-    mainnet,
-    linea,
-    zkSync,
-  ],
-  [
-    infuraProvider({ apiKey: process.env.NEXT_PUBLIC_INFURA_API_KEY ||''}),
-    publicProvider(),
-  ]
-);
+
 
 //钱包列表
 const projectId = process.env.WALLET_PROJECTID_KEY || "1234567890";
-const connectors = connectorsForWallets([
-  {
-    groupName: "Recommended",
-    wallets: [
-      injectedWallet({ chains }),
-      walletConnectWallet({ projectId, chains }),
-      metaMaskWallet({ projectId, chains }),
-      okxWallet({ projectId, chains }),
-      coinbaseWallet({ chains, appName: 'QianCset' }),
-      oneKeyWallet({ chains }),
-    ],
-  },
+const connectors = connectorsForWallets(
+  [
+    {
+      groupName: "Recommended",
+      wallets: [injectedWallet, walletConnectWallet, metaMaskWallet, safeWallet, okxWallet, coinbaseWallet,],
+    },
+    {
+      groupName: "Others",
+      wallets: [rainbowWallet, oneKeyWallet, trustWallet, uniswapWallet, tokenPocketWallet, imTokenWallet,],
+    },
+  ],
 
   {
-    groupName: "Others",
-    wallets: [
-      rainbowWallet({ projectId, chains }),
-      uniswapWallet({ projectId, chains }),
-      tokenPocketWallet({ projectId, chains }),
-      imTokenWallet({ projectId, chains }),
-      trustWallet({ projectId, chains }),
-    ],
-  },
-]);
+    appName: 'QianCset Site App',
+    projectId: projectId
+  }
 
-const wagmiConfig = createConfig({
-  autoConnect: true,
+);
+
+const wagmiconfig = createConfig({
   connectors,
-
-  publicClient,
-  webSocketPublicClient,
+  chains: [mainnet, linea, zkSync],
+  transports: {
+    [mainnet.id]: http(),
+    [linea.id]: http(),
+    [zkSync.id]: http(),
+  },
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const getAddressHash = (address) => {
   // 假设这里使用了简单的哈希函数，实际应用中可能需要更复杂的算法
