@@ -3,8 +3,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'mdx'],
+  //output: 'export',
   images: {
     remotePatterns: [
+      
       {
         protocol: 'https',
         hostname: 'z1.muscache.cn',
