@@ -39,9 +39,10 @@ function Pathname({ href, children }) {
 }
 
 function BackLink({ href }) {
+  const router = useRouter()
   return (
     <div className='Header_left'>
-      <Link href={`${href}`} prefetch={true} passHref>
+      <Link  prefetch={true} passHref onClick={() => router.back({href})}>
         <div className='BackLink'>
           <GoArrowLeft />
         </div>

@@ -5,10 +5,7 @@ import { usePathname } from 'next/navigation'
 import { BsHouseCheck, BsHouses, BsHouseUp, BsPinMap } from 'react-icons/bs'
 import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
 import { useRouter } from 'next/navigation'
-import A from '../house/1/page'
-import B from '../house/2/page'
-import C from '../house/3/page'
-import D from '../house/4/page'
+
 export default function Home_Tabs() {
     const pathname = usePathname();
     return (
@@ -43,7 +40,6 @@ function Taba() {
                         <BsHouseCheck /><span>整租</span>
                     </div>
                 }>
-                    <A />
                 </Tab>
 
                 <Tab key="2" title={
@@ -51,7 +47,6 @@ function Taba() {
                         <BsHouses /><span>合租</span>
                     </div>
                 }>
-                    <B />
                 </Tab>
 
                 <Tab key="3" title={
@@ -59,7 +54,6 @@ function Taba() {
                         <BsPinMap /><span>地图</span>
                     </div>
                 }>
-                    <C />
                 </Tab>
 
                 <Tab key="4" title={
@@ -67,7 +61,6 @@ function Taba() {
                         <BsHouseUp /><span>出租</span>
                     </div>
                 }>
-                    <D />
                 </Tab>
 
 

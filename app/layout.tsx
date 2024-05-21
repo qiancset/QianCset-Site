@@ -1,8 +1,10 @@
-import { Inter } from "next/font/google";
+//import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 //import 'nextra-theme-docs/style.css'
 import './globals.css'
 import Providers from "@/config/Providers";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 
 
@@ -25,21 +27,23 @@ export const metadata = {
    },
 
 };
-const inter = Inter({ subsets: ["latin"] });
+//const inter = Inter({ subsets: ["latin"] });
 export default function Layout({ children }: { children: React.ReactNode }) {
 
    return (
       <html>
 
 
-         <body className={inter.className}>
+         <body /* className={inter.className} */>
 
 
 
             <Providers>
 
-               {children}
 
+               <Suspense fallback={<Loading/>}>
+                  {children}
+               </Suspense>
 
 
             </Providers>
